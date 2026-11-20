@@ -26,7 +26,7 @@ subject "gtopt-cases removal request" (or, for non-confidential requests,
 open an issue with the data removal form).  We acknowledge within 5
 working days, remove the material from `main` promptly and, when required,
 rewrite the git history and ask GitHub Support to purge cached views; see
-[`DISCLAIMER.md`](DISCLAIMER.md#removal-requests).
+[`DISCLAIMER.md`](LICENSING.md#removal-requests).
 
 ## Summary
 

@@ -1,14 +1,8 @@
 # ncp_week_2026-06-21 — Guatemala (daily scheduling)
 
 > [!WARNING]
-> **Provided AS IS — not validated by the publishing institutions.**  These
-> cases were built with gtopt's own conversion tools and verified only as
-> far as the authors can; they have **not** been validated by the
-> institutions that published the source data and come **with no warranty**.
-> They must **never** be used as a reference for analysing official
-> operation scheduling or for financial analysis.  All rights to the
-> original data belong to their authors and/or the publishing institutions.
-> See [DISCLAIMER.md](../../../DISCLAIMER.md).
+> Provided **AS IS**, not validated by the publishers, who keep all
+> rights over the data.  See the [disclaimer](../../../DISCLAIMER.md).
 
 | Field | Value |
 |---|---|

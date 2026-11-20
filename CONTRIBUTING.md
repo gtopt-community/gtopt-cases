@@ -42,6 +42,25 @@ Data contributions are accepted under the terms in
 publishers' rights, and what you add to the conversion layer (README,
 metadata, NOTICE files, profiles) is dedicated under CC0-1.0.
 
+## Size and hygiene rules
+
+`tools/check_repo.sh` runs in CI on every push and pull request (and,
+after `git config core.hooksPath .githooks`, before each local commit).
+It rejects:
+
+- a `source/` file whose sha256 or size differs from `catalog.json`, or a
+  tracked `source/` file missing from the catalog (`NOTICE.md` excepted);
+
+- any file larger than 10 MB (compress with `xz -6`, or split the file
+  into `<name>.<N>.xz` parts, which `tools/get_case.py` joins back);
+- results, logs and caches (`results/`, `output/`, `logs/`, `*.log`,
+  `*.sol`, `__pycache__`): the repository publishes inputs only;
+- absolute home paths (`/home/...`, Windows user folders) in text files;
+- a tracked tree larger than 400 MB.
+
+When a case is updated, its files are replaced in place rather than added
+as a new copy next to the old one.  Pull requests are squash-merged.
+
 ## Tools
 
 Changes to `tools/` are under the gtopt licence (AGPL-3.0-or-later with
@@ -53,4 +72,4 @@ Keep `tools/` minimal; converters and analysis tools belong in
 
 ## Removal requests
 
-Rights holders: see [`DISCLAIMER.md`](DISCLAIMER.md#removal-requests).
+Rights holders: see [`DISCLAIMER.md`](LICENSING.md#removal-requests).

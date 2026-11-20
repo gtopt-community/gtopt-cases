@@ -1,7 +1,7 @@
 blank_issues_enabled: false
 contact_links:
   - name: Confidential data removal request
-    url: https://github.com/gtopt-community/gtopt-cases#removal-requests
+    url: https://github.com/gtopt-community/gtopt-cases/blob/main/LICENSING.md#removal-requests
     about: >-
       Rights holders: e-mail marcelomatusacuna@gmail.com with the subject "gtopt-cases removal
       request" for confidential requests.  We acknowledge within 5 working

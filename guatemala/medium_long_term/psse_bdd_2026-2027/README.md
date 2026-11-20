@@ -1,14 +1,8 @@
 # AMM long-term study 2026–2027 — PSS®E DC-OPF snapshots
 
 > [!WARNING]
-> **Provided AS IS — not validated by the publishing institutions.**  These
-> cases were built with gtopt's own conversion tools and verified only as
-> far as the authors can; they have **not** been validated by the
-> institutions that published the source data and come **with no warranty**.
-> They must **never** be used as a reference for analysing official
-> operation scheduling or for financial analysis.  All rights to the
-> original data belong to their authors and/or the publishing institutions.
-> See [DISCLAIMER.md](../../../DISCLAIMER.md).
+> Provided **AS IS**, not validated by the publishers, who keep all
+> rights over the data.  See the [disclaimer](../../../DISCLAIMER.md).
 
 Six single-period snapshots (1 stage / 1 block / 1 scenario) of the network
 used by the AMM long-term study *BDD ESO PLP AE MAY26-ABR27 Definitiva*:

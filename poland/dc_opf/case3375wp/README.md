@@ -50,14 +50,9 @@ the source.  A good large-network, small-LP case.
 | sha256 (`.m.xz`) | `43c306dba9594d33efa5557e1395a2c33b896791562a28a79718ba6b086de20d` |
 | Licence | **No explicit licence.**  MATPOWER's code is under the 3-clause BSD licence, but MATPOWER's `LICENSE` states: *"The MATPOWER case files distributed with MATPOWER are not covered by the BSD license.  In most cases, the data has either been included with permission or has been converted from data available from a public source."*  The file header states: *"This data was graciously provided by, and is distributed with the permission of, Roman Korab"*. |
 
-**Terms that apply.**  The data are redistributed here, unchanged and in
-the same form MATPOWER publishes them openly on GitHub, for research,
-education, software testing and benchmarking, with full attribution, under
-the permission granted by the author for distribution with MATPOWER.  No
-additional licence is granted by this repository (see
-[LICENSING.md](../../../LICENSING.md)).  If you are the rights holder and
-object to this redistribution, please open an issue and the files will be
-removed.
+**Terms.**  Redistributed unchanged, as MATPOWER publishes it, with full
+attribution; no additional licence is granted here and the derived
+`case/` follows the same terms.  See [LICENSING.md](../../../LICENSING.md).
 
 **Citation request.**  MATPOWER's `CITATION` file asks that all
 publications derived from the use of MATPOWER *or the included data files*
@@ -86,38 +81,6 @@ Suggested attribution: *"Polish system winter 2007-08 evening peak
 (`case3375wp`), data by R. Korab (Silesian University of Technology),
 distributed with MATPOWER 8.1 [1, 2]; converted to gtopt by the gtopt
 authors (changes listed in the README)."*
-
-**Derived work.**  `case/case3375wp.json` is a derivative of the source
-file, distributed under the same terms as the source data (no additional
-licence; attribution as above).  The gtopt tools used to produce it are
-licensed AGPL-3.0-or-later (with the GTOpt Solver Plugin Exception) or
-under the GTOpt Commercial License, see
-[LICENSING.md](../../../LICENSING.md); that licence does not extend to the
-case data.  Any rights the gtopt authors hold in the conversion layer are
-dedicated under CC0-1.0, without granting any right in the source data.
-Everything is provided AS IS: see
-[DISCLAIMER.md](../../../DISCLAIMER.md).
-
-### Changes made by the conversion
-
-- AC power-flow data dropped: reactive power, voltages, shunts (`Gs`,
-  `Bs`), line charging, resistances (the DC model is lossless), branch
-  ratings B/C and angle limits.
-- Out-of-service generators (117 of 596, `status = 0`) and their costs are
-  omitted.  Generator `Pmin`/`Pmax` are kept (5 units have `Pmin < 0`).
-- Costs: MATPOWER polynomial `gencost` (model 2, `c2 = 0`) → linear
-  `gcost = c1` [$/MWh]; the constant term `c0` is dropped.
-- Buses with negative real load (`Pd < 0`, 10 buses, 3,736.2 MW in total)
-  become fixed generators (`pmin = pmax = −Pd`, zero cost).
-- Branches: reactance on the 100 MVA base; transformer ratio → `tap_ratio`
-  (effective reactance `x·τ`); the 2 phase shifters (+3° in MATPOWER,
-  from bus 10135 to 10134) are written as `phase_shift_deg = −3` on the
-  reversed orientation 10134 → 10135 (same physics); `rateA = 0`
-  (unlimited) → 9,999 MW.  Per-bus generation limits and costs, and
-  per-branch susceptance, rating and shift were checked to match the `.m`
-  file.
-- Unserved demand is allowed at `demand_fail_cost = 1000` $/MWh;
-  `scale_objective = 1000`.
 
 ## How to run
 

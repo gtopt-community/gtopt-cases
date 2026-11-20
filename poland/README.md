@@ -1,13 +1,8 @@
 # Poland — Polish transmission system
 
 > [!WARNING]
-> **Provided AS IS — not validated by the data authors.**  These cases
-> were built with gtopt's own conversion tools and verified only as far as
-> the authors can; they have **not** been validated by the authors or
-> distributors of the source data and come **with no warranty**.  They
-> must **never** be used as a reference for analysing official operation
-> scheduling or for financial analysis.  All rights to the original data
-> belong to their authors.  See [DISCLAIMER.md](../DISCLAIMER.md).
+> Provided **AS IS**, not validated by the data authors, who keep all
+> rights over the data.  See the [disclaimer](../DISCLAIMER.md).
 
 Cases of the Polish power system built from the Polish test systems
 distributed with **[MATPOWER](https://matpower.org)**, with data prepared
