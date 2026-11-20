@@ -36,6 +36,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | AEMO — 2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario | `australia/production_cost/isp2026_sc_2027w03` | Australian Energy Market Operator (AEMO) | AEMO copyright permissions: general permission to use AEMO material for any purpose, with accurate and appropriate attribution of the material and of AEMO as its author (confidential and third-party commissioned reports excluded) | Scenario XML unchanged (xz) + the 250 trace files read, cut to the case week + gtopt case |
 | CEN — PCP daily programme (PLEXOS model bases) | `chile/daily_scheduling/pcp_*` (14) | Coordinador Eléctrico Nacional (CEN), Chile | No open licence stated; public CEN publications, CEN keeps the rights; check CEN terms before redistribution | PLEXOS input bundles (`DATOS*.zip.xz`) + gtopt cases; PLEXOS results (`RES*.zip`) not redistributed |
 | CEN — PLP medium/long-term programme | `chile/medium_long_term/plp_*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs + gtopt cases |
+| CEN — transmission planning PET 2027 (PLP-PET27) | `chile/transmission_planning/plp_pet27/*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs (Diagnóstico Anexo IV.1) + gtopt cases + Anexo II methodology PDF |
 | AMM / EOR — PSR NCP daily/weekly programme | `guatemala/daily_scheduling/ncp_*` (2) | Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR) | No open licence stated; public AMM/EOR publications, they keep the rights; check their terms | Selected converter inputs (xz) + gtopt cases; original `.rar` archives and operator results not redistributed |
 | AMM — PSS®E long-term study (BDD 2026-2027) | `guatemala/medium_long_term/psse_bdd_2026-2027/*` (6) | AMM (and EOR for regional data) | As above | PSS®E `.raw` / spreadsheets (xz) + gtopt cases |
 | SEM Committee — SEM-25-010, SEM PLEXOS Forecast Model 2024-2032 (public version) | `ireland/unit_commitment/sem_2025w03` | SEM Committee: Commission for Regulation of Utilities (CRU), Ireland, and Utility Regulator (UR), Northern Ireland; model by NERA Economic Consulting | No licence stated; redistribution needs the publishers' written permission | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads and converts the public files locally |
@@ -73,6 +74,11 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 - PCP model bases (PLEXOS): "Programa de Operación" portal,
   <https://programa.coordinador.cl/operacion/pcp/bases-modelo> (download
   bucket serves Chilean IP addresses only).  PLP data: same portal.
+- Transmission planning (PET 2027): Diagnóstico annexes,
+  <https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/>
+  (Anexo IV.1 Base PLP, Anexo II Metodología); attribution *"Source:
+  Coordinador Eléctrico Nacional (CEN), Propuesta de Expansión de
+  Transmisión del SEN 2027, Diagnóstico, Anexo IV.1 (Base PLP)"*.
 - Terms: data derived from public CEN publications; CEN keeps the rights
   on the original data.  No open licence is stated.
 - Attribution: *"Source: Coordinador Eléctrico Nacional (CEN), Programa

@@ -7,6 +7,12 @@
   is fetched from the CEN portal by `tools/get_case.py`.
 * **Medium/long term**: CEN PLP input sets, kept in `source/` (xz) and
   converted with `plp2gtopt` from gtopt.
+* **Chile, transmission planning (PLP-PET27)**: PLP bases of the CEN
+  *Propuesta de Expansión de Transmisión del SEN 2027*, Diagnóstico,
+  Anexo IV.1 (`Anexo-4.1-Base-PLP.zip`, coordinador.cl), kept in
+  `source/` (xz; the IPLP `.xlsm` workbooks are not included) and
+  converted with `plp2gtopt`; the Anexo II methodology PDF is kept as
+  published in `plp_pet27/methodology/`.
 * **Guatemala**: AMM PSR NCP models and PSS®E study files, converted with
   `sddp2gtopt` / `psse2gtopt` in the gtopt repository; inputs kept in
   `source/` (xz).

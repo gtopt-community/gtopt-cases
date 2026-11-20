@@ -12,6 +12,7 @@ operator.
 |---|---|---|---|
 | Daily scheduling | [daily_scheduling/](daily_scheduling/README.md) | CEN daily operation programme (PCP), daily PLEXOS model | `plexos2gtopt` |
 | Medium / long term | [medium_long_term/](medium_long_term/README.md) (`plp_2y`, `plp_5y`, `plp_23y`) | PLP — *Programa de Largo Plazo*, hydrothermal SDDP | `plp2gtopt` |
+| Transmission planning | [transmission_planning/](transmission_planning/README.md) (`plp_pet27`: `e01`, `e02`, `e03`) | PLP-PET27 — Proceso de Planificación de la Transmisión 2027 (PLP bases of the PET 2027 Diagnóstico) | `plp2gtopt` |
 | Expansion | [expansion/](expansion/README.md) | — | — |
 
 ## Getting the data
@@ -33,6 +34,9 @@ Chile, or copy the files by hand (PCP: `DATOS<date>.zip.xz` into the case
   * CEN: <https://www.coordinador.cl> — PCP model bases (PLEXOS) on the
     "Programa de Operación" portal
     <https://programa.coordinador.cl/operacion/pcp/bases-modelo>.
+  * CEN transmission planning (PET 2027): PLP bases and methodology of
+    the Diagnóstico annexes,
+    <https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/>.
 * Converter, gtopt revision, flags and file hashes per case:
   [`catalog.json`](../catalog.json).
 

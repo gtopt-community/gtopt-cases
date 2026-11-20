@@ -22,6 +22,7 @@ gtopt-cases/
 ├── chile/               Sistema Eléctrico Nacional (SEN), data from the CEN
 │   ├── daily_scheduling/    CEN PCP daily unit commitment (PLEXOS → gtopt)
 │   ├── medium_long_term/    CEN PLP hydrothermal SDDP (PLP → gtopt)
+│   ├── transmission_planning/  CEN PET 2027 PLP bases, PLP-PET27 (PLP → gtopt)
 │   └── expansion/           (no case yet)
 ├── guatemala/           Sistema Nacional Interconectado (SNI), data from AMM/EOR
 │   ├── daily_scheduling/    PSR NCP daily/weekly dispatch (sddp2gtopt)
@@ -61,6 +62,9 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [medium_long_term/plp_23y](../chile/medium_long_term/plp_23y) | 339 | 449 | 1,628 | 161 | 10 | 156 | — | 3 | — | 120 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [medium_long_term/plp_2y](../chile/medium_long_term/plp_2y) | 245 | 343 | 1,892 | 137 | 10 | 176 | 112 | 4 | — | 270 | 52 | 4 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [medium_long_term/plp_5y](../chile/medium_long_term/plp_5y) | 241 | 345 | 1,880 | 139 | 10 | 177 | 68 | 4 | — | 234 | 72 | 4 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e01](../chile/transmission_planning/plp_pet27/e01) | 292 | 430 | 933 | 148 | 10 | 173 | 158 | 3 | — | 96 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e02](../chile/transmission_planning/plp_pet27/e02) | 292 | 430 | 965 | 148 | 10 | 173 | 171 | 3 | — | 96 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e03](../chile/transmission_planning/plp_pet27/e03) | 292 | 430 | 988 | 148 | 10 | 173 | 202 | 3 | — | 96 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [daily_scheduling/ncp_pdd_2026-06-22](../guatemala/daily_scheduling/ncp_pdd_2026-06-22) | 830 | 955 | 230 | 241 | 44 | 98 | — | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | 830 | 955 | 219 | 241 | — | — | — | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/psse_bdd_2026-2027/PAEMARMAX27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMAX27) | 877 | 948 | 121 | 260 | — | — | — | — | — | 1 | 1 | 1 |
@@ -136,6 +140,20 @@ are documented as `plp2gtopt` variants in each README.
 
 See [chile/medium_long_term/README.md](../chile/medium_long_term/README.md).
 
+## <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> Chile: transmission planning — PLP-PET27 (hydrothermal SDDP)
+
+PLP bases of the CEN **Proceso de Planificación de la Transmisión 2027**
+(Diagnóstico, Anexo IV.1), one case per energy scenario in configuration
+CS_I; the group folder also holds the CEN methodology (Anexo II).
+
+| Case | Source (PLP) | Case | Buses | LP rows | Resources |
+|---|---|---|---:|---:|---|
+| [plp_pet27/e01](../chile/transmission_planning/plp_pet27/e01) | `PET27_E01_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 455,069 | medium |
+| [plp_pet27/e02](../chile/transmission_planning/plp_pet27/e02) | `PET27_E02_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 458,969 | medium |
+| [plp_pet27/e03](../chile/transmission_planning/plp_pet27/e03) | `PET27_E03_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 468,269 | medium |
+
+See [chile/transmission_planning/plp_pet27/README.md](../chile/transmission_planning/plp_pet27/README.md).
+
 ## <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> Guatemala
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
@@ -198,7 +216,7 @@ No case yet; see [chile/expansion/README.md](../chile/expansion/README.md).
 | Country | System | Data source | Daily scheduling | Medium/long term | Expansion |
 |---|---|---|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](../australia/README.md) | NEM | AEMO (Australian Energy Market Operator), 2026 ISP | 1 weekly dispatch (production cost) | — | — |
-| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 + 3 PLP-PET27 (transmission planning) | — |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
 | <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](../ireland/README.md) | SEM | SEM Committee (CRU, Utility Regulator); not redistributed, fetched on demand | 1 weekly unit commitment | — | — |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |

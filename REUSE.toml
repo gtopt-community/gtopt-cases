@@ -62,6 +62,12 @@ SPDX-FileCopyrightText = [
 ]
 SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
 
+[[annotations]]
+path = ["chile/transmission_planning/plp_pet27/methodology/*.pdf", "chile/transmission_planning/plp_pet27/methodology/*.jpg"]
+precedence = "override"
+SPDX-FileCopyrightText = "Coordinador Eléctrico Nacional (CEN), Chile"
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
 # ---- Guatemala: AMM and EOR (the SDDP programmes: AMM only)
 [[annotations]]
 path = "guatemala/**/source/**"
