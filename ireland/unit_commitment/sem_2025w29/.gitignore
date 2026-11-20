@@ -1,0 +1,4 @@
+# SEM data are not redistributed: tools/get_case.py fetch sem_2025w29
+# downloads them into source/ and converts them into case/.
+source/
+case/

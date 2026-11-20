@@ -30,30 +30,38 @@ the PLEXOS XML directly (`plexos2gtopt --plexos-model`), resolves one
 week of one weather sample, and builds an hourly mixed-integer
 unit-commitment problem:
 
-| | `sem_2025w03` |
-|---|---|
-| Horizon | 13-19 January 2025, 168 hourly blocks |
-| Network | 3 nodes (SEM, Great Britain, France), 2 HVDC interconnectors |
-| Units | 116 generators, 61 with unit commitment (min up/down, start costs, ramps) |
-| Storage | 22 grid batteries + Turlough Hill pumped storage |
-| Hydro | daily energy limits for Ardnacrusha, Erne, Lee and Liffey |
-| Size | ~102k rows, ~89k columns, ~10k binaries: small, runs in minutes |
+| | `sem_2025w03` | `sem_2025w16` | `sem_2025w29` | `sem_2025w42` |
+|---|---|---|---|---|
+| Season | winter | spring | summer | autumn |
+| Horizon (2025, 168 hourly blocks) | 13-19 January | 14-20 April | 14-20 July | 13-19 October |
+| Network | 3 nodes (SEM, Great Britain, France); 2 HVDC links SEM-GB (East-West, Moyle) | 3 nodes; 3 HVDC links SEM-GB (East-West, Moyle, Greenlink) | same as w16 | same as w16 |
+| Units | 116 generators, 61 with unit commitment | 116, 58 with UC | 116, 65 with UC | 116, 69 with UC |
+| Storage | 22 grid batteries + Turlough Hill | 23 + Turlough Hill | 23 + Turlough Hill | 24 + Turlough Hill |
+| Hydro | daily energy limits for Ardnacrusha, Erne, Lee and Liffey | same | same | same |
+| Size (rows / binaries) | ~102k / 10.2k | ~101k / 9.7k | ~106k / 10.9k | ~113k / 11.6k |
+
+Unit commitment covers min up/down times, start costs and ramps; each
+week is a small MIP that runs in minutes at a 0.1 % gap.
 
 Great Britain and France enter as single nodes with price-bid
 generators, as in PLEXOS.  The case README lists what is and is not
 converted.
 
-These figures describe the case that `tools/get_case.py fetch` builds;
+These figures describe the cases that `tools/get_case.py fetch` builds;
 the data themselves are not in this repository (see below).
 
 | Application | Folder | Source | Converter |
 |---|---|---|---|
-| Unit commitment (weekly) | [unit_commitment/sem_2025w03](unit_commitment/sem_2025w03/README.md) | SEM-25-010 PLEXOS model, 13-19 January 2025, weather sample 1 | `plexos2gtopt --plexos-model` (gtopt 1.1.0 or later) |
+| Unit commitment (weekly), winter | [unit_commitment/sem_2025w03](unit_commitment/sem_2025w03/README.md) | SEM-25-010 PLEXOS model, 13-19 January 2025, weather sample 1 | `plexos2gtopt --plexos-model` (gtopt 1.1.0 or later) |
+| Unit commitment (weekly), spring | [unit_commitment/sem_2025w16](unit_commitment/sem_2025w16/README.md) | same model: 14-20 April 2025 | same |
+| Unit commitment (weekly), summer | [unit_commitment/sem_2025w29](unit_commitment/sem_2025w29/README.md) | same model: 14-20 July 2025 | same |
+| Unit commitment (weekly), autumn | [unit_commitment/sem_2025w42](unit_commitment/sem_2025w42/README.md) | same model: 13-19 October 2025 | same |
 
 ## Getting the data
 
 The SEM data are **not redistributed** here: this folder is a recipe.
-`tools/get_case.py fetch sem_2025w03` downloads the public archives from
+`tools/get_case.py fetch sem_2025w03` (or `sem_2025w16`, `sem_2025w29`,
+`sem_2025w42`) downloads the public archives from
 the SEM Committee site, checks their sha256 and converts them locally
 (see the case README).
 

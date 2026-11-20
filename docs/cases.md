@@ -45,6 +45,9 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | Case | Buses | Lines | Generators | Demands | Reservoirs | Turbines | Batteries | Water rights | Unit commitments | Blocks | Stages | Scenarios |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | 15 | 18 | 523 | 15 | 22 | 95 | 85 | — | — | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | 15 | 18 | 527 | 15 | 22 | 95 | 90 | — | — | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | 15 | 18 | 540 | 15 | 22 | 95 | 100 | — | — | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w42](../australia/production_cost/isp2026_sc_2027w42) | 15 | 18 | 542 | 15 | 22 | 95 | 106 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-10-05](../chile/daily_scheduling/pcp_2025-10-05) | 237 | 305 | 1,739 | 127 | 12 | 35 | 23 | 4 | 1,009 | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-10-19](../chile/daily_scheduling/pcp_2025-10-19) | 239 | 306 | 1,747 | 127 | 12 | 37 | 25 | 4 | 1,001 | 107 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-11-09](../chile/daily_scheduling/pcp_2025-11-09) | 239 | 307 | 1,751 | 127 | 12 | 34 | 25 | 5 | 1,005 | 118 | 1 | 1 |
@@ -80,6 +83,9 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/sddp_plp_2025-2026](../guatemala/medium_long_term/sddp_plp_2025-2026) | 489 | 553 | 178 | 136 | 44 | 58 | — | — | — | 108 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/sddp_plp_2026-2027](../guatemala/medium_long_term/sddp_plp_2026-2027) | 497 | 559 | 217 | 134 | 44 | 58 | — | — | — | 108 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [unit_commitment/sem_2025w03](../ireland/unit_commitment/sem_2025w03) | 3 | 2 | 116 | 3 | — | — | 23 | — | 61 | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [unit_commitment/sem_2025w16](../ireland/unit_commitment/sem_2025w16) | 3 | 3 | 116 | 3 | — | — | 24 | — | 58 | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [unit_commitment/sem_2025w29](../ireland/unit_commitment/sem_2025w29) | 3 | 3 | 116 | 3 | — | — | 24 | — | 65 | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [unit_commitment/sem_2025w42](../ireland/unit_commitment/sem_2025w42) | 3 | 3 | 116 | 3 | — | — | 25 | — | 69 | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2026](../peru/medium_long_term/coes_mrfo_2026-2029/2026) | 270 | 312 | 157 | 133 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2027](../peru/medium_long_term/coes_mrfo_2026-2029/2027) | 270 | 331 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2028](../peru/medium_long_term/coes_mrfo_2026-2029/2028) | 270 | 346 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
@@ -91,8 +97,12 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
 | [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | production_cost | 15 | 168 | 126,129 | small |
+| [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | production_cost | 15 | 168 | 132,012 | small |
+| [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | production_cost | 15 | 168 | 143,792 | small |
+| [production_cost/isp2026_sc_2027w42](../australia/production_cost/isp2026_sc_2027w42) | production_cost | 15 | 168 | 150,860 | small |
 
-One-week hourly dispatch (18-24 January 2027) of the AEMO 2026 ISP PLEXOS
+Four one-week hourly dispatches, one per season of 2027 (18-24 January,
+19-25 April, 19-25 July and 18-24 October), of the AEMO 2026 ISP PLEXOS
 model, Step Change scenario; prototype without expansion or PLEXOS
 constraints.  See [australia/README.md](../australia/README.md).
 
@@ -180,10 +190,15 @@ See [guatemala/README.md](../guatemala/README.md).
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
 | [unit_commitment/sem_2025w03](../ireland/unit_commitment/sem_2025w03) | unit_commitment | 3 | 168 | 102,351 | small |
+| [unit_commitment/sem_2025w16](../ireland/unit_commitment/sem_2025w16) | unit_commitment | 3 | 168 | 100,505 | small |
+| [unit_commitment/sem_2025w29](../ireland/unit_commitment/sem_2025w29) | unit_commitment | 3 | 168 | 105,724 | small |
+| [unit_commitment/sem_2025w42](../ireland/unit_commitment/sem_2025w42) | unit_commitment | 3 | 168 | 112,609 | small |
 
-One-week unit commitment (13-19 January 2025) of the SEM PLEXOS Forecast
+Four one-week unit commitments, one per season of 2025 (13-19 January,
+14-20 April, 14-20 July and 13-19 October), of the SEM PLEXOS Forecast
 Model 2024-2032.  **Recipe only**: the SEM data are not redistributed;
-`tools/get_case.py fetch sem_2025w03` downloads and converts them.  See
+`tools/get_case.py fetch sem_2025w03` (or `w16`, `w29`, `w42`) downloads and
+converts them.  See
 [ireland/README.md](../ireland/README.md).
 
 ## <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> Peru

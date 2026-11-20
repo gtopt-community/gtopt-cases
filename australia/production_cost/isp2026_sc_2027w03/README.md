@@ -24,6 +24,10 @@ in service on 18 January 2027:
   natural inflows;
 - 85 battery and coordinated consumer-storage aggregates.
 
+This is the summer week of four seasonal weeks of 2027
+(`isp2026_sc_2027w03`, `w16`, `w29` and `w42`), converted from the same
+database; see the [Australia README](../../README.md).
+
 | Field | Value |
 |---|---|
 | Case id | `australia/production_cost/isp2026_sc_2027w03` |

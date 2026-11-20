@@ -6169,6 +6169,300 @@
       ]
     },
     {
+      "id": "australia/production_cost/isp2026_sc_2027w16",
+      "path": "australia/production_cost/isp2026_sc_2027w16",
+      "date": "2027-04-19 to 2027-04-25 (one week, hourly)",
+      "country": "australia",
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/isp2026_sc_2027w16.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 132012,
+          "cols": 248410,
+          "nnz": 465892,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 15,
+        "generators": 527,
+        "lines": 18,
+        "batteries": 90,
+        "reservoirs": 22,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "files": [
+          {
+            "path": "source/2026 ISP Step Change Model.xml.xz",
+            "sha256": "e98c4827c4fb3052732e20415709a83a8453de8ddd0960101490f0b0b96e74df",
+            "bytes": 1234148
+          },
+          {
+            "path": "source/traces.sha256",
+            "sha256": "056829dbe0841dca5e68c78496847dc6ac1eb22cac2ec56dd391f4788e33087b",
+            "bytes": 26865,
+            "manifest": "source/traces",
+            "note": "sha256 manifest of the 251 window-cut trace files under source/traces/ (629,826 bytes), paths relative to source/traces"
+          },
+          {
+            "path": "source/NOT_KEPT.txt",
+            "sha256": "eb0b38e08c64b004d270865073701ce1926a0b8082511ca41d516f45e440b96b",
+            "bytes": 1369
+          }
+        ],
+        "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w16.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+        "publisher": "Australian Energy Market Operator (AEMO)",
+        "licence": "AEMO copyright permissions (https://aemo.com.au/privacy-and-legal-notices/copyright-permissions): 'AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. You do not need to obtain specific permission to use AEMO Material in this way.' Excludes confidential documents and reports commissioned by third parties."
+      },
+      "converter": {
+        "tool": "plexos2gtopt.aemo_isp",
+        "flags": [
+          "-s",
+          "2027-04-19",
+          "-d",
+          "7",
+          "-n",
+          "isp2026_sc_2027w16"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w16/case/isp2026_sc_2027w16.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w16/case\" -d . --solver clp",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w16",
+        "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16",
+        "resources": {
+          "class": "small",
+          "guide": "~132k-row LP; a few minutes with CLP, < 1 GB RAM"
+        },
+        "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-04-19 -d 7 -o case -n isp2026_sc_2027w16"
+      },
+      "rights_holders": [
+        {
+          "name": "Australian Energy Market Operator (AEMO)",
+          "url": "https://www.aemo.com.au"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Australian Energy Market Operator (AEMO)"
+        ],
+        "licence": "AEMO copyright permissions: general permission for anyone to use AEMO Material for any purpose, with accurate and appropriate attribution of the AEMO Material and of AEMO as its author; confidential documents and reports commissioned by third parties are excluded.",
+        "attribution": "Source: Australian Energy Market Operator (AEMO), 2026 Integrated System Plan PLEXOS model (Step Change), © AEMO, used under AEMO's copyright permissions; converted to gtopt format.",
+        "modified": "source: scenario XML unmodified except xz compression; trace files cut to the rows of 2027-04-19..2027-04-25 (see source/NOT_KEPT.txt); case: converted by gtopt plexos2gtopt.aemo_isp",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-04-19; no capacity expansion.",
+        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
+        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "Not validated against AEMO (the public package has no PLEXOS solution)."
+      ]
+    },
+    {
+      "id": "australia/production_cost/isp2026_sc_2027w29",
+      "path": "australia/production_cost/isp2026_sc_2027w29",
+      "date": "2027-07-19 to 2027-07-25 (one week, hourly)",
+      "country": "australia",
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/isp2026_sc_2027w29.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 143792,
+          "cols": 264232,
+          "nnz": 500204,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 15,
+        "generators": 540,
+        "lines": 18,
+        "batteries": 100,
+        "reservoirs": 22,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "files": [
+          {
+            "path": "source/2026 ISP Step Change Model.xml.xz",
+            "sha256": "e98c4827c4fb3052732e20415709a83a8453de8ddd0960101490f0b0b96e74df",
+            "bytes": 1234148
+          },
+          {
+            "path": "source/traces.sha256",
+            "sha256": "94b49f58b9f279ed8ab0d2cc8df8b4f4dc9f3871c906fea3ca28795f881f0ca8",
+            "bytes": 28106,
+            "manifest": "source/traces",
+            "note": "sha256 manifest of the 263 window-cut trace files under source/traces/ (657,608 bytes), paths relative to source/traces"
+          },
+          {
+            "path": "source/NOT_KEPT.txt",
+            "sha256": "097695523e462ffc6f7caa7692ec3fb2ce93efa1dc33c032dde961ad80acd4fa",
+            "bytes": 1369
+          }
+        ],
+        "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w29.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+        "publisher": "Australian Energy Market Operator (AEMO)",
+        "licence": "AEMO copyright permissions (https://aemo.com.au/privacy-and-legal-notices/copyright-permissions): 'AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. You do not need to obtain specific permission to use AEMO Material in this way.' Excludes confidential documents and reports commissioned by third parties."
+      },
+      "converter": {
+        "tool": "plexos2gtopt.aemo_isp",
+        "flags": [
+          "-s",
+          "2027-07-19",
+          "-d",
+          "7",
+          "-n",
+          "isp2026_sc_2027w29"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w29/case/isp2026_sc_2027w29.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w29/case\" -d . --solver clp",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w29",
+        "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29",
+        "resources": {
+          "class": "small",
+          "guide": "~144k-row LP; a few minutes with CLP, < 1 GB RAM"
+        },
+        "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-07-19 -d 7 -o case -n isp2026_sc_2027w29"
+      },
+      "rights_holders": [
+        {
+          "name": "Australian Energy Market Operator (AEMO)",
+          "url": "https://www.aemo.com.au"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Australian Energy Market Operator (AEMO)"
+        ],
+        "licence": "AEMO copyright permissions: general permission for anyone to use AEMO Material for any purpose, with accurate and appropriate attribution of the AEMO Material and of AEMO as its author; confidential documents and reports commissioned by third parties are excluded.",
+        "attribution": "Source: Australian Energy Market Operator (AEMO), 2026 Integrated System Plan PLEXOS model (Step Change), © AEMO, used under AEMO's copyright permissions; converted to gtopt format.",
+        "modified": "source: scenario XML unmodified except xz compression; trace files cut to the rows of 2027-07-19..2027-07-25 (see source/NOT_KEPT.txt); case: converted by gtopt plexos2gtopt.aemo_isp",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-07-19; no capacity expansion.",
+        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
+        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "Not validated against AEMO (the public package has no PLEXOS solution)."
+      ]
+    },
+    {
+      "id": "australia/production_cost/isp2026_sc_2027w42",
+      "path": "australia/production_cost/isp2026_sc_2027w42",
+      "date": "2027-10-18 to 2027-10-24 (one week, hourly)",
+      "country": "australia",
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/isp2026_sc_2027w42.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 150860,
+          "cols": 272590,
+          "nnz": 519656,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 15,
+        "generators": 542,
+        "lines": 18,
+        "batteries": 106,
+        "reservoirs": 22,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "files": [
+          {
+            "path": "source/2026 ISP Step Change Model.xml.xz",
+            "sha256": "e98c4827c4fb3052732e20415709a83a8453de8ddd0960101490f0b0b96e74df",
+            "bytes": 1234148
+          },
+          {
+            "path": "source/traces.sha256",
+            "sha256": "fc5a279a0c822db1568af52bae2f3663eef6650a457b91ccc36a1f4020923a78",
+            "bytes": 28206,
+            "manifest": "source/traces",
+            "note": "sha256 manifest of the 264 window-cut trace files under source/traces/ (662,346 bytes), paths relative to source/traces"
+          },
+          {
+            "path": "source/NOT_KEPT.txt",
+            "sha256": "ccaf288c03a76541e9a4b0645faa47bf02ac54e51f2e249df187026eb2e2a4bf",
+            "bytes": 1369
+          }
+        ],
+        "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w42.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+        "publisher": "Australian Energy Market Operator (AEMO)",
+        "licence": "AEMO copyright permissions (https://aemo.com.au/privacy-and-legal-notices/copyright-permissions): 'AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. You do not need to obtain specific permission to use AEMO Material in this way.' Excludes confidential documents and reports commissioned by third parties."
+      },
+      "converter": {
+        "tool": "plexos2gtopt.aemo_isp",
+        "flags": [
+          "-s",
+          "2027-10-18",
+          "-d",
+          "7",
+          "-n",
+          "isp2026_sc_2027w42"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w42/case/isp2026_sc_2027w42.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w42/case\" -d . --solver clp",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w42",
+        "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42",
+        "resources": {
+          "class": "small",
+          "guide": "~151k-row LP; a few minutes with CLP, < 1 GB RAM"
+        },
+        "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-10-18 -d 7 -o case -n isp2026_sc_2027w42"
+      },
+      "rights_holders": [
+        {
+          "name": "Australian Energy Market Operator (AEMO)",
+          "url": "https://www.aemo.com.au"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Australian Energy Market Operator (AEMO)"
+        ],
+        "licence": "AEMO copyright permissions: general permission for anyone to use AEMO Material for any purpose, with accurate and appropriate attribution of the AEMO Material and of AEMO as its author; confidential documents and reports commissioned by third parties are excluded.",
+        "attribution": "Source: Australian Energy Market Operator (AEMO), 2026 Integrated System Plan PLEXOS model (Step Change), © AEMO, used under AEMO's copyright permissions; converted to gtopt format.",
+        "modified": "source: scenario XML unmodified except xz compression; trace files cut to the rows of 2027-10-18..2027-10-24 (see source/NOT_KEPT.txt); case: converted by gtopt plexos2gtopt.aemo_isp",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-10-18; no capacity expansion.",
+        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
+        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "Not validated against AEMO (the public package has no PLEXOS solution)."
+      ]
+    },
+    {
       "id": "ireland/unit_commitment/sem_2025w03",
       "path": "ireland/unit_commitment/sem_2025w03",
       "date": "2025-01-13 to 2025-01-19 (one week, hourly)",
@@ -6234,7 +6528,8 @@
         ],
         "origin": "SEM Committee publication SEM-25-010 (24 March 2025), https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report; XML uncompressed sha256 1ffda1ff2370a41a48c9bfa9f3437c8c776eb613a726c40d117ac55b5ca79d5f",
         "publisher": "SEM Committee (Commission for Regulation of Utilities, Ireland, and Utility Regulator, Northern Ireland); model prepared by NERA Economic Consulting",
-        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them."
+        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them.",
+        "cache": "sem_plexos_2024_2032"
       },
       "converter": {
         "tool": "plexos2gtopt",
@@ -6304,6 +6599,426 @@
         "Recipe only: no SEM data and no converted case files are in this repository.",
         "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
         "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; France not connected in January 2025.",
+        "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
+      ]
+    },
+    {
+      "id": "ireland/unit_commitment/sem_2025w16",
+      "path": "ireland/unit_commitment/sem_2025w16",
+      "date": "2025-04-14 to 2025-04-20 (one week, hourly)",
+      "country": "ireland",
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/sem_2025w16.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 100505,
+          "cols": 89289,
+          "nnz": 326588,
+          "binaries": 9744,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 3,
+        "generators": 116,
+        "lines": 3,
+        "batteries": 24,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "The SEM data are NOT in this repository: the publication states no licence, so redistribution needs the publishers' written permission (CRU). tools/get_case.py fetch sem_2025w16 downloads the archives below from the SEM Committee site, checks their sha256, extracts the listed members into the git-ignored source/ and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032( Public Version).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%28%20Public%20Version%29.zip",
+            "sha256": "1d436a80d8efa5a78b82050ca178b77fc31ba485be767ce694eebf942a48b1ad",
+            "bytes": 1443942,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032( Public Version)/PUBLIC Validation 2024-2032 Model 2025-03-14.xml": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%201%20of%202%29.zip",
+            "sha256": "25b989630687950fcca803f091699bbdb5893f517997bd64e0d5e9c792c9ea60",
+            "bytes": 15015279,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/AI Demand_2023-2033_5base years.csv": "source/data_files/AI Demand_2023-2033_5base years.csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/NI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/NI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%202%20of%202%29.zip",
+            "sha256": "6740919634fe23949c05f846ee918d443f048db43cc8c53439bacd1764065ebd",
+            "bytes": 22470462,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/Offshore Wind_5base years 2018-2033 (Avail).csv": "source/data_files/Offshore Wind_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/ROI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/ROI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          }
+        ],
+        "origin": "SEM Committee publication SEM-25-010 (24 March 2025), https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report; XML uncompressed sha256 1ffda1ff2370a41a48c9bfa9f3437c8c776eb613a726c40d117ac55b5ca79d5f",
+        "publisher": "SEM Committee (Commission for Regulation of Utilities, Ireland, and Utility Regulator, Northern Ireland); model prepared by NERA Economic Consulting",
+        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them.",
+        "cache": "sem_plexos_2024_2032"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--horizon-mode",
+          "hourly",
+          "--horizon-days",
+          "7",
+          "--line-losses-mode",
+          "none",
+          "--plexos-model",
+          "Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP",
+          "--plexos-start-date",
+          "2025-04-14",
+          "--plexos-sample",
+          "1",
+          "--plexos-data-dir",
+          "source/data_files",
+          "--battery-efin-pin",
+          "--no-emissions"
+        ],
+        "input": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml",
+        "rename_input": true,
+        "drop": [
+          "options.solver_options.param_file"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "plexos2gtopt --plexos-model materialiser, in gtopt 1.1.0 or later. Run from the case directory with the XML named sem_2025w16.xml; options.solver_options.param_file is removed from the output (tools/get_case.py does both)."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w16/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w16/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w16/case/sem_2025w16.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w16/case\" -d . --solver highs --mip-gap 0.001",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only sem_2025w16",
+        "output": "~/gtopt-cases-out/ireland/unit_commitment/sem_2025w16",
+        "resources": {
+          "class": "small",
+          "guide": "~101k-row MIP, 10k binaries, solved to a 0.1 % gap; minutes with HiGHS or CBC, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch sem_2025w16"
+      },
+      "rights_holders": [
+        {
+          "name": "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "url": "https://www.semcommittee.com"
+        },
+        {
+          "name": "Utility Regulator (Northern Ireland)",
+          "url": "https://www.uregni.gov.uk"
+        },
+        {
+          "name": "NERA Economic Consulting (model author)",
+          "url": "https://www.nera.com"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "Utility Regulator (Northern Ireland)",
+          "NERA Economic Consulting (model author)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Source: SEM Committee (CRU and Utility Regulator), SEM PLEXOS Forecast Model 2024-2032, public version (SEM-25-010, March 2025), model by NERA Economic Consulting; converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no SEM data and no converted case files are in this repository.",
+        "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
+        "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in April 2025.",
+        "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
+      ]
+    },
+    {
+      "id": "ireland/unit_commitment/sem_2025w29",
+      "path": "ireland/unit_commitment/sem_2025w29",
+      "date": "2025-07-14 to 2025-07-20 (one week, hourly)",
+      "country": "ireland",
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/sem_2025w29.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 105724,
+          "cols": 94608,
+          "nnz": 336223,
+          "binaries": 10920,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 3,
+        "generators": 116,
+        "lines": 3,
+        "batteries": 24,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "The SEM data are NOT in this repository: the publication states no licence, so redistribution needs the publishers' written permission (CRU). tools/get_case.py fetch sem_2025w29 downloads the archives below from the SEM Committee site, checks their sha256, extracts the listed members into the git-ignored source/ and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032( Public Version).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%28%20Public%20Version%29.zip",
+            "sha256": "1d436a80d8efa5a78b82050ca178b77fc31ba485be767ce694eebf942a48b1ad",
+            "bytes": 1443942,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032( Public Version)/PUBLIC Validation 2024-2032 Model 2025-03-14.xml": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%201%20of%202%29.zip",
+            "sha256": "25b989630687950fcca803f091699bbdb5893f517997bd64e0d5e9c792c9ea60",
+            "bytes": 15015279,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/AI Demand_2023-2033_5base years.csv": "source/data_files/AI Demand_2023-2033_5base years.csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/NI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/NI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%202%20of%202%29.zip",
+            "sha256": "6740919634fe23949c05f846ee918d443f048db43cc8c53439bacd1764065ebd",
+            "bytes": 22470462,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/Offshore Wind_5base years 2018-2033 (Avail).csv": "source/data_files/Offshore Wind_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/ROI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/ROI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          }
+        ],
+        "origin": "SEM Committee publication SEM-25-010 (24 March 2025), https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report; XML uncompressed sha256 1ffda1ff2370a41a48c9bfa9f3437c8c776eb613a726c40d117ac55b5ca79d5f",
+        "publisher": "SEM Committee (Commission for Regulation of Utilities, Ireland, and Utility Regulator, Northern Ireland); model prepared by NERA Economic Consulting",
+        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them.",
+        "cache": "sem_plexos_2024_2032"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--horizon-mode",
+          "hourly",
+          "--horizon-days",
+          "7",
+          "--line-losses-mode",
+          "none",
+          "--plexos-model",
+          "Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP",
+          "--plexos-start-date",
+          "2025-07-14",
+          "--plexos-sample",
+          "1",
+          "--plexos-data-dir",
+          "source/data_files",
+          "--battery-efin-pin",
+          "--no-emissions"
+        ],
+        "input": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml",
+        "rename_input": true,
+        "drop": [
+          "options.solver_options.param_file"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "plexos2gtopt --plexos-model materialiser, in gtopt 1.1.0 or later. Run from the case directory with the XML named sem_2025w29.xml; options.solver_options.param_file is removed from the output (tools/get_case.py does both)."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w29/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w29/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w29/case/sem_2025w29.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w29/case\" -d . --solver highs --mip-gap 0.001",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only sem_2025w29",
+        "output": "~/gtopt-cases-out/ireland/unit_commitment/sem_2025w29",
+        "resources": {
+          "class": "small",
+          "guide": "~106k-row MIP, 11k binaries, solved to a 0.1 % gap; minutes with HiGHS or CBC, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch sem_2025w29"
+      },
+      "rights_holders": [
+        {
+          "name": "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "url": "https://www.semcommittee.com"
+        },
+        {
+          "name": "Utility Regulator (Northern Ireland)",
+          "url": "https://www.uregni.gov.uk"
+        },
+        {
+          "name": "NERA Economic Consulting (model author)",
+          "url": "https://www.nera.com"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "Utility Regulator (Northern Ireland)",
+          "NERA Economic Consulting (model author)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Source: SEM Committee (CRU and Utility Regulator), SEM PLEXOS Forecast Model 2024-2032, public version (SEM-25-010, March 2025), model by NERA Economic Consulting; converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no SEM data and no converted case files are in this repository.",
+        "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
+        "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in July 2025.",
+        "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
+      ]
+    },
+    {
+      "id": "ireland/unit_commitment/sem_2025w42",
+      "path": "ireland/unit_commitment/sem_2025w42",
+      "date": "2025-10-13 to 2025-10-19 (one week, hourly)",
+      "country": "ireland",
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/sem_2025w42.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 112609,
+          "cols": 98809,
+          "nnz": 357977,
+          "binaries": 11592,
+          "gtopt_revision": "5de60c22b78c"
+        },
+        "buses": 3,
+        "generators": 116,
+        "lines": 3,
+        "batteries": 25,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "The SEM data are NOT in this repository: the publication states no licence, so redistribution needs the publishers' written permission (CRU). tools/get_case.py fetch sem_2025w42 downloads the archives below from the SEM Committee site, checks their sha256, extracts the listed members into the git-ignored source/ and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032( Public Version).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%28%20Public%20Version%29.zip",
+            "sha256": "1d436a80d8efa5a78b82050ca178b77fc31ba485be767ce694eebf942a48b1ad",
+            "bytes": 1443942,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032( Public Version)/PUBLIC Validation 2024-2032 Model 2025-03-14.xml": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%201%20of%202%29.zip",
+            "sha256": "25b989630687950fcca803f091699bbdb5893f517997bd64e0d5e9c792c9ea60",
+            "bytes": 15015279,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/AI Demand_2023-2033_5base years.csv": "source/data_files/AI Demand_2023-2033_5base years.csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/NI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/NI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%202%20of%202%29.zip",
+            "sha256": "6740919634fe23949c05f846ee918d443f048db43cc8c53439bacd1764065ebd",
+            "bytes": 22470462,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/Offshore Wind_5base years 2018-2033 (Avail).csv": "source/data_files/Offshore Wind_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/ROI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/ROI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          }
+        ],
+        "origin": "SEM Committee publication SEM-25-010 (24 March 2025), https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report; XML uncompressed sha256 1ffda1ff2370a41a48c9bfa9f3437c8c776eb613a726c40d117ac55b5ca79d5f",
+        "publisher": "SEM Committee (Commission for Regulation of Utilities, Ireland, and Utility Regulator, Northern Ireland); model prepared by NERA Economic Consulting",
+        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them.",
+        "cache": "sem_plexos_2024_2032"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--horizon-mode",
+          "hourly",
+          "--horizon-days",
+          "7",
+          "--line-losses-mode",
+          "none",
+          "--plexos-model",
+          "Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP",
+          "--plexos-start-date",
+          "2025-10-13",
+          "--plexos-sample",
+          "1",
+          "--plexos-data-dir",
+          "source/data_files",
+          "--battery-efin-pin",
+          "--no-emissions"
+        ],
+        "input": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml",
+        "rename_input": true,
+        "drop": [
+          "options.solver_options.param_file"
+        ],
+        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+        "note": "plexos2gtopt --plexos-model materialiser, in gtopt 1.1.0 or later. Run from the case directory with the XML named sem_2025w42.xml; options.solver_options.param_file is removed from the output (tools/get_case.py does both)."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w42/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w42/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w42/case/sem_2025w42.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w42/case\" -d . --solver highs --mip-gap 0.001",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only sem_2025w42",
+        "output": "~/gtopt-cases-out/ireland/unit_commitment/sem_2025w42",
+        "resources": {
+          "class": "small",
+          "guide": "~113k-row MIP, 12k binaries, solved to a 0.1 % gap; minutes with HiGHS or CBC, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch sem_2025w42"
+      },
+      "rights_holders": [
+        {
+          "name": "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "url": "https://www.semcommittee.com"
+        },
+        {
+          "name": "Utility Regulator (Northern Ireland)",
+          "url": "https://www.uregni.gov.uk"
+        },
+        {
+          "name": "NERA Economic Consulting (model author)",
+          "url": "https://www.nera.com"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "Utility Regulator (Northern Ireland)",
+          "NERA Economic Consulting (model author)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Source: SEM Committee (CRU and Utility Regulator), SEM PLEXOS Forecast Model 2024-2032, public version (SEM-25-010, March 2025), model by NERA Economic Consulting; converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no SEM data and no converted case files are in this repository.",
+        "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
+        "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in October 2025.",
         "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
       ]
     }

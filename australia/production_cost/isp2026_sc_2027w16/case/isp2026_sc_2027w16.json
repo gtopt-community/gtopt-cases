@@ -1,0 +1,8450 @@
+{
+ "options": {
+  "input_format": "parquet",
+  "output_format": "parquet",
+  "model_options": {
+   "use_single_bus": false,
+   "use_kirchhoff": false,
+   "demand_fail_cost": 36356.0,
+   "scale_objective": 1000.0
+  }
+ },
+ "simulation": {
+  "block_array": [
+   {
+    "uid": 1,
+    "duration": 1.0
+   },
+   {
+    "uid": 2,
+    "duration": 1.0
+   },
+   {
+    "uid": 3,
+    "duration": 1.0
+   },
+   {
+    "uid": 4,
+    "duration": 1.0
+   },
+   {
+    "uid": 5,
+    "duration": 1.0
+   },
+   {
+    "uid": 6,
+    "duration": 1.0
+   },
+   {
+    "uid": 7,
+    "duration": 1.0
+   },
+   {
+    "uid": 8,
+    "duration": 1.0
+   },
+   {
+    "uid": 9,
+    "duration": 1.0
+   },
+   {
+    "uid": 10,
+    "duration": 1.0
+   },
+   {
+    "uid": 11,
+    "duration": 1.0
+   },
+   {
+    "uid": 12,
+    "duration": 1.0
+   },
+   {
+    "uid": 13,
+    "duration": 1.0
+   },
+   {
+    "uid": 14,
+    "duration": 1.0
+   },
+   {
+    "uid": 15,
+    "duration": 1.0
+   },
+   {
+    "uid": 16,
+    "duration": 1.0
+   },
+   {
+    "uid": 17,
+    "duration": 1.0
+   },
+   {
+    "uid": 18,
+    "duration": 1.0
+   },
+   {
+    "uid": 19,
+    "duration": 1.0
+   },
+   {
+    "uid": 20,
+    "duration": 1.0
+   },
+   {
+    "uid": 21,
+    "duration": 1.0
+   },
+   {
+    "uid": 22,
+    "duration": 1.0
+   },
+   {
+    "uid": 23,
+    "duration": 1.0
+   },
+   {
+    "uid": 24,
+    "duration": 1.0
+   },
+   {
+    "uid": 25,
+    "duration": 1.0
+   },
+   {
+    "uid": 26,
+    "duration": 1.0
+   },
+   {
+    "uid": 27,
+    "duration": 1.0
+   },
+   {
+    "uid": 28,
+    "duration": 1.0
+   },
+   {
+    "uid": 29,
+    "duration": 1.0
+   },
+   {
+    "uid": 30,
+    "duration": 1.0
+   },
+   {
+    "uid": 31,
+    "duration": 1.0
+   },
+   {
+    "uid": 32,
+    "duration": 1.0
+   },
+   {
+    "uid": 33,
+    "duration": 1.0
+   },
+   {
+    "uid": 34,
+    "duration": 1.0
+   },
+   {
+    "uid": 35,
+    "duration": 1.0
+   },
+   {
+    "uid": 36,
+    "duration": 1.0
+   },
+   {
+    "uid": 37,
+    "duration": 1.0
+   },
+   {
+    "uid": 38,
+    "duration": 1.0
+   },
+   {
+    "uid": 39,
+    "duration": 1.0
+   },
+   {
+    "uid": 40,
+    "duration": 1.0
+   },
+   {
+    "uid": 41,
+    "duration": 1.0
+   },
+   {
+    "uid": 42,
+    "duration": 1.0
+   },
+   {
+    "uid": 43,
+    "duration": 1.0
+   },
+   {
+    "uid": 44,
+    "duration": 1.0
+   },
+   {
+    "uid": 45,
+    "duration": 1.0
+   },
+   {
+    "uid": 46,
+    "duration": 1.0
+   },
+   {
+    "uid": 47,
+    "duration": 1.0
+   },
+   {
+    "uid": 48,
+    "duration": 1.0
+   },
+   {
+    "uid": 49,
+    "duration": 1.0
+   },
+   {
+    "uid": 50,
+    "duration": 1.0
+   },
+   {
+    "uid": 51,
+    "duration": 1.0
+   },
+   {
+    "uid": 52,
+    "duration": 1.0
+   },
+   {
+    "uid": 53,
+    "duration": 1.0
+   },
+   {
+    "uid": 54,
+    "duration": 1.0
+   },
+   {
+    "uid": 55,
+    "duration": 1.0
+   },
+   {
+    "uid": 56,
+    "duration": 1.0
+   },
+   {
+    "uid": 57,
+    "duration": 1.0
+   },
+   {
+    "uid": 58,
+    "duration": 1.0
+   },
+   {
+    "uid": 59,
+    "duration": 1.0
+   },
+   {
+    "uid": 60,
+    "duration": 1.0
+   },
+   {
+    "uid": 61,
+    "duration": 1.0
+   },
+   {
+    "uid": 62,
+    "duration": 1.0
+   },
+   {
+    "uid": 63,
+    "duration": 1.0
+   },
+   {
+    "uid": 64,
+    "duration": 1.0
+   },
+   {
+    "uid": 65,
+    "duration": 1.0
+   },
+   {
+    "uid": 66,
+    "duration": 1.0
+   },
+   {
+    "uid": 67,
+    "duration": 1.0
+   },
+   {
+    "uid": 68,
+    "duration": 1.0
+   },
+   {
+    "uid": 69,
+    "duration": 1.0
+   },
+   {
+    "uid": 70,
+    "duration": 1.0
+   },
+   {
+    "uid": 71,
+    "duration": 1.0
+   },
+   {
+    "uid": 72,
+    "duration": 1.0
+   },
+   {
+    "uid": 73,
+    "duration": 1.0
+   },
+   {
+    "uid": 74,
+    "duration": 1.0
+   },
+   {
+    "uid": 75,
+    "duration": 1.0
+   },
+   {
+    "uid": 76,
+    "duration": 1.0
+   },
+   {
+    "uid": 77,
+    "duration": 1.0
+   },
+   {
+    "uid": 78,
+    "duration": 1.0
+   },
+   {
+    "uid": 79,
+    "duration": 1.0
+   },
+   {
+    "uid": 80,
+    "duration": 1.0
+   },
+   {
+    "uid": 81,
+    "duration": 1.0
+   },
+   {
+    "uid": 82,
+    "duration": 1.0
+   },
+   {
+    "uid": 83,
+    "duration": 1.0
+   },
+   {
+    "uid": 84,
+    "duration": 1.0
+   },
+   {
+    "uid": 85,
+    "duration": 1.0
+   },
+   {
+    "uid": 86,
+    "duration": 1.0
+   },
+   {
+    "uid": 87,
+    "duration": 1.0
+   },
+   {
+    "uid": 88,
+    "duration": 1.0
+   },
+   {
+    "uid": 89,
+    "duration": 1.0
+   },
+   {
+    "uid": 90,
+    "duration": 1.0
+   },
+   {
+    "uid": 91,
+    "duration": 1.0
+   },
+   {
+    "uid": 92,
+    "duration": 1.0
+   },
+   {
+    "uid": 93,
+    "duration": 1.0
+   },
+   {
+    "uid": 94,
+    "duration": 1.0
+   },
+   {
+    "uid": 95,
+    "duration": 1.0
+   },
+   {
+    "uid": 96,
+    "duration": 1.0
+   },
+   {
+    "uid": 97,
+    "duration": 1.0
+   },
+   {
+    "uid": 98,
+    "duration": 1.0
+   },
+   {
+    "uid": 99,
+    "duration": 1.0
+   },
+   {
+    "uid": 100,
+    "duration": 1.0
+   },
+   {
+    "uid": 101,
+    "duration": 1.0
+   },
+   {
+    "uid": 102,
+    "duration": 1.0
+   },
+   {
+    "uid": 103,
+    "duration": 1.0
+   },
+   {
+    "uid": 104,
+    "duration": 1.0
+   },
+   {
+    "uid": 105,
+    "duration": 1.0
+   },
+   {
+    "uid": 106,
+    "duration": 1.0
+   },
+   {
+    "uid": 107,
+    "duration": 1.0
+   },
+   {
+    "uid": 108,
+    "duration": 1.0
+   },
+   {
+    "uid": 109,
+    "duration": 1.0
+   },
+   {
+    "uid": 110,
+    "duration": 1.0
+   },
+   {
+    "uid": 111,
+    "duration": 1.0
+   },
+   {
+    "uid": 112,
+    "duration": 1.0
+   },
+   {
+    "uid": 113,
+    "duration": 1.0
+   },
+   {
+    "uid": 114,
+    "duration": 1.0
+   },
+   {
+    "uid": 115,
+    "duration": 1.0
+   },
+   {
+    "uid": 116,
+    "duration": 1.0
+   },
+   {
+    "uid": 117,
+    "duration": 1.0
+   },
+   {
+    "uid": 118,
+    "duration": 1.0
+   },
+   {
+    "uid": 119,
+    "duration": 1.0
+   },
+   {
+    "uid": 120,
+    "duration": 1.0
+   },
+   {
+    "uid": 121,
+    "duration": 1.0
+   },
+   {
+    "uid": 122,
+    "duration": 1.0
+   },
+   {
+    "uid": 123,
+    "duration": 1.0
+   },
+   {
+    "uid": 124,
+    "duration": 1.0
+   },
+   {
+    "uid": 125,
+    "duration": 1.0
+   },
+   {
+    "uid": 126,
+    "duration": 1.0
+   },
+   {
+    "uid": 127,
+    "duration": 1.0
+   },
+   {
+    "uid": 128,
+    "duration": 1.0
+   },
+   {
+    "uid": 129,
+    "duration": 1.0
+   },
+   {
+    "uid": 130,
+    "duration": 1.0
+   },
+   {
+    "uid": 131,
+    "duration": 1.0
+   },
+   {
+    "uid": 132,
+    "duration": 1.0
+   },
+   {
+    "uid": 133,
+    "duration": 1.0
+   },
+   {
+    "uid": 134,
+    "duration": 1.0
+   },
+   {
+    "uid": 135,
+    "duration": 1.0
+   },
+   {
+    "uid": 136,
+    "duration": 1.0
+   },
+   {
+    "uid": 137,
+    "duration": 1.0
+   },
+   {
+    "uid": 138,
+    "duration": 1.0
+   },
+   {
+    "uid": 139,
+    "duration": 1.0
+   },
+   {
+    "uid": 140,
+    "duration": 1.0
+   },
+   {
+    "uid": 141,
+    "duration": 1.0
+   },
+   {
+    "uid": 142,
+    "duration": 1.0
+   },
+   {
+    "uid": 143,
+    "duration": 1.0
+   },
+   {
+    "uid": 144,
+    "duration": 1.0
+   },
+   {
+    "uid": 145,
+    "duration": 1.0
+   },
+   {
+    "uid": 146,
+    "duration": 1.0
+   },
+   {
+    "uid": 147,
+    "duration": 1.0
+   },
+   {
+    "uid": 148,
+    "duration": 1.0
+   },
+   {
+    "uid": 149,
+    "duration": 1.0
+   },
+   {
+    "uid": 150,
+    "duration": 1.0
+   },
+   {
+    "uid": 151,
+    "duration": 1.0
+   },
+   {
+    "uid": 152,
+    "duration": 1.0
+   },
+   {
+    "uid": 153,
+    "duration": 1.0
+   },
+   {
+    "uid": 154,
+    "duration": 1.0
+   },
+   {
+    "uid": 155,
+    "duration": 1.0
+   },
+   {
+    "uid": 156,
+    "duration": 1.0
+   },
+   {
+    "uid": 157,
+    "duration": 1.0
+   },
+   {
+    "uid": 158,
+    "duration": 1.0
+   },
+   {
+    "uid": 159,
+    "duration": 1.0
+   },
+   {
+    "uid": 160,
+    "duration": 1.0
+   },
+   {
+    "uid": 161,
+    "duration": 1.0
+   },
+   {
+    "uid": 162,
+    "duration": 1.0
+   },
+   {
+    "uid": 163,
+    "duration": 1.0
+   },
+   {
+    "uid": 164,
+    "duration": 1.0
+   },
+   {
+    "uid": 165,
+    "duration": 1.0
+   },
+   {
+    "uid": 166,
+    "duration": 1.0
+   },
+   {
+    "uid": 167,
+    "duration": 1.0
+   },
+   {
+    "uid": 168,
+    "duration": 1.0
+   }
+  ],
+  "stage_array": [
+   {
+    "uid": 1,
+    "first_block": 0,
+    "count_block": 168,
+    "chronological": true
+   }
+  ],
+  "scenario_array": [
+   {
+    "uid": 1,
+    "probability_factor": 1.0
+   }
+  ]
+ },
+ "system": {
+  "name": "isp2026_sc_2027w16",
+  "bus_array": [
+   {
+    "uid": 1,
+    "name": "CNSW"
+   },
+   {
+    "uid": 2,
+    "name": "CQ"
+   },
+   {
+    "uid": 3,
+    "name": "CSA"
+   },
+   {
+    "uid": 4,
+    "name": "GG"
+   },
+   {
+    "uid": 5,
+    "name": "MEL"
+   },
+   {
+    "uid": 6,
+    "name": "NNSW"
+   },
+   {
+    "uid": 7,
+    "name": "NQ"
+   },
+   {
+    "uid": 8,
+    "name": "NSA"
+   },
+   {
+    "uid": 9,
+    "name": "SESA"
+   },
+   {
+    "uid": 10,
+    "name": "SEV"
+   },
+   {
+    "uid": 11,
+    "name": "SNSW"
+   },
+   {
+    "uid": 12,
+    "name": "SNW"
+   },
+   {
+    "uid": 13,
+    "name": "SQ"
+   },
+   {
+    "uid": 14,
+    "name": "TAS"
+   },
+   {
+    "uid": 15,
+    "name": "WNV"
+   }
+  ],
+  "demand_array": [
+   {
+    "uid": 1,
+    "name": "load_CNSW",
+    "bus": "CNSW",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 2,
+    "name": "load_CQ",
+    "bus": "CQ",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 3,
+    "name": "load_CSA",
+    "bus": "CSA",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 4,
+    "name": "load_GG",
+    "bus": "GG",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 5,
+    "name": "load_MEL",
+    "bus": "MEL",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 6,
+    "name": "load_NNSW",
+    "bus": "NNSW",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 7,
+    "name": "load_NQ",
+    "bus": "NQ",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 8,
+    "name": "load_NSA",
+    "bus": "NSA",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 9,
+    "name": "load_SESA",
+    "bus": "SESA",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 10,
+    "name": "load_SEV",
+    "bus": "SEV",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 11,
+    "name": "load_SNSW",
+    "bus": "SNSW",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 12,
+    "name": "load_SNW",
+    "bus": "SNW",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 13,
+    "name": "load_SQ",
+    "bus": "SQ",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 14,
+    "name": "load_TAS",
+    "bus": "TAS",
+    "lmax": "lmax"
+   },
+   {
+    "uid": 15,
+    "name": "load_WNV",
+    "bus": "WNV",
+    "lmax": "lmax"
+   }
+  ],
+  "generator_array": [
+   {
+    "uid": 1,
+    "name": "ADPPV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 9.36522
+   },
+   {
+    "uid": 2,
+    "name": "AGLHAL01",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 16.3647
+   },
+   {
+    "uid": 3,
+    "name": "AGLHAL02",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 16.3647
+   },
+   {
+    "uid": 4,
+    "name": "AGLHAL03",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 16.8606
+   },
+   {
+    "uid": 5,
+    "name": "AGLHAL04",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 15.8688
+   },
+   {
+    "uid": 6,
+    "name": "AGLHAL05",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 15.8688
+   },
+   {
+    "uid": 7,
+    "name": "AGLHAL06",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 14.877
+   },
+   {
+    "uid": 8,
+    "name": "AGLHAL07",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 22.8114
+   },
+   {
+    "uid": 9,
+    "name": "AGLHAL08",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 24.795
+   },
+   {
+    "uid": 10,
+    "name": "AGLHAL09",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 22.8114
+   },
+   {
+    "uid": 11,
+    "name": "AGLHAL10",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 15.8688
+   },
+   {
+    "uid": 12,
+    "name": "AGLHAL11",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 15.8688
+   },
+   {
+    "uid": 13,
+    "name": "AGLHAL12",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 15.8688
+   },
+   {
+    "uid": 14,
+    "name": "AGLHALRE",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 231.1599,
+    "pmax": "pmax",
+    "capacity": 31.7376
+   },
+   {
+    "uid": 15,
+    "name": "AGLSOM01",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 228.4545,
+    "pmax": "pmax",
+    "capacity": 42.1515
+   },
+   {
+    "uid": 16,
+    "name": "AGLSOM02",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 228.4545,
+    "pmax": "pmax",
+    "capacity": 42.1515
+   },
+   {
+    "uid": 17,
+    "name": "AGLSOM03",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 228.4545,
+    "pmax": "pmax",
+    "capacity": 42.1515
+   },
+   {
+    "uid": 18,
+    "name": "AGLSOM04",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 228.4545,
+    "pmax": "pmax",
+    "capacity": 42.1515
+   },
+   {
+    "uid": 19,
+    "name": "ANGAS1",
+    "bus": "CSA",
+    "type": "liquid",
+    "gcost": 392.01491,
+    "pmax": "pmax",
+    "capacity": 27.48671
+   },
+   {
+    "uid": 20,
+    "name": "ANGAS2",
+    "bus": "CSA",
+    "type": "liquid",
+    "gcost": 392.01491,
+    "pmax": "pmax",
+    "capacity": 18.35755
+   },
+   {
+    "uid": 21,
+    "name": "ARWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 88.60434000000001
+   },
+   {
+    "uid": 22,
+    "name": "AVLSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 152.2894365
+   },
+   {
+    "uid": 23,
+    "name": "Aldoga Solar Farm",
+    "bus": "GG",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 333.90197459999996
+   },
+   {
+    "uid": 24,
+    "name": "BALDHWF1",
+    "bus": "SEV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.4458834
+   },
+   {
+    "uid": 25,
+    "name": "BANGOWF1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 129.04121999999998
+   },
+   {
+    "uid": 26,
+    "name": "BANGOWF2",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 73.83397670000001
+   },
+   {
+    "uid": 27,
+    "name": "BANN1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.61917
+   },
+   {
+    "uid": 28,
+    "name": "BARCALDN",
+    "bus": "CQ",
+    "type": "gas",
+    "gcost": 170.1491,
+    "pmax": "pmax",
+    "capacity": 36.696600000000004
+   },
+   {
+    "uid": 29,
+    "name": "BARRON-1",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 32.7855
+   },
+   {
+    "uid": 30,
+    "name": "BARRON-2",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 32.7855
+   },
+   {
+    "uid": 31,
+    "name": "BASTYAN",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 80.4735
+   },
+   {
+    "uid": 32,
+    "name": "BBTHREE1",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 198.3001,
+    "pmax": "pmax",
+    "capacity": 21.8196
+   },
+   {
+    "uid": 33,
+    "name": "BBTHREE2",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 198.3001,
+    "pmax": "pmax",
+    "capacity": 24.795
+   },
+   {
+    "uid": 34,
+    "name": "BBTHREE3",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 198.3001,
+    "pmax": "pmax",
+    "capacity": 22.8114
+   },
+   {
+    "uid": 35,
+    "name": "BDL01",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 151.3399,
+    "pmax": "pmax",
+    "capacity": 43.6392
+   },
+   {
+    "uid": 36,
+    "name": "BDL02",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 151.3399,
+    "pmax": "pmax",
+    "capacity": 43.6392
+   },
+   {
+    "uid": 37,
+    "name": "BERYLSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.66998129999999
+   },
+   {
+    "uid": 38,
+    "name": "BIPS1_01",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 39,
+    "name": "BIPS1_02",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 40,
+    "name": "BIPS1_03",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 41,
+    "name": "BIPS1_04",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 42,
+    "name": "BIPS1_05",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 43,
+    "name": "BIPS1_06",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 44,
+    "name": "BIPS1_07",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 45,
+    "name": "BIPS1_08",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 46,
+    "name": "BIPS1_09",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 47,
+    "name": "BIPS1_10",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 48,
+    "name": "BIPS1_11",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 49,
+    "name": "BIPS1_12",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 128.7308,
+    "pmax": "pmax",
+    "capacity": 17.325
+   },
+   {
+    "uid": 50,
+    "name": "BLOWERNG",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 69.545
+   },
+   {
+    "uid": 51,
+    "name": "BLUEGSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.12513143000001
+   },
+   {
+    "uid": 52,
+    "name": "BLUFF1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 34.28958225
+   },
+   {
+    "uid": 53,
+    "name": "BNGSF1",
+    "bus": "NSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 98.05664304
+   },
+   {
+    "uid": 54,
+    "name": "BNGSF2",
+    "bus": "NSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 98.05664304
+   },
+   {
+    "uid": 55,
+    "name": "BOCORWF1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 86.50043292000001
+   },
+   {
+    "uid": 56,
+    "name": "BODWF1",
+    "bus": "CNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 95.08672865999999
+   },
+   {
+    "uid": 57,
+    "name": "BOGONG1",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 69.545
+   },
+   {
+    "uid": 58,
+    "name": "BOGONG2",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 69.545
+   },
+   {
+    "uid": 59,
+    "name": "BOLIVPS1_1",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 165.6944,
+    "pmax": "pmax",
+    "capacity": 31.142519999999998
+   },
+   {
+    "uid": 60,
+    "name": "BOLIVPS1_2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 165.6944,
+    "pmax": "pmax",
+    "capacity": 31.142519999999998
+   },
+   {
+    "uid": 61,
+    "name": "BOLIVPS1_3",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 165.6944,
+    "pmax": "pmax",
+    "capacity": 31.142519999999998
+   },
+   {
+    "uid": 62,
+    "name": "BOLIVPS1_4",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 165.6944,
+    "pmax": "pmax",
+    "capacity": 31.142519999999998
+   },
+   {
+    "uid": 63,
+    "name": "BOMENSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 81.067486365
+   },
+   {
+    "uid": 64,
+    "name": "BOWWPV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 3.578161635
+   },
+   {
+    "uid": 65,
+    "name": "BRAEMAR1",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 179.5158
+   },
+   {
+    "uid": 66,
+    "name": "BRAEMAR2",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 179.5158
+   },
+   {
+    "uid": 67,
+    "name": "BRAEMAR3",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 179.5158
+   },
+   {
+    "uid": 68,
+    "name": "BRAEMAR5",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 69,
+    "name": "BRAEMAR6",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 70,
+    "name": "BRAEMAR7",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 154.4619,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 71,
+    "name": "BROKENH1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 52.8039
+   },
+   {
+    "uid": 72,
+    "name": "BRYB1WF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 132.66854689
+   },
+   {
+    "uid": 73,
+    "name": "BRYB2WF2",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 79.34469091999999
+   },
+   {
+    "uid": 74,
+    "name": "BULGANA1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 92.17428220000001
+   },
+   {
+    "uid": 75,
+    "name": "BW01",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 46.01614,
+    "pmax": "pmax",
+    "capacity": 621.7860000000001
+   },
+   {
+    "uid": 76,
+    "name": "BW02",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 46.01614,
+    "pmax": "pmax",
+    "capacity": 645.3385000000001
+   },
+   {
+    "uid": 77,
+    "name": "BW03",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 46.01614,
+    "pmax": "pmax",
+    "capacity": 645.3385000000001
+   },
+   {
+    "uid": 78,
+    "name": "BW04",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 46.01614,
+    "pmax": "pmax",
+    "capacity": 645.3385000000001
+   },
+   {
+    "uid": 79,
+    "name": "Broadsound Solar Farm",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 275.29363079999996
+   },
+   {
+    "uid": 80,
+    "name": "Bundaberg Solar Farm",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 66.4043913
+   },
+   {
+    "uid": 81,
+    "name": "CA111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 23.844
+   },
+   {
+    "uid": 82,
+    "name": "CA112-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 23.844
+   },
+   {
+    "uid": 83,
+    "name": "CALL_B_1",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 39.962379,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 84,
+    "name": "CALL_B_2",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 39.962379,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 85,
+    "name": "CAPTL_WF",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 126.61857515999998
+   },
+   {
+    "uid": 86,
+    "name": "CATHROCK",
+    "bus": "NSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 50.080282999999994
+   },
+   {
+    "uid": 87,
+    "name": "CETHANA",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 88,
+    "name": "CG1",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 169.3599,
+    "pmax": "pmax",
+    "capacity": 176.5404
+   },
+   {
+    "uid": 89,
+    "name": "CG2",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 169.3599,
+    "pmax": "pmax",
+    "capacity": 176.5404
+   },
+   {
+    "uid": 90,
+    "name": "CG3",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 169.3599,
+    "pmax": "pmax",
+    "capacity": 176.5404
+   },
+   {
+    "uid": 91,
+    "name": "CG4",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 169.3599,
+    "pmax": "pmax",
+    "capacity": 176.5404
+   },
+   {
+    "uid": 92,
+    "name": "CHALLHWF",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 30.413142375
+   },
+   {
+    "uid": 93,
+    "name": "CHILDSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 52.35157979999999
+   },
+   {
+    "uid": 94,
+    "name": "CHYTWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 38.44833696
+   },
+   {
+    "uid": 95,
+    "name": "CLARESF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 97.88647499999999
+   },
+   {
+    "uid": 96,
+    "name": "CLEMGPWF",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 52.177401044999996
+   },
+   {
+    "uid": 97,
+    "name": "CLERMSF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 66.83927625
+   },
+   {
+    "uid": 98,
+    "name": "CLRKCWF1",
+    "bus": "CQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 293.7878086
+   },
+   {
+    "uid": 99,
+    "name": "CLRKCWF2",
+    "bus": "CQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 91.3923043
+   },
+   {
+    "uid": 100,
+    "name": "CNUNDAWF",
+    "bus": "SESA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 31.2979469
+   },
+   {
+    "uid": 101,
+    "name": "COHUNSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 21.92338224
+   },
+   {
+    "uid": 102,
+    "name": "COLEASF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 136.6674525
+   },
+   {
+    "uid": 103,
+    "name": "COLUMSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 136.3028067
+   },
+   {
+    "uid": 104,
+    "name": "COLWF01",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 153.353150775
+   },
+   {
+    "uid": 105,
+    "name": "COOPGWF1",
+    "bus": "SQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 324.01041200000003
+   },
+   {
+    "uid": 106,
+    "name": "CPP_3",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 40.33133,
+    "pmax": "pmax",
+    "capacity": 434.9178
+   },
+   {
+    "uid": 107,
+    "name": "CPP_4",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 40.33133,
+    "pmax": "pmax",
+    "capacity": 434.9178
+   },
+   {
+    "uid": 108,
+    "name": "CPSA_GT1",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 91.831,
+    "pmax": "pmax",
+    "capacity": 43.09224
+   },
+   {
+    "uid": 109,
+    "name": "CPSA_GT2",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 91.831,
+    "pmax": "pmax",
+    "capacity": 43.09224
+   },
+   {
+    "uid": 110,
+    "name": "CPSA_ST",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 91.831,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 111,
+    "name": "CROOKWF2",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 67.8229552
+   },
+   {
+    "uid": 112,
+    "name": "CROOKWF3",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 44.2347752
+   },
+   {
+    "uid": 113,
+    "name": "CROWLWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 49.198204
+   },
+   {
+    "uid": 114,
+    "name": "CRURWF1",
+    "bus": "CNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 89.85907259999999
+   },
+   {
+    "uid": 115,
+    "name": "CRWASF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 25.70454
+   },
+   {
+    "uid": 116,
+    "name": "CSPVPS1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 39.0400155
+   },
+   {
+    "uid": 117,
+    "name": "CTHLWF1",
+    "bus": "TAS",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 132.4426752
+   },
+   {
+    "uid": 118,
+    "name": "CULLRGWF",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 29.1234735
+   },
+   {
+    "uid": 119,
+    "name": "Culcairn Solar Farm",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 281.404935
+   },
+   {
+    "uid": 120,
+    "name": "DARLSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 233.1591075
+   },
+   {
+    "uid": 121,
+    "name": "DARTM1",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 168.895
+   },
+   {
+    "uid": 122,
+    "name": "DAYDSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 134.72466749999998
+   },
+   {
+    "uid": 123,
+    "name": "DDPS1_GT1",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 95.6566,
+    "pmax": "pmax",
+    "capacity": 116.8104
+   },
+   {
+    "uid": 124,
+    "name": "DDPS1_GT2",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 95.6566,
+    "pmax": "pmax",
+    "capacity": 116.8104
+   },
+   {
+    "uid": 125,
+    "name": "DDPS1_GT3",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 95.6566,
+    "pmax": "pmax",
+    "capacity": 116.8104
+   },
+   {
+    "uid": 126,
+    "name": "DDPS1_ST",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 95.6566,
+    "pmax": "pmax",
+    "capacity": 267.9768
+   },
+   {
+    "uid": 127,
+    "name": "DDSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 102.47742539999999
+   },
+   {
+    "uid": 128,
+    "name": "DEVILS_G",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 62.590500000000006
+   },
+   {
+    "uid": 129,
+    "name": "DRYCGT1",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 213.4959,
+    "pmax": "pmax",
+    "capacity": 46.6146
+   },
+   {
+    "uid": 130,
+    "name": "DRYCGT2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 213.4959,
+    "pmax": "pmax",
+    "capacity": 46.6146
+   },
+   {
+    "uid": 131,
+    "name": "DRYCGT3",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 213.4959,
+    "pmax": "pmax",
+    "capacity": 48.5982
+   },
+   {
+    "uid": 132,
+    "name": "DULAWF1",
+    "bus": "SQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 164.60188799999997
+   },
+   {
+    "uid": 133,
+    "name": "DUNDWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 130.2067536
+   },
+   {
+    "uid": 134,
+    "name": "DUNDWF2",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 36.03580134
+   },
+   {
+    "uid": 135,
+    "name": "DUNDWF3",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.88276028
+   },
+   {
+    "uid": 136,
+    "name": "Dubbo GT",
+    "bus": "CNSW",
+    "type": "gas",
+    "gcost": 168.762,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 137,
+    "name": "EDENVSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.0044795
+   },
+   {
+    "uid": 138,
+    "name": "EILDON1",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 59.61
+   },
+   {
+    "uid": 139,
+    "name": "EILDON2",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 59.61
+   },
+   {
+    "uid": 140,
+    "name": "ELAINWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 54.31208177999999
+   },
+   {
+    "uid": 141,
+    "name": "EMERASF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 65.38517639999999
+   },
+   {
+    "uid": 142,
+    "name": "ER01",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.095372,
+    "pmax": "pmax",
+    "capacity": 678.312
+   },
+   {
+    "uid": 143,
+    "name": "ER02",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.095372,
+    "pmax": "pmax",
+    "capacity": 678.312
+   },
+   {
+    "uid": 144,
+    "name": "ER03",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.095372,
+    "pmax": "pmax",
+    "capacity": 678.312
+   },
+   {
+    "uid": 145,
+    "name": "ER04",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.095372,
+    "pmax": "pmax",
+    "capacity": 678.312
+   },
+   {
+    "uid": 146,
+    "name": "FINLYSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 113.237017065
+   },
+   {
+    "uid": 147,
+    "name": "FISHER",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 45.701
+   },
+   {
+    "uid": 148,
+    "name": "FLYCRKWF",
+    "bus": "CNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 127.723057
+   },
+   {
+    "uid": 149,
+    "name": "GANGARR1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 101.119817205
+   },
+   {
+    "uid": 150,
+    "name": "GANNSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 40.499595
+   },
+   {
+    "uid": 151,
+    "name": "GIRGSF",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 61.24634693999999
+   },
+   {
+    "uid": 152,
+    "name": "GLENSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 80.3834766
+   },
+   {
+    "uid": 153,
+    "name": "GLRWNSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 86.4140805
+   },
+   {
+    "uid": 154,
+    "name": "GNNDHSF1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 109.59299999999999
+   },
+   {
+    "uid": 155,
+    "name": "GO181-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 140.08350000000002
+   },
+   {
+    "uid": 156,
+    "name": "GO182-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 140.08350000000002
+   },
+   {
+    "uid": 157,
+    "name": "GO183-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 140.08350000000002
+   },
+   {
+    "uid": 158,
+    "name": "GOONSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 59.21479160999999
+   },
+   {
+    "uid": 159,
+    "name": "GPWFEST1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 190.60835200000002
+   },
+   {
+    "uid": 160,
+    "name": "GPWFEST2",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 200.122912
+   },
+   {
+    "uid": 161,
+    "name": "GPWFEST3",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 190.60835200000002
+   },
+   {
+    "uid": 162,
+    "name": "GRANWF1",
+    "bus": "TAS",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 105.74006255999998
+   },
+   {
+    "uid": 163,
+    "name": "GSTONE1",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 164,
+    "name": "GSTONE2",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 165,
+    "name": "GSTONE3",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 166,
+    "name": "GSTONE4",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 167,
+    "name": "GSTONE5",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 168,
+    "name": "GSTONE6",
+    "bus": "GG",
+    "type": "coal",
+    "gcost": 66.21223,
+    "pmax": "pmax",
+    "capacity": 261.324
+   },
+   {
+    "uid": 169,
+    "name": "GSWF1A",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 184.36987305
+   },
+   {
+    "uid": 170,
+    "name": "GSWF1B",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 179.50837888499996
+   },
+   {
+    "uid": 171,
+    "name": "GULLRSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 9.963
+   },
+   {
+    "uid": 172,
+    "name": "GULLRWF1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 97.4320677
+   },
+   {
+    "uid": 173,
+    "name": "GULLRWF2",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 88.64953416000002
+   },
+   {
+    "uid": 174,
+    "name": "GUNNING1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 40.9245012
+   },
+   {
+    "uid": 175,
+    "name": "GUSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 79.83850050000001
+   },
+   {
+    "uid": 176,
+    "name": "GUTHEGA1",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 33.779
+   },
+   {
+    "uid": 177,
+    "name": "GUTHEGA2",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 33.779
+   },
+   {
+    "uid": 178,
+    "name": "Golden Plains West Wind Farm",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 412.44993207
+   },
+   {
+    "uid": 179,
+    "name": "Goorambat East Solar Farm",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 193.4067375
+   },
+   {
+    "uid": 180,
+    "name": "Goulburn River Solar Farm",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 382.2055875
+   },
+   {
+    "uid": 181,
+    "name": "HALLWF1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 89.35063829999999
+   },
+   {
+    "uid": 182,
+    "name": "HALLWF2",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 69.56154282
+   },
+   {
+    "uid": 183,
+    "name": "HAMISF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 51.329376
+   },
+   {
+    "uid": 184,
+    "name": "HAUGHT11",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 88.42162499999999
+   },
+   {
+    "uid": 185,
+    "name": "HAYMSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 44.908222499999994
+   },
+   {
+    "uid": 186,
+    "name": "HD1WF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 78.67996015
+   },
+   {
+    "uid": 187,
+    "name": "HDWF1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.996935
+   },
+   {
+    "uid": 188,
+    "name": "HDWF2",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.42271
+   },
+   {
+    "uid": 189,
+    "name": "HDWF3",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 99.98167244999999
+   },
+   {
+    "uid": 190,
+    "name": "HEZ1",
+    "bus": "SNW",
+    "type": "liquid",
+    "gcost": 266.264708,
+    "pmax": "pmax",
+    "capacity": 20.441380000000002
+   },
+   {
+    "uid": 191,
+    "name": "HILLSTN1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 70.16193675
+   },
+   {
+    "uid": 192,
+    "name": "HUGSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 18.425721645
+   },
+   {
+    "uid": 193,
+    "name": "HUMENSW",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 194,
+    "name": "HUMEV",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 195,
+    "name": "HUNTER1",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 166.6707,
+    "pmax": "pmax",
+    "capacity": 327.294
+   },
+   {
+    "uid": 196,
+    "name": "HUNTER2",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 166.6707,
+    "pmax": "pmax",
+    "capacity": 327.294
+   },
+   {
+    "uid": 197,
+    "name": "HVWWPV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 6.609254939999999
+   },
+   {
+    "uid": 198,
+    "name": "Hay Sun Farm",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 90.633411
+   },
+   {
+    "uid": 199,
+    "name": "Horsham Solar Farm",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.3924509
+   },
+   {
+    "uid": 200,
+    "name": "JBUTTERS",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 139.09
+   },
+   {
+    "uid": 201,
+    "name": "JEMALNG1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 43.463587499999996
+   },
+   {
+    "uid": 202,
+    "name": "JLA01",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 203,
+    "name": "JLA02",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 204,
+    "name": "JLA03",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 205,
+    "name": "JLA04",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 206,
+    "name": "JLB01",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 84.303
+   },
+   {
+    "uid": 207,
+    "name": "JLB02",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 82.3194
+   },
+   {
+    "uid": 208,
+    "name": "JLB03",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 221.116,
+    "pmax": "pmax",
+    "capacity": 86.2866
+   },
+   {
+    "uid": 209,
+    "name": "JUNEESF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 26.362098
+   },
+   {
+    "uid": 210,
+    "name": "KABANWF1",
+    "bus": "NQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 103.7959208
+   },
+   {
+    "uid": 211,
+    "name": "KAREEYA1",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 21.459600000000002
+   },
+   {
+    "uid": 212,
+    "name": "KAREEYA2",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 21.459600000000002
+   },
+   {
+    "uid": 213,
+    "name": "KAREEYA3",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 21.459600000000002
+   },
+   {
+    "uid": 214,
+    "name": "KAREEYA4",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 10.2708,
+    "pmax": "pmax",
+    "capacity": 21.459600000000002
+   },
+   {
+    "uid": 215,
+    "name": "KARSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 77.6964555
+   },
+   {
+    "uid": 216,
+    "name": "KEPSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 14.002996500000002
+   },
+   {
+    "uid": 217,
+    "name": "KEPWF1",
+    "bus": "NQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 39.77561808
+   },
+   {
+    "uid": 218,
+    "name": "KIAMSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 175.64768999999998
+   },
+   {
+    "uid": 219,
+    "name": "KIATAWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 29.497811969999997
+   },
+   {
+    "uid": 220,
+    "name": "KINGASF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 35.707392
+   },
+   {
+    "uid": 221,
+    "name": "KPP_1",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 29.917139,
+    "pmax": "pmax",
+    "capacity": 709.308
+   },
+   {
+    "uid": 222,
+    "name": "KSP1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 43.34353335
+   },
+   {
+    "uid": 223,
+    "name": "Kerang Solar Plant",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 28.215215999999998
+   },
+   {
+    "uid": 224,
+    "name": "Kidston Pumped Storage Hydro 1",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.325
+   },
+   {
+    "uid": 225,
+    "name": "Kidston Pumped Storage Hydro 2",
+    "bus": "NQ",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.325
+   },
+   {
+    "uid": 226,
+    "name": "LADBROK1",
+    "bus": "SESA",
+    "type": "gas",
+    "gcost": 191.5786,
+    "pmax": "pmax",
+    "capacity": 39.672
+   },
+   {
+    "uid": 227,
+    "name": "LADBROK2",
+    "bus": "SESA",
+    "type": "gas",
+    "gcost": 191.5786,
+    "pmax": "pmax",
+    "capacity": 39.672
+   },
+   {
+    "uid": 228,
+    "name": "LGAPWF1",
+    "bus": "NSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 85.83669325000001
+   },
+   {
+    "uid": 229,
+    "name": "LGAPWF2",
+    "bus": "NSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 60.649373399999995
+   },
+   {
+    "uid": 230,
+    "name": "LI111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 28.811500000000002
+   },
+   {
+    "uid": 231,
+    "name": "LI112-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 28.811500000000002
+   },
+   {
+    "uid": 232,
+    "name": "LI113-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 28.811500000000002
+   },
+   {
+    "uid": 233,
+    "name": "LILYSF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 93.004605
+   },
+   {
+    "uid": 234,
+    "name": "LIMOSF11",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 207.569142
+   },
+   {
+    "uid": 235,
+    "name": "LIMOSF21",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 28.892699999999998
+   },
+   {
+    "uid": 236,
+    "name": "LKBONNY1",
+    "bus": "SESA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 45.995216575
+   },
+   {
+    "uid": 237,
+    "name": "LKBONNY2",
+    "bus": "SESA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 107.86686404999999
+   },
+   {
+    "uid": 238,
+    "name": "LKBONNY3",
+    "bus": "SESA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 6.4550343
+   },
+   {
+    "uid": 239,
+    "name": "LK_ECHO",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 29.805
+   },
+   {
+    "uid": 240,
+    "name": "LM111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 54.642500000000005
+   },
+   {
+    "uid": 241,
+    "name": "LNGS1",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 184.3463,
+    "pmax": "pmax",
+    "capacity": 170.5896
+   },
+   {
+    "uid": 242,
+    "name": "LNGS2",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 184.3463,
+    "pmax": "pmax",
+    "capacity": 170.5896
+   },
+   {
+    "uid": 243,
+    "name": "LONSDALE",
+    "bus": "CSA",
+    "type": "liquid",
+    "gcost": 244.53743,
+    "pmax": "pmax",
+    "capacity": 20.0404908
+   },
+   {
+    "uid": 244,
+    "name": "LOYYB1",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 19.266191,
+    "pmax": "pmax",
+    "capacity": 531.454
+   },
+   {
+    "uid": 245,
+    "name": "LOYYB2",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 19.266191,
+    "pmax": "pmax",
+    "capacity": 531.454
+   },
+   {
+    "uid": 246,
+    "name": "LRSF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 13.4948835
+   },
+   {
+    "uid": 247,
+    "name": "LYA1",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 18.903472,
+    "pmax": "pmax",
+    "capacity": 513.128
+   },
+   {
+    "uid": 248,
+    "name": "LYA2",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 18.903472,
+    "pmax": "pmax",
+    "capacity": 485.639
+   },
+   {
+    "uid": 249,
+    "name": "LYA3",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 18.903472,
+    "pmax": "pmax",
+    "capacity": 513.128
+   },
+   {
+    "uid": 250,
+    "name": "LYA4",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 18.903472,
+    "pmax": "pmax",
+    "capacity": 513.128
+   },
+   {
+    "uid": 251,
+    "name": "Lancaster Solar Farm",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 64.839204
+   },
+   {
+    "uid": 252,
+    "name": "Lockhart Hybrid Facility - Solar",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 7.895627685
+   },
+   {
+    "uid": 253,
+    "name": "MACARTH1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 253.29542700000002
+   },
+   {
+    "uid": 254,
+    "name": "MACKNTSH",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 80.4735
+   },
+   {
+    "uid": 255,
+    "name": "MANSF2",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 27.736991999999997
+   },
+   {
+    "uid": 256,
+    "name": "MANSLR1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 38.035994175
+   },
+   {
+    "uid": 257,
+    "name": "MAPS2PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 8.62437132
+   },
+   {
+    "uid": 258,
+    "name": "MAPS3PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 10.01919132
+   },
+   {
+    "uid": 259,
+    "name": "MARYRSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 25.05026979
+   },
+   {
+    "uid": 260,
+    "name": "MBPS2PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 6.34184802
+   },
+   {
+    "uid": 261,
+    "name": "MCKAY11",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 262,
+    "name": "MCKAY12",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 263,
+    "name": "MCKAY13",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 264,
+    "name": "MCKAY14",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 265,
+    "name": "MCKAY15",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 266,
+    "name": "MCKAY16",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 26.52645
+   },
+   {
+    "uid": 267,
+    "name": "MEADOWBK",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 43.714
+   },
+   {
+    "uid": 268,
+    "name": "MERCER01",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 79.38473136
+   },
+   {
+    "uid": 269,
+    "name": "METZSF1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 103.51806075
+   },
+   {
+    "uid": 270,
+    "name": "MEWF1",
+    "bus": "NQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 153.13287880000001
+   },
+   {
+    "uid": 271,
+    "name": "MIDDLSF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 25.0748784
+   },
+   {
+    "uid": 272,
+    "name": "MINTARO",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 199.0703,
+    "pmax": "pmax",
+    "capacity": 89.262
+   },
+   {
+    "uid": 273,
+    "name": "MLWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 16.495125075
+   },
+   {
+    "uid": 274,
+    "name": "MOKOSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 36.1367973
+   },
+   {
+    "uid": 275,
+    "name": "MOLNGSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 30.988915199999997
+   },
+   {
+    "uid": 276,
+    "name": "MOORAWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 221.05534043999998
+   },
+   {
+    "uid": 277,
+    "name": "MOREESF1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 49.5997992
+   },
+   {
+    "uid": 278,
+    "name": "MORTLK11",
+    "bus": "WNV",
+    "type": "gas",
+    "gcost": 166.6143,
+    "pmax": "pmax",
+    "capacity": 289.6056
+   },
+   {
+    "uid": 279,
+    "name": "MORTLK12",
+    "bus": "WNV",
+    "type": "gas",
+    "gcost": 166.6143,
+    "pmax": "pmax",
+    "capacity": 289.6056
+   },
+   {
+    "uid": 280,
+    "name": "MOUSF1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 70.49041686
+   },
+   {
+    "uid": 281,
+    "name": "MP1",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 71.50902,
+    "pmax": "pmax",
+    "capacity": 687.7330000000001
+   },
+   {
+    "uid": 282,
+    "name": "MP2",
+    "bus": "CNSW",
+    "type": "coal",
+    "gcost": 71.50902,
+    "pmax": "pmax",
+    "capacity": 687.7330000000001
+   },
+   {
+    "uid": 283,
+    "name": "MPP_1",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 27.60433,
+    "pmax": "pmax",
+    "capacity": 397.5858
+   },
+   {
+    "uid": 284,
+    "name": "MPP_2",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 27.60433,
+    "pmax": "pmax",
+    "capacity": 397.5858
+   },
+   {
+    "uid": 285,
+    "name": "MRTLSWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 119.26352295
+   },
+   {
+    "uid": 286,
+    "name": "MSTUART1",
+    "bus": "NQ",
+    "type": "liquid",
+    "gcost": 374.0422,
+    "pmax": "pmax",
+    "capacity": 138.922
+   },
+   {
+    "uid": 287,
+    "name": "MSTUART2",
+    "bus": "NQ",
+    "type": "liquid",
+    "gcost": 374.0422,
+    "pmax": "pmax",
+    "capacity": 138.922
+   },
+   {
+    "uid": 288,
+    "name": "MSTUART3",
+    "bus": "NQ",
+    "type": "liquid",
+    "gcost": 374.0422,
+    "pmax": "pmax",
+    "capacity": 119.076
+   },
+   {
+    "uid": 289,
+    "name": "MTGELWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.46382465
+   },
+   {
+    "uid": 290,
+    "name": "MTMILLAR",
+    "bus": "NSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 40.31051475
+   },
+   {
+    "uid": 291,
+    "name": "MURRAY01",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 292,
+    "name": "MURRAY02",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 293,
+    "name": "MURRAY03",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 294,
+    "name": "MURRAY04",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 295,
+    "name": "MURRAY05",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 296,
+    "name": "MURRAY06",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 297,
+    "name": "MURRAY07",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 298,
+    "name": "MURRAY08",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 299,
+    "name": "MURRAY09",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 300,
+    "name": "MURRAY10",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 94.38250000000001
+   },
+   {
+    "uid": 301,
+    "name": "MURRAY11",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 149.025
+   },
+   {
+    "uid": 302,
+    "name": "MURRAY12",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 149.025
+   },
+   {
+    "uid": 303,
+    "name": "MURRAY13",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 149.025
+   },
+   {
+    "uid": 304,
+    "name": "MURRAY14",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 305,
+    "name": "MUSSELR1",
+    "bus": "TAS",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 161.093394
+   },
+   {
+    "uid": 306,
+    "name": "MUWAWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 114.64177587499998
+   },
+   {
+    "uid": 307,
+    "name": "MUWAWF2",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 112.99481545
+   },
+   {
+    "uid": 308,
+    "name": "MWPS1PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 2.99268594
+   },
+   {
+    "uid": 309,
+    "name": "MWPS2PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 2.619173069999999
+   },
+   {
+    "uid": 310,
+    "name": "MWPS3PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 4.302322289999999
+   },
+   {
+    "uid": 311,
+    "name": "MWPS4PV1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 3.1301753399999996
+   },
+   {
+    "uid": 312,
+    "name": "MacIntyre Wind Farm",
+    "bus": "SQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 812.8357985
+   },
+   {
+    "uid": 313,
+    "name": "Maryvale Solar Farm",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 133.66360799999998
+   },
+   {
+    "uid": 314,
+    "name": "Mugga Lane Renewable Hybrid",
+    "bus": "SNSW",
+    "type": "other",
+    "gcost": 10.4539,
+    "pmax": "pmax",
+    "capacity": 34.199999999999996
+   },
+   {
+    "uid": 315,
+    "name": "Mulwala Solar Farm",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 21.506131800000002
+   },
+   {
+    "uid": 316,
+    "name": "Munna Creek Solar Farm",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 100.73708855999999
+   },
+   {
+    "uid": 317,
+    "name": "NBHWF1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 126.7696188
+   },
+   {
+    "uid": 318,
+    "name": "NEVERSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.00010796
+   },
+   {
+    "uid": 319,
+    "name": "NEWENSF1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 179.73252
+   },
+   {
+    "uid": 320,
+    "name": "NEWENSF2",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 179.73252
+   },
+   {
+    "uid": 321,
+    "name": "NPS",
+    "bus": "MEL",
+    "type": "gas",
+    "gcost": 168.8682,
+    "pmax": "pmax",
+    "capacity": 484.5
+   },
+   {
+    "uid": 322,
+    "name": "NSW1_DSP",
+    "bus": "SNW",
+    "type": "dsp",
+    "gcost": 20300.0,
+    "pmax": "pmax",
+    "capacity": 252.0
+   },
+   {
+    "uid": 323,
+    "name": "NUMURSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 55.2677499
+   },
+   {
+    "uid": 324,
+    "name": "NYNGAN1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 101.62259999999999
+   },
+   {
+    "uid": 325,
+    "name": "OAKEY1",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 143.0654,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 326,
+    "name": "OAKEY1SF",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 23.574948749999997
+   },
+   {
+    "uid": 327,
+    "name": "OAKEY2",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 143.0654,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 328,
+    "name": "OAKEY2SF",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 49.097664
+   },
+   {
+    "uid": 329,
+    "name": "OAKLAND1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 39.30553935
+   },
+   {
+    "uid": 330,
+    "name": "OsborneGT",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 125.7323,
+    "pmax": "pmax",
+    "capacity": 120.7368
+   },
+   {
+    "uid": 331,
+    "name": "OsborneST",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 125.7323,
+    "pmax": "pmax",
+    "capacity": 64.7856
+   },
+   {
+    "uid": 332,
+    "name": "PAREPS1",
+    "bus": "NSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.5643735
+   },
+   {
+    "uid": 333,
+    "name": "PAREPW1",
+    "bus": "NSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 96.31856685000001
+   },
+   {
+    "uid": 334,
+    "name": "PARSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 45.88932892500001
+   },
+   {
+    "uid": 335,
+    "name": "PO161-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 336,
+    "name": "PO162-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 337,
+    "name": "PO163-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 338,
+    "name": "PO164-4",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 339,
+    "name": "PO165-5",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 340,
+    "name": "PO166-6",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 341,
+    "name": "POR01-1",
+    "bus": "NSA",
+    "type": "liquid",
+    "gcost": 415.895184,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 342,
+    "name": "POR01-2",
+    "bus": "NSA",
+    "type": "liquid",
+    "gcost": 415.895184,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 343,
+    "name": "POR01-3",
+    "bus": "NSA",
+    "type": "liquid",
+    "gcost": 415.895184,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 344,
+    "name": "PORTWF",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 130.28881668
+   },
+   {
+    "uid": 345,
+    "name": "PPCCGTGT1",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 111.1481,
+    "pmax": "pmax",
+    "capacity": 163.9272
+   },
+   {
+    "uid": 346,
+    "name": "PPCCGTGT2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 111.1481,
+    "pmax": "pmax",
+    "capacity": 170.79840000000002
+   },
+   {
+    "uid": 347,
+    "name": "PPCCGTST",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 111.1481,
+    "pmax": "pmax",
+    "capacity": 154.1112
+   },
+   {
+    "uid": 348,
+    "name": "PTSTAN1_1",
+    "bus": "CSA",
+    "type": "liquid",
+    "gcost": 244.49693,
+    "pmax": "pmax",
+    "capacity": 28.078120799999997
+   },
+   {
+    "uid": 349,
+    "name": "PTSTAN1_2",
+    "bus": "CSA",
+    "type": "liquid",
+    "gcost": 244.49693,
+    "pmax": "pmax",
+    "capacity": 28.078120799999997
+   },
+   {
+    "uid": 350,
+    "name": "PV CNSW Area1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 619.0
+   },
+   {
+    "uid": 351,
+    "name": "PV CQ Area1",
+    "bus": "CQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 460.5
+   },
+   {
+    "uid": 352,
+    "name": "PV CSA Area1",
+    "bus": "CSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 1803.0
+   },
+   {
+    "uid": 353,
+    "name": "PV GG Area1",
+    "bus": "GG",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 56.5
+   },
+   {
+    "uid": 354,
+    "name": "PV MEL Area1",
+    "bus": "MEL",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 807.0
+   },
+   {
+    "uid": 355,
+    "name": "PV MEL Area2",
+    "bus": "MEL",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 1948.0
+   },
+   {
+    "uid": 356,
+    "name": "PV NNSW Area1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 808.0
+   },
+   {
+    "uid": 357,
+    "name": "PV NQ Area1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 754.5
+   },
+   {
+    "uid": 358,
+    "name": "PV NSA Area1",
+    "bus": "NSA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 115.5
+   },
+   {
+    "uid": 359,
+    "name": "PV SESA Area1",
+    "bus": "SESA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 91.5
+   },
+   {
+    "uid": 360,
+    "name": "PV SEV Area1",
+    "bus": "SEV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 264.0
+   },
+   {
+    "uid": 361,
+    "name": "PV SNSW Area1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 524.5
+   },
+   {
+    "uid": 362,
+    "name": "PV SNSW Area2",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 395.0
+   },
+   {
+    "uid": 363,
+    "name": "PV SNW Area1",
+    "bus": "SNW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 1523.5
+   },
+   {
+    "uid": 364,
+    "name": "PV SNW Area2",
+    "bus": "SNW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 1839.5
+   },
+   {
+    "uid": 365,
+    "name": "PV SQ Area1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 3693.5
+   },
+   {
+    "uid": 366,
+    "name": "PV TAS Area1",
+    "bus": "TAS",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 198.5
+   },
+   {
+    "uid": 367,
+    "name": "PV WNV Area1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 205.5
+   },
+   {
+    "uid": 368,
+    "name": "PV WNV Area2",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 841.5
+   },
+   {
+    "uid": 369,
+    "name": "Punch's Creek Renewable Energy Solar Farm",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 713.0766182399999
+   },
+   {
+    "uid": 370,
+    "name": "QLD1_DSP",
+    "bus": "SQ",
+    "type": "dsp",
+    "gcost": 20300.0,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 371,
+    "name": "QPS1",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.8447,
+    "pmax": "pmax",
+    "capacity": 28.7622
+   },
+   {
+    "uid": 372,
+    "name": "QPS2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.8447,
+    "pmax": "pmax",
+    "capacity": 22.8114
+   },
+   {
+    "uid": 373,
+    "name": "QPS3",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.8447,
+    "pmax": "pmax",
+    "capacity": 28.7622
+   },
+   {
+    "uid": 374,
+    "name": "QPS4",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.8447,
+    "pmax": "pmax",
+    "capacity": 22.8114
+   },
+   {
+    "uid": 375,
+    "name": "QPS5",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.8447,
+    "pmax": "pmax",
+    "capacity": 119.016
+   },
+   {
+    "uid": 376,
+    "name": "QPSF",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 68.47151453999999
+   },
+   {
+    "uid": 377,
+    "name": "REECE1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 115.24600000000001
+   },
+   {
+    "uid": 378,
+    "name": "REECE2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 115.24600000000001
+   },
+   {
+    "uid": 379,
+    "name": "ROMA_7",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 153.1983,
+    "pmax": "pmax",
+    "capacity": 33.7212
+   },
+   {
+    "uid": 380,
+    "name": "ROMA_8",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 153.1983,
+    "pmax": "pmax",
+    "capacity": 33.7212
+   },
+   {
+    "uid": 381,
+    "name": "RRSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 113.4327402
+   },
+   {
+    "uid": 382,
+    "name": "RUGBYR1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 64.72712025
+   },
+   {
+    "uid": 383,
+    "name": "RYANCWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 147.534997335
+   },
+   {
+    "uid": 384,
+    "name": "Ravenswood Solar Farm",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 375.95231054999994
+   },
+   {
+    "uid": 385,
+    "name": "Rye Park Wind Farm",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 259.2192317
+   },
+   {
+    "uid": 386,
+    "name": "SA1_DSP",
+    "bus": "CSA",
+    "type": "dsp",
+    "gcost": 20300.0,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 387,
+    "name": "SALTCRK1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 41.5310544
+   },
+   {
+    "uid": 388,
+    "name": "SAPHWF1",
+    "bus": "NNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 231.8728005
+   },
+   {
+    "uid": 389,
+    "name": "SEBSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 72.450936
+   },
+   {
+    "uid": 390,
+    "name": "SHGEN01",
+    "bus": "CNSW",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 40.778600000000004
+   },
+   {
+    "uid": 391,
+    "name": "SHGEN02",
+    "bus": "CNSW",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 40.778600000000004
+   },
+   {
+    "uid": 392,
+    "name": "SHGEN03",
+    "bus": "CNSW",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 82.0545
+   },
+   {
+    "uid": 393,
+    "name": "SHGEN04",
+    "bus": "CNSW",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 82.0545
+   },
+   {
+    "uid": 394,
+    "name": "SITHE01",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 128.2317,
+    "pmax": "pmax",
+    "capacity": 124.66926000000001
+   },
+   {
+    "uid": 395,
+    "name": "SMCSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 122.20057872000001
+   },
+   {
+    "uid": 396,
+    "name": "SNAPPER1_1",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 151.4234,
+    "pmax": "pmax",
+    "capacity": 29.754
+   },
+   {
+    "uid": 397,
+    "name": "SNAPPER1_2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 151.4234,
+    "pmax": "pmax",
+    "capacity": 29.754
+   },
+   {
+    "uid": 398,
+    "name": "SNAPPER1_3",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 151.4234,
+    "pmax": "pmax",
+    "capacity": 29.754
+   },
+   {
+    "uid": 399,
+    "name": "SNAPPER1_4",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 151.4234,
+    "pmax": "pmax",
+    "capacity": 29.754
+   },
+   {
+    "uid": 400,
+    "name": "SNAPPER1_5",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 151.4234,
+    "pmax": "pmax",
+    "capacity": 29.754
+   },
+   {
+    "uid": 401,
+    "name": "SNOWNTH1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 108.7514208
+   },
+   {
+    "uid": 402,
+    "name": "SNOWSTH1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 108.83169989999999
+   },
+   {
+    "uid": 403,
+    "name": "SNOWTWN1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 72.68142651000001
+   },
+   {
+    "uid": 404,
+    "name": "SNUG1",
+    "bus": "SESA",
+    "type": "liquid",
+    "gcost": 417.78214,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 405,
+    "name": "SNUG2",
+    "bus": "SESA",
+    "type": "liquid",
+    "gcost": 417.78214,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 406,
+    "name": "SNUG3",
+    "bus": "SESA",
+    "type": "liquid",
+    "gcost": 417.78214,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 407,
+    "name": "SRSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 65.97996749999999
+   },
+   {
+    "uid": 408,
+    "name": "STAN-1",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 72.174428,
+    "pmax": "pmax",
+    "capacity": 340.6545
+   },
+   {
+    "uid": 409,
+    "name": "STAN-2",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 72.174428,
+    "pmax": "pmax",
+    "capacity": 340.6545
+   },
+   {
+    "uid": 410,
+    "name": "STAN-3",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 72.174428,
+    "pmax": "pmax",
+    "capacity": 340.6545
+   },
+   {
+    "uid": 411,
+    "name": "STAN-4",
+    "bus": "CQ",
+    "type": "coal",
+    "gcost": 72.174428,
+    "pmax": "pmax",
+    "capacity": 340.6545
+   },
+   {
+    "uid": 412,
+    "name": "STARHLWF",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 27.39152625
+   },
+   {
+    "uid": 413,
+    "name": "STOCKYD1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 355.52937419999995
+   },
+   {
+    "uid": 414,
+    "name": "STWF1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 154.2429108
+   },
+   {
+    "uid": 415,
+    "name": "SUNRSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 173.09616569999997
+   },
+   {
+    "uid": 416,
+    "name": "SUNTPSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 136.6674525
+   },
+   {
+    "uid": 417,
+    "name": "SWAN_E",
+    "bus": "SQ",
+    "type": "gas",
+    "gcost": 97.4691,
+    "pmax": "pmax",
+    "capacity": 366.1368
+   },
+   {
+    "uid": 418,
+    "name": "Stubbo Solar Farm",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 342.7272
+   },
+   {
+    "uid": 419,
+    "name": "TA111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 12.418750000000001
+   },
+   {
+    "uid": 420,
+    "name": "TA111-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 421,
+    "name": "TA111-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 13.909
+   },
+   {
+    "uid": 422,
+    "name": "TA112-4",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 12.418750000000001
+   },
+   {
+    "uid": 423,
+    "name": "TA112-5",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 13.909
+   },
+   {
+    "uid": 424,
+    "name": "TA112-6",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 13.909
+   },
+   {
+    "uid": 425,
+    "name": "TALWA1",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 107.9168,
+    "pmax": "pmax",
+    "capacity": 447.6096
+   },
+   {
+    "uid": 426,
+    "name": "TARALGA1",
+    "bus": "CNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 78.27569045999999
+   },
+   {
+    "uid": 427,
+    "name": "TARONG#1",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 45.165594,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 428,
+    "name": "TARONG#2",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 45.165594,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 429,
+    "name": "TARONG#3",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 45.165594,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 430,
+    "name": "TARONG#4",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 45.165594,
+    "pmax": "pmax",
+    "capacity": 326.65500000000003
+   },
+   {
+    "uid": 431,
+    "name": "TAS1_DSP",
+    "bus": "TAS",
+    "type": "dsp",
+    "gcost": 20300.0,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 432,
+    "name": "TB2SF1",
+    "bus": "SESA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 73.5030288
+   },
+   {
+    "uid": 433,
+    "name": "TBSF1",
+    "bus": "SESA",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 94.6485
+   },
+   {
+    "uid": 434,
+    "name": "TNPS1",
+    "bus": "SQ",
+    "type": "coal",
+    "gcost": 43.011374,
+    "pmax": "pmax",
+    "capacity": 413.4519
+   },
+   {
+    "uid": 435,
+    "name": "TORRB2",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.4264,
+    "pmax": "pmax",
+    "capacity": 190.0
+   },
+   {
+    "uid": 436,
+    "name": "TORRB3",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.4264,
+    "pmax": "pmax",
+    "capacity": 190.0
+   },
+   {
+    "uid": 437,
+    "name": "TORRB4",
+    "bus": "CSA",
+    "type": "gas",
+    "gcost": 160.4264,
+    "pmax": "pmax",
+    "capacity": 190.0
+   },
+   {
+    "uid": 438,
+    "name": "TR111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 19.87
+   },
+   {
+    "uid": 439,
+    "name": "TR111-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 19.87
+   },
+   {
+    "uid": 440,
+    "name": "TR112-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 29.805
+   },
+   {
+    "uid": 441,
+    "name": "TR112-4",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 29.805
+   },
+   {
+    "uid": 442,
+    "name": "TRIBUTE",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 87.428
+   },
+   {
+    "uid": 443,
+    "name": "TU111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 25.831000000000003
+   },
+   {
+    "uid": 444,
+    "name": "TU112-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 25.831000000000003
+   },
+   {
+    "uid": 445,
+    "name": "TU113-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 25.831000000000003
+   },
+   {
+    "uid": 446,
+    "name": "TU114-4",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 25.831000000000003
+   },
+   {
+    "uid": 447,
+    "name": "TU115-5",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 448,
+    "name": "TUMUT1_01",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 92.3955
+   },
+   {
+    "uid": 449,
+    "name": "TUMUT1_02",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 92.3955
+   },
+   {
+    "uid": 450,
+    "name": "TUMUT1_03",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 92.3955
+   },
+   {
+    "uid": 451,
+    "name": "TUMUT1_04",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 92.3955
+   },
+   {
+    "uid": 452,
+    "name": "TUMUT2_01",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 72.52550000000001
+   },
+   {
+    "uid": 453,
+    "name": "TUMUT2_02",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 72.52550000000001
+   },
+   {
+    "uid": 454,
+    "name": "TUMUT2_03",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 72.52550000000001
+   },
+   {
+    "uid": 455,
+    "name": "TUMUT2_04",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 72.52550000000001
+   },
+   {
+    "uid": 456,
+    "name": "TUMUT3_01",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 457,
+    "name": "TUMUT3_02",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 458,
+    "name": "TUMUT3_03",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 459,
+    "name": "TUMUT3_04",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 460,
+    "name": "TUMUT3_05",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 461,
+    "name": "TUMUT3_06",
+    "bus": "SNSW",
+    "type": "hydro",
+    "gcost": 8.9865,
+    "pmax": "pmax",
+    "capacity": 298.05
+   },
+   {
+    "uid": 462,
+    "name": "TVCC201_GT",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 118.7919,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 463,
+    "name": "TVCC201_ST",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 118.7919,
+    "pmax": "pmax",
+    "capacity": 0.0
+   },
+   {
+    "uid": 464,
+    "name": "TVPP104",
+    "bus": "TAS",
+    "type": "gas",
+    "gcost": 202.9253,
+    "pmax": "pmax",
+    "capacity": 57.5244
+   },
+   {
+    "uid": 465,
+    "name": "Tallawarra B",
+    "bus": "SNW",
+    "type": "gas",
+    "gcost": 462.871514,
+    "pmax": "pmax",
+    "capacity": 315.3924
+   },
+   {
+    "uid": 466,
+    "name": "Tully Sugar Mill Biomass",
+    "bus": "NQ",
+    "type": "other",
+    "gcost": 23.557626,
+    "pmax": "pmax",
+    "capacity": 30.4
+   },
+   {
+    "uid": 467,
+    "name": "URANQ11",
+    "bus": "SNSW",
+    "type": "gas",
+    "gcost": 174.9076,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 468,
+    "name": "URANQ12",
+    "bus": "SNSW",
+    "type": "gas",
+    "gcost": 174.9076,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 469,
+    "name": "URANQ13",
+    "bus": "SNSW",
+    "type": "gas",
+    "gcost": 174.9076,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 470,
+    "name": "URANQ14",
+    "bus": "SNSW",
+    "type": "gas",
+    "gcost": 174.9076,
+    "pmax": "pmax",
+    "capacity": 171.5814
+   },
+   {
+    "uid": 471,
+    "name": "VIC1_DSP",
+    "bus": "MEL",
+    "type": "dsp",
+    "gcost": 20300.0,
+    "pmax": "pmax",
+    "capacity": 152.0
+   },
+   {
+    "uid": 472,
+    "name": "VP5",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.285998,
+    "pmax": "pmax",
+    "capacity": 621.7860000000001
+   },
+   {
+    "uid": 473,
+    "name": "VP6",
+    "bus": "SNW",
+    "type": "coal",
+    "gcost": 72.285998,
+    "pmax": "pmax",
+    "capacity": 621.7860000000001
+   },
+   {
+    "uid": 474,
+    "name": "VPGS1",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 475,
+    "name": "VPGS2",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 476,
+    "name": "VPGS3",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 477,
+    "name": "VPGS4",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 478,
+    "name": "VPGS5",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 479,
+    "name": "VPGS6",
+    "bus": "SEV",
+    "type": "gas",
+    "gcost": 210.7288,
+    "pmax": "pmax",
+    "capacity": 55.540800000000004
+   },
+   {
+    "uid": 480,
+    "name": "W/HOE#1",
+    "bus": "SQ",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 283.461
+   },
+   {
+    "uid": 481,
+    "name": "W/HOE#2",
+    "bus": "SQ",
+    "type": "hydro",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 283.461
+   },
+   {
+    "uid": 482,
+    "name": "WAGGNSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 13.626992879999998
+   },
+   {
+    "uid": 483,
+    "name": "WANDSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 107.16451875
+   },
+   {
+    "uid": 484,
+    "name": "WARWSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 27.8326368
+   },
+   {
+    "uid": 485,
+    "name": "WARWSF2",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 27.8326368
+   },
+   {
+    "uid": 486,
+    "name": "WATERLWF",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 96.51391266
+   },
+   {
+    "uid": 487,
+    "name": "WAUBRAWF",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 129.2077248
+   },
+   {
+    "uid": 488,
+    "name": "WDGPH1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 336.35087999999996
+   },
+   {
+    "uid": 489,
+    "name": "WELLSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 132.03166860000002
+   },
+   {
+    "uid": 490,
+    "name": "WELNSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 283.407498
+   },
+   {
+    "uid": 491,
+    "name": "WEMENSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.7506816
+   },
+   {
+    "uid": 492,
+    "name": "WGWF1",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 102.40788524999999
+   },
+   {
+    "uid": 493,
+    "name": "WHITSF1",
+    "bus": "NQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 51.30147959999999
+   },
+   {
+    "uid": 494,
+    "name": "WI111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 32.7855
+   },
+   {
+    "uid": 495,
+    "name": "WINTSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 65.75829075
+   },
+   {
+    "uid": 496,
+    "name": "WKIEWA1_1",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 16.8895
+   },
+   {
+    "uid": 497,
+    "name": "WKIEWA1_2",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 16.8895
+   },
+   {
+    "uid": 498,
+    "name": "WKIEWA2_1",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 16.8895
+   },
+   {
+    "uid": 499,
+    "name": "WKIEWA2_2",
+    "bus": "WNV",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 16.8895
+   },
+   {
+    "uid": 500,
+    "name": "WLWLSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 119.99357496
+   },
+   {
+    "uid": 501,
+    "name": "WLWLSF2",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 119.99357496
+   },
+   {
+    "uid": 502,
+    "name": "WOLARSF1",
+    "bus": "CNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 237.81681
+   },
+   {
+    "uid": 503,
+    "name": "WOODLWN1",
+    "bus": "SNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 42.1257144
+   },
+   {
+    "uid": 504,
+    "name": "WOOLGSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 147.99438719999998
+   },
+   {
+    "uid": 505,
+    "name": "WOOLNTH1",
+    "bus": "TAS",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 124.80426750000001
+   },
+   {
+    "uid": 506,
+    "name": "WPWF",
+    "bus": "CSA",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 75.54818325999999
+   },
+   {
+    "uid": 507,
+    "name": "WRSF1",
+    "bus": "NNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 19.926
+   },
+   {
+    "uid": 508,
+    "name": "WRWF1",
+    "bus": "NNSW",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 119.16243074999998
+   },
+   {
+    "uid": 509,
+    "name": "WSTWYSF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 76.1721165
+   },
+   {
+    "uid": 510,
+    "name": "WUNUSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 61.0482825
+   },
+   {
+    "uid": 511,
+    "name": "WY111-1",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 12.915500000000002
+   },
+   {
+    "uid": 512,
+    "name": "WY111-2",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 12.915500000000002
+   },
+   {
+    "uid": 513,
+    "name": "WY111-3",
+    "bus": "TAS",
+    "type": "hydro",
+    "gcost": 8.9314,
+    "pmax": "pmax",
+    "capacity": 12.915500000000002
+   },
+   {
+    "uid": 514,
+    "name": "WYASF1",
+    "bus": "SNSW",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 44.64569744999999
+   },
+   {
+    "uid": 515,
+    "name": "Wambo Wind Farm",
+    "bus": "SQ",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 236.89470419999995
+   },
+   {
+    "uid": 516,
+    "name": "YABULU",
+    "bus": "NQ",
+    "type": "gas",
+    "gcost": 96.9815,
+    "pmax": "pmax",
+    "capacity": 161.964
+   },
+   {
+    "uid": 517,
+    "name": "YABULU2",
+    "bus": "NQ",
+    "type": "gas",
+    "gcost": 96.9815,
+    "pmax": "pmax",
+    "capacity": 79.5096
+   },
+   {
+    "uid": 518,
+    "name": "YAMBUKWF",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 29.287005
+   },
+   {
+    "uid": 519,
+    "name": "YARANSF1",
+    "bus": "SQ",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 96.8722416
+   },
+   {
+    "uid": 520,
+    "name": "YARWUN_1",
+    "bus": "GG",
+    "type": "gas",
+    "gcost": 137.9105,
+    "pmax": "pmax",
+    "capacity": 176.68800000000002
+   },
+   {
+    "uid": 521,
+    "name": "YATSF1",
+    "bus": "WNV",
+    "type": "solar",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 73.07412165
+   },
+   {
+    "uid": 522,
+    "name": "YENDWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 70.77028838
+   },
+   {
+    "uid": 523,
+    "name": "YSWF1",
+    "bus": "WNV",
+    "type": "wind",
+    "gcost": 0.0,
+    "pmax": "pmax",
+    "capacity": 19.328085315
+   },
+   {
+    "uid": 524,
+    "name": "YWPS1",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 21.166184,
+    "pmax": "pmax",
+    "capacity": 316.1235
+   },
+   {
+    "uid": 525,
+    "name": "YWPS2",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 21.166184,
+    "pmax": "pmax",
+    "capacity": 329.868
+   },
+   {
+    "uid": 526,
+    "name": "YWPS3",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 21.166184,
+    "pmax": "pmax",
+    "capacity": 352.7755
+   },
+   {
+    "uid": 527,
+    "name": "YWPS4",
+    "bus": "SEV",
+    "type": "coal",
+    "gcost": 21.166184,
+    "pmax": "pmax",
+    "capacity": 361.9385
+   }
+  ],
+  "line_array": [
+   {
+    "uid": 1,
+    "name": "CNSW-NNSW",
+    "bus_a": "CNSW",
+    "bus_b": "NNSW",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 2,
+    "name": "CNSW-SNW",
+    "bus_a": "CNSW",
+    "bus_b": "SNW",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 3,
+    "name": "CQ-GG",
+    "bus_a": "CQ",
+    "bus_b": "GG",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 4,
+    "name": "CQ-NQ",
+    "bus_a": "CQ",
+    "bus_b": "NQ",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 5,
+    "name": "CSA-NSA",
+    "bus_a": "CSA",
+    "bus_b": "NSA",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 6,
+    "name": "EnergyConnect",
+    "bus_a": "SNSW",
+    "bus_b": "CSA",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 7,
+    "name": "MEL-WNV",
+    "bus_a": "MEL",
+    "bus_b": "WNV",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 8,
+    "name": "Marinus",
+    "bus_a": "TAS",
+    "bus_b": "SEV",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 9,
+    "name": "N-Q-MNSP1",
+    "bus_a": "NNSW",
+    "bus_b": "SQ",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 10,
+    "name": "NSW1-QLD1",
+    "bus_a": "NNSW",
+    "bus_b": "SQ",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 11,
+    "name": "SESA-CSA",
+    "bus_a": "SESA",
+    "bus_b": "CSA",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 12,
+    "name": "SEV-MEL",
+    "bus_a": "SEV",
+    "bus_b": "MEL",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 13,
+    "name": "SNSW-CNSW",
+    "bus_a": "SNSW",
+    "bus_b": "CNSW",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 14,
+    "name": "SQ-CQ",
+    "bus_a": "SQ",
+    "bus_b": "CQ",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 15,
+    "name": "T-V-MNSP1",
+    "bus_a": "TAS",
+    "bus_b": "SEV",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 16,
+    "name": "V-S-MNSP1",
+    "bus_a": "WNV",
+    "bus_b": "CSA",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 17,
+    "name": "V-SA",
+    "bus_a": "WNV",
+    "bus_b": "SESA",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   },
+   {
+    "uid": 18,
+    "name": "VIC1-NSW1",
+    "bus_a": "WNV",
+    "bus_b": "SNSW",
+    "tmax_ab": "tmax_ab",
+    "tmax_ba": "tmax_ba"
+   }
+  ],
+  "battery_array": [
+   {
+    "uid": 1,
+    "name": "ADPBA1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 12.4803,
+    "eini": 6.24015,
+    "efin": 6.24015,
+    "pmax_charge": 6.1,
+    "pmax_discharge": 6.1,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 2,
+    "name": "BALB1",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 29.84415,
+    "eini": 14.922075,
+    "efin": 14.922075,
+    "pmax_charge": 29.9,
+    "pmax_discharge": 29.9,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 3,
+    "name": "BBATTERY",
+    "bus": "CQ",
+    "emin": 0.0,
+    "emax": 99.05,
+    "eini": 49.525,
+    "efin": 49.525,
+    "pmax_charge": 50.0,
+    "pmax_discharge": 50.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 4,
+    "name": "BHBG1",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 59.78745,
+    "eini": 29.893725,
+    "efin": 29.893725,
+    "pmax_charge": 50.0,
+    "pmax_discharge": 50.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 5,
+    "name": "BLYTHB1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 396.2,
+    "eini": 198.1,
+    "efin": 198.1,
+    "pmax_charge": 200.0,
+    "pmax_discharge": 200.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 6,
+    "name": "BOWWBA1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 4.9525,
+    "eini": 2.47625,
+    "efin": 2.47625,
+    "pmax_charge": 2.2,
+    "pmax_discharge": 2.2,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 7,
+    "name": "BULBES1",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 33.677,
+    "eini": 16.8385,
+    "efin": 16.8385,
+    "pmax_charge": 20.0,
+    "pmax_discharge": 20.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 8,
+    "name": "Brendale BESS",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 406.00595,
+    "eini": 203.002975,
+    "efin": 203.002975,
+    "pmax_charge": 205.0,
+    "pmax_discharge": 205.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 9,
+    "name": "Broadsound BESS",
+    "bus": "CQ",
+    "emin": 0.0,
+    "emax": 356.58,
+    "eini": 178.29,
+    "efin": 178.29,
+    "pmax_charge": 180.0,
+    "pmax_discharge": 180.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 10,
+    "name": "Bulabul BESS 1",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 594.3,
+    "eini": 297.15,
+    "efin": 297.15,
+    "pmax_charge": 300.0,
+    "pmax_discharge": 300.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 11,
+    "name": "Bungama BESS",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 396.2,
+    "eini": 198.1,
+    "efin": 198.1,
+    "pmax_charge": 200.0,
+    "pmax_discharge": 200.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 12,
+    "name": "Bungama Solar BESS",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 297.15,
+    "eini": 148.575,
+    "efin": 148.575,
+    "pmax_charge": 150.0,
+    "pmax_discharge": 150.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 13,
+    "name": "CAPBES1",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 198.1,
+    "eini": 99.05,
+    "efin": 99.05,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 14,
+    "name": "CBWWBA1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 4.25915,
+    "eini": 2.129575,
+    "efin": 2.129575,
+    "pmax_charge": 2.2,
+    "pmax_discharge": 2.2,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 15,
+    "name": "CHBESSG1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 198.1,
+    "eini": 99.05,
+    "efin": 99.05,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 16,
+    "name": "CNSW Battery - Coordinated CER Storages Area1",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 119.4097,
+    "eini": 59.70485,
+    "efin": 59.70485,
+    "pmax_charge": 54.141,
+    "pmax_discharge": 54.141,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 17,
+    "name": "CQ Battery - Coordinated CER Storages Area1",
+    "bus": "CQ",
+    "emin": 0.0,
+    "emax": 53.10375,
+    "eini": 26.551875,
+    "efin": 26.551875,
+    "pmax_charge": 23.891,
+    "pmax_discharge": 23.891,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 18,
+    "name": "CSA Battery - Coordinated CER Storages Area1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 559.65615,
+    "eini": 279.828075,
+    "efin": 279.828075,
+    "pmax_charge": 273.65,
+    "pmax_discharge": 273.65,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 19,
+    "name": "Calala BESS 1",
+    "bus": "NNSW",
+    "emin": 0.0,
+    "emax": 198.00095,
+    "eini": 99.000475,
+    "efin": 99.000475,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 20,
+    "name": "Calala BESS 2",
+    "bus": "NNSW",
+    "emin": 0.0,
+    "emax": 297.24905,
+    "eini": 148.624525,
+    "efin": 148.624525,
+    "pmax_charge": 150.0,
+    "pmax_discharge": 150.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 21,
+    "name": "Clements Gap BESS",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 118.86,
+    "eini": 59.43,
+    "efin": 59.43,
+    "pmax_charge": 60.0,
+    "pmax_discharge": 60.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 22,
+    "name": "Culcairn BESS",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 790.4,
+    "eini": 395.2,
+    "efin": 395.2,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 23,
+    "name": "DALNTH1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 8.9235,
+    "eini": 4.46175,
+    "efin": 4.46175,
+    "pmax_charge": 30.0,
+    "pmax_discharge": 30.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 24,
+    "name": "DPNTB1",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 49.62405,
+    "eini": 24.812025,
+    "efin": 24.812025,
+    "pmax_charge": 25.0,
+    "pmax_discharge": 25.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 25,
+    "name": "Eraring Big Battery",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 1713.565,
+    "eini": 856.7825,
+    "efin": 856.7825,
+    "pmax_charge": 460.0,
+    "pmax_discharge": 460.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 26,
+    "name": "Eraring Big Battery 2",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 1376.795,
+    "eini": 688.3975,
+    "efin": 688.3975,
+    "pmax_charge": 240.0,
+    "pmax_discharge": 240.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 27,
+    "name": "GANNB1",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 49.525,
+    "eini": 24.7625,
+    "efin": 24.7625,
+    "pmax_charge": 25.3,
+    "pmax_discharge": 25.3,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 28,
+    "name": "GG Battery - Coordinated CER Storages Area1",
+    "bus": "GG",
+    "emin": 0.0,
+    "emax": 6.9207,
+    "eini": 3.46035,
+    "efin": 3.46035,
+    "pmax_charge": 3.1,
+    "pmax_discharge": 3.1,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 29,
+    "name": "GREENB1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 396.2,
+    "eini": 198.1,
+    "efin": 198.1,
+    "pmax_charge": 200.0,
+    "pmax_discharge": 200.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 30,
+    "name": "Goulburn River Solar Farm BESS",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 550.2,
+    "eini": 275.1,
+    "efin": 275.1,
+    "pmax_charge": 49.8,
+    "pmax_discharge": 49.8,
+    "input_efficiency": 0.9125,
+    "output_efficiency": 0.9125
+   },
+   {
+    "uid": 31,
+    "name": "HBESS1",
+    "bus": "SEV",
+    "emin": 0.0,
+    "emax": 160.623,
+    "eini": 80.3115,
+    "efin": 80.3115,
+    "pmax_charge": 150.0,
+    "pmax_discharge": 150.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 32,
+    "name": "HPR1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 176.78445,
+    "eini": 88.392225,
+    "efin": 88.392225,
+    "pmax_charge": 150.0,
+    "pmax_discharge": 150.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 33,
+    "name": "HVWWBA1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 8.7164,
+    "eini": 4.3582,
+    "efin": 4.3582,
+    "pmax_charge": 4.3,
+    "pmax_discharge": 4.3,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 34,
+    "name": "Koorangie Energy Storage System",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 366.485,
+    "eini": 183.2425,
+    "efin": 183.2425,
+    "pmax_charge": 185.0,
+    "pmax_discharge": 185.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 35,
+    "name": "LBBG1",
+    "bus": "SESA",
+    "emin": 0.0,
+    "emax": 51.3079,
+    "eini": 25.65395,
+    "efin": 25.65395,
+    "pmax_charge": 25.0,
+    "pmax_discharge": 25.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 36,
+    "name": "LGAPBS1",
+    "bus": "NSA",
+    "emin": 0.0,
+    "emax": 59.49,
+    "eini": 29.745,
+    "efin": 29.745,
+    "pmax_charge": 10.0,
+    "pmax_discharge": 10.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 37,
+    "name": "LaTrobe Valley BESS",
+    "bus": "SEV",
+    "emin": 0.0,
+    "emax": 193.9399,
+    "eini": 96.96995,
+    "efin": 96.96995,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 38,
+    "name": "Liddell BESS",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 988.0,
+    "eini": 494.0,
+    "efin": 494.0,
+    "pmax_charge": 500.0,
+    "pmax_discharge": 500.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 39,
+    "name": "Limondale BESS",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 393.0,
+    "eini": 196.5,
+    "efin": 196.5,
+    "pmax_charge": 50.0,
+    "pmax_discharge": 50.0,
+    "input_efficiency": 0.9125,
+    "output_efficiency": 0.9125
+   },
+   {
+    "uid": 40,
+    "name": "Lockhart Hybrid Facility - Battery",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 19.81,
+    "eini": 9.905,
+    "efin": 9.905,
+    "pmax_charge": 9.9,
+    "pmax_discharge": 9.9,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 41,
+    "name": "MEL Battery - Coordinated CER Storages Area1",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 117.9035,
+    "eini": 58.95175,
+    "efin": 58.95175,
+    "pmax_charge": 52.573,
+    "pmax_discharge": 52.573,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 42,
+    "name": "MEL Battery - Coordinated CER Storages Area2",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 288.66,
+    "eini": 144.33,
+    "efin": 144.33,
+    "pmax_charge": 128.714,
+    "pmax_discharge": 128.714,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 43,
+    "name": "Mannum BESS",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 198.1,
+    "eini": 99.05,
+    "efin": 99.05,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 44,
+    "name": "Maryvale Solar Farm BESS",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 404.22305,
+    "eini": 202.111525,
+    "efin": 202.111525,
+    "pmax_charge": 172.0,
+    "pmax_discharge": 172.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 45,
+    "name": "Melbourne Renewable Energy Hub - Side A",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 1585.1962,
+    "eini": 792.5981,
+    "efin": 792.5981,
+    "pmax_charge": 600.0,
+    "pmax_discharge": 600.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 46,
+    "name": "Mornington BESS",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 475.44,
+    "eini": 237.72,
+    "efin": 237.72,
+    "pmax_charge": 240.0,
+    "pmax_discharge": 240.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 47,
+    "name": "Mortlake Battery",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 643.825,
+    "eini": 321.9125,
+    "efin": 321.9125,
+    "pmax_charge": 300.0,
+    "pmax_discharge": 300.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 48,
+    "name": "NNSW Battery - Coordinated CER Storages Area1",
+    "bus": "NNSW",
+    "emin": 0.0,
+    "emax": 174.25765,
+    "eini": 87.128825,
+    "efin": 87.128825,
+    "pmax_charge": 78.865,
+    "pmax_discharge": 78.865,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 49,
+    "name": "NQ Battery - Coordinated CER Storages Area1",
+    "bus": "NQ",
+    "emin": 0.0,
+    "emax": 80.1057,
+    "eini": 40.05285,
+    "efin": 40.05285,
+    "pmax_charge": 36.099,
+    "pmax_discharge": 36.099,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 50,
+    "name": "NSA Battery - Coordinated CER Storages Area1",
+    "bus": "NSA",
+    "emin": 0.0,
+    "emax": 28.37385,
+    "eini": 14.186925,
+    "efin": 14.186925,
+    "pmax_charge": 14.107,
+    "pmax_discharge": 14.107,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 51,
+    "name": "New England Solar Farm BESS",
+    "bus": "NNSW",
+    "emin": 0.0,
+    "emax": 396.6,
+    "eini": 198.3,
+    "efin": 198.3,
+    "pmax_charge": 200.0,
+    "pmax_discharge": 200.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 52,
+    "name": "ORANA",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 1642.1548,
+    "eini": 821.0774,
+    "efin": 821.0774,
+    "pmax_charge": 414.8,
+    "pmax_discharge": 414.8,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 53,
+    "name": "PIBESS1",
+    "bus": "SEV",
+    "emin": 0.0,
+    "emax": 9.905,
+    "eini": 4.9525,
+    "efin": 4.9525,
+    "pmax_charge": 5.0,
+    "pmax_discharge": 5.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 54,
+    "name": "Pine Lodge BESS",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 544.775,
+    "eini": 272.3875,
+    "efin": 272.3875,
+    "pmax_charge": 250.0,
+    "pmax_discharge": 250.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 55,
+    "name": "QBYNB1",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 19.81,
+    "eini": 9.905,
+    "efin": 9.905,
+    "pmax_charge": 10.0,
+    "pmax_discharge": 10.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 56,
+    "name": "QPBESS",
+    "bus": "CNSW",
+    "emin": 0.0,
+    "emax": 42.53535,
+    "eini": 21.267675,
+    "efin": 21.267675,
+    "pmax_charge": 20.0,
+    "pmax_discharge": 20.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 57,
+    "name": "RANGEB1",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 396.2,
+    "eini": 198.1,
+    "efin": 198.1,
+    "pmax_charge": 200.0,
+    "pmax_discharge": 200.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 58,
+    "name": "RESS1G",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 118.86,
+    "eini": 59.43,
+    "efin": 59.43,
+    "pmax_charge": 60.0,
+    "pmax_discharge": 60.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 59,
+    "name": "RIVNB2",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 128.765,
+    "eini": 64.3825,
+    "efin": 64.3825,
+    "pmax_charge": 65.0,
+    "pmax_discharge": 65.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 60,
+    "name": "SESA Battery - Coordinated CER Storages Area1",
+    "bus": "SESA",
+    "emin": 0.0,
+    "emax": 25.8519,
+    "eini": 12.92595,
+    "efin": 12.92595,
+    "pmax_charge": 12.804,
+    "pmax_discharge": 12.804,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 61,
+    "name": "SEV Battery - Coordinated CER Storages Area1",
+    "bus": "SEV",
+    "emin": 0.0,
+    "emax": 38.49565,
+    "eini": 19.247825,
+    "efin": 19.247825,
+    "pmax_charge": 17.367,
+    "pmax_discharge": 17.367,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 62,
+    "name": "SNSW Battery - Coordinated CER Storages Area1",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 106.454,
+    "eini": 53.227,
+    "efin": 53.227,
+    "pmax_charge": 48.292,
+    "pmax_discharge": 48.292,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 63,
+    "name": "SNSW Battery - Coordinated CER Storages Area2",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 75.79875,
+    "eini": 37.899375,
+    "efin": 37.899375,
+    "pmax_charge": 34.386,
+    "pmax_discharge": 34.386,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 64,
+    "name": "SNW Battery - Coordinated CER Storages Area1",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 331.6751,
+    "eini": 165.83755,
+    "efin": 165.83755,
+    "pmax_charge": 150.421,
+    "pmax_discharge": 150.421,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 65,
+    "name": "SNW Battery - Coordinated CER Storages Area2",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 362.64145,
+    "eini": 181.320725,
+    "efin": 181.320725,
+    "pmax_charge": 164.465,
+    "pmax_discharge": 164.465,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 66,
+    "name": "SQ Battery - Coordinated CER Storages Area1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 418.6641,
+    "eini": 209.33205,
+    "efin": 209.33205,
+    "pmax_charge": 187.63,
+    "pmax_discharge": 187.63,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 67,
+    "name": "Smithfield BESS",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 128.765,
+    "eini": 64.3825,
+    "efin": 64.3825,
+    "pmax_charge": 65.0,
+    "pmax_discharge": 65.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 68,
+    "name": "Springvale Energy Hub BESS",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 244.0592,
+    "eini": 122.0296,
+    "efin": 122.0296,
+    "pmax_charge": 123.52,
+    "pmax_discharge": 123.52,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 69,
+    "name": "Stanwell BESS",
+    "bus": "CQ",
+    "emin": 0.0,
+    "emax": 1188.6,
+    "eini": 594.3,
+    "efin": 594.3,
+    "pmax_charge": 300.0,
+    "pmax_discharge": 300.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 70,
+    "name": "Summerfield BESS 1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 526.3076,
+    "eini": 263.1538,
+    "efin": 263.1538,
+    "pmax_charge": 120.0,
+    "pmax_discharge": 120.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 71,
+    "name": "Summerfield BESS 2",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 526.3076,
+    "eini": 263.1538,
+    "efin": 263.1538,
+    "pmax_charge": 120.0,
+    "pmax_discharge": 120.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 72,
+    "name": "Supernode BESS 1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 611.1768,
+    "eini": 305.5884,
+    "efin": 305.5884,
+    "pmax_charge": 260.0,
+    "pmax_discharge": 260.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 73,
+    "name": "Supernode BESS 2",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 1223.144,
+    "eini": 611.572,
+    "efin": 611.572,
+    "pmax_charge": 260.0,
+    "pmax_discharge": 260.0,
+    "input_efficiency": 0.9129999999999999,
+    "output_efficiency": 0.9129999999999999
+   },
+   {
+    "uid": 74,
+    "name": "Swanbank BESS",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 526.25265,
+    "eini": 263.126325,
+    "efin": 263.126325,
+    "pmax_charge": 250.0,
+    "pmax_discharge": 250.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 75,
+    "name": "TAS Battery - Coordinated CER Storages Area1",
+    "bus": "TAS",
+    "emin": 0.0,
+    "emax": 17.45305,
+    "eini": 8.726525,
+    "efin": 8.726525,
+    "pmax_charge": 9.242,
+    "pmax_discharge": 9.242,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 76,
+    "name": "TB2BG1",
+    "bus": "SESA",
+    "emin": 0.0,
+    "emax": 83.202,
+    "eini": 41.601,
+    "efin": 41.601,
+    "pmax_charge": 41.0,
+    "pmax_discharge": 41.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 77,
+    "name": "TIB1",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 247.4784,
+    "eini": 123.7392,
+    "efin": 123.7392,
+    "pmax_charge": 250.7,
+    "pmax_discharge": 250.7,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 78,
+    "name": "TRGBESS",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 198.00095,
+    "eini": 99.000475,
+    "efin": 99.000475,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 79,
+    "name": "Tarong BESS",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 594.9,
+    "eini": 297.45,
+    "efin": 297.45,
+    "pmax_charge": 300.0,
+    "pmax_discharge": 300.0,
+    "input_efficiency": 0.9115000000000001,
+    "output_efficiency": 0.9115000000000001
+   },
+   {
+    "uid": 80,
+    "name": "Templers BESS",
+    "bus": "CSA",
+    "emin": 0.0,
+    "emax": 288.2355,
+    "eini": 144.11775,
+    "efin": 144.11775,
+    "pmax_charge": 111.0,
+    "pmax_discharge": 111.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 81,
+    "name": "ULBESS",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 295.169,
+    "eini": 147.5845,
+    "efin": 147.5845,
+    "pmax_charge": 155.0,
+    "pmax_discharge": 155.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 82,
+    "name": "VBB1",
+    "bus": "MEL",
+    "emin": 0.0,
+    "emax": 465.535,
+    "eini": 232.7675,
+    "efin": 232.7675,
+    "pmax_charge": 240.0,
+    "pmax_discharge": 240.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 83,
+    "name": "WALGRV1",
+    "bus": "SNW",
+    "emin": 0.0,
+    "emax": 2674.35,
+    "eini": 1337.175,
+    "efin": 1337.175,
+    "pmax_charge": 50.0,
+    "pmax_discharge": 50.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 84,
+    "name": "WANDB1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 148.575,
+    "eini": 74.2875,
+    "efin": 74.2875,
+    "pmax_charge": 100.0,
+    "pmax_discharge": 100.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 85,
+    "name": "WDBESS1",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 504.7588,
+    "eini": 252.3794,
+    "efin": 252.3794,
+    "pmax_charge": 255.0,
+    "pmax_discharge": 255.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 86,
+    "name": "WDBESS2",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 504.7588,
+    "eini": 252.3794,
+    "efin": 252.3794,
+    "pmax_charge": 255.0,
+    "pmax_discharge": 255.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 87,
+    "name": "WNV Battery - Coordinated CER Storages Area1",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 23.2152,
+    "eini": 11.6076,
+    "efin": 11.6076,
+    "pmax_charge": 10.519,
+    "pmax_discharge": 10.519,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 88,
+    "name": "WNV Battery - Coordinated CER Storages Area2",
+    "bus": "WNV",
+    "emin": 0.0,
+    "emax": 89.369,
+    "eini": 44.6845,
+    "efin": 44.6845,
+    "pmax_charge": 40.494,
+    "pmax_discharge": 40.494,
+    "input_efficiency": 0.922,
+    "output_efficiency": 0.922
+   },
+   {
+    "uid": 89,
+    "name": "Williamsdale BESS",
+    "bus": "SNSW",
+    "emin": 0.0,
+    "emax": 495.25,
+    "eini": 247.625,
+    "efin": 247.625,
+    "pmax_charge": 250.0,
+    "pmax_discharge": 250.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   },
+   {
+    "uid": 90,
+    "name": "Woolooga BESS",
+    "bus": "SQ",
+    "emin": 0.0,
+    "emax": 587.66365,
+    "eini": 293.831825,
+    "efin": 293.831825,
+    "pmax_charge": 222.0,
+    "pmax_discharge": 222.0,
+    "input_efficiency": 0.9105,
+    "output_efficiency": 0.9105
+   }
+  ],
+  "junction_array": [
+   {
+    "uid": 1,
+    "name": "Bendeela Pondage",
+    "drain": true
+   },
+   {
+    "uid": 2,
+    "name": "Blowering",
+    "drain": true
+   },
+   {
+    "uid": 3,
+    "name": "Dartmouth",
+    "drain": true
+   },
+   {
+    "uid": 4,
+    "name": "Eildon",
+    "drain": true
+   },
+   {
+    "uid": 5,
+    "name": "Fitzroy Falls",
+    "drain": true
+   },
+   {
+    "uid": 6,
+    "name": "Geehi",
+    "drain": true
+   },
+   {
+    "uid": 7,
+    "name": "Guthega",
+    "drain": true
+   },
+   {
+    "uid": 8,
+    "name": "Hume Dam",
+    "drain": true
+   },
+   {
+    "uid": 9,
+    "name": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 10,
+    "name": "Jounama Pondage",
+    "drain": true
+   },
+   {
+    "uid": 11,
+    "name": "Kidston Lower",
+    "drain": true
+   },
+   {
+    "uid": 12,
+    "name": "Kidston Upper",
+    "drain": true
+   },
+   {
+    "uid": 13,
+    "name": "Koombooloomba Dam",
+    "drain": true
+   },
+   {
+    "uid": 14,
+    "name": "Kuranda Weir",
+    "drain": true
+   },
+   {
+    "uid": 15,
+    "name": "Lake Yarrunga",
+    "drain": true
+   },
+   {
+    "uid": 16,
+    "name": "Murray 2 Pondage",
+    "drain": true
+   },
+   {
+    "uid": 17,
+    "name": "Split Yard Creek Dam",
+    "drain": true
+   },
+   {
+    "uid": 18,
+    "name": "Talbingo",
+    "drain": true
+   },
+   {
+    "uid": 19,
+    "name": "Tantangara",
+    "drain": true
+   },
+   {
+    "uid": 20,
+    "name": "Tumut",
+    "drain": true
+   },
+   {
+    "uid": 21,
+    "name": "Tumut 2",
+    "drain": true
+   },
+   {
+    "uid": 22,
+    "name": "Wivenhoe",
+    "drain": true
+   }
+  ],
+  "reservoir_array": [
+   {
+    "uid": 1,
+    "name": "Bendeela Pondage",
+    "junction": "Bendeela Pondage",
+    "emin": 0.0,
+    "emax": 0.78,
+    "eini": 0.343,
+    "efin": 0.343,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 2,
+    "name": "Blowering",
+    "junction": "Blowering",
+    "emin": 0.0,
+    "emax": 1610.0,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 3,
+    "name": "Dartmouth",
+    "junction": "Dartmouth",
+    "emin": 0.0,
+    "emax": 3906.0,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 4,
+    "name": "Eildon",
+    "junction": "Eildon",
+    "emin": 0.0,
+    "emax": 3387.0,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 5,
+    "name": "Fitzroy Falls",
+    "junction": "Fitzroy Falls",
+    "emin": 0.0,
+    "emax": 4.4,
+    "eini": 0.711,
+    "efin": 0.711,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 6,
+    "name": "Geehi",
+    "junction": "Geehi",
+    "emin": 0.0,
+    "emax": 12.679,
+    "eini": 5.872,
+    "efin": 5.872,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 7,
+    "name": "Guthega",
+    "junction": "Guthega",
+    "emin": 0.0,
+    "emax": 1.655,
+    "eini": 0.6573,
+    "efin": 0.6573,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 8,
+    "name": "Hume Dam",
+    "junction": "Hume Dam",
+    "emin": 0.0,
+    "emax": 3040.0,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 9,
+    "name": "Hydro TAS",
+    "junction": "Hydro TAS",
+    "emin": 0.0,
+    "emax": 5961.013,
+    "eini": 2416.506,
+    "efin": 2416.506,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 10,
+    "name": "Jounama Pondage",
+    "junction": "Jounama Pondage",
+    "emin": 0.0,
+    "emax": 27.8,
+    "eini": 11.473,
+    "efin": 11.473,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 11,
+    "name": "Kidston Lower",
+    "junction": "Kidston Lower",
+    "emin": 0.0,
+    "emax": 3.4416,
+    "eini": 1.7208,
+    "efin": 1.7208,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 12,
+    "name": "Kidston Upper",
+    "junction": "Kidston Upper",
+    "emin": 0.0,
+    "emax": 3.4416,
+    "eini": 1.7208,
+    "efin": 1.7208,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 13,
+    "name": "Koombooloomba Dam",
+    "junction": "Koombooloomba Dam",
+    "emin": 0.0,
+    "emax": 184.5,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 14,
+    "name": "Kuranda Weir",
+    "junction": "Kuranda Weir",
+    "emin": 0.0,
+    "emax": 1.387,
+    "eini": 0.0,
+    "efin": 0.0,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 15,
+    "name": "Lake Yarrunga",
+    "junction": "Lake Yarrunga",
+    "emin": 0.0,
+    "emax": 36.0,
+    "eini": 21.6,
+    "efin": 21.6,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 16,
+    "name": "Murray 2 Pondage",
+    "junction": "Murray 2 Pondage",
+    "emin": 0.0,
+    "emax": 1.032,
+    "eini": 0.5,
+    "efin": 0.5,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 17,
+    "name": "Split Yard Creek Dam",
+    "junction": "Split Yard Creek Dam",
+    "emin": 0.0,
+    "emax": 15.0,
+    "eini": 4.408,
+    "efin": 4.408,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 18,
+    "name": "Talbingo",
+    "junction": "Talbingo",
+    "emin": 0.0,
+    "emax": 160.4,
+    "eini": 66.199,
+    "efin": 66.199,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 19,
+    "name": "Tantangara",
+    "junction": "Tantangara",
+    "emin": 0.0,
+    "emax": 238.8,
+    "eini": 23.88,
+    "efin": 23.88,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 20,
+    "name": "Tumut",
+    "junction": "Tumut",
+    "emin": 0.0,
+    "emax": 48.538,
+    "eini": 21.786,
+    "efin": 21.786,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 21,
+    "name": "Tumut 2",
+    "junction": "Tumut 2",
+    "emin": 0.0,
+    "emax": 1.457,
+    "eini": 0.818,
+    "efin": 0.818,
+    "efin_cost": 10000.0
+   },
+   {
+    "uid": 22,
+    "name": "Wivenhoe",
+    "junction": "Wivenhoe",
+    "emin": 0.0,
+    "emax": 1165.0,
+    "eini": 1150.0,
+    "efin": 1150.0,
+    "efin_cost": 10000.0
+   }
+  ],
+  "waterway_array": [
+   {
+    "uid": 1,
+    "name": "Blowering-Out",
+    "junction_a": "Blowering"
+   },
+   {
+    "uid": 2,
+    "name": "Dartmouth-Out",
+    "junction_a": "Dartmouth"
+   },
+   {
+    "uid": 3,
+    "name": "Eildon-Out",
+    "junction_a": "Eildon"
+   },
+   {
+    "uid": 4,
+    "name": "Fitzroy Falls- Lake Yarrunga",
+    "junction_a": "Fitzroy Falls",
+    "junction_b": "Lake Yarrunga"
+   },
+   {
+    "uid": 5,
+    "name": "Geehi River Outlet",
+    "junction_a": "Geehi",
+    "fmax": 42.5
+   },
+   {
+    "uid": 6,
+    "name": "Geehi Spillway",
+    "junction_a": "Geehi",
+    "fmax": 1557.0
+   },
+   {
+    "uid": 7,
+    "name": "Guthega River Outlet",
+    "junction_a": "Guthega",
+    "fmax": 49.6
+   },
+   {
+    "uid": 8,
+    "name": "Guthega Spillway",
+    "junction_a": "Guthega",
+    "fmax": 1420.0
+   },
+   {
+    "uid": 9,
+    "name": "Hume Dam-Out",
+    "junction_a": "Hume Dam"
+   },
+   {
+    "uid": 10,
+    "name": "Hydro TAS-Out",
+    "junction_a": "Hydro TAS"
+   },
+   {
+    "uid": 11,
+    "name": "Indirect - Tantangara to Tumut",
+    "junction_a": "Tantangara",
+    "junction_b": "Tumut"
+   },
+   {
+    "uid": 12,
+    "name": "Jounama River Outlet",
+    "junction_a": "Jounama Pondage",
+    "fmax": 62.3
+   },
+   {
+    "uid": 13,
+    "name": "Jounama Spillway",
+    "junction_a": "Jounama Pondage",
+    "fmax": 3965.0
+   },
+   {
+    "uid": 14,
+    "name": "Koombooloomba Dam-Out",
+    "junction_a": "Koombooloomba Dam"
+   },
+   {
+    "uid": 15,
+    "name": "Kuranda Weir-Out",
+    "junction_a": "Kuranda Weir"
+   },
+   {
+    "uid": 16,
+    "name": "Murray 2 River Outlet",
+    "junction_a": "Murray 2 Pondage",
+    "fmax": 5.7
+   },
+   {
+    "uid": 17,
+    "name": "Murray 2 Spillway",
+    "junction_a": "Murray 2 Pondage",
+    "fmax": 566.0
+   },
+   {
+    "uid": 18,
+    "name": "Talbingo River Outlet",
+    "junction_a": "Talbingo",
+    "fmax": 70.8
+   },
+   {
+    "uid": 19,
+    "name": "Talbingo Spillway",
+    "junction_a": "Talbingo",
+    "fmax": 4250.0
+   },
+   {
+    "uid": 20,
+    "name": "Tantangara River Outlet",
+    "junction_a": "Tantangara",
+    "fmax": 28.3
+   },
+   {
+    "uid": 21,
+    "name": "Tantangara Spillway",
+    "junction_a": "Tantangara",
+    "fmax": 900.0
+   },
+   {
+    "uid": 22,
+    "name": "Tumut 2 River Outlet",
+    "junction_a": "Tumut 2",
+    "junction_b": "Talbingo",
+    "fmax": 170.8
+   },
+   {
+    "uid": 23,
+    "name": "Tumut 2 Spillway",
+    "junction_a": "Tumut 2",
+    "junction_b": "Talbingo",
+    "fmax": 2150.0
+   },
+   {
+    "uid": 24,
+    "name": "Tumut River Outlet",
+    "junction_a": "Tumut",
+    "junction_b": "Tumut 2",
+    "fmax": 203.8
+   },
+   {
+    "uid": 25,
+    "name": "Tumut River Spillway",
+    "junction_a": "Tumut",
+    "junction_b": "Tumut 2",
+    "fmax": 1926.0
+   }
+  ],
+  "turbine_array": [
+   {
+    "uid": 1,
+    "name": "turbine_BARRON_1",
+    "generator": "BARRON-1",
+    "junction_a": "Kuranda Weir",
+    "production_factor": 2.32,
+    "main_reservoir": "Kuranda Weir",
+    "drain": true
+   },
+   {
+    "uid": 2,
+    "name": "turbine_BARRON_2",
+    "generator": "BARRON-2",
+    "junction_a": "Kuranda Weir",
+    "production_factor": 2.32,
+    "main_reservoir": "Kuranda Weir",
+    "drain": true
+   },
+   {
+    "uid": 3,
+    "name": "turbine_BASTYAN",
+    "generator": "BASTYAN",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 4,
+    "name": "turbine_BLOWERNG",
+    "generator": "BLOWERNG",
+    "junction_a": "Blowering",
+    "production_factor": 0.651,
+    "main_reservoir": "Blowering",
+    "drain": true
+   },
+   {
+    "uid": 5,
+    "name": "turbine_CA111_1",
+    "generator": "CA111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 6,
+    "name": "turbine_CA112_2",
+    "generator": "CA112-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 7,
+    "name": "turbine_CETHANA",
+    "generator": "CETHANA",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 8,
+    "name": "turbine_DARTM1",
+    "generator": "DARTM1",
+    "junction_a": "Dartmouth",
+    "production_factor": 1.441,
+    "main_reservoir": "Dartmouth",
+    "drain": true
+   },
+   {
+    "uid": 9,
+    "name": "turbine_DEVILS_G",
+    "generator": "DEVILS_G",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 10,
+    "name": "turbine_EILDON1",
+    "generator": "EILDON1",
+    "junction_a": "Eildon",
+    "production_factor": 0.79,
+    "main_reservoir": "Eildon",
+    "drain": true
+   },
+   {
+    "uid": 11,
+    "name": "turbine_EILDON2",
+    "generator": "EILDON2",
+    "junction_a": "Eildon",
+    "production_factor": 0.79,
+    "main_reservoir": "Eildon",
+    "drain": true
+   },
+   {
+    "uid": 12,
+    "name": "turbine_FISHER",
+    "generator": "FISHER",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 13,
+    "name": "turbine_GO181_1",
+    "generator": "GO181-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 14,
+    "name": "turbine_GO182_2",
+    "generator": "GO182-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 15,
+    "name": "turbine_GO183_3",
+    "generator": "GO183-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 16,
+    "name": "turbine_GUTHEGA1",
+    "generator": "GUTHEGA1",
+    "junction_a": "Guthega",
+    "production_factor": 2.378,
+    "main_reservoir": "Guthega",
+    "drain": true
+   },
+   {
+    "uid": 17,
+    "name": "turbine_GUTHEGA2",
+    "generator": "GUTHEGA2",
+    "junction_a": "Guthega",
+    "production_factor": 2.378,
+    "main_reservoir": "Guthega",
+    "drain": true
+   },
+   {
+    "uid": 18,
+    "name": "turbine_HUMENSW",
+    "generator": "HUMENSW",
+    "junction_a": "Hume Dam",
+    "production_factor": 0.24,
+    "main_reservoir": "Hume Dam",
+    "drain": true
+   },
+   {
+    "uid": 19,
+    "name": "turbine_HUMEV",
+    "generator": "HUMEV",
+    "junction_a": "Hume Dam",
+    "production_factor": 0.24,
+    "main_reservoir": "Hume Dam",
+    "drain": true
+   },
+   {
+    "uid": 20,
+    "name": "turbine_JBUTTERS",
+    "generator": "JBUTTERS",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 21,
+    "name": "turbine_KAREEYA1",
+    "generator": "KAREEYA1",
+    "junction_a": "Koombooloomba Dam",
+    "production_factor": 3.419,
+    "main_reservoir": "Koombooloomba Dam",
+    "drain": true
+   },
+   {
+    "uid": 22,
+    "name": "turbine_KAREEYA2",
+    "generator": "KAREEYA2",
+    "junction_a": "Koombooloomba Dam",
+    "production_factor": 3.419,
+    "main_reservoir": "Koombooloomba Dam",
+    "drain": true
+   },
+   {
+    "uid": 23,
+    "name": "turbine_KAREEYA3",
+    "generator": "KAREEYA3",
+    "junction_a": "Koombooloomba Dam",
+    "production_factor": 3.419,
+    "main_reservoir": "Koombooloomba Dam",
+    "drain": true
+   },
+   {
+    "uid": 24,
+    "name": "turbine_KAREEYA4",
+    "generator": "KAREEYA4",
+    "junction_a": "Koombooloomba Dam",
+    "production_factor": 3.419,
+    "main_reservoir": "Koombooloomba Dam",
+    "drain": true
+   },
+   {
+    "uid": 25,
+    "name": "turbine_Kidston_Pumped_Storage_Hydro_1",
+    "generator": "Kidston Pumped Storage Hydro 1",
+    "junction_a": "Kidston Upper",
+    "production_factor": 2.092,
+    "main_reservoir": "Kidston Upper",
+    "junction_b": "Kidston Lower"
+   },
+   {
+    "uid": 26,
+    "name": "turbine_Kidston_Pumped_Storage_Hydro_2",
+    "generator": "Kidston Pumped Storage Hydro 2",
+    "junction_a": "Kidston Upper",
+    "production_factor": 2.092,
+    "main_reservoir": "Kidston Upper",
+    "junction_b": "Kidston Lower"
+   },
+   {
+    "uid": 27,
+    "name": "turbine_LI111_1",
+    "generator": "LI111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 28,
+    "name": "turbine_LI112_2",
+    "generator": "LI112-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 29,
+    "name": "turbine_LI113_3",
+    "generator": "LI113-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 30,
+    "name": "turbine_LK_ECHO",
+    "generator": "LK_ECHO",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 31,
+    "name": "turbine_LM111_1",
+    "generator": "LM111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 32,
+    "name": "turbine_MACKNTSH",
+    "generator": "MACKNTSH",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 33,
+    "name": "turbine_MEADOWBK",
+    "generator": "MEADOWBK",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 34,
+    "name": "turbine_MURRAY01",
+    "generator": "MURRAY01",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 35,
+    "name": "turbine_MURRAY02",
+    "generator": "MURRAY02",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 36,
+    "name": "turbine_MURRAY03",
+    "generator": "MURRAY03",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 37,
+    "name": "turbine_MURRAY04",
+    "generator": "MURRAY04",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 38,
+    "name": "turbine_MURRAY05",
+    "generator": "MURRAY05",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 39,
+    "name": "turbine_MURRAY06",
+    "generator": "MURRAY06",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 40,
+    "name": "turbine_MURRAY07",
+    "generator": "MURRAY07",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 41,
+    "name": "turbine_MURRAY08",
+    "generator": "MURRAY08",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 42,
+    "name": "turbine_MURRAY09",
+    "generator": "MURRAY09",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 43,
+    "name": "turbine_MURRAY10",
+    "generator": "MURRAY10",
+    "junction_a": "Geehi",
+    "production_factor": 4.258,
+    "main_reservoir": "Geehi",
+    "junction_b": "Murray 2 Pondage"
+   },
+   {
+    "uid": 44,
+    "name": "turbine_MURRAY11",
+    "generator": "MURRAY11",
+    "junction_a": "Murray 2 Pondage",
+    "production_factor": 2.493,
+    "main_reservoir": "Murray 2 Pondage",
+    "drain": true
+   },
+   {
+    "uid": 45,
+    "name": "turbine_MURRAY12",
+    "generator": "MURRAY12",
+    "junction_a": "Murray 2 Pondage",
+    "production_factor": 2.493,
+    "main_reservoir": "Murray 2 Pondage",
+    "drain": true
+   },
+   {
+    "uid": 46,
+    "name": "turbine_MURRAY13",
+    "generator": "MURRAY13",
+    "junction_a": "Murray 2 Pondage",
+    "production_factor": 2.493,
+    "main_reservoir": "Murray 2 Pondage",
+    "drain": true
+   },
+   {
+    "uid": 47,
+    "name": "turbine_MURRAY14",
+    "generator": "MURRAY14",
+    "junction_a": "Murray 2 Pondage",
+    "production_factor": 2.493,
+    "main_reservoir": "Murray 2 Pondage",
+    "drain": true
+   },
+   {
+    "uid": 48,
+    "name": "turbine_PO161_1",
+    "generator": "PO161-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 49,
+    "name": "turbine_PO162_2",
+    "generator": "PO162-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 50,
+    "name": "turbine_PO163_3",
+    "generator": "PO163-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 51,
+    "name": "turbine_PO164_4",
+    "generator": "PO164-4",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 52,
+    "name": "turbine_PO165_5",
+    "generator": "PO165-5",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 53,
+    "name": "turbine_PO166_6",
+    "generator": "PO166-6",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 54,
+    "name": "turbine_REECE1",
+    "generator": "REECE1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 55,
+    "name": "turbine_REECE2",
+    "generator": "REECE2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 56,
+    "name": "turbine_SHGEN01",
+    "generator": "SHGEN01",
+    "junction_a": "Bendeela Pondage",
+    "production_factor": 1.026,
+    "main_reservoir": "Bendeela Pondage",
+    "junction_b": "Lake Yarrunga"
+   },
+   {
+    "uid": 57,
+    "name": "turbine_SHGEN02",
+    "generator": "SHGEN02",
+    "junction_a": "Bendeela Pondage",
+    "production_factor": 1.026,
+    "main_reservoir": "Bendeela Pondage",
+    "junction_b": "Lake Yarrunga"
+   },
+   {
+    "uid": 58,
+    "name": "turbine_SHGEN03",
+    "generator": "SHGEN03",
+    "junction_a": "Fitzroy Falls",
+    "production_factor": 3.923,
+    "main_reservoir": "Fitzroy Falls",
+    "junction_b": "Bendeela Pondage"
+   },
+   {
+    "uid": 59,
+    "name": "turbine_SHGEN04",
+    "generator": "SHGEN04",
+    "junction_a": "Fitzroy Falls",
+    "production_factor": 3.923,
+    "main_reservoir": "Fitzroy Falls",
+    "junction_b": "Bendeela Pondage"
+   },
+   {
+    "uid": 60,
+    "name": "turbine_TA111_1",
+    "generator": "TA111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 61,
+    "name": "turbine_TA111_2",
+    "generator": "TA111-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 62,
+    "name": "turbine_TA111_3",
+    "generator": "TA111-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 63,
+    "name": "turbine_TA112_4",
+    "generator": "TA112-4",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 64,
+    "name": "turbine_TA112_5",
+    "generator": "TA112-5",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 65,
+    "name": "turbine_TA112_6",
+    "generator": "TA112-6",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 66,
+    "name": "turbine_TR111_1",
+    "generator": "TR111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 67,
+    "name": "turbine_TR111_2",
+    "generator": "TR111-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 68,
+    "name": "turbine_TR112_3",
+    "generator": "TR112-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 69,
+    "name": "turbine_TR112_4",
+    "generator": "TR112-4",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 70,
+    "name": "turbine_TRIBUTE",
+    "generator": "TRIBUTE",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 71,
+    "name": "turbine_TU111_1",
+    "generator": "TU111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 72,
+    "name": "turbine_TU112_2",
+    "generator": "TU112-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 73,
+    "name": "turbine_TU113_3",
+    "generator": "TU113-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 74,
+    "name": "turbine_TU114_4",
+    "generator": "TU114-4",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 75,
+    "name": "turbine_TU115_5",
+    "generator": "TU115-5",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 76,
+    "name": "turbine_TUMUT1_01",
+    "generator": "TUMUT1_01",
+    "junction_a": "Tumut",
+    "production_factor": 2.81,
+    "main_reservoir": "Tumut",
+    "junction_b": "Tumut 2"
+   },
+   {
+    "uid": 77,
+    "name": "turbine_TUMUT1_02",
+    "generator": "TUMUT1_02",
+    "junction_a": "Tumut",
+    "production_factor": 2.81,
+    "main_reservoir": "Tumut",
+    "junction_b": "Tumut 2"
+   },
+   {
+    "uid": 78,
+    "name": "turbine_TUMUT1_03",
+    "generator": "TUMUT1_03",
+    "junction_a": "Tumut",
+    "production_factor": 2.81,
+    "main_reservoir": "Tumut",
+    "junction_b": "Tumut 2"
+   },
+   {
+    "uid": 79,
+    "name": "turbine_TUMUT1_04",
+    "generator": "TUMUT1_04",
+    "junction_a": "Tumut",
+    "production_factor": 2.81,
+    "main_reservoir": "Tumut",
+    "junction_b": "Tumut 2"
+   },
+   {
+    "uid": 80,
+    "name": "turbine_TUMUT2_01",
+    "generator": "TUMUT2_01",
+    "junction_a": "Tumut 2",
+    "production_factor": 2.433,
+    "main_reservoir": "Tumut 2",
+    "junction_b": "Talbingo"
+   },
+   {
+    "uid": 81,
+    "name": "turbine_TUMUT2_02",
+    "generator": "TUMUT2_02",
+    "junction_a": "Tumut 2",
+    "production_factor": 2.433,
+    "main_reservoir": "Tumut 2",
+    "junction_b": "Talbingo"
+   },
+   {
+    "uid": 82,
+    "name": "turbine_TUMUT2_03",
+    "generator": "TUMUT2_03",
+    "junction_a": "Tumut 2",
+    "production_factor": 2.433,
+    "main_reservoir": "Tumut 2",
+    "junction_b": "Talbingo"
+   },
+   {
+    "uid": 83,
+    "name": "turbine_TUMUT2_04",
+    "generator": "TUMUT2_04",
+    "junction_a": "Tumut 2",
+    "production_factor": 2.433,
+    "main_reservoir": "Tumut 2",
+    "junction_b": "Talbingo"
+   },
+   {
+    "uid": 84,
+    "name": "turbine_TUMUT3_01",
+    "generator": "TUMUT3_01",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 85,
+    "name": "turbine_TUMUT3_02",
+    "generator": "TUMUT3_02",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 86,
+    "name": "turbine_TUMUT3_03",
+    "generator": "TUMUT3_03",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 87,
+    "name": "turbine_TUMUT3_04",
+    "generator": "TUMUT3_04",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 88,
+    "name": "turbine_TUMUT3_05",
+    "generator": "TUMUT3_05",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 89,
+    "name": "turbine_TUMUT3_06",
+    "generator": "TUMUT3_06",
+    "junction_a": "Talbingo",
+    "production_factor": 1.325,
+    "main_reservoir": "Talbingo",
+    "junction_b": "Jounama Pondage"
+   },
+   {
+    "uid": 90,
+    "name": "turbine_W_HOE_1",
+    "generator": "W/HOE#1",
+    "junction_a": "Split Yard Creek Dam",
+    "production_factor": 0.867,
+    "main_reservoir": "Split Yard Creek Dam",
+    "junction_b": "Wivenhoe"
+   },
+   {
+    "uid": 91,
+    "name": "turbine_W_HOE_2",
+    "generator": "W/HOE#2",
+    "junction_a": "Split Yard Creek Dam",
+    "production_factor": 0.867,
+    "main_reservoir": "Split Yard Creek Dam",
+    "junction_b": "Wivenhoe"
+   },
+   {
+    "uid": 92,
+    "name": "turbine_WI111_1",
+    "generator": "WI111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 93,
+    "name": "turbine_WY111_1",
+    "generator": "WY111-1",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 94,
+    "name": "turbine_WY111_2",
+    "generator": "WY111-2",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   },
+   {
+    "uid": 95,
+    "name": "turbine_WY111_3",
+    "generator": "WY111-3",
+    "junction_a": "Hydro TAS",
+    "production_factor": 3.6,
+    "main_reservoir": "Hydro TAS",
+    "drain": true
+   }
+  ],
+  "flow_array": [
+   {
+    "uid": 1,
+    "name": "inflow_Blowering",
+    "junction": "Blowering",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 2,
+    "name": "inflow_Dartmouth",
+    "junction": "Dartmouth",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 3,
+    "name": "inflow_Eildon",
+    "junction": "Eildon",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 4,
+    "name": "inflow_Geehi",
+    "junction": "Geehi",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 5,
+    "name": "inflow_Guthega",
+    "junction": "Guthega",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 6,
+    "name": "inflow_Hume_Dam",
+    "junction": "Hume Dam",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 7,
+    "name": "inflow_Hydro_TAS",
+    "junction": "Hydro TAS",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 8,
+    "name": "inflow_Koombooloomba_Dam",
+    "junction": "Koombooloomba Dam",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 9,
+    "name": "inflow_Kuranda_Weir",
+    "junction": "Kuranda Weir",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 10,
+    "name": "inflow_Talbingo",
+    "junction": "Talbingo",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 11,
+    "name": "inflow_Tantangara",
+    "junction": "Tantangara",
+    "discharge": "discharge"
+   },
+   {
+    "uid": 12,
+    "name": "inflow_Tumut_2",
+    "junction": "Tumut 2",
+    "discharge": "discharge"
+   }
+  ],
+  "user_constraint_array": [
+   {
+    "name": "energy_day_BOGONG1",
+    "expression": "generator(\"BOGONG1\").generation <= 188.836",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 1
+   },
+   {
+    "name": "energy_day_BOGONG2",
+    "expression": "generator(\"BOGONG2\").generation <= 188.836",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 2
+   },
+   {
+    "name": "energy_day_MCKAY11",
+    "expression": "generator(\"MCKAY11\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 3
+   },
+   {
+    "name": "energy_day_MCKAY12",
+    "expression": "generator(\"MCKAY12\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 4
+   },
+   {
+    "name": "energy_day_MCKAY13",
+    "expression": "generator(\"MCKAY13\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 5
+   },
+   {
+    "name": "energy_day_MCKAY14",
+    "expression": "generator(\"MCKAY14\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 6
+   },
+   {
+    "name": "energy_day_MCKAY15",
+    "expression": "generator(\"MCKAY15\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 7
+   },
+   {
+    "name": "energy_day_MCKAY16",
+    "expression": "generator(\"MCKAY16\").generation <= 62.9452",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 8
+   },
+   {
+    "name": "energy_day_NSW1_DSP",
+    "expression": "generator(\"NSW1_DSP\").generation <= 500",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Day \u2192 daily energy budget [MWh/day]",
+    "uid": 9
+   },
+   {
+    "name": "energy_day_VIC1_DSP",
+    "expression": "generator(\"VIC1_DSP\").generation <= 300",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Day \u2192 daily energy budget [MWh/day]",
+    "uid": 10
+   },
+   {
+    "name": "energy_day_WKIEWA1_1",
+    "expression": "generator(\"WKIEWA1_1\").generation <= 175.937",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 11
+   },
+   {
+    "name": "energy_day_WKIEWA1_2",
+    "expression": "generator(\"WKIEWA1_2\").generation <= 175.937",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 12
+   },
+   {
+    "name": "energy_day_WKIEWA2_1",
+    "expression": "generator(\"WKIEWA2_1\").generation <= 134.86",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 13
+   },
+   {
+    "name": "energy_day_WKIEWA2_2",
+    "expression": "generator(\"WKIEWA2_2\").generation <= 134.86",
+    "daily_sum": true,
+    "constraint_type": "energy",
+    "description": "PLEXOS Max Energy Year \u2192 daily energy budget [MWh/day]",
+    "uid": 14
+   }
+  ]
+ }
+}

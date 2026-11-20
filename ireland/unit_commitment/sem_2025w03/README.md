@@ -20,6 +20,11 @@ for that week and weather sample 1 by `plexos2gtopt --plexos-model` and
 converted into a mixed-integer unit-commitment and dispatch problem on a
 three-node transport network (SEM, Great Britain, France).
 
+This is the winter week of four seasonal weeks of 2025 (`sem_2025w03`,
+`w16`, `w29` and `w42`) built from the same archives; see the [Ireland
+README](../../README.md).  The four weeks share the download cache, so the
+archives are fetched once.
+
 | Field | Value |
 |---|---|
 | Case id | `ireland/unit_commitment/sem_2025w03` |

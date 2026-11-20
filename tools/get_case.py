@@ -269,7 +269,9 @@ def cmd_fetch(args: argparse.Namespace) -> Path:
     entry = catalog_entry(args.case)
     if entry is None or entry["source"].get("redistributed", True):
         sys.exit(f"{args.case}: not a catalogued fetch-on-demand case")
-    case_dir, dl = REPO / entry["path"], CACHE / entry["id"].rsplit("/", 1)[-1]
+    # cases that share the same archives name a common "cache" folder
+    key = entry["source"].get("cache") or entry["id"].rsplit("/", 1)[-1]
+    case_dir, dl = REPO / entry["path"], CACHE / key
     for f in entry["source"]["files"]:
         archive = dl / f["archive"]
         if not archive.is_file():

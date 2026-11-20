@@ -1,0 +1,36 @@
+{
+ "source": {
+  "publisher": "Australian Energy Market Operator (AEMO)",
+  "dataset": "2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario",
+  "page": "https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp",
+  "archives_sha256": {
+   "2026 ISP Model.zip": "d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2",
+   "2026 ISP Solar traces.zip": "ce364d7c6eddfebaf23a56569732fb90bdb93f051007df79d3d6dda6d50fb689",
+   "2026 ISP Wind traces.zip": "7a14094b68437356c20da1048714b62c1a082b030573531e690b3bf6df22d844",
+   "2026 ISP Hydro traces.zip": "e66ce0f94dd13a7414d6defa5b5405b479bae86c4db82d5323e9591f66e2dc5c",
+   "2026 ISP Timeslice traces.zip": "66c21860a84de67f7164b4010e0fdb04df6bd03746878264e3c514358d40c3bd"
+  },
+  "xml": "2026 ISP Model/2026 ISP Step Change/2026 ISP Step Change Model.xml",
+  "xml_sha256": "19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+  "copyright": "(c) AEMO. Used under AEMO's copyright permissions: general permission to use AEMO Material for any purpose with accurate and appropriate attribution of the material and of AEMO as its author."
+ },
+ "converter": {
+  "tool": "python -m plexos2gtopt.aemo_isp",
+  "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
+  "args": [
+   "-s",
+   "2027-07-19",
+   "-d",
+   "7",
+   "-n",
+   "isp2026_sc_2027w29"
+  ],
+  "trace_roots": [
+   "model folder",
+   "2026 ISP Solar traces",
+   "2026 ISP Wind traces",
+   "hydro",
+   "2026 ISP Timeslice traces"
+  ]
+ }
+}

@@ -18,6 +18,24 @@ Each release states the minimum gtopt version its cases need.
 ### Added
 
 - This changelog.
+- **Australia**: three more weekly dispatches from the AEMO 2026 ISP
+  Step Change database, so there is one week per season of 2027:
+  `isp2026_sc_2027w16` (19-25 April), `isp2026_sc_2027w29` (19-25 July)
+  and `isp2026_sc_2027w42` (18-24 October), each with its own `source/`
+  (scenario XML and the trace files it reads, cut to the week) and
+  `case/`.
+- **Ireland**: three more weekly unit-commitment recipes from the SEM
+  PLEXOS Forecast Model 2024-2032, one week per season of 2025:
+  `sem_2025w16` (14-20 April), `sem_2025w29` (14-20 July) and
+  `sem_2025w42` (13-19 October).  From April 2025 the model includes the
+  Greenlink interconnector.  As for `sem_2025w03`, the data are not
+  redistributed; `tools/get_case.py fetch <case>` builds them locally.
+
+### Changed
+
+- `tools/get_case.py fetch`: cases that use the same archives share one
+  download folder (`source.cache` in `catalog.json`), so the four Irish
+  weeks download the SEM archives once.
 
 ## [1.0.0] - 2026-11-20
 
