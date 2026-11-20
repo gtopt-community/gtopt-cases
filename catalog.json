@@ -3,6 +3,7 @@
   "disclaimer": "DISCLAIMER.md",
   "disclaimer_summary": "Cases built with gtopt's own conversion tools, verified only as far as the authors can, NOT validated by the publishing institutions; provided AS IS without warranty; never to be used as a reference for analysing official operation scheduling or for financial analysis.",
   "description": "Machine-readable index of the gtopt case collection (INPUTS ONLY: source data, gtopt case inputs and how to run them; no results). One entry per case. Paths are relative to the repo root (case_json relative to the case path); run commands assume REPO=<this checkout>.",
+  "revisions_note": "converter.gtopt_revision, converter.converter_last_change and size.lp.gtopt_revision record the gtopt development revision used for the conversion or the LP-size check (pre-publication history; may not exist in the public repository https://github.com/gtopt-community/gtopt). To rebuild a case, use the named converter from gtopt master of November 2026 or later.",
   "converter_defaults": {
     "daily_scheduling": {
       "tool": "plexos2gtopt",
@@ -129,6 +130,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-10-05; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -214,6 +225,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-10-19; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -299,6 +320,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-11-09; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -384,6 +415,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-11-23; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -469,6 +510,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-12-07; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -554,6 +605,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-12-21; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -639,6 +700,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-01-04; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -724,6 +795,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-01-18; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -809,6 +890,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-02-15; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -894,6 +985,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-03-15; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -979,6 +1080,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-04-07; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": []
     },
     {
@@ -1064,6 +1175,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-04-12; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "Expect a harder MIP than the other days: allow the full profile time_limit."
       ]
@@ -1151,6 +1272,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-04-22; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "Expect a harder MIP than the other days: allow the full profile time_limit."
       ]
@@ -1238,6 +1369,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-05-17; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plexos2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "Lift list contains both 'Futuro033_CRCA2B>Andes220' (common) and 'Futuro033_CRCA2B->Andes220' (extra); both names exist in the bundle."
       ]
@@ -1466,7 +1607,7 @@
             "bytes": 408
           }
         ],
-        "origin": "CEN PLP long-term input set (formerly support/plp/long_term in the gtopt repo): 276 monthly stages (23 years), 28 hydrologies; plpaflce.dat split in 12 xz parts",
+        "origin": "CEN PLP long-term input set: 276 monthly stages (23 years), 28 hydrologies; plpaflce.dat split in 12 xz parts",
         "publisher": "CEN (Coordinador Eléctrico Nacional)"
       },
       "converter": {
@@ -1503,6 +1644,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PLP model bases; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression and splitting of large files into numbered parts; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "1-year cut of the 23-year source: 12 monthly stages = 12 SDDP phases, 120 blocks, hydrology 1, no apertures; boundary cuts via system.future_cost_array (810 cuts); sddp_options.max_iterations = 3 (smoke-test setting).",
         "Same model as the former cen_long_term_1y case (regenerated from source/; identical parquet data and planning JSON up to system.version). The full 23-year horizon is a README variant."
@@ -1702,7 +1853,7 @@
             "bytes": 1306
           }
         ],
-        "origin": "CEN PLP 2-year input set (formerly support/plp/2_years in the gtopt repo): 52 weekly/monthly stages, 68 hydrologies in plpaflce.dat (51-68 simulated)",
+        "origin": "CEN PLP 2-year input set: 52 weekly/monthly stages, 68 hydrologies in plpaflce.dat (51-68 simulated)",
         "publisher": "CEN (Coordinador Eléctrico Nacional)"
       },
       "converter": {
@@ -1737,6 +1888,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PLP model bases; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "4 equiprobable hydrologies (2, 17, 52, 67), 52 stages = 52 SDDP phases, 20 apertures; boundary cuts via system.future_cost_array (1007 cuts).",
         "Replaces the former gtopt_case_2y (hydrologies 51,52) and gtopt_case_2y_fs (first scenario); their commands are in the README Variants section."
@@ -1926,7 +2087,7 @@
             "bytes": 416
           }
         ],
-        "origin": "CEN PLP 5-year input set (formerly support/plp/5_years in the gtopt repo): 72 stages July year 1 - December year 5, 65 hydrologies in plpaflce.dat (36-65 simulated)",
+        "origin": "CEN PLP 5-year input set: 72 stages July year 1 - December year 5, 65 hydrologies in plpaflce.dat (36-65 simulated)",
         "publisher": "CEN (Coordinador Eléctrico Nacional)"
       },
       "converter": {
@@ -1961,6 +2122,16 @@
           "url": "https://www.coordinador.cl"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PLP model bases; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "4 equiprobable hydrologies (16, 17, 19, 48) at about the 65th, 35th, 90th and 10th percentile of total inflow; 72 stages = 72 SDDP phases, 34 apertures; boundary cuts via system.future_cost_array (1665 cuts)."
       ]
@@ -2106,7 +2277,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "c96c30fdbc4e81b68ebb980b6ddf1a82fcdec702",
-        "note": "case JSON taken as committed in gtopt support/luis (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
+        "note": "case JSON produced with an earlier gtopt development revision (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case/ncp_pdd_22jun.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case\" -d .",
@@ -2129,8 +2300,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Daily PSR NCP model (PDD 22-Jun-2026) over a 168-hour horizon, single stage, 1 block per hour.",
         "Terminal water value: system.future_cost_array 'fcf' -> case/boundary_cuts.csv (watervcp single-cut proxy). case/boundary_cuts_gtopt_fcf.csv holds gtopt's own FCF from the two-run pipeline (A/B alternative, not used by default).",
         "Economics: thermal merit costs, water values, inflow-limited run-of-river, Mexico import capped at 200 MW (EOR tie limit)."
@@ -2222,7 +2404,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "c96c30fdbc4e81b68ebb980b6ddf1a82fcdec702",
-        "note": "case JSON taken as committed in gtopt support/luis (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
+        "note": "case JSON produced with an earlier gtopt development revision (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case/sddp_ncp_week.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case\" -d .",
@@ -2244,8 +2426,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Weekly NCP dispatch 21-27 Jun 2026 (short-term weekly program), 168 hourly blocks, single stage; kept under daily_scheduling (dispatch with hourly resolution).",
         "No water-value file shipped: thermal merit costs + import cap only."
       ]
@@ -2309,7 +2502,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAEMARMAX27.raw.xz"
       },
       "run": {
@@ -2332,8 +2525,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), maximum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2397,7 +2601,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAEMARMED27.raw.xz"
       },
       "run": {
@@ -2420,8 +2624,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), medium demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2485,7 +2700,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAEMARMIN27.raw.xz"
       },
       "run": {
@@ -2508,8 +2723,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), minimum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2573,7 +2799,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAESEPMAX26.raw.xz"
       },
       "run": {
@@ -2596,8 +2822,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), maximum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2661,7 +2898,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAESEPMED26.raw.xz"
       },
       "run": {
@@ -2684,8 +2921,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), medium demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2749,7 +2997,7 @@
         ],
         "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
         "converter_last_change": "72aa0476c7f46b3c57e61eaacf301c936875d190",
-        "note": "case JSON taken as committed in gtopt support/luis",
+        "note": "case JSON produced with an earlier gtopt development revision",
         "input": "../source/PAESEPMIN26.raw.xz"
       },
       "run": {
@@ -2772,8 +3020,19 @@
           "url": "https://www.enteoperador.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)",
+          "Ente Operador Regional (EOR)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt psse2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "Self-contained case as committed in gtopt support/luis (no application profile); run as is.",
+        "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), minimum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
       ]
@@ -2911,7 +3170,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2021-2022/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2021-2022/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2021-2022/case/sddp_plp_2021-2022.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2021-2022/case\" -d .",
@@ -2921,7 +3180,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2021-2022 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -2930,6 +3189,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2021-2022; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2021-2022: 12 monthly stages from 2021-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -3077,7 +3346,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2022-2023/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2022-2023/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2022-2023/case/sddp_plp_2022-2023.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2022-2023/case\" -d .",
@@ -3087,7 +3356,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2022-2023 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -3096,6 +3365,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2022-2023; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2022-2023: 12 monthly stages from 2022-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -3253,7 +3532,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2023-2024/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2023-2024/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2023-2024/case/sddp_plp_2023-2024.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2023-2024/case\" -d .",
@@ -3263,7 +3542,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2023-2024 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -3272,6 +3551,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2023-2024; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2023-2024: 12 monthly stages from 2023-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -3424,7 +3713,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2024-2025/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2024-2025/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2024-2025/case/sddp_plp_2024-2025.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2024-2025/case\" -d .",
@@ -3434,7 +3723,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2024-2025 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -3443,6 +3732,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2024-2025; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2024-2025: 12 monthly stages from 2024-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -3600,7 +3899,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2025-2026/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2025-2026/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2025-2026/case/sddp_plp_2025-2026.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2025-2026/case\" -d .",
@@ -3610,7 +3909,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2025-2026 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -3619,6 +3918,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2025-2026; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2025-2026: 12 monthly stages from 2025-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -3796,7 +4105,7 @@
         "flags": [],
         "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
         "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2026-2027/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2026-2027/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2026-2027/case/sddp_plp_2026-2027.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2026-2027/case\" -d .",
@@ -3806,7 +4115,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2026-2027 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -3815,6 +4124,16 @@
           "url": "https://www.amm.org.gt"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Administrador del Mercado Mayorista (AMM)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Administrador del Mercado Mayorista (AMM), Programación de Largo Plazo 2026-2027; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "AMM long-term programme 2026-2027: 12 monthly stages from 2026-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
       ]
@@ -4051,7 +4370,7 @@
         "input": "../source",
         "overlay": "../source/2026",
         "join_parts": true,
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2026/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2026/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2026/case/coes_mrfo_2026.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2026/case\" -d .",
@@ -4061,7 +4380,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2026 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4070,8 +4389,18 @@
           "url": "https://www.coes.org.pe"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Comité de Operación Económica del Sistema Interconectado Nacional (COES)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: COES, Estudio de Verificación del Margen de Reserva Firme Objetivo 2026-2029, Anexo D; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression and splitting of large files into numbered parts (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "VALIDATION PENDING: the expected cost differs substantially from the PSR SDDP results of the source study and the cause is not yet identified; do not use as a validated reproduction.",
+        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2026, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4307,7 +4636,7 @@
         "input": "../source",
         "overlay": "../source/2027",
         "join_parts": true,
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2027/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2027/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2027/case/coes_mrfo_2027.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2027/case\" -d .",
@@ -4317,7 +4646,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2027 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4326,8 +4655,18 @@
           "url": "https://www.coes.org.pe"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Comité de Operación Económica del Sistema Interconectado Nacional (COES)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: COES, Estudio de Verificación del Margen de Reserva Firme Objetivo 2026-2029, Anexo D; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression and splitting of large files into numbered parts (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "VALIDATION PENDING: the expected cost differs substantially from the PSR SDDP results of the source study and the cause is not yet identified; do not use as a validated reproduction.",
+        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2027, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4563,7 +4902,7 @@
         "input": "../source",
         "overlay": "../source/2028",
         "join_parts": true,
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2028/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2028/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2028/case/coes_mrfo_2028.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2028/case\" -d .",
@@ -4573,7 +4912,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2028 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4582,8 +4921,18 @@
           "url": "https://www.coes.org.pe"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Comité de Operación Económica del Sistema Interconectado Nacional (COES)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: COES, Estudio de Verificación del Margen de Reserva Firme Objetivo 2026-2029, Anexo D; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression and splitting of large files into numbered parts (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "VALIDATION PENDING: the expected cost differs substantially from the PSR SDDP results of the source study and the cause is not yet identified; do not use as a validated reproduction.",
+        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2028, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4819,7 +5168,7 @@
         "input": "../source",
         "overlay": "../source/2029",
         "join_parts": true,
-        "note": "sddp2gtopt from the unmerged branch feat/sddp2gtopt-peru; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2029/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2029/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2029/case/coes_mrfo_2029.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2029/case\" -d .",
@@ -4829,7 +5178,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt 2e06ab17f, branch feat/sddp2gtopt-peru (not yet merged into master); any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2029 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4838,8 +5187,18 @@
           "url": "https://www.coes.org.pe"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Comité de Operación Económica del Sistema Interconectado Nacional (COES)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: COES, Estudio de Verificación del Margen de Reserva Firme Objetivo 2026-2029, Anexo D; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression and splitting of large files into numbered parts (only the files of the published archive that the converter reads); case: converted by gtopt sddp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
-        "VALIDATION PENDING: the expected cost differs substantially from the PSR SDDP results of the source study and the cause is not yet identified; do not use as a validated reproduction.",
+        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2029, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4889,7 +5248,7 @@
           "--no-check"
         ],
         "gtopt_revision": "8cfe33d44694f2fa441909ee3e051a315c4e025a",
-        "note": "pp2gtopt with the MATPOWER-fidelity fixes (in-service filter, sgens, negative-x and impedance branches, x = sqrt(vk^2 - vkr^2), PST sign, per-unit reactance), in gtopt since 0218e96e2; needs the matpower extra (pip install -e \"scripts[matpower]\")"
+        "note": "pp2gtopt with the MATPOWER-fidelity fixes (in-service filter, sgens, negative-x and impedance branches, x = sqrt(vk^2 - vkr^2), PST sign, per-unit reactance), in gtopt master of November 2026 or later; needs the matpower extra (pip install -e \"scripts[matpower]\")"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/poland/dc_opf/case3375wp/output && cd ~/gtopt-cases-out/poland/dc_opf/case3375wp/output && gtopt \"$REPO/poland/dc_opf/case3375wp/case/case3375wp.json\" --set input_directory=\"$REPO/poland/dc_opf/case3375wp/case\" -d .",
@@ -4911,6 +5270,17 @@
           "url": "https://matpower.org"
         }
       ],
+      "terms": {
+        "rights_holders": [
+          "Roman Korab, Silesian University of Technology (data author)",
+          "MATPOWER (distributor)"
+        ],
+        "licence": "No explicit licence: MATPOWER's BSD-3-Clause licence does not cover its case files; the data are distributed with MATPOWER with the permission of Roman Korab. MATPOWER asks users of its data files to cite the MATPOWER paper (doi:10.1109/TPWRS.2010.2051168).",
+        "attribution": "Polish system winter 2007-08 evening peak (case3375wp), data by R. Korab (Silesian University of Technology), distributed with MATPOWER 8.1; converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
       "notes": [
         "Single-hour DC OPF snapshot: MATPOWER provides no time series, no unit-commitment or ramp data.",
         "Out-of-service units omitted; 10 negative-load buses become fixed injections; MATPOWER linear costs.",

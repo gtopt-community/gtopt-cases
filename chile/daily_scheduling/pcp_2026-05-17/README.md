@@ -25,10 +25,10 @@ Late autumn; largest battery fleet of the set (41).
 | Horizon | 110 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 251 buses, 321 lines |
 | Units | 1790 generators, 41 batteries, 1093 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 915,043 rows, 1,136,220 cols, 4,057,816 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 915,043 rows, 1,136,220 cols, 4,057,816 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20260517.zip.xz`](source/DATOS20260517.zip.xz) (sha256 `ceb5e533dcaef649…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 37 lines (35 common + 2) |
 

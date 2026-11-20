@@ -25,10 +25,10 @@ Smallest case: 6-day horizon in 107 variable-length blocks.  Good first case to 
 | Horizon | 107 blocks covering 144 h (PLEXOS ST block layout) |
 | Network | 239 buses, 306 lines |
 | Units | 1747 generators, 25 batteries, 1001 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 820,905 rows, 1,035,513 cols, 3,623,480 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 820,905 rows, 1,035,513 cols, 3,623,480 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20251019.zip.xz`](source/DATOS20251019.zip.xz) (sha256 `ab2565568ef5439b…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 39 lines (35 common + 4) |
 

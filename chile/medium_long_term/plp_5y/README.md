@@ -23,16 +23,15 @@ blocks per stage).  Mid-horizon companion of [plp_2y](../plp_2y).
 | Apertures | 34 (every PLP aperture, `-a all`) |
 | Network | 241 buses, 345 lines |
 | Units | 1880 generators, 68 batteries, 10 reservoirs, 177 turbines, 4 flow rights |
-| LP (`--lp-only`) | 3,593,820 rows, 2,781,076 cols, 9,513,040 nnz over 288 (scene, phase) LPs (gtopt `75d9cec1c`) |
+| LP (`--lp-only`) | 3,593,820 rows, 2,781,076 cols, 9,513,040 nnz over 288 (scene, phase) LPs (gtopt development revision `75d9cec1c`) |
 | Method / profile | sddp, no profile (method and SDDP options are in the case JSON) |
 | Future cost | `system.future_cost_array`: `boundary_cuts.csv` (1665 PLP cuts), `mode: phi_expectation` |
-| Converter | `plp2gtopt` from gtopt `75d9cec1c` (converter last changed in `801bf32b3`) |
+| Converter | `plp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 
 ## Files
 
 - `source/` — the PLP input files as used by the CEN (`plp*.dat`,
   `indhor.csv`; xz-compressed, `plp2gtopt` reads them directly).
-  Formerly `support/plp/5_years` in the gtopt repository.
 - `case/` — `gtopt_case_5y.json`, per-class Parquet inputs, `apertures/`,
   `boundary_cuts.csv`, `solvers/` (parameter files, comments removed) and
   `plp2gtopt_state.json` (exact converter invocation and options).

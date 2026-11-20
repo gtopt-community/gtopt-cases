@@ -1,0 +1,44 @@
+name: Data removal request
+description: >-
+  Ask for third-party material to be removed (non-confidential requests;
+  for confidential ones e-mail marcelomatusacuna@gmail.com with the subject
+  "gtopt-cases removal request").
+title: "Data removal request: <case or path>"
+labels: ["data-removal"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        We acknowledge each request within 5 working days and remove the
+        material from `main` promptly.  When required we also rewrite the
+        git history and ask GitHub Support to purge cached views.  This
+        issue is public: do not include confidential information here;
+        e-mail marcelomatusacuna@gmail.com instead.
+  - type: input
+    id: rights_holder
+    attributes:
+      label: Rights holder
+      description: The institution or person holding the rights, and your relation to it.
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Material concerned
+      description: Case ids or paths (e.g. `chile/daily_scheduling/pcp_2025-10-05/source/`).
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: Reason and scope
+      description: What should be removed (source data, derived case, both; current tree only or history too).
+    validations:
+      required: true
+  - type: input
+    id: contact
+    attributes:
+      label: Contact for follow-up
+      description: An e-mail address or other channel (optional; it will be public).
+    validations:
+      required: false

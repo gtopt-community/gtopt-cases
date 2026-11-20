@@ -24,4 +24,4 @@ Licensing contact: <marcelomatusacuna@gmail.com>.
 Reseller and service provider (maintenance and development of GTOpt,
 energy studies and consulting):
 **Black Bear Engineering SpA**
-(<contacto@blackbeareng.cl>) — see [`PROVIDERS.md`](PROVIDERS.md).
+(<contacto@blackbeareng.cl>) — see [`PROVIDERS.md`](https://github.com/gtopt-community/gtopt/blob/master/PROVIDERS.md).

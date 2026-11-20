@@ -11,10 +11,9 @@
 > See [DISCLAIMER.md](../../../../DISCLAIMER.md).
 
 > [!CAUTION]
-> **Validation against the PSR SDDP results is pending** (the expected
-> cost differs substantially and the cause is not yet identified).  See
-> [../README.md](../README.md), which also has the source, data terms
-> (rights: COES), modelling notes and how to regenerate.
+> Conversion not yet validated; use for software testing only.  See
+> [../README.md](../README.md) for the source, data terms (rights: COES),
+> modelling notes and how to regenerate.
 
 | Field | Value |
 |---|---|
@@ -23,9 +22,9 @@
 | Scenarios | 56 historical hydrologies (1966–2021), one scene each |
 | Network | 270 buses, 346 lines (DC, Kirchhoff + losses) |
 | Units | 162 generators, 60 reservoirs |
-| LP (`--lp-only`) | 6,915,664 rows, 14,049,224 cols, 34,917,008 nnz over 672 (scene, phase) LPs (gtopt `75d9cec1ce81`) |
+| LP (`--lp-only`) | 6,915,664 rows, 14,049,224 cols, 34,917,008 nnz over 672 (scene, phase) LPs (gtopt development revision `75d9cec1ce81`) |
 | Inputs | `../source/` (common) + `../source/2028/sddp.dat.xz` |
-| Converter | `sddp2gtopt` from gtopt `2e06ab17f` (branch `feat/sddp2gtopt-peru`, not yet merged) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 
 ## How to run
 

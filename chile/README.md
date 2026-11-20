@@ -16,7 +16,7 @@ operator.
 
 | Application | Folder | CEN source | Converter |
 |---|---|---|---|
-| Daily scheduling | [daily_scheduling/](daily_scheduling/README.md) | PCP — *Programa de Coordinación de Predespacho*, daily PLEXOS model | `plexos2gtopt` |
+| Daily scheduling | [daily_scheduling/](daily_scheduling/README.md) | CEN daily operation programme (PCP), daily PLEXOS model | `plexos2gtopt` |
 | Medium / long term | [medium_long_term/](medium_long_term/README.md) (`plp_2y`, `plp_5y`, `plp_23y`) | PLP — *Programa de Largo Plazo*, hydrothermal SDDP | `plp2gtopt` |
 | Expansion | [expansion/](expansion/README.md) | — | — |
 

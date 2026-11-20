@@ -24,10 +24,10 @@ the source.  A good large-network, small-LP case.
 | Network | 3374 buses, 4161 branches (lines, transformers, 2 phase shifters, 4 impedance branches) |
 | Units | 489 generators: 479 in-service MATPOWER units + 10 fixed injections (buses with negative load) |
 | Demand | 2414 loads, 52,099.2 MW |
-| LP (`--lp-only`) | 4,162 rows, 7,064 cols (gtopt `8cfe33d44`) |
+| LP (`--lp-only`) | 4,162 rows, 7,064 cols (gtopt development revision `8cfe33d44`) |
 | Method / profile | monolithic LP, no profile (self-contained JSON) |
 | Source | [`source/case3375wp.m.xz`](source/case3375wp.m.xz) (MATPOWER 8.1, sha256 of the `.m`: `f814bc31845cfbfb…`) |
-| Converter | `pp2gtopt` (gtopt ≥ `0218e96e2`, MATPOWER-fidelity fixes listed below) |
+| Converter | `pp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (MATPOWER-fidelity fixes listed below; development revision used: `catalog.json`) |
 
 ## Files
 
@@ -93,7 +93,9 @@ licence; attribution as above).  The gtopt tools used to produce it are
 licensed AGPL-3.0-or-later (with the GTOpt Solver Plugin Exception) or
 under the GTOpt Commercial License, see
 [LICENSING.md](../../../LICENSING.md); that licence does not extend to the
-case data.  Everything is provided AS IS: see
+case data.  Any rights the gtopt authors hold in the conversion layer are
+dedicated under CC0-1.0, without granting any right in the source data.
+Everything is provided AS IS: see
 [DISCLAIMER.md](../../../DISCLAIMER.md).
 
 ### Changes made by the conversion
@@ -147,9 +149,9 @@ pp2gtopt -f source/case3375wp.m -o case/case3375wp.json \
 
 `pp2gtopt` reads MATPOWER `.m` files through pandapower; install the
 `matpower` extra of the gtopt scripts (`pip install -e "scripts[matpower]"`,
-which brings `matpowercaseframes`).  The case was produced with gtopt
-`8cfe33d44`, whose `pp2gtopt` includes the MATPOWER-fidelity fixes
-(since `0218e96e2`): skip out-of-service units/branches, keep pandapower static
+which brings `matpowercaseframes`).  The case was produced with a gtopt
+development revision (`8cfe33d44`) whose `pp2gtopt` includes the
+MATPOWER-fidelity fixes, as does gtopt master of November 2026 or later: skip out-of-service units/branches, keep pandapower static
 generators (`sgen`, every MATPOWER generator after the first on a bus) and
 negative-reactance and `impedance` branches, use the series reactance
 `x = √(vk² − vkr²)` of transformers instead of `|z|`, undo pandapower's
@@ -174,8 +176,8 @@ without these fixes produces a **different** (incomplete) case.
 The source has no time series, so there is no longer horizon to build from
 it alone.  If you have hourly load / generation profiles for the Polish
 system from another source, the time-series mode of `pp2gtopt` (gtopt
-branch `feat/pp2gtopt-profiles`, commit `7ce5093f2`, not yet in a gtopt
-release) turns this network into one multi-block case:
+master of November 2026 or later) turns this network into one
+multi-block case:
 
 ```bash
 # profiles.csv: one row per hour; columns e.g. load@all (system MW),

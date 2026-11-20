@@ -1,0 +1,12 @@
+# Binary data: no textual diffs.
+*.xz       binary -diff
+*.parquet  binary -diff
+*.zip      binary -diff
+
+# Generated gtopt case JSON (collapsed in GitHub diffs, excluded from
+# language statistics); the hand-maintained catalog is not generated.
+**/case/**/*.json  linguist-generated=true
+catalog.json   -linguist-generated
+
+# Local git hooks are not part of release archives.
+.githooks  export-ignore

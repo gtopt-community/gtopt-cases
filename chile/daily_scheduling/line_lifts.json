@@ -1,7 +1,7 @@
 {
   "_comment": "Lines that PLEXOS dispatches above their stated rating in the CEN PCP solutions (capacity expanded outside the model). Passed to plexos2gtopt --lift-line-caps so the EL hard caps become soft bands.",
   "provenance": {
-    "source": "gtopt repo support/plexos/per_case_lifts.json (added in gtopt commit ddec48e2e, 2026-07-04)",
+    "source": "per-case lift lists captured with the gtopt PLEXOS tooling (gtopt development revision ddec48e2e, 2026-07-04; pre-publication history, may not exist in the public repository)",
     "method": "Captured from the PLEXOS solution (RES*.accdb) of each PCP day: lines whose PLEXOS flow exceeds the rating in any block. 'common' = intersection over the 14 days (equals the plexos2gtopt default --lift-line-caps list); 'union' = union over the 14 days; 'per_case' = full list per day (common + that day's extras).",
     "used_by": "tools/get_case.py (--lifts case|common|union)"
   },

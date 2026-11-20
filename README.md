@@ -1,5 +1,21 @@
 # gtopt-cases
 
+> [!IMPORTANT]
+> **Licensing at a glance**
+> - **Data** (`source/`, `case/`): third-party data; **this repository
+>   grants no licence** over it.  The rights stay with the publishers: CEN
+>   (Chile), AMM and EOR (Guatemala), COES (Peru), and R. Korab / MATPOWER
+>   (Poland).
+> - **Tools** (`tools/`): AGPL-3.0-or-later with the GTOpt Solver Plugin
+>   Exception, or the GTOpt Commercial License.
+> - **Conversion layer** written by the gtopt authors (layout, profiles,
+>   line lifts, catalog, documentation): CC0-1.0, to the extent they hold
+>   any rights in it.
+>
+> Details in [`LICENSING.md`](LICENSING.md) and
+> [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md); removal requests:
+> [below](#removal-requests).
+
 > [!WARNING]
 > **Provided AS IS — not validated by the publishing institutions.**  These
 > cases were built with gtopt's own conversion tools and verified only as
@@ -29,9 +45,11 @@ Cases are organised by **country first, then application**;
 gtopt-cases/
 ├── README.md            this index
 ├── DISCLAIMER.md        AS-IS terms: read before using any case
+├── LICENSING.md         who holds which rights; LICENSES/ has the texts
+├── THIRD_PARTY_DATA.md  data sources, rights holders, attribution
 ├── catalog.json         one entry per case: size, source (+sha256), converter
 │                        revision and exact flags, profile, run command,
-│                        rights holders, notes
+│                        rights holders and terms, notes
 ├── profiles/            shared gtopt options per application
 ├── tools/               get_case.py: download sources + run the converters
 ├── chile/               Sistema Eléctrico Nacional (SEN), data from the CEN
@@ -120,9 +138,7 @@ See [guatemala/README.md](guatemala/README.md).
 ### Peru
 
 > [!CAUTION]
-> Validation of the Peruvian cases against the PSR SDDP results is
-> **pending** (the expected cost differs substantially; cause not yet
-> identified).  See the case README.
+> Conversion not yet validated; use for software testing only.
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
@@ -153,7 +169,7 @@ No case yet; see [chile/expansion/README.md](chile/expansion/README.md).
 |---|---|---|---:|---:|---:|
 | [Chile](chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
 | [Guatemala](guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
-| [Peru](peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP (validation pending) | — |
+| [Peru](peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP (not yet validated) | — |
 | [Poland](poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
 
 
@@ -201,9 +217,15 @@ git clone --depth 1 https://github.com/gtopt-community/gtopt-cases.git
 
 ## Contributing data: size and hygiene rules
 
+See [`CONTRIBUTING.md`](CONTRIBUTING.md) for how to propose a case and the
+data provenance and licence checklist.
+
 `tools/check_repo.sh` runs in CI on every push and pull request (and,
 after `git config core.hooksPath .githooks`, before each local commit).
 It rejects:
+
+- a `source/` file whose sha256 or size differs from `catalog.json`, or a
+  tracked `source/` file missing from the catalog (`NOTICE.md` excepted);
 
 - any file larger than 10 MB (compress with `xz -6`, or split the file
   into `<name>.<N>.xz` parts, which `tools/get_case.py` joins back);
@@ -258,8 +280,8 @@ Style of `tools/`: `ruff format tools && ruff check tools`.
   (`DATOS*.zip.xz`).  The PLEXOS solution (`RES*.zip`) is a result and is
   not redistributed; it is needed only to rebuild a case (block layout) and
   is fetched from the CEN portal by `tools/get_case.py`.
-* **Medium/long term**: CEN PLP input sets (formerly `support/plp/` of the
-  gtopt repository), kept in `source/` (xz) and converted with `plp2gtopt`.
+* **Medium/long term**: CEN PLP input sets, kept in `source/` (xz) and
+  converted with `plp2gtopt` from gtopt.
 * **Guatemala**: AMM PSR NCP models and PSS®E study files, converted with
   `sddp2gtopt` / `psse2gtopt` in the gtopt repository; inputs kept in
   `source/` (xz).
@@ -269,16 +291,20 @@ Style of `tools/`: `ruff format tools && ruff check tools`.
   (xz), archives not redistributed.
 * **Peru**: COES PSR SDDP base cases (`DatosSDDP_CasoBase.zip`, Anexo D of
   the MRFO 2026-2029 study), converted with `sddp2gtopt`; converter inputs
-  kept once in `source/` (xz), archive not redistributed.  The Guatemalan
-  SDDP and Peruvian cases need `sddp2gtopt` from the gtopt branch
-  `feat/sddp2gtopt-peru` (`2e06ab17f`, not yet merged) to be rebuilt.
+  kept once in `source/` (xz), archive not redistributed.
 
 * **Poland**: MATPOWER 8.1 `data/case3375wp.m` (data by R. Korab),
-  kept unchanged in `source/` (xz) and converted with `pp2gtopt` (gtopt
-  master, `matpower` extra of the scripts).
+  kept unchanged in `source/` (xz) and converted with `pp2gtopt` (gtopt,
+  `matpower` extra of the scripts).
 
-* The converter revision, exact flags and file hashes of each case are in
-  `catalog.json`.
+* Every case was converted with the named tool (`plexos2gtopt`,
+  `plp2gtopt`, `sddp2gtopt`, `psse2gtopt`, `pp2gtopt`) from gtopt; rebuild
+  with gtopt master of November 2026 or later.
+* The exact flags and file hashes of each case are in `catalog.json`.  Its
+  `gtopt_revision` (and `converter_last_change`) fields record the gtopt
+  development revision used for the conversion (pre-publication history;
+  may not exist in the public repository); the same holds for the gtopt
+  revisions quoted in the case READMEs.
 
 The CEN portal only serves Chilean IP addresses; from abroad, download
 through a relay/VPN in Chile or copy the files by hand (`DATOS*.zip.xz`
@@ -286,11 +312,43 @@ into the case `source/`, the solution bundle via `--res`).
 
 ## Licensing and data terms
 
-The source data and the cases derived from them belong to the institutions
-that published them (CEN for Chile, AMM/EOR for Guatemala, COES for Peru,
-R. Korab / MATPOWER for Poland), which keep the rights
-on the original data; check their terms of use before redistributing them.
-The gtopt-specific files (tools, profiles, catalog, documentation) follow the
-gtopt licence: AGPL-3.0-or-later with the GTOpt Solver Plugin Exception, or
-the GTOpt Commercial License. See [`LICENSING.md`](LICENSING.md) and
-[`DISCLAIMER.md`](DISCLAIMER.md).
+This repository holds third-party data and a thin layer added by the gtopt
+authors; they are under different terms.
+
+- **`source/`**: third-party data, redistributed as published and
+  unmodified except for xz compression and, for large files, splitting
+  into numbered parts.  **No licence is granted** by this repository.
+- **`case/`**: derived from that data by the gtopt conversion tools; the
+  cases remain subject to the rights and terms of the publishers.
+- **Rights holders**: Coordinador Eléctrico Nacional (CEN), Chile;
+  Administrador del Mercado Mayorista (AMM), Guatemala; Ente Operador
+  Regional (EOR), Central America; Comité de Operación Económica del
+  Sistema Interconectado Nacional (COES), Peru; Roman Korab, Silesian
+  University of Technology, whose data are distributed by MATPOWER.
+  Sources, terms and the attribution to give:
+  [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md).
+- **Conversion layer**: to the extent the gtopt authors hold any rights in
+  what they add (the file layout, `profiles/`, line lifts, solver
+  parameter files, `catalog.json`, the READMEs, `NOTICE.md` files and
+  other documentation and metadata), they dedicate those rights to the
+  public domain under **CC0-1.0**
+  ([`LICENSES/CC0-1.0.txt`](LICENSES/CC0-1.0.txt)).  This dedication
+  grants no right in the third-party data.
+- **Tools** (`tools/`, `.githooks/`): the gtopt licence,
+  AGPL-3.0-or-later with the GTOpt Solver Plugin Exception, or the GTOpt
+  Commercial License.
+
+This statement is not legal advice.  Everything is provided **AS IS**,
+without warranty of any kind; see [`DISCLAIMER.md`](DISCLAIMER.md).
+
+## Removal requests
+
+If you are a rights holder and object to the redistribution of any
+material here, e-mail <marcelomatusacuna@gmail.com> with the subject
+**"gtopt-cases removal request"**; for non-confidential requests you may
+instead open an issue with the
+[data removal form](https://github.com/gtopt-community/gtopt-cases/issues/new?template=data-removal.yml).
+We acknowledge each request within 5 working days and remove the material
+from `main` promptly.  When required, we also rewrite the git history and
+ask GitHub Support to purge cached views; the maintainers bypass the
+main-branch protection ruleset only for that purpose.

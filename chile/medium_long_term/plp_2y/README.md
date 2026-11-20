@@ -24,17 +24,17 @@ irrigation agreements (`plplajam.dat`, `plpmaulen.dat`).
 | Apertures | 20 (every PLP aperture, `-a all`) |
 | Network | 245 buses, 343 lines |
 | Units | 1892 generators, 112 batteries, 10 reservoirs, 176 turbines, 4 flow rights |
-| LP (`--lp-only`) | 4,279,344 rows, 3,237,404 cols, 11,166,608 nnz over 208 (scene, phase) LPs (gtopt `75d9cec1c`) |
+| LP (`--lp-only`) | 4,279,344 rows, 3,237,404 cols, 11,166,608 nnz over 208 (scene, phase) LPs (gtopt development revision `75d9cec1c`) |
 | Method / profile | sddp, no profile (method and SDDP options are in the case JSON) |
 | Future cost | `system.future_cost_array`: `boundary_cuts.csv` (1007 PLP cuts), `mode: phi_expectation` |
-| Converter | `plp2gtopt` from gtopt `75d9cec1c` (converter last changed in `801bf32b3`) |
+| Converter | `plp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 
 ## Files
 
 - `source/` — the PLP input files as used by the CEN (`plp*.dat`,
   `indhor.csv`, `centipo.csv`; xz-compressed, `plp2gtopt` reads them
   directly) and `run_plp_cen65_*.sh`, the environment flags of the PLP
-  run.  Formerly `support/plp/2_years` in the gtopt repository.
+  run.
 - `case/` — `gtopt_case_2y.json`, per-class Parquet inputs, `apertures/`,
   `boundary_cuts.csv`, `solvers/` (parameter files, comments removed) and
   `plp2gtopt_state.json` (exact converter invocation and options).

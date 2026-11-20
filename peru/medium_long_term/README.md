@@ -18,5 +18,4 @@ study.  The inputs, which differ between years only in `sddp.dat`, are
 stored once in `coes_mrfo_2026-2029/source/`.
 
 > [!CAUTION]
-> **Validation against the PSR SDDP results is pending**: the expected
-> cost differs substantially and the cause is not yet identified.
+> Conversion not yet validated; use for software testing only.

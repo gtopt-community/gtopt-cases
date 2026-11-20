@@ -24,9 +24,9 @@ series) and models the DC network with losses.
 | Horizon | 12 monthly stages = 12 SDDP phases, 108 blocks, 8,784 h, from 2023-05 |
 | Scenarios | 1 (the study's single hydrology) |
 | Network | 461 buses, 519 lines |
-| LP (`--lp-only`) | 190,836 rows, 375,217 cols, 847,405 nnz over 12 phase LPs (gtopt `75d9cec1ce81`) |
+| LP (`--lp-only`) | 190,836 rows, 375,217 cols, 847,405 nnz over 12 phase LPs (gtopt development revision `75d9cec1ce81`) |
 | Method / profile | sddp, no profile (options in the case JSON) |
-| Converter | `sddp2gtopt` from gtopt `2e06ab17f` (branch `feat/sddp2gtopt-peru`, not yet merged into gtopt master) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 
 ## Source and data terms
 
@@ -72,7 +72,7 @@ gtopt "$C/sddp_plp_2023-2024.json" --set input_directory="$C" -d . \
 
 ## How to regenerate
 
-With `sddp2gtopt` from gtopt `2e06ab17f` or later (it reads the `.xz`
+With `sddp2gtopt` from gtopt master of November 2026 or later (it reads the `.xz`
 files directly), from this folder:
 
 ```bash

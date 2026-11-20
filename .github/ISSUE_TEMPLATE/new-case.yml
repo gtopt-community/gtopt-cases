@@ -1,0 +1,55 @@
+name: Propose a new case
+description: Suggest a publicly available power-system data set to add as a gtopt case.
+title: "New case: <country>/<application>/<case>"
+labels: ["new-case"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read [CONTRIBUTING.md](https://github.com/gtopt-community/gtopt-cases/blob/main/CONTRIBUTING.md) first.  This
+        repository publishes **inputs only** (no results) and only data
+        whose publisher made them publicly available.
+  - type: input
+    id: case
+    attributes:
+      label: Case path
+      description: "`<country>/<application>/<case>`, e.g. `colombia/medium_long_term/xm_2027`."
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Public source URL
+    validations:
+      required: true
+  - type: input
+    id: rights_holder
+    attributes:
+      label: Rights holder / publisher
+    validations:
+      required: true
+  - type: textarea
+    id: terms
+    attributes:
+      label: Licence or terms of use
+      description: Quote the publisher's terms, or state that none are published, with a link.
+    validations:
+      required: true
+  - type: input
+    id: converter
+    attributes:
+      label: gtopt converter
+      description: e.g. plexos2gtopt, plp2gtopt, sddp2gtopt, psse2gtopt, pp2gtopt.
+    validations:
+      required: false
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: The data are publicly available from the publisher.
+          required: true
+        - label: The data contain no personal data.
+          required: true
+        - label: Only inputs would be published (no results, logs or solutions).
+          required: true

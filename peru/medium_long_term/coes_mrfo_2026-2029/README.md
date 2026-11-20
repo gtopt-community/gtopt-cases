@@ -11,11 +11,7 @@
 > See [DISCLAIMER.md](../../../DISCLAIMER.md).
 
 > [!CAUTION]
-> **Validation against the PSR SDDP results is pending.**  The expected
-> operating cost that gtopt obtains for these cases differs substantially
-> from the one reported by the source PSR SDDP study, and the cause has not
-> yet been identified.  Until this is resolved, the cases are a conversion
-> benchmark only, **not** a validated reproduction of the COES study.
+> Conversion not yet validated; use for software testing only.
 
 Four one-year hydrothermal cases of the Peruvian SEIN, converted with
 `sddp2gtopt` from the PSR SDDP base cases of the COES study *Estudio de
@@ -93,10 +89,9 @@ gtopt "$C/coes_mrfo_$Y.json" --set input_directory="$C" -d . \
 
 ## How to regenerate
 
-The converter is `sddp2gtopt` from gtopt **`2e06ab17f`** (branch
-`feat/sddp2gtopt-peru`, **not yet merged into gtopt master**); use that
-revision or a later one that includes it.  Running the
-cases needs only a recent gtopt.
+The cases were converted with `sddp2gtopt` from gtopt; rebuild with gtopt
+master of November 2026 or later.  Running the cases needs only a recent
+gtopt.
 
 ```bash
 tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2027 --out <dir outside the repo>

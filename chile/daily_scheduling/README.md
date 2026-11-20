@@ -19,8 +19,8 @@
 > replicate it; they are not gtopt's recommended defaults for daily
 > scheduling.
 
-Each case is one day of the CEN *Programa de Coordinación de Predespacho*
-(PCP): a security-constrained unit commitment of the whole SEN over a
+Each case is one day of the CEN daily operation programme (PCP): a
+security-constrained unit commitment of the whole SEN over a
 6–7 day horizon (the first day is the program; the rest is look-ahead),
 with DC power flow (Kirchhoff), piecewise line losses, reserves, hydro
 cascades with end-of-horizon water values (boundary cuts), batteries and the

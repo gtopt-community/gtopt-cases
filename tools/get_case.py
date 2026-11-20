@@ -122,9 +122,13 @@ def postprocess(raw: Path, dest: Path, name: str, profile: Path | None) -> Path:
         strip(case.setdefault("options", {}), load(profile).get("options", {}), "")
     if conflicts:
         sys.exit("profile would change the model:\n  " + "\n  ".join(conflicts))
+    notice = dest / "NOTICE.md"  # rights notice: kept across rebuilds
+    kept = notice.read_bytes() if notice.is_file() else None
     if dest.exists():
         shutil.rmtree(dest)
     dest.mkdir(parents=True)
+    if kept is not None:
+        notice.write_bytes(kept)
     for item in raw.iterdir():
         if item.name in DROP or item == jsons[0]:
             continue

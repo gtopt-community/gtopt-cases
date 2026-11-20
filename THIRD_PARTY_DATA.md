@@ -3,17 +3,30 @@
 Every case in this repository is derived from data published by third
 parties.  This file lists **all** data sources, their licence or terms of
 use, and the attribution to give.  It complements
-[`LICENSING.md`](LICENSING.md) (the gtopt tools and documentation are
-AGPL-3.0-or-later + GTOpt Solver Plugin Exception, or the GTOpt Commercial
-License; **that licence does not extend to the case data**) and
+[`LICENSING.md`](LICENSING.md) (the gtopt tools are AGPL-3.0-or-later +
+GTOpt Solver Plugin Exception, or the GTOpt Commercial License, and the
+gtopt-authored conversion layer is CC0-1.0; **neither extends to the case
+data**) and
 [`DISCLAIMER.md`](DISCLAIMER.md) (all cases are provided AS IS, not
 validated by the publishers, and must never be used as a reference for
 official operation analysis or financial analysis).
 
 All rights to the original data belong to their authors and/or the
-publishing institutions.  If you are a rights holder and object to the
-redistribution of any material, please open an issue and it will be
-removed.
+publishing institutions.  `source/` holds the data unmodified except for
+xz compression and splitting into parts; `case/` holds gtopt conversions
+derived from it, which remain subject to the publishers' rights; no
+licence is granted over either.  The conversion layer added by the gtopt
+authors is CC0-1.0, without granting any right in the third-party data.
+The full rights statement is in [`LICENSING.md`](LICENSING.md); per-case
+terms are in each `source/NOTICE.md`, `case/NOTICE.md` and the `terms`
+object of [`catalog.json`](catalog.json).  This is not legal advice.
+
+**Removal requests**: e-mail <marcelomatusacuna@gmail.com> with the
+subject "gtopt-cases removal request" (or, for non-confidential requests,
+open an issue with the data removal form).  We acknowledge within 5
+working days, remove the material from `main` promptly and, when required,
+rewrite the git history and ask GitHub Support to purge cached views; see
+[`DISCLAIMER.md`](DISCLAIMER.md#removal-requests).
 
 ## Summary
 

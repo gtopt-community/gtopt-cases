@@ -24,17 +24,17 @@ committed case, `cen_long_term_1y`, is its **first year**; the full
 | Hydrologies | 1 scenario: hydrology 1 (of 28); no apertures (`-a 0`) |
 | Network | 339 buses, 449 lines |
 | Units | 1628 generators, 10 reservoirs, 156 turbines, 3 flow rights |
-| LP (`--lp-only`) | 673,493 rows, 472,250 cols, 1,693,693 nnz over 12 phase LPs (gtopt `75d9cec1c`) |
+| LP (`--lp-only`) | 673,493 rows, 472,250 cols, 1,693,693 nnz over 12 phase LPs (gtopt development revision `75d9cec1c`) |
 | Method / profile | sddp, no profile (method and SDDP options are in the case JSON; `sddp_options.max_iterations = 3`) |
 | Future cost | `system.future_cost_array`: `boundary_cuts.csv` (810 PLP cuts), `mode: phi_expectation` |
-| Converter | `plp2gtopt` from gtopt `75d9cec1c` (converter last changed in `801bf32b3`) |
+| Converter | `plp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 
 ## Files
 
 - `source/` — the PLP input files as used by the CEN (`plp*.dat`,
   `indhor.csv`), xz-compressed; `plpaflce.dat` is split into 12 parts
   (`plpaflce.dat.1.xz` … `.12.xz`).  `plp2gtopt` reads both forms
-  directly.  Formerly `support/plp/long_term` in the gtopt repository.
+  directly.
 - `case/` — `cen_long_term_1y.json`, per-class Parquet inputs,
   `boundary_cuts.csv`, `solvers/` (parameter files, comments removed) and
   `plp2gtopt_state.json` (exact converter invocation and options).

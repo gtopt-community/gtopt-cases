@@ -1,0 +1,27 @@
+LicenseRef-third-party-no-licence
+
+Third-party data: no licence granted by this repository.
+
+Files marked with this identifier are data published by a third party
+(the rights holder named in the SPDX-FileCopyrightText of REUSE.toml, in
+catalog.json and in THIRD_PARTY_DATA.md), or derived from such data.
+
+- Files in a `source/` directory are redistributed as published by the
+  rights holder, unmodified except for xz compression and, for large
+  files, splitting into numbered parts.
+- Files in a `case/` directory are derived from that data by the gtopt
+  conversion tools and remain subject to the rights and terms of the
+  rights holder.
+
+The publisher has stated no licence for this data, and the gtopt authors
+grant none: all rights remain with the rights holder.  Any use beyond
+what applicable law permits without a licence requires the permission
+of the rights holder.  Where a file is also marked CC0-1.0, that
+dedication covers only the conversion layer added by the gtopt authors
+and grants no right in the third-party data.
+
+The data are provided AS IS, without warranty of any kind; see
+DISCLAIMER.md.  This text is not legal advice.
+
+Removal requests: marcelomatusacuna@gmail.com, subject
+"gtopt-cases removal request" (see DISCLAIMER.md).

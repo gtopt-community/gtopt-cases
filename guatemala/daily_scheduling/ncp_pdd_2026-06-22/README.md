@@ -16,11 +16,11 @@
 | Horizon | 168 blocks covering 168 h, 1 stage, 1 scenario |
 | Network | 830 buses, 955 lines |
 | Units | 230 generators, 0 batteries |
-| LP (`--lp-only`) | 192,056 rows, 302,930 cols, 600,446 nnz (gtopt 3b70b4ee9eca-dirty) |
+| LP (`--lp-only`) | 192,056 rows, 302,930 cols, 600,446 nnz (gtopt development revision `3b70b4ee9eca`, local build) |
 | Method / profile | monolithic, no profile (self-contained JSON) |
 | Source | `source/PRECIOSMEX.csv.xz`, `source/RESTMEX.csv.xz`, `source/Volt.dat.xz`, `source/ccombuGU.dat.xz`, `source/cgndgu.dat.xz`, `source/chidroGU.dat.xz`, `source/commith.dat.xz`, `source/cpdexbus.dat.xz`, `source/cpgndgu.dat.xz`, `source/cprmxhgu_u.dat.xz`, `source/cprmxtgu_u.dat.xz`, `source/ctermigu.dat.xz`, `source/dbus.dat.xz`, `source/dcirc.dat.xz`, `source/gndsitegu.dat.xz`, `source/inflow.csv.xz`, `source/sddp.dat.xz`, `source/sistem.dat.xz`, `source/volfincp.csv.xz`, `source/watervcp.csv.xz` |
 | Origin | AMM PSR NCP daily program PDD_22JUN2026_V5.29.b.rar (not redistributed) |
-| Converter | `sddp2gtopt` from gtopt `cbb030aaa` (converter last changed in `c96c30fdb`) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--import-limit 200` |
 
 ## How to run
@@ -58,8 +58,8 @@ gtopt_check_cases --repo "$REPO" --only ncp_pdd_2026-06-22    # LP only: rows/co
 
 ### Regenerate `case/` from `source/`
 
-The case JSON is taken as committed in the gtopt repository
-(`support/luis`).  To regenerate it with the installed converter and the
+The case JSON was produced with an earlier gtopt development revision.  To
+regenerate it with the installed converter and the
 flags pinned in `catalog.json`:
 
 ```bash
@@ -71,7 +71,7 @@ differ from the committed case; check it with `gtopt_check_cases`.
 
 ## Notes
 
-- Self-contained case as committed in gtopt support/luis (no application profile); run as is.
+- Self-contained case (no application profile); run as is.
 - Daily PSR NCP model (PDD 22-Jun-2026) over a 168-hour horizon, single stage, 1 block per hour.
 - Terminal water value: system.future_cost_array 'fcf' -> case/boundary_cuts.csv (watervcp single-cut proxy). case/boundary_cuts_gtopt_fcf.csv holds gtopt's own FCF from the two-run pipeline (A/B alternative, not used by default).
 - Economics: thermal merit costs, water values, inflow-limited run-of-river, Mexico import capped at 200 MW (EOR tie limit).

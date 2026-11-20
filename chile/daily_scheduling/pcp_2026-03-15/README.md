@@ -25,10 +25,10 @@ Autumn transition; extra lifts on the central 220 kV corridor (Los Vilos–Nogal
 | Horizon | 132 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 246 buses, 315 lines |
 | Units | 1768 generators, 33 batteries, 1066 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 1,066,186 rows, 1,303,587 cols, 4,687,564 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 1,066,186 rows, 1,303,587 cols, 4,687,564 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20260315.zip.xz`](source/DATOS20260315.zip.xz) (sha256 `c2050ffb4cf2e8e0…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 42 lines (35 common + 7) |
 

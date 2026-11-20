@@ -21,10 +21,7 @@ Sistema Interconectado Nacional*), the system operator.
 | Expansion | — | — | — |
 
 > [!CAUTION]
-> **Validation against the PSR SDDP results is pending**: the expected
-> cost of the gtopt cases differs substantially from the source study
-> and the cause is not yet identified.  See
-> [medium_long_term/coes_mrfo_2026-2029/README.md](medium_long_term/coes_mrfo_2026-2029/README.md).
+> Conversion not yet validated; use for software testing only.
 
 ## Provenance and rights
 

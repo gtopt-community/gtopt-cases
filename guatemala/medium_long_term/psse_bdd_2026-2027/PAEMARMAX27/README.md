@@ -16,11 +16,11 @@
 | Horizon | 1 blocks covering 1 h, 1 stage, 1 scenario |
 | Network | 877 buses, 948 lines |
 | Units | 121 generators, 0 batteries |
-| LP (`--lp-only`) | 949 rows, 1,329 cols, 2,751 nnz (gtopt 3b70b4ee9eca-dirty) |
+| LP (`--lp-only`) | 949 rows, 1,329 cols, 2,751 nnz (gtopt development revision `3b70b4ee9eca`, local build) |
 | Method / profile | monolithic, no profile (self-contained JSON) |
 | Source | `../source/LDM Marzo 2027.xlsx.xz`, `../source/Nomenclatura.xls.xz`, `../source/PAEMARMAX27.raw.xz` |
 | Origin | AMM long-term study 'BDD ESO PLP AE MAY26-ABR27 Definitiva.7z' (PSS/E v33 network + AMM spreadsheets; archive not redistributed) |
-| Converter | `psse2gtopt` from gtopt `cbb030aaa` (converter last changed in `72aa0476c`) |
+| Converter | `psse2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--nomenclatura Nomenclatura.xls.xz --ldm LDM Marzo 2027.xlsx.xz --rating-set A` |
 
 ## How to run
@@ -58,8 +58,8 @@ gtopt_check_cases --repo "$REPO" --only PAEMARMAX27    # LP only: rows/cols/nnz
 
 ### Regenerate `case/` from `source/`
 
-The case JSON is taken as committed in the gtopt repository
-(`support/luis`).  To regenerate it with the installed converter and the
+The case JSON was produced with an earlier gtopt development revision.  To
+regenerate it with the installed converter and the
 flags pinned in `catalog.json`:
 
 ```bash
@@ -71,6 +71,6 @@ differ from the committed case; check it with `gtopt_check_cases`.
 
 ## Notes
 
-- Self-contained case as committed in gtopt support/luis (no application profile); run as is.
+- Self-contained case (no application profile); run as is.
 - Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), maximum demand; 1 stage / 1 block / 1 scenario.
 - Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name).

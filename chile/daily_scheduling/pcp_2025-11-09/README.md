@@ -25,10 +25,10 @@
 | Horizon | 118 blocks covering 144 h (PLEXOS ST block layout) |
 | Network | 239 buses, 307 lines |
 | Units | 1751 generators, 25 batteries, 1005 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 910,149 rows, 1,140,367 cols, 3,989,755 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 910,149 rows, 1,140,367 cols, 3,989,755 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20251109.zip.xz`](source/DATOS20251109.zip.xz) (sha256 `2d23b888f0533bb5…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 40 lines (35 common + 5) |
 

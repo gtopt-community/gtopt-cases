@@ -25,10 +25,10 @@ Autumn week, 110 blocks.  Expect a harder MIP than the other days: allow the ful
 | Horizon | 110 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 247 buses, 316 lines |
 | Units | 1773 generators, 36 batteries, 1097 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 906,263 rows, 1,109,851 cols, 3,986,400 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 906,263 rows, 1,109,851 cols, 3,986,400 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20260412.zip.xz`](source/DATOS20260412.zip.xz) (sha256 `6b50de4a4fbb679b…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 38 lines (35 common + 3) |
 

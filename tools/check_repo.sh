@@ -9,6 +9,8 @@
 #   * inputs only: no results/, output/, logs/ directories, no *.log,
 #     no solver output (*.sol, *.lp dumps) and no Python caches;
 #   * no absolute home paths (/home/..., /Users/..., C:\Users\...) in text files;
+#   * every source/ file matches its sha256/bytes in catalog.json, and no
+#     tracked source/ file is missing from the catalog (NOTICE.md excepted);
 #   * the whole tracked tree stays under MAX_TREE_MB (default 400 MB).
 set -euo pipefail
 
@@ -53,6 +55,33 @@ if (( ${#text_files[@]} )); then
     echo "$hits" >&2
   fi
 fi
+
+# source/ integrity: every catalogued file matches its sha256/bytes, and
+# every tracked file under a source/ directory is catalogued (NOTICE.md
+# excepted).
+python3 - <<'PY' || fail=1
+import hashlib, json, os, subprocess, sys
+cat = json.load(open("catalog.json", encoding="utf-8"))
+tracked = set(subprocess.run(["git", "ls-files", "-z"], capture_output=True,
+                             text=True, check=True).stdout.split("\0"))
+listed, bad = set(), []
+for c in cat["cases"]:
+    for f in c["source"]["files"]:
+        p = os.path.normpath(os.path.join(c["path"], f["path"]))
+        if p in listed:
+            continue
+        listed.add(p)
+        if p not in tracked or not os.path.isfile(p):
+            bad.append(f"{p}: in catalog.json but not tracked")
+        elif (os.path.getsize(p) != f["bytes"] or hashlib.sha256(
+                open(p, "rb").read()).hexdigest() != f["sha256"]):
+            bad.append(f"{p}: sha256/bytes differ from catalog.json")
+bad += [f"{p}: under source/ but not in catalog.json" for p in sorted(tracked - listed)
+        if "/source/" in p and os.path.basename(p) != "NOTICE.md"]
+for b in bad:
+    print(f"error: {b}", file=sys.stderr)
+sys.exit(1 if bad else 0)
+PY
 
 if [[ "$mode" == "tree" ]]; then
   total=$(git ls-files -z | xargs -0 stat -c %s -- 2>/dev/null | awk '{s+=$1} END {print int(s/1024/1024)}')

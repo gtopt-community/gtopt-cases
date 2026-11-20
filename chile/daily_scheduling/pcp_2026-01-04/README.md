@@ -25,10 +25,10 @@ Mid-summer week; 29 batteries.
 | Horizon | 132 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 243 buses, 311 lines |
 | Units | 1763 generators, 29 batteries, 1026 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 1,037,557 rows, 1,302,031 cols, 4,602,228 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 1,037,557 rows, 1,302,031 cols, 4,602,228 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20260104.zip.xz`](source/DATOS20260104.zip.xz) (sha256 `6e1bf9d6f6f63144…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 39 lines (35 common + 4) |
 

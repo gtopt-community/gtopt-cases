@@ -25,10 +25,10 @@ Mid-summer week with the shortest extra-lift list (2 lines).
 | Horizon | 132 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 243 buses, 311 lines |
 | Units | 1765 generators, 29 batteries, 1034 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 1,041,981 rows, 1,304,470 cols, 4,634,096 nnz (gtopt 3b70b4ee9eca) |
+| LP (`--lp-only`) | 1,041,981 rows, 1,304,470 cols, 4,634,096 nnz (gtopt development revision `3b70b4ee9eca`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20260118.zip.xz`](source/DATOS20260118.zip.xz) (sha256 `d52a4f69bc6fa667…`) |
-| Converter | `plexos2gtopt` from gtopt `d92e4cf14` (converter last changed in `53079a43f`) |
+| Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
 | Flags | `--no-check --write-out all --plexos-legacy --no-battery-efin-pin --line-losses-mode piecewise --loss-cost-eps 0` |
 | Line lifts | `--lifts case`: 37 lines (35 common + 2) |
 

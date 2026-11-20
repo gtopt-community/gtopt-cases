@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Confidential data removal request
+    url: https://github.com/gtopt-community/gtopt-cases#removal-requests
+    about: >-
+      Rights holders: e-mail marcelomatusacuna@gmail.com with the subject "gtopt-cases removal
+      request" for confidential requests.  We acknowledge within 5 working
+      days.
+  - name: gtopt solver issues
+    url: https://github.com/gtopt-community/gtopt/issues
+    about: Problems with gtopt itself or its converters belong in the gtopt repository.

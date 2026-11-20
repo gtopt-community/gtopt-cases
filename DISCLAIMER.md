@@ -57,16 +57,46 @@ DAMAGE.
 ## Ownership of the source data
 
 All rights to the original cases, models and data belong to their authors
-and/or to the institutions that published them. This repository claims no
-ownership of them; it only redistributes the published inputs, as
-publicly made available, together with the gtopt conversions derived from
-them, for the purposes stated above. The source data remain subject to the
-terms of use of those institutions; see each country's `README.md`.
+and/or to the institutions that published them: Coordinador Eléctrico
+Nacional (CEN), Chile; Administrador del Mercado Mayorista (AMM),
+Guatemala; Ente Operador Regional (EOR); Comité de Operación Económica del
+Sistema Interconectado Nacional (COES), Peru; and Roman Korab, Silesian
+University of Technology, whose data are distributed by MATPOWER.  This
+repository claims no ownership of them and grants no licence over them.
+`source/` holds the data as published (unmodified except for compression
+and splitting into parts); `case/` holds gtopt conversions derived from
+it, which remain subject to the publishers' rights.  See
+[`LICENSING.md`](LICENSING.md) and [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md);
+the source data remain subject to the terms of use of those institutions.
 
-Mentioning an institution does not imply any affiliation with, or
-endorsement by, that institution. If you are a rights holder and object to
-the redistribution of any material here, please open an issue and it will
-be removed.
+## No affiliation; trademarks
+
+The gtopt project is not affiliated with, sponsored by or endorsed by CEN,
+AMM, EOR, COES, Energy Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC.
+Mentioning an institution or a product does not imply any such
+relationship.
+
+PLEXOS® is a registered trademark of Energy Exemplar.  SDDP and NCP are
+products of PSR.  PSS®E is a registered trademark of
+Siemens.  CPLEX is a trademark of IBM.  MATPOWER is a project originally
+developed at PSERC (Cornell University).  These and other product names
+are used only nominatively, to identify the file formats and tools the
+data come from or that gtopt can read; all trademarks belong to their
+respective owners.
+
+## Removal requests
+
+If you are a rights holder and object to the redistribution of any
+material here, e-mail <marcelomatusacuna@gmail.com> with the subject
+**"gtopt-cases removal request"**; for non-confidential requests you may
+instead open an issue with the
+[data removal form](https://github.com/gtopt-community/gtopt-cases/issues/new?template=data-removal.yml).
+We acknowledge each request within 5 working days and remove the material
+from `main` promptly.  When required, we also rewrite the git history and
+ask GitHub Support to purge cached views; the maintainers bypass the
+main-branch protection ruleset only for that purpose.
+
+This disclaimer is not legal advice.
 
 ---
 
@@ -88,8 +118,29 @@ publicados por las instituciones competentes. Los autores no asumen
 responsabilidad alguna por el uso de estos casos.
 
 Todos los derechos sobre los casos, modelos y datos originales pertenecen a
-sus autores y/o a las instituciones que los publican. Este repositorio no
-reclama propiedad sobre ellos; solo redistribuye los insumos tal como fueron
-publicados, junto con las conversiones a gtopt derivadas de ellos. Si usted
-es titular de derechos y se opone a la redistribución de algún material,
-abra un issue y será retirado.
+sus autores y/o a las instituciones que los publican (CEN, Chile; AMM,
+Guatemala; EOR; COES, Perú; Roman Korab, Universidad Tecnológica de
+Silesia, con datos distribuidos por MATPOWER). Este repositorio no
+reclama propiedad sobre ellos ni otorga licencia alguna sobre ellos; solo
+redistribuye los insumos tal como fueron publicados (sin modificaciones,
+salvo compresión y división en partes), junto con las conversiones a gtopt
+derivadas de ellos, que siguen sujetas a los derechos de los publicadores.
+
+El proyecto gtopt no está afiliado a CEN, AMM, EOR, COES, Energy Exemplar,
+PSR, Siemens, IBM ni MATPOWER / PSERC, ni cuenta con su patrocinio o
+respaldo. PLEXOS® es marca registrada de Energy Exemplar; SDDP y NCP son
+productos de PSR; PSS®E es marca registrada de Siemens; CPLEX es
+marca de IBM; MATPOWER es un proyecto desarrollado originalmente en PSERC
+(Universidad de Cornell). Estos nombres se usan solo para identificar los
+formatos de archivo y las herramientas de origen de los datos; todas las
+marcas pertenecen a sus respectivos dueños.
+
+Si usted es titular de derechos y se opone a la redistribución de algún
+material, escriba a <marcelomatusacuna@gmail.com> con el asunto
+**"gtopt-cases removal request"** (para solicitudes no confidenciales
+puede usar el formulario de retiro de datos en los issues). Acusamos
+recibo dentro de 5 días hábiles y retiramos el material de `main` a la
+brevedad; cuando corresponde, reescribimos además el historial de git y
+pedimos a GitHub Support purgar las vistas en caché.
+
+Este aviso no constituye asesoría legal.

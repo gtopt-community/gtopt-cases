@@ -1,0 +1,125 @@
+# REUSE annotations (https://reuse.software/spec-3.3/).  The licence texts
+# are in LICENSES/; the rights statement is in LICENSING.md.  Third-party
+# data carry LicenseRef-third-party-no-licence: no licence is granted by
+# this repository and all rights stay with the rights holders.  When
+# several annotations match a file, the last one in this file wins.
+version = 1
+
+# Documentation, catalog, profiles, line lifts and repository metadata
+# written by the gtopt authors: public-domain dedication.
+[[annotations]]
+path = [
+  "*.md",
+  "**/*.md",
+  "catalog.json",
+  "profiles/**",
+  "chile/daily_scheduling/line_lifts.json",
+  ".github/**",
+  ".gitattributes",
+  ".gitignore",
+  "ruff.toml",
+  "REUSE.toml",
+]
+SPDX-FileCopyrightText = "2026 The gtopt authors"
+SPDX-License-Identifier = "CC0-1.0"
+
+# Tools: the gtopt dual licence.
+[[annotations]]
+path = ["tools/**", ".githooks/**"]
+SPDX-FileCopyrightText = "2026 Marcelo Matus and the gtopt contributors"
+SPDX-License-Identifier = "AGPL-3.0-or-later OR LicenseRef-gtopt-commercial"
+
+# ---- Chile: CEN
+[[annotations]]
+path = "chile/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Coordinador Eléctrico Nacional (CEN), Chile"
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "chile/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Coordinador Eléctrico Nacional (CEN), Chile",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+# ---- Guatemala: AMM and EOR (the SDDP programmes: AMM only)
+[[annotations]]
+path = "guatemala/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Administrador del Mercado Mayorista (AMM), Guatemala",
+  "Ente Operador Regional (EOR)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "guatemala/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Administrador del Mercado Mayorista (AMM), Guatemala",
+  "Ente Operador Regional (EOR)",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+[[annotations]]
+path = "guatemala/medium_long_term/sddp_plp_*/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Administrador del Mercado Mayorista (AMM), Guatemala"
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "guatemala/medium_long_term/sddp_plp_*/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Administrador del Mercado Mayorista (AMM), Guatemala",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+# ---- Peru: COES
+[[annotations]]
+path = "peru/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Comité de Operación Económica del Sistema Interconectado Nacional (COES), Peru"
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "peru/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Comité de Operación Económica del Sistema Interconectado Nacional (COES), Peru",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+# ---- Poland: R. Korab, distributed by MATPOWER (MATPOWER's BSD licence
+# does not cover its case files)
+[[annotations]]
+path = "poland/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Roman Korab, Silesian University of Technology",
+  "Distributed by MATPOWER (https://matpower.org)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "poland/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Roman Korab, Silesian University of Technology",
+  "Distributed by MATPOWER (https://matpower.org)",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+# NOTICE.md files inside source/ and case/ are written by the gtopt authors.
+[[annotations]]
+path = ["**/source/NOTICE.md", "**/case/NOTICE.md"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 The gtopt authors"
+SPDX-License-Identifier = "CC0-1.0"
