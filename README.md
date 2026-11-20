@@ -43,19 +43,23 @@ How large the systems are, counted as gtopt elements in the converted
 cases: buses and lines of the network, generators (thermal, hydro,
 wind, solar and, where the source models them, neighbouring markets as
 price bids), demands, hydro reservoirs and batteries (including pumped
-storage modelled as a battery).  Where a country has several cases the
+storage modelled as a battery).  The horizon is the period each case
+simulates: one hour for the OPF and network snapshots, one week for
+unit commitment and dispatch, one to 4.5 years for the SDDP cases (the
+23-year Chilean PLP and the PET 2027 bases are converted for their
+first year).  Where a country has several cases the
 table gives the range.  The Ireland figures describe the case that
 `tools/get_case.py fetch` builds locally, since its data are not
 redistributed here.
 
-| Country | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
-|---|---:|---:|---:|---:|---:|---:|
-| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 15 | 18 | 523 | 15 | 22 | 85 |
-| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 237–339 | 305–449 | 933–1,892 | 127–161 | 10–12 | 0–202 |
-| <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
-| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](ireland/README.md) | 3 | 2 | 116 | 3 | — | 23 |
-| <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
-| <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](poland/README.md) | 3,374 | 4,161 | 489 | 2,414 | — | — |
+| Country | Horizon | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
+|---|---|---:|---:|---:|---:|---:|---:|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 1 week (hourly) | 15 | 18 | 523 | 15 | 22 | 85 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 1 week · 1 year · 2.9 years · 4.5 years | 237–339 | 305–449 | 933–1,892 | 127–161 | 10–12 | 0–202 |
+| <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 1 hour · 1 week · 1 year | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](ireland/README.md) | 1 week (hourly) | 3 | 2 | 116 | 3 | — | 23 |
+| <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 1 year | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
+| <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](poland/README.md) | 1 hour | 3,374 | 4,161 | 489 | 2,414 | — | — |
 
 Per-case detail (demands, turbines,
 water rights, unit commitments, blocks, scenarios, LP size) is in the
