@@ -16,6 +16,7 @@ operators and research groups.
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [**Australia**](australia/README.md) | NEM · AEMO | 1 weekly dispatch (PLEXOS ISP 2026, Step Change) |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [**Chile**](chile/README.md) | SEN · CEN | 14 daily unit commitments (PLEXOS)<br>3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [**Guatemala**](guatemala/README.md) | SNI · AMM, EOR | 2 daily/weekly dispatches (NCP)<br>6 annual SDDP programmes · 6 PSS®E snapshots |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [**Ireland**](ireland/README.md) | SEM · SEM Committee (CRU, UR) | 1 weekly unit commitment (PLEXOS), fetched and converted on demand |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [**Peru**](peru/README.md) | SEIN · COES | 4 annual SDDP cases (2026-2029 reserve-margin study) |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [**Poland**](poland/README.md) | Polish grid · R. Korab / MATPOWER | 1 DC OPF of 3,374 buses |
 
@@ -26,6 +27,7 @@ operators and research groups.
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 15 | 18 | 523 | 15 | 22 | 85 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 237–339 | 305–449 | 1,628–1,892 | 127–161 | 10–12 | 0–112 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](ireland/README.md) | 3 | 2 | 116 | 3 | — | 23 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](poland/README.md) | 3,374 | 4,161 | 489 | 2,414 | — | — |
 

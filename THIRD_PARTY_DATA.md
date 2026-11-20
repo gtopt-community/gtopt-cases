@@ -38,6 +38,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | CEN — PLP medium/long-term programme | `chile/medium_long_term/plp_*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs + gtopt cases |
 | AMM / EOR — PSR NCP daily/weekly programme | `guatemala/daily_scheduling/ncp_*` (2) | Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR) | No open licence stated; public AMM/EOR publications, they keep the rights; check their terms | Selected converter inputs (xz) + gtopt cases; original `.rar` archives and operator results not redistributed |
 | AMM — PSS®E long-term study (BDD 2026-2027) | `guatemala/medium_long_term/psse_bdd_2026-2027/*` (6) | AMM (and EOR for regional data) | As above | PSS®E `.raw` / spreadsheets (xz) + gtopt cases |
+| SEM Committee — SEM-25-010, SEM PLEXOS Forecast Model 2024-2032 (public version) | `ireland/unit_commitment/sem_2025w03` | SEM Committee: Commission for Regulation of Utilities (CRU), Ireland, and Utility Regulator (UR), Northern Ireland; model by NERA Economic Consulting | No licence stated; redistribution needs the publishers' written permission | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads and converts the public files locally |
 | COES — MRFO 2026-2029 study, Anexo D (PSR SDDP base cases) | `peru/medium_long_term/coes_mrfo_2026-2029/*` (4) | Comité de Operación Económica del Sistema Interconectado Nacional (COES), Peru | No open licence stated; public COES publication, COES keeps the rights; cite COES; check its terms | SDDP inputs read by the converter (xz) + gtopt cases; original zip and PSR results not redistributed |
 | MATPOWER `case3375wp` (Polish system, winter 2007-08 evening peak) | `poland/dc_opf/case3375wp` | Roman Korab, Silesian University of Technology; distributed by MATPOWER (PSERC / R. D. Zimmerman, C. E. Murillo-Sánchez) | **No explicit licence**: MATPOWER's BSD-3-Clause licence explicitly does **not** cover its case files; distributed with MATPOWER *"with the permission of Roman Korab"*; MATPOWER asks users of its data files to cite the MATPOWER paper | `.m` file unchanged (xz) + gtopt case |
 
@@ -93,6 +94,25 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 - Attribution: *"Source: Administrador del Mercado Mayorista (AMM) and
   Ente Operador Regional (EOR); converted to gtopt by the gtopt authors."*
 - See [`guatemala/README.md`](guatemala/README.md).
+
+### SEM Committee (Ireland)
+
+- Publisher: SEM Committee (CRU, <https://www.cru.ie>, and Utility
+  Regulator, <https://www.uregni.gov.uk>), <https://www.semcommittee.com>.
+- Source: SEM-25-010, *SEM PLEXOS Model Validation 2024-2032 and
+  Backcast Report*, 24 March 2025,
+  <https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report>;
+  model prepared by NERA Economic Consulting.
+- Terms: no licence is stated on the page or in the archives; the CRU's
+  terms have no reuse clause, the Utility Regulator's terms restrict
+  reuse to personal, non-commercial use without written permission, and
+  the NERA report carries a NERA copyright notice.  **The data are not
+  redistributed here**; ask the CRU (<info@cru.ie>) before redistributing
+  them or cases derived from them.
+- Attribution: *"Source: SEM Committee (CRU and Utility Regulator), SEM
+  PLEXOS Forecast Model 2024-2032, public version (SEM-25-010, March
+  2025), model by NERA Economic Consulting; converted to gtopt."*
+- See [`ireland/README.md`](ireland/README.md).
 
 ### COES (Peru)
 

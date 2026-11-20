@@ -23,8 +23,8 @@ same command per case.  Resource classes: **large** — the 14 Chilean
 daily cases (MIPs of 0.8–1.3 M rows, 5–30 GB RAM), the Chilean and
 Peruvian SDDP cases;
 **medium** — the Guatemalan NCP and SDDP cases (~0.2 M rows); **small** — the
-PSS®E snapshots (~1 k rows), the Polish DC OPF and the Australian ISP
-week (~0.13 M rows).
+PSS®E snapshots (~1 k rows), the Polish DC OPF, the Australian ISP
+week (~0.13 M rows) and the Irish SEM week (~0.1 M-row MIP).
 
 ## Cloning
 

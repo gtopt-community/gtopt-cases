@@ -5,6 +5,7 @@
     tools/get_case.py pcp 2026-06-03   # -> chile/daily_scheduling/pcp_<date>/
     tools/get_case.py plp 2026-05-15   # -> chile/medium_long_term/plp_<date>/
     tools/get_case.py rebuild pcp_2025-10-19 --res RES20251019.zip.xz --out ~/x
+    tools/get_case.py fetch sem_2025w03  # data not redistributed: download
 
 All the work is done by the gtopt Python tools, installed from a gtopt
 checkout (``pip install -e <gtopt>/scripts``) and called here as console
@@ -16,7 +17,11 @@ Files are only downloaded when not already local.  Inputs land in the
 case directory (``source/``, ``case/``); the PLEXOS solution bundle
 (``RES<date>.zip``, a result needed only for the block layout) stays in
 ``$GTOPT_CASES_CACHE`` (default ``~/.cache/gtopt-cases``), outside the
-repository.  The CEN portal only serves Chilean IP addresses.  Cases are
+repository.  ``fetch`` downloads the publisher's archives of a case whose
+data are not redistributed here (``source.redistributed: false``) into
+the cache, checks their sha256 and extracts the members the converter
+reads into the (git-ignored) ``source/`` of the case.  The CEN portal
+only serves Chilean IP addresses.  Cases are
 provided AS IS (see DISCLAIMER.md); run them as the READMEs show.
 """
 
@@ -24,6 +29,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
 import lzma
 import os
@@ -33,13 +39,15 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.request
+import zipfile
 from pathlib import Path
 from typing import Any
 
 REPO = Path(__file__).resolve().parent.parent
 CACHE = Path(os.environ.get("GTOPT_CASES_CACHE", "~/.cache/gtopt-cases")).expanduser()
 DROP = {"README.md", "logs", "plexos2gtopt_state.json", "plp2gtopt_state.json"}
-SIDE = (".provenance.json", "_state.json", "_report.json")
+SIDE = (".provenance.json", "_state.json", "_report.json", ".plexos_model.json")
 OUTPUT_ONLY = {"output_compression", "output_format", "write_out"}
 
 
@@ -97,9 +105,12 @@ def lift_flags(entry: dict[str, Any], mode: str | None) -> list[str]:
     return ["--lift-line-caps", ",".join(names)]
 
 
-def postprocess(raw: Path, dest: Path, name: str, profile: Path | None) -> Path:
-    """Copy converter output to ``dest``: profile options stripped, no
-    side files, solver-file comments and build-machine paths removed."""
+def postprocess(
+    raw: Path, dest: Path, name: str, profile: Path | None, drop: list[str]
+) -> Path:
+    """Copy converter output to ``dest``: profile options and ``drop``
+    keys (dotted paths) stripped, no side files, solver-file comments and
+    build-machine paths removed."""
     jsons = [p for p in raw.glob("*.json") if not p.name.endswith(SIDE)]
     if len(jsons) != 1:
         sys.exit(f"expected one planning JSON in {raw}, got {jsons}")
@@ -122,6 +133,12 @@ def postprocess(raw: Path, dest: Path, name: str, profile: Path | None) -> Path:
         strip(case.setdefault("options", {}), load(profile).get("options", {}), "")
     if conflicts:
         sys.exit("profile would change the model:\n  " + "\n  ".join(conflicts))
+    for key in drop:
+        *parents, leaf = key.split(".")
+        node = case
+        for k in parents:
+            node = node.get(k, {})
+        node.pop(leaf, None)
     notice = dest / "NOTICE.md"  # rights notice: kept across rebuilds
     kept = notice.read_bytes() if notice.is_file() else None
     if dest.exists():
@@ -194,7 +211,13 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
         if inp.is_dir() and (overlay or conv.get("join_parts")):
             ovl = (case_dir / overlay).resolve() if overlay else None
             inp = stage_input(inp, ovl, Path(tmp) / "in")
-        if conv["tool"] == "plexos2gtopt":
+        cwd = inp if inp.is_dir() else inp.parent
+        if conv.get("rename_input"):  # the input name names the planning JSON
+            stage = Path(tmp) / "in"
+            stage.mkdir()
+            (stage / f"{case_json.stem}{inp.suffix}").symlink_to(inp)
+            inp, cwd = stage / f"{case_json.stem}{inp.suffix}", case_dir
+        elif conv["tool"] == "plexos2gtopt":
             d8 = entry["date"].replace("-", "")
             stage = Path(tmp) / case_json.stem  # names the planning JSON
             stage.mkdir()
@@ -205,10 +228,9 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
             elif not args.allow_hourly:
                 sys.exit(f"no RES{d8}.zip: pass --res, or run `pcp {entry['date']}`")
             flags += lift_flags(entry, args.lifts)
-            inp = stage
-        cwd = inp if inp.is_dir() else inp.parent
+            inp = cwd = stage
         run(conv["tool"], "-i", inp, "-o", raw, *flags, cwd=cwd)
-        return postprocess(raw, dest, case_json.name, profile)
+        return postprocess(raw, dest, case_json.name, profile, conv.get("drop", []))
 
 
 def cmd_pcp(args: argparse.Namespace) -> Path:
@@ -242,6 +264,31 @@ def cmd_plp(args: argparse.Namespace) -> Path | None:
     return convert(entry, args)
 
 
+def cmd_fetch(args: argparse.Namespace) -> Path:
+    """Download, check and extract the publisher's archives, then convert."""
+    entry = catalog_entry(args.case)
+    if entry is None or entry["source"].get("redistributed", True):
+        sys.exit(f"{args.case}: not a catalogued fetch-on-demand case")
+    case_dir, dl = REPO / entry["path"], CACHE / entry["id"].rsplit("/", 1)[-1]
+    for f in entry["source"]["files"]:
+        archive = dl / f["archive"]
+        if not archive.is_file():
+            print(f"+ download {f['url']}", flush=True)
+            dl.mkdir(parents=True, exist_ok=True)
+            req = urllib.request.Request(f["url"], headers={"User-Agent": "gtopt"})
+            with urllib.request.urlopen(req) as r, archive.open("wb") as fo:
+                shutil.copyfileobj(r, fo)
+        if hashlib.sha256(archive.read_bytes()).hexdigest() != f["sha256"]:
+            sys.exit(f"{archive}: sha256 differs from catalog.json")
+        with zipfile.ZipFile(archive) as z:
+            for member, path in f["members"].items():
+                out = case_dir / path
+                out.parent.mkdir(parents=True, exist_ok=True)
+                with z.open(member) as zi, out.open("wb") as fo:
+                    shutil.copyfileobj(zi, fo)
+    return convert(entry, args)
+
+
 def cmd_rebuild(args: argparse.Namespace) -> Path:
     entry = catalog_entry(args.case)
     if entry is None or not entry.get("case_json"):
@@ -257,20 +304,23 @@ def main(argv: list[str] | None = None) -> int:
     pcp = sub.add_parser("pcp", help="CEN PCP day (PLEXOS -> gtopt)")
     plp = sub.add_parser("plp", help="CEN PLP bundle in force on a date")
     reb = sub.add_parser("rebuild", help="reconvert a catalogued case from source/")
+    fet = sub.add_parser("fetch", help="download a not-redistributed case + convert")
     pcp.add_argument("date", help="YYYY-MM-DD")
     plp.add_argument("date", help="YYYY-MM-DD")
     reb.add_argument("case", help="case id, path, name or date")
+    fet.add_argument("case", help="case id, path or name")
     plp.add_argument("--name", help="force a CEN file (e.g. IPLP_20260401.zip)")
     plp.add_argument("--dry-run", action="store_true", help="only print the choice")
     plp.add_argument("--plp2gtopt-arg", dest="extra", action="append", default=[])
-    for p in (pcp, plp, reb):
+    for p in (pcp, plp, reb, fet):
         p.add_argument("--out", help="case/ output directory (default: in place)")
         p.add_argument("--source", help="converter input instead of source/")
         p.add_argument("--res", help="PLEXOS RES<date>.zip[.xz] (block layout)")
         p.add_argument("--lifts", choices=("case", "common", "union", "none"))
         p.add_argument("--allow-hourly", action="store_true", help="no RES needed")
     args = ap.parse_args(argv)
-    case_json = {"pcp": cmd_pcp, "plp": cmd_plp, "rebuild": cmd_rebuild}[args.cmd](args)
+    cmds = {"pcp": cmd_pcp, "plp": cmd_plp, "rebuild": cmd_rebuild, "fetch": cmd_fetch}
+    case_json = cmds[args.cmd](args)
     if case_json is not None:
         print(f"case: {case_json}\nProvided AS IS, see {REPO / 'DISCLAIMER.md'}.")
     return 0

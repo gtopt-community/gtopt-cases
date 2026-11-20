@@ -26,6 +26,8 @@ gtopt-cases/
 ├── guatemala/           Sistema Nacional Interconectado (SNI), data from AMM/EOR
 │   ├── daily_scheduling/    PSR NCP daily/weekly dispatch (sddp2gtopt)
 │   └── medium_long_term/    AMM SDDP programmes + PSS®E snapshots
+├── ireland/             Single Electricity Market (SEM), data from the SEM Committee
+│   └── unit_commitment/     SEM PLEXOS model week, recipe only: fetched + converted on demand
 ├── peru/                Sistema Eléctrico Interconectado Nacional (SEIN), data from the COES
 │   └── medium_long_term/    COES SDDP base cases 2026-2029 (sddp2gtopt)
 └── poland/              Polish transmission system, MATPOWER case3375wp (R. Korab)
@@ -73,6 +75,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/sddp_plp_2024-2025](../guatemala/medium_long_term/sddp_plp_2024-2025) | 462 | 524 | 160 | 127 | 44 | 58 | — | — | — | 108 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/sddp_plp_2025-2026](../guatemala/medium_long_term/sddp_plp_2025-2026) | 489 | 553 | 178 | 136 | 44 | 58 | — | — | — | 108 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/sddp_plp_2026-2027](../guatemala/medium_long_term/sddp_plp_2026-2027) | 497 | 559 | 217 | 134 | 44 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [unit_commitment/sem_2025w03](../ireland/unit_commitment/sem_2025w03) | 3 | 2 | 116 | 3 | — | — | 23 | — | 61 | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2026](../peru/medium_long_term/coes_mrfo_2026-2029/2026) | 270 | 312 | 157 | 133 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2027](../peru/medium_long_term/coes_mrfo_2026-2029/2027) | 270 | 331 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2028](../peru/medium_long_term/coes_mrfo_2026-2029/2028) | 270 | 346 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
@@ -154,6 +157,17 @@ See [chile/medium_long_term/README.md](../chile/medium_long_term/README.md).
 
 See [guatemala/README.md](../guatemala/README.md).
 
+## <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> Ireland
+
+| Case | Application | Buses | Blocks | LP rows | Resources |
+|---|---|---:|---:|---:|---|
+| [unit_commitment/sem_2025w03](../ireland/unit_commitment/sem_2025w03) | unit_commitment | 3 | 168 | 102,351 | small |
+
+One-week unit commitment (13-19 January 2025) of the SEM PLEXOS Forecast
+Model 2024-2032.  **Recipe only**: the SEM data are not redistributed;
+`tools/get_case.py fetch sem_2025w03` downloads and converts them.  See
+[ireland/README.md](../ireland/README.md).
+
 ## <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> Peru
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
@@ -186,13 +200,14 @@ No case yet; see [chile/expansion/README.md](../chile/expansion/README.md).
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](../australia/README.md) | NEM | AEMO (Australian Energy Market Operator), 2026 ISP | 1 weekly dispatch (production cost) | — | — |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](../ireland/README.md) | SEM | SEM Committee (CRU, Utility Regulator); not redistributed, fetched on demand | 1 weekly unit commitment | — | — |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](../poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
 
 
 Each country README names the rights holders of its source data
-(Australia: AEMO; Chile: CEN; Guatemala: AMM and EOR; Peru: COES;
-Poland: R. Korab / MATPOWER).
+(Australia: AEMO; Chile: CEN; Guatemala: AMM and EOR; Ireland: SEM
+Committee, CRU and UR; Peru: COES; Poland: R. Korab / MATPOWER).
 All third-party data sources, their terms and the attribution to give are
 listed in [`THIRD_PARTY_DATA.md`](../THIRD_PARTY_DATA.md).  New countries
 follow the same pattern.

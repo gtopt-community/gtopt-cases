@@ -5381,6 +5381,145 @@
         "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
       ]
+    },
+    {
+      "id": "ireland/unit_commitment/sem_2025w03",
+      "path": "ireland/unit_commitment/sem_2025w03",
+      "date": "2025-01-13 to 2025-01-19 (one week, hourly)",
+      "country": "ireland",
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/sem_2025w03.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 102351,
+          "cols": 89399,
+          "nnz": 333284,
+          "binaries": 10248,
+          "gtopt_revision": "1e2719308"
+        },
+        "buses": 3,
+        "generators": 116,
+        "lines": 2,
+        "batteries": 23,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "The SEM data are NOT in this repository: the publication states no licence, so redistribution needs the publishers' written permission (CRU). tools/get_case.py fetch sem_2025w03 downloads the archives below from the SEM Committee site, checks their sha256, extracts the listed members into the git-ignored source/ and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032( Public Version).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%28%20Public%20Version%29.zip",
+            "sha256": "1d436a80d8efa5a78b82050ca178b77fc31ba485be767ce694eebf942a48b1ad",
+            "bytes": 1443942,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032( Public Version)/PUBLIC Validation 2024-2032 Model 2025-03-14.xml": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%201%20of%202%29.zip",
+            "sha256": "25b989630687950fcca803f091699bbdb5893f517997bd64e0d5e9c792c9ea60",
+            "bytes": 15015279,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/AI Demand_2023-2033_5base years.csv": "source/data_files/AI Demand_2023-2033_5base years.csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/NI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 1 of 2)/CSV Files (1 of 2)/NI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/NI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          },
+          {
+            "archive": "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2).zip",
+            "url": "https://www.semcommittee.com/files/semcommittee/2025-03/SEM%20PLEXOS%20Forecast%20Model%202024-2032%20%28CSV%20Files%202%20of%202%29.zip",
+            "sha256": "6740919634fe23949c05f846ee918d443f048db43cc8c53439bacd1764065ebd",
+            "bytes": 22470462,
+            "members": {
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/Offshore Wind_5base years 2018-2033 (Avail).csv": "source/data_files/Offshore Wind_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Solar_5base years 2018-2033 (Avail).csv": "source/data_files/ROI Solar_5base years 2018-2033 (Avail).csv",
+              "SEM PLEXOS Forecast Model 2024-2032 (CSV Files 2 of 2)/CSV Files (2 of 2)/ROI Wind_5base years - 2018-2033 (Avail).csv": "source/data_files/ROI Wind_5base years - 2018-2033 (Avail).csv"
+            }
+          }
+        ],
+        "origin": "SEM Committee publication SEM-25-010 (24 March 2025), https://www.semcommittee.com/publications/sem-25-010-sem-plexos-model-validation-2024-2032-and-backcast-report; XML uncompressed sha256 1ffda1ff2370a41a48c9bfa9f3437c8c776eb613a726c40d117ac55b5ca79d5f",
+        "publisher": "SEM Committee (Commission for Regulation of Utilities, Ireland, and Utility Regulator, Northern Ireland); model prepared by NERA Economic Consulting",
+        "licence": "No licence stated on the publication page or in the archives. Not redistributed here; ask the CRU (info@cru.ie) before redistributing the data or cases derived from them."
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--horizon-mode",
+          "hourly",
+          "--horizon-days",
+          "7",
+          "--line-losses-mode",
+          "none",
+          "--plexos-model",
+          "Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP",
+          "--plexos-start-date",
+          "2025-01-13",
+          "--plexos-sample",
+          "1",
+          "--plexos-data-dir",
+          "source/data_files",
+          "--battery-efin-pin",
+          "--no-emissions"
+        ],
+        "input": "source/PUBLIC Validation 2024-2032 Model 2025-03-14.xml",
+        "rename_input": true,
+        "drop": [
+          "options.solver_options.param_file"
+        ],
+        "gtopt_revision": "1e27193085a165fd5b2c9669b17416dda2f0a128",
+        "note": "plexos2gtopt --plexos-model materialiser, in gtopt 1.1.0 or later. Run from the case directory with the XML named sem_2025w03.xml; options.solver_options.param_file is removed from the output (tools/get_case.py does both)."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w03/case/sem_2025w03.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w03/case\" -d . --solver highs --mip-gap 0.01",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only sem_2025w03",
+        "output": "~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03",
+        "resources": {
+          "class": "small",
+          "guide": "~102k-row MIP, 10k binaries; seconds to a few minutes with HiGHS or CBC, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch sem_2025w03"
+      },
+      "rights_holders": [
+        {
+          "name": "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "url": "https://www.semcommittee.com"
+        },
+        {
+          "name": "Utility Regulator (Northern Ireland)",
+          "url": "https://www.uregni.gov.uk"
+        },
+        {
+          "name": "NERA Economic Consulting (model author)",
+          "url": "https://www.nera.com"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "SEM Committee / Commission for Regulation of Utilities (Ireland)",
+          "Utility Regulator (Northern Ireland)",
+          "NERA Economic Consulting (model author)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Source: SEM Committee (CRU and Utility Regulator), SEM PLEXOS Forecast Model 2024-2032, public version (SEM-25-010, March 2025), model by NERA Economic Consulting; converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no SEM data and no converted case files are in this repository.",
+        "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
+        "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; France not connected in January 2025.",
+        "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
+      ]
     }
   ],
   "results_policy": "No results of any kind are published here; run gtopt and the gtopt analysis tools with their output outside the repository (e.g. ~/gtopt-cases-out)."

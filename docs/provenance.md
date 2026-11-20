@@ -24,6 +24,12 @@
   read cut to the case week, converted with `plexos2gtopt.aemo_isp`
   (gtopt 1.1.0 or later).
 
+* **Ireland**: SEM Committee publication SEM-25-010 (SEM PLEXOS Forecast
+  Model 2024-2032, public version, and two CSV archives).  **Not
+  redistributed**: `tools/get_case.py fetch sem_2025w03` downloads the
+  archives (URLs and sha256 in `catalog.json`) and converts them with
+  `plexos2gtopt --plexos-model` (gtopt 1.1.0 or later).
+
 * **Poland**: MATPOWER 8.1 `data/case3375wp.m` (data by R. Korab),
   kept unchanged in `source/` (xz) and converted with `pp2gtopt` (gtopt,
   `matpower` extra of the scripts).

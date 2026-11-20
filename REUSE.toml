@@ -17,6 +17,7 @@ path = [
   ".github/**",
   ".gitattributes",
   ".gitignore",
+  "ireland/**/.gitignore",
   "ruff.toml",
   "REUSE.toml",
 ]

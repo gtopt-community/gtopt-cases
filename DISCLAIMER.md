@@ -73,8 +73,9 @@ to the terms of use of those institutions.
 ## No affiliation; trademarks
 
 The gtopt project is not affiliated with, sponsored by or endorsed by AEMO,
-CEN, AMM, EOR, COES, Energy Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC.
-Mentioning an institution or a product does not imply any such relationship.
+CEN, AMM, EOR, COES, the SEM Committee, CRU, Utility Regulator, NERA, Energy
+Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC. Mentioning an institution or
+a product does not imply any such relationship.
 
 PLEXOS® is a registered trademark of Energy Exemplar.  SDDP and NCP are
 products of PSR.  PSS®E is a registered trademark of
@@ -127,14 +128,14 @@ división en partes; las series de AEMO se recortan a la semana del caso),
 junto con las conversiones a gtopt derivadas de ellos, que siguen sujetas a
 los derechos de los publicadores.
 
-El proyecto gtopt no está afiliado a AEMO, CEN, AMM, EOR, COES, Energy
-Exemplar, PSR, Siemens, IBM ni MATPOWER / PSERC, ni cuenta con su patrocinio o
-respaldo. PLEXOS® es marca registrada de Energy Exemplar; SDDP y NCP son
-productos de PSR; PSS®E es marca registrada de Siemens; CPLEX es marca de IBM;
-MATPOWER es un proyecto desarrollado originalmente en PSERC (Universidad de
-Cornell). Estos nombres se usan solo para identificar los formatos de archivo
-y las herramientas de origen de los datos; todas las marcas pertenecen a sus
-respectivos dueños.
+El proyecto gtopt no está afiliado a AEMO, CEN, AMM, EOR, COES, SEM Committee,
+CRU, Utility Regulator, NERA, Energy Exemplar, PSR, Siemens, IBM ni MATPOWER /
+PSERC, ni cuenta con su patrocinio o respaldo. PLEXOS® es marca registrada de
+Energy Exemplar; SDDP y NCP son productos de PSR; PSS®E es marca registrada de
+Siemens; CPLEX es marca de IBM; MATPOWER es un proyecto desarrollado
+originalmente en PSERC (Universidad de Cornell). Estos nombres se usan solo
+para identificar los formatos de archivo y las herramientas de origen de los
+datos; todas las marcas pertenecen a sus respectivos dueños.
 
 Si usted es titular de derechos y se opone a la redistribución de algún
 material, escriba a <marcelomatusacuna@gmail.com> con el asunto

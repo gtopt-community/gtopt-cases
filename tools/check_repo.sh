@@ -12,7 +12,7 @@
 #   * every source/ file matches its sha256/bytes in catalog.json, and no
 #     tracked source/ file is missing from the catalog (NOTICE.md excepted;
 #     a catalogued sha256 manifest with a "manifest" directory covers the
-#     files it lists);
+#     files it lists; cases with "redistributed": false have no source/);
 #   * the whole tracked tree stays under MAX_TREE_MB (default 400 MB).
 set -euo pipefail
 
@@ -69,6 +69,8 @@ tracked = set(subprocess.run(["git", "ls-files", "-z"], capture_output=True,
 listed, bad = set(), []
 for c in cat["cases"]:
     for f in c["source"]["files"]:
+        if not c["source"].get("redistributed", True):
+            continue  # remote archives, fetched by tools/get_case.py
         p = os.path.normpath(os.path.join(c["path"], f["path"]))
         if p in listed:
             continue

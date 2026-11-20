@@ -12,7 +12,9 @@ authors; they are under different terms.
 - **Rights holders**: Australian Energy Market Operator (AEMO),
   Australia; Coordinador Eléctrico Nacional (CEN), Chile;
   Administrador del Mercado Mayorista (AMM), Guatemala; Ente Operador
-  Regional (EOR), Central America; Comité de Operación Económica del
+  Regional (EOR), Central America; SEM Committee (CRU, Ireland, and
+  Utility Regulator, Northern Ireland; data not redistributed here,
+  fetched on demand); Comité de Operación Económica del
   Sistema Interconectado Nacional (COES), Peru; Roman Korab, Silesian
   University of Technology, whose data are distributed by MATPOWER.
   Sources, terms and the attribution to give:
