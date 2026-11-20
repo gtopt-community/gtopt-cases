@@ -1,0 +1,16 @@
+name: hygiene
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Size, inputs-only and path checks
+        run: bash tools/check_repo.sh tree

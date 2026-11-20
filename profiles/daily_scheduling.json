@@ -1,0 +1,26 @@
+{
+  "options": {
+    "method": "monolithic",
+    "annual_discount_rate": 0.0,
+    "input_format": "parquet",
+    "output_format": "parquet",
+    "output_compression": "zstd",
+    "write_out": "all",
+    "model_options": {
+      "use_single_bus": false,
+      "use_kirchhoff": true,
+      "scale_objective": 1000.0
+    },
+    "solver_options": {
+      "log_mode": 1,
+      "log_level": 1,
+      "mip_gap": 0.005,
+      "time_limit": 7200
+    },
+    "monolithic_options": {
+      "mip_start": {
+        "enabled": true
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "options": {
+    "method": "sddp",
+    "input_format": "parquet",
+    "output_format": "parquet",
+    "output_compression": "zstd"
+  }
+}

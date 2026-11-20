@@ -1,0 +1,32 @@
+# This repository publishes INPUTS ONLY (source data + gtopt case inputs).
+# Results of any kind are written outside it (e.g.
+# ~/gtopt-cases-out); the patterns below guard against accidents.
+
+# PLEXOS solution bundles (results; GitHub Release assets if ever needed)
+RES*.zip
+RES*.zip.xz
+*.accdb
+
+# results / run artefacts
+output/
+results/
+reference/
+out/
+gtopt-cases-out/
+*.log
+*.lp
+*.lp.gz
+*.sol
+*.scales.json
+gtopt_reference.json
+*_cmg_by_bus.csv
+plexos_summary.json
+gtopt_state.json
+catalog.results.json
+RESULTS.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/

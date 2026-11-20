@@ -1,0 +1,11 @@
+{
+  "options": {
+    "method": "monolithic",
+    "input_format": "parquet",
+    "output_format": "parquet",
+    "output_compression": "zstd",
+    "solver_options": {
+      "mip_gap": 0.001
+    }
+  }
+}

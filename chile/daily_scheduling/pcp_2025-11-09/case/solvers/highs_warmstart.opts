@@ -1,0 +1,4 @@
+solver = simplex
+presolve = off
+run_crossover = off
+simplex_strategy = 4

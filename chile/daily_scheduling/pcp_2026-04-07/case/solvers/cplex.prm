@@ -1,0 +1,7 @@
+CPLEX Parameter File Version 22.1.1.0
+CPXPARAM_MIP_Cuts_Gomory                        1
+CPXPARAM_LPMethod                               4
+CPXPARAM_MIP_Tolerances_MIPGap                  0.01
+CPXPARAM_MIP_Limits_CutPasses                   1
+CPXPARAM_MIP_Strategy_RINSHeur                  50
+CPXPARAM_MIP_Strategy_HeuristicEffort           0.30

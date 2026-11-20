@@ -1,0 +1,27 @@
+{
+  "case_id": "poland/dc_opf/case3375wp",
+  "source": {
+    "file": "source/case3375wp.m.xz",
+    "sha256_xz": "43c306dba9594d33efa5557e1395a2c33b896791562a28a79718ba6b086de20d",
+    "sha256_m": "f814bc31845cfbfb7754610f3c9b496a2dfd5eb3f86601ff8be015c21653722f",
+    "bytes_m": 484785,
+    "origin": "https://github.com/MATPOWER/matpower/blob/1a828c7af590714499284e36ee9c81273388c594/data/case3375wp.m",
+    "matpower_tag": "8.1",
+    "matpower_commit": "1a828c7af590714499284e36ee9c81273388c594",
+    "file_last_changed_commit": "a187db15d1aafdd15e9d48f5766d21de04e7b0dd",
+    "retrieved": "2026-11-20"
+  },
+  "converter": {
+    "tool": "pp2gtopt",
+    "command": "pp2gtopt -f case3375wp.m -o case3375wp.json --solver monolithic --no-check",
+    "gtopt_revision": "8cfe33d44694f2fa441909ee3e051a315c4e025a",
+    "python_deps": {
+      "pandapower": "3.5.4",
+      "matpowercaseframes": "2.1.1"
+    }
+  },
+  "output": {
+    "file": "case/case3375wp.json",
+    "sha256": "81495666c47ecaff40991e6a2259005d453cc185154a216fbdb89336bb5ef2f7"
+  }
+}
