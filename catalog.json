@@ -5212,6 +5212,7 @@
           "lps": 1,
           "rows": 4162,
           "cols": 7064,
+          "nnz": 20524,
           "gtopt_revision": "8cfe33d44"
         },
         "buses": 3374,
