@@ -45,9 +45,13 @@ wind, solar and, where the source models them, neighbouring markets as
 price bids), demands, hydro reservoirs and batteries (including pumped
 storage modelled as a battery).  The horizon is the period each case
 simulates: one hour for the OPF and network snapshots, one week for
-unit commitment and dispatch, one to 4.5 years for the SDDP cases (the
-23-year Chilean PLP and the PET 2027 bases are converted for their
-first year).  Where a country has several cases the
+unit commitment and dispatch, one to 4.5 years for the SDDP cases.  The
+Chilean `plp_2y` case is two years plus end-of-horizon fill stages.  The
+23-year Chilean PLP and the PET 2027 bases are committed for their first
+year only, to keep the repository small: their `source/` holds all 276
+monthly stages, and each case README gives the `plp2gtopt` command that
+builds the full 23-year horizon on your machine (drop `-s 12`, e.g.
+`plp2gtopt -i source -o <out> -y 1 -a 0 --method sddp`).  Where a country has several cases the
 table gives the range.  The Ireland figures describe the case that
 `tools/get_case.py fetch` builds locally, since its data are not
 redistributed here.
@@ -55,7 +59,7 @@ redistributed here.
 | Country | Horizon | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
 |---|---|---:|---:|---:|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 1 week (hourly) | 15 | 18 | 523 | 15 | 22 | 85 |
-| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 1 week · 1 year · 2.9 years · 4.5 years | 237–339 | 305–449 | 933–1,892 | 127–161 | 10–12 | 0–202 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 1 week · 1 year · 2 years (+ fill) · 4.5 years | 237–339 | 305–449 | 933–1,892 | 127–161 | 10–12 | 0–202 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 1 hour · 1 week · 1 year | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
 | <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](ireland/README.md) | 1 week (hourly) | 3 | 2 | 116 | 3 | — | 23 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 1 year | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
