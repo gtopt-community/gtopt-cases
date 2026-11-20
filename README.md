@@ -2,8 +2,10 @@
 
 **Real power-system cases, ready to run with
 [gtopt](https://github.com/gtopt-community/gtopt).**  From a one-hour DC
-OPF to a 23-year hydrothermal SDDP, built from data published by system
-operators and research groups.
+OPF to a 23-year hydrothermal SDDP and the transmission planning bases of
+the Chilean system operator, built from data published by system operators
+and research groups.  Needs gtopt **1.1.0 or later**
+([releases](https://github.com/gtopt-community/gtopt/releases)).
 
 > [!WARNING]
 > Provided **AS IS**; the data publishers keep all rights.
@@ -44,8 +46,13 @@ water rights, unit commitments, blocks, scenarios, LP size) is in the
 └── case/       the gtopt case built from it
 ```
 
-Inputs only: no objective values, prices, logs or operator solutions.
-Run the cases and compare on your own.
+Inputs only: no gtopt results, logs or solutions.  Run the cases and
+compare on your own.  A few case READMEs show figures the publisher itself
+released (e.g. CEN's PET 2027 diagnosis), with their source, as context.
+
+Where the data may not be redistributed (Ireland), the case folder holds
+only a recipe: `tools/get_case.py fetch <case>` downloads the files from the
+publisher, checks their hashes and converts them on your machine.
 
 ## Quick start
 
