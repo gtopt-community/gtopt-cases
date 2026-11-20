@@ -6265,12 +6265,12 @@
         "note": "plexos2gtopt --plexos-model materialiser, in gtopt 1.1.0 or later. Run from the case directory with the XML named sem_2025w03.xml; options.solver_options.param_file is removed from the output (tools/get_case.py does both)."
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w03/case/sem_2025w03.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w03/case\" -d . --solver highs --mip-gap 0.01",
+        "command": "mkdir -p ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && cd ~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03/output && gtopt \"$REPO/ireland/unit_commitment/sem_2025w03/case/sem_2025w03.json\" --set input_directory=\"$REPO/ireland/unit_commitment/sem_2025w03/case\" -d . --solver highs --mip-gap 0.001",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only sem_2025w03",
         "output": "~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03",
         "resources": {
           "class": "small",
-          "guide": "~102k-row MIP, 10k binaries; seconds to a few minutes with HiGHS or CBC, < 1 GB RAM"
+          "guide": "~102k-row MIP, 10k binaries, solved to a 0.1 % gap; minutes with HiGHS or CBC, < 1 GB RAM"
         },
         "rebuild": "tools/get_case.py fetch sem_2025w03"
       },

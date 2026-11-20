@@ -85,13 +85,19 @@ C=$REPO/ireland/unit_commitment/sem_2025w03/case
 OUT=~/gtopt-cases-out/ireland/unit_commitment/sem_2025w03
 mkdir -p "$OUT/output" && cd "$OUT/output"
 gtopt "$C/sem_2025w03.json" --set input_directory="$C" -d . \
-    --solver highs --mip-gap 0.01
+    --solver highs --mip-gap 0.001
 ```
 
 - Solver: any MIP solver plugin (`--solver highs|cbc|…`; `gtopt
   --solvers` lists them).  Add `--no-mip` for the LP relaxation.
+- **Use a tight MIP gap (0.1 %).**  The SEM value of lost load is
+  500 €/MWh (from the PLEXOS model), so several hundred MWh of unserved
+  energy cost less than 1 % of the weekly objective: at a 1 % gap the
+  solver may stop at a commitment that leaves load unserved and sets
+  prices at 500 €/MWh.  At 0.1 % no load is shed.  Check the unserved
+  energy of the solution if you change the gap.
 - Expected resources: **small** — a ~102k-row MIP with 10k binaries;
-  seconds to a few minutes with HiGHS or CBC, under 1 GB of RAM.
+  minutes with HiGHS or CBC at a 0.1 % gap, under 1 GB of RAM.
 
 ## Limitations
 
