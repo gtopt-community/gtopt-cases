@@ -137,9 +137,6 @@ See [guatemala/README.md](guatemala/README.md).
 
 ### Peru
 
-> [!CAUTION]
-> Conversion not yet validated; use for software testing only.
-
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
 | [medium_long_term/coes_mrfo_2026-2029/2026](peru/medium_long_term/coes_mrfo_2026-2029/2026) | medium_long_term | 270 | 60 | 6,457,304 | large |
@@ -169,7 +166,7 @@ No case yet; see [chile/expansion/README.md](chile/expansion/README.md).
 |---|---|---|---:|---:|---:|
 | [Chile](chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
 | [Guatemala](guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
-| [Peru](peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP (not yet validated) | — |
+| [Peru](peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |
 | [Poland](poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
 
 

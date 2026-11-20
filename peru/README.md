@@ -20,9 +20,6 @@ Sistema Interconectado Nacional*), the system operator.
 | Medium / long term | [medium_long_term/](medium_long_term/README.md) | PSR SDDP base cases 2026–2029 of the *Estudio de Verificación del Margen de Reserva Firme Objetivo 2026-2029* (Anexo D) | `sddp2gtopt` |
 | Expansion | — | — | — |
 
-> [!CAUTION]
-> Conversion not yet validated; use for software testing only.
-
 ## Provenance and rights
 
 * **Rights holder: COES.**  All rights to the original models and data

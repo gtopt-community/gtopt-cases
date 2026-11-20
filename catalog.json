@@ -4400,7 +4400,6 @@
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
       "notes": [
-        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2026, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4666,7 +4665,6 @@
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
       "notes": [
-        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2027, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -4932,7 +4930,6 @@
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
       "notes": [
-        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2028, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },
@@ -5198,7 +5195,6 @@
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
       "notes": [
-        "Conversion not yet validated; use for software testing only.",
         "12 monthly stages of 2029, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
       ]
     },

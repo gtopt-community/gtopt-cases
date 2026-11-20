@@ -10,10 +10,8 @@
 > original data belong to their authors and/or the publishing institutions.
 > See [DISCLAIMER.md](../../../../DISCLAIMER.md).
 
-> [!CAUTION]
-> Conversion not yet validated; use for software testing only.  See
-> [../README.md](../README.md) for the source, data terms (rights: COES),
-> modelling notes and how to regenerate.
+See [../README.md](../README.md) for the source, data terms (rights:
+COES), modelling notes and how to regenerate.
 
 | Field | Value |
 |---|---|

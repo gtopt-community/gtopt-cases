@@ -17,5 +17,3 @@ historical hydrologies, DC network with losses) converted with
 study.  The inputs, which differ between years only in `sddp.dat`, are
 stored once in `coes_mrfo_2026-2029/source/`.
 
-> [!CAUTION]
-> Conversion not yet validated; use for software testing only.

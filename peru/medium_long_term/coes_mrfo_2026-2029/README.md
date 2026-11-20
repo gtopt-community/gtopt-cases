@@ -10,9 +10,6 @@
 > original data belong to their authors and/or the publishing institutions.
 > See [DISCLAIMER.md](../../../DISCLAIMER.md).
 
-> [!CAUTION]
-> Conversion not yet validated; use for software testing only.
-
 Four one-year hydrothermal cases of the Peruvian SEIN, converted with
 `sddp2gtopt` from the PSR SDDP base cases of the COES study *Estudio de
 Verificación del Margen de Reserva Firme Objetivo 2026-2029* (Anexo D,
