@@ -20,6 +20,14 @@ and research groups.  Needs gtopt **1.1.0 or later**
 
 ## Countries
 
+Six countries so far, each in its own folder with a README that
+describes the power system, the publisher of the data and the cases.
+The table below lists, for each country, the system and the institution
+whose published data the cases are built from, and what the cases are:
+daily or weekly unit commitment and dispatch, hydrothermal SDDP over
+one to 23 years, transmission planning bases and a DC optimal power
+flow.
+
 | Country | System · data from | Cases |
 |---|---|---|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [**Australia**](australia/README.md) | NEM · AEMO | 1 weekly dispatch (PLEXOS ISP 2026, Step Change) |
@@ -31,6 +39,15 @@ and research groups.  Needs gtopt **1.1.0 or later**
 
 ### Model size
 
+How large the systems are, counted as gtopt elements in the converted
+cases: buses and lines of the network, generators (thermal, hydro,
+wind, solar and, where the source models them, neighbouring markets as
+price bids), demands, hydro reservoirs and batteries (including pumped
+storage modelled as a battery).  Where a country has several cases the
+table gives the range.  The Ireland figures describe the case that
+`tools/get_case.py fetch` builds locally, since its data are not
+redistributed here.
+
 | Country | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
 |---|---:|---:|---:|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 15 | 18 | 523 | 15 | 22 | 85 |
@@ -40,7 +57,7 @@ and research groups.  Needs gtopt **1.1.0 or later**
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](poland/README.md) | 3,374 | 4,161 | 489 | 2,414 | — | — |
 
-Ranges over each country's cases.  Per-case detail (demands, turbines,
+Per-case detail (demands, turbines,
 water rights, unit commitments, blocks, scenarios, LP size) is in the
 [case index](docs/cases.md) and [`catalog.json`](catalog.json).
 
