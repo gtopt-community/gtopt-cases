@@ -13,6 +13,7 @@ operators and research groups.
 
 | Country | System · data from | Cases |
 |---|---|---|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [**Australia**](australia/README.md) | NEM · AEMO | 1 weekly dispatch (PLEXOS ISP 2026, Step Change) |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [**Chile**](chile/README.md) | SEN · CEN | 14 daily unit commitments (PLEXOS)<br>3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [**Guatemala**](guatemala/README.md) | SNI · AMM, EOR | 2 daily/weekly dispatches (NCP)<br>6 annual SDDP programmes · 6 PSS®E snapshots |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [**Peru**](peru/README.md) | SEIN · COES | 4 annual SDDP cases (2026-2029 reserve-margin study) |
@@ -22,6 +23,7 @@ operators and research groups.
 
 | Country | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
 |---|---:|---:|---:|---:|---:|---:|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 15 | 18 | 523 | 15 | 22 | 85 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 237–339 | 305–449 | 1,628–1,892 | 127–161 | 10–12 | 0–112 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](peru/README.md) | 270 | 312–394 | 157–163 | 133–135 | 60 | — |

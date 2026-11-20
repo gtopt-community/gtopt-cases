@@ -5,10 +5,12 @@ authors; they are under different terms.
 
 - **`source/`**: third-party data, redistributed as published and
   unmodified except for xz compression and, for large files, splitting
-  into numbered parts.  **No licence is granted** by this repository.
+  into numbered parts (the AEMO trace files are also cut to the rows of
+  the case week).  **No licence is granted** by this repository.
 - **`case/`**: derived from that data by the gtopt conversion tools; the
   cases remain subject to the rights and terms of the publishers.
-- **Rights holders**: Coordinador Eléctrico Nacional (CEN), Chile;
+- **Rights holders**: Australian Energy Market Operator (AEMO),
+  Australia; Coordinador Eléctrico Nacional (CEN), Chile;
   Administrador del Mercado Mayorista (AMM), Guatemala; Ente Operador
   Regional (EOR), Central America; Comité de Operación Económica del
   Sistema Interconectado Nacional (COES), Peru; Roman Korab, Silesian

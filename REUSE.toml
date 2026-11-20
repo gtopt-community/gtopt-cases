@@ -29,6 +29,22 @@ path = ["tools/**", ".githooks/**"]
 SPDX-FileCopyrightText = "2026 Marcelo Matus and the gtopt contributors"
 SPDX-License-Identifier = "AGPL-3.0-or-later OR LicenseRef-gtopt-commercial"
 
+# ---- Australia: AEMO (used under AEMO's copyright permissions)
+[[annotations]]
+path = "australia/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = "Australian Energy Market Operator (AEMO)"
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence"
+
+[[annotations]]
+path = "australia/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "Australian Energy Market Operator (AEMO)",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
 # ---- Chile: CEN
 [[annotations]]
 path = "chile/**/source/**"

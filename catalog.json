@@ -5283,6 +5283,104 @@
         "Out-of-service units omitted; 10 negative-load buses become fixed injections; MATPOWER linear costs.",
         "Data have no explicit licence; redistributed unchanged as published by MATPOWER, with attribution; removable on request of the rights holder."
       ]
+    },
+    {
+      "id": "australia/production_cost/isp2026_sc_2027w03",
+      "path": "australia/production_cost/isp2026_sc_2027w03",
+      "date": "2027-01-18 to 2027-01-24 (one week, hourly)",
+      "country": "australia",
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/isp2026_sc_2027w03.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 126129,
+          "cols": 241022,
+          "nnz": 449427,
+          "gtopt_revision": "61a0ba430b0c"
+        },
+        "buses": 15,
+        "generators": 523,
+        "lines": 18,
+        "batteries": 85,
+        "reservoirs": 22,
+        "blocks": 168,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      },
+      "source": {
+        "files": [
+          {
+            "path": "source/2026 ISP Step Change Model.xml.xz",
+            "sha256": "e98c4827c4fb3052732e20415709a83a8453de8ddd0960101490f0b0b96e74df",
+            "bytes": 1234148
+          },
+          {
+            "path": "source/traces.sha256",
+            "sha256": "df102f707199c51764495462bfd9109ae09c2ba523d94f602bb8b9c17d412105",
+            "bytes": 26757,
+            "manifest": "source/traces",
+            "note": "sha256 manifest of the 250 window-cut trace files under source/traces/ (629,806 bytes), paths relative to source/traces"
+          },
+          {
+            "path": "source/NOT_KEPT.txt",
+            "sha256": "39a14d8c13fb16c8beac8d86536467a5dd8210ed22fb2682941c6a3c714871dd",
+            "bytes": 1369
+          }
+        ],
+        "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w03.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+        "publisher": "Australian Energy Market Operator (AEMO)",
+        "licence": "AEMO copyright permissions (https://aemo.com.au/privacy-and-legal-notices/copyright-permissions): 'AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. You do not need to obtain specific permission to use AEMO Material in this way.' Excludes confidential documents and reports commissioned by third parties."
+      },
+      "converter": {
+        "tool": "plexos2gtopt.aemo_isp",
+        "flags": [
+          "-s",
+          "2027-01-18",
+          "-d",
+          "7",
+          "-n",
+          "isp2026_sc_2027w03"
+        ],
+        "gtopt_revision": "da204a77f83cca6ec8cd9141bc7f912f20c72af5",
+        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w03/case/isp2026_sc_2027w03.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w03/case\" -d . --solver clp",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w03",
+        "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03",
+        "resources": {
+          "class": "small",
+          "guide": "~126k-row LP; about a minute with CLP, < 1 GB RAM"
+        },
+        "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-01-18 -d 7 -o case -n isp2026_sc_2027w03"
+      },
+      "rights_holders": [
+        {
+          "name": "Australian Energy Market Operator (AEMO)",
+          "url": "https://www.aemo.com.au"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Australian Energy Market Operator (AEMO)"
+        ],
+        "licence": "AEMO copyright permissions: general permission for anyone to use AEMO Material for any purpose, with accurate and appropriate attribution of the AEMO Material and of AEMO as its author; confidential documents and reports commissioned by third parties are excluded.",
+        "attribution": "Source: Australian Energy Market Operator (AEMO), 2026 Integrated System Plan PLEXOS model (Step Change), © AEMO, used under AEMO's copyright permissions; converted to gtopt format.",
+        "modified": "source: scenario XML unmodified except xz compression; trace files cut to the rows of 2027-01-18..2027-01-24 (see source/NOT_KEPT.txt); case: converted by gtopt plexos2gtopt.aemo_isp",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-01-18; no capacity expansion.",
+        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
+        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "Not validated against AEMO (the public package has no PLEXOS solution)."
+      ]
     }
   ],
   "results_policy": "No results of any kind are published here; run gtopt and the gtopt analysis tools with their output outside the repository (e.g. ~/gtopt-cases-out)."

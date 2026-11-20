@@ -57,24 +57,24 @@ DAMAGE.
 ## Ownership of the source data
 
 All rights to the original cases, models and data belong to their authors
-and/or to the institutions that published them: Coordinador Eléctrico
-Nacional (CEN), Chile; Administrador del Mercado Mayorista (AMM),
-Guatemala; Ente Operador Regional (EOR); Comité de Operación Económica del
-Sistema Interconectado Nacional (COES), Peru; and Roman Korab, Silesian
-University of Technology, whose data are distributed by MATPOWER.  This
-repository claims no ownership of them and grants no licence over them.
-`source/` holds the data as published (unmodified except for compression
-and splitting into parts); `case/` holds gtopt conversions derived from
-it, which remain subject to the publishers' rights.  See
-[`LICENSING.md`](LICENSING.md) and [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md);
-the source data remain subject to the terms of use of those institutions.
+and/or to the institutions that published them: Australian Energy Market
+Operator (AEMO), Australia; Coordinador Eléctrico Nacional (CEN), Chile;
+Administrador del Mercado Mayorista (AMM), Guatemala; Ente Operador Regional
+(EOR); Comité de Operación Económica del Sistema Interconectado Nacional
+(COES), Peru; and Roman Korab, Silesian University of Technology, whose data
+are distributed by MATPOWER.  This repository claims no ownership of them and
+grants no licence over them.  `source/` holds the data as published (unmodified
+except for compression and splitting into parts; the AEMO traces are cut to
+the case week); `case/` holds gtopt conversions derived from it, which remain
+subject to the publishers' rights.  See [`LICENSING.md`](LICENSING.md) and
+[`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md); the source data remain subject
+to the terms of use of those institutions.
 
 ## No affiliation; trademarks
 
-The gtopt project is not affiliated with, sponsored by or endorsed by CEN,
-AMM, EOR, COES, Energy Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC.
-Mentioning an institution or a product does not imply any such
-relationship.
+The gtopt project is not affiliated with, sponsored by or endorsed by AEMO,
+CEN, AMM, EOR, COES, Energy Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC.
+Mentioning an institution or a product does not imply any such relationship.
 
 PLEXOS® is a registered trademark of Energy Exemplar.  SDDP and NCP are
 products of PSR.  PSS®E is a registered trademark of
@@ -118,22 +118,23 @@ publicados por las instituciones competentes. Los autores no asumen
 responsabilidad alguna por el uso de estos casos.
 
 Todos los derechos sobre los casos, modelos y datos originales pertenecen a
-sus autores y/o a las instituciones que los publican (CEN, Chile; AMM,
-Guatemala; EOR; COES, Perú; Roman Korab, Universidad Tecnológica de
-Silesia, con datos distribuidos por MATPOWER). Este repositorio no
-reclama propiedad sobre ellos ni otorga licencia alguna sobre ellos; solo
-redistribuye los insumos tal como fueron publicados (sin modificaciones,
-salvo compresión y división en partes), junto con las conversiones a gtopt
-derivadas de ellos, que siguen sujetas a los derechos de los publicadores.
+sus autores y/o a las instituciones que los publican (AEMO, Australia; CEN,
+Chile; AMM, Guatemala; EOR; COES, Perú; Roman Korab, Universidad Tecnológica
+de Silesia, con datos distribuidos por MATPOWER). Este repositorio no reclama
+propiedad sobre ellos ni otorga licencia alguna sobre ellos; solo redistribuye
+los insumos tal como fueron publicados (sin modificaciones, salvo compresión y
+división en partes; las series de AEMO se recortan a la semana del caso),
+junto con las conversiones a gtopt derivadas de ellos, que siguen sujetas a
+los derechos de los publicadores.
 
-El proyecto gtopt no está afiliado a CEN, AMM, EOR, COES, Energy Exemplar,
-PSR, Siemens, IBM ni MATPOWER / PSERC, ni cuenta con su patrocinio o
+El proyecto gtopt no está afiliado a AEMO, CEN, AMM, EOR, COES, Energy
+Exemplar, PSR, Siemens, IBM ni MATPOWER / PSERC, ni cuenta con su patrocinio o
 respaldo. PLEXOS® es marca registrada de Energy Exemplar; SDDP y NCP son
-productos de PSR; PSS®E es marca registrada de Siemens; CPLEX es
-marca de IBM; MATPOWER es un proyecto desarrollado originalmente en PSERC
-(Universidad de Cornell). Estos nombres se usan solo para identificar los
-formatos de archivo y las herramientas de origen de los datos; todas las
-marcas pertenecen a sus respectivos dueños.
+productos de PSR; PSS®E es marca registrada de Siemens; CPLEX es marca de IBM;
+MATPOWER es un proyecto desarrollado originalmente en PSERC (Universidad de
+Cornell). Estos nombres se usan solo para identificar los formatos de archivo
+y las herramientas de origen de los datos; todas las marcas pertenecen a sus
+respectivos dueños.
 
 Si usted es titular de derechos y se opone a la redistribución de algún
 material, escriba a <marcelomatusacuna@gmail.com> con el asunto

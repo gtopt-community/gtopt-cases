@@ -10,7 +10,9 @@
 #     no solver output (*.sol, *.lp dumps) and no Python caches;
 #   * no absolute home paths (/home/..., /Users/..., C:\Users\...) in text files;
 #   * every source/ file matches its sha256/bytes in catalog.json, and no
-#     tracked source/ file is missing from the catalog (NOTICE.md excepted);
+#     tracked source/ file is missing from the catalog (NOTICE.md excepted;
+#     a catalogued sha256 manifest with a "manifest" directory covers the
+#     files it lists);
 #   * the whole tracked tree stays under MAX_TREE_MB (default 400 MB).
 set -euo pipefail
 
@@ -76,6 +78,18 @@ for c in cat["cases"]:
         elif (os.path.getsize(p) != f["bytes"] or hashlib.sha256(
                 open(p, "rb").read()).hexdigest() != f["sha256"]):
             bad.append(f"{p}: sha256/bytes differ from catalog.json")
+        elif "manifest" in f:
+            # sha256sum-style manifest of the files under f["manifest"]
+            # (paths relative to that directory): each is catalogued by it.
+            base = os.path.join(c["path"], f["manifest"])
+            for line in open(p, encoding="utf-8").read().splitlines():
+                digest, _, rel = line.partition("  ")
+                q = os.path.normpath(os.path.join(base, rel))
+                listed.add(q)
+                if q not in tracked or not os.path.isfile(q):
+                    bad.append(f"{q}: in {p} but not tracked")
+                elif hashlib.sha256(open(q, "rb").read()).hexdigest() != digest:
+                    bad.append(f"{q}: sha256 differs from {p}")
 bad += [f"{p}: under source/ but not in catalog.json" for p in sorted(tracked - listed)
         if "/source/" in p and os.path.basename(p) != "NOTICE.md"]
 for b in bad:

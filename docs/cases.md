@@ -17,6 +17,8 @@ gtopt-cases/
 │                        rights holders and terms, notes
 ├── profiles/            shared gtopt options per application
 ├── tools/               get_case.py: download sources + run the converters
+├── australia/           National Electricity Market (NEM), data from AEMO
+│   └── production_cost/     2026 ISP PLEXOS model, one-week dispatch (plexos2gtopt.aemo_isp)
 ├── chile/               Sistema Eléctrico Nacional (SEN), data from the CEN
 │   ├── daily_scheduling/    CEN PCP daily unit commitment (PLEXOS → gtopt)
 │   ├── medium_long_term/    CEN PLP hydrothermal SDDP (PLP → gtopt)
@@ -39,6 +41,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 
 | Case | Buses | Lines | Generators | Demands | Reservoirs | Turbines | Batteries | Water rights | Unit commitments | Blocks | Stages | Scenarios |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | 15 | 18 | 523 | 15 | 22 | 95 | 85 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-10-05](../chile/daily_scheduling/pcp_2025-10-05) | 237 | 305 | 1,739 | 127 | 12 | 35 | 23 | 4 | 1,009 | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-10-19](../chile/daily_scheduling/pcp_2025-10-19) | 239 | 306 | 1,747 | 127 | 12 | 37 | 25 | 4 | 1,001 | 107 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [daily_scheduling/pcp_2025-11-09](../chile/daily_scheduling/pcp_2025-11-09) | 239 | 307 | 1,751 | 127 | 12 | 34 | 25 | 5 | 1,005 | 118 | 1 | 1 |
@@ -75,6 +78,16 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2028](../peru/medium_long_term/coes_mrfo_2026-2029/2028) | 270 | 346 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [medium_long_term/coes_mrfo_2026-2029/2029](../peru/medium_long_term/coes_mrfo_2026-2029/2029) | 270 | 394 | 163 | 135 | 60 | 56 | — | — | — | 60 | 12 | 56 |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [dc_opf/case3375wp](../poland/dc_opf/case3375wp) | 3,374 | 4,161 | 489 | 2,414 | — | — | — | — | — | 1 | 1 | 1 |
+
+## <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> Australia
+
+| Case | Application | Buses | Blocks | LP rows | Resources |
+|---|---|---:|---:|---:|---|
+| [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | production_cost | 15 | 168 | 126,129 | small |
+
+One-week hourly dispatch (18-24 January 2027) of the AEMO 2026 ISP PLEXOS
+model, Step Change scenario; prototype without expansion or PLEXOS
+constraints.  See [australia/README.md](../australia/README.md).
 
 ## <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> Chile: daily scheduling — day-ahead unit commitment (monolithic MIP)
 
@@ -170,14 +183,16 @@ No case yet; see [chile/expansion/README.md](../chile/expansion/README.md).
 
 | Country | System | Data source | Daily scheduling | Medium/long term | Expansion |
 |---|---|---|---:|---:|---:|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](../australia/README.md) | NEM | AEMO (Australian Energy Market Operator), 2026 ISP | 1 weekly dispatch (production cost) | — | — |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [Poland](../poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
 
 
-Each country README names the rights holders of its source data (Chile:
-CEN; Guatemala: AMM and EOR; Peru: COES; Poland: R. Korab / MATPOWER).
+Each country README names the rights holders of its source data
+(Australia: AEMO; Chile: CEN; Guatemala: AMM and EOR; Peru: COES;
+Poland: R. Korab / MATPOWER).
 All third-party data sources, their terms and the attribution to give are
 listed in [`THIRD_PARTY_DATA.md`](../THIRD_PARTY_DATA.md).  New countries
 follow the same pattern.

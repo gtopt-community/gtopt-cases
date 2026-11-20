@@ -13,7 +13,8 @@ official operation analysis or financial analysis).
 
 All rights to the original data belong to their authors and/or the
 publishing institutions.  `source/` holds the data unmodified except for
-xz compression and splitting into parts; `case/` holds gtopt conversions
+xz compression and splitting into parts (the AEMO trace files are also
+cut to the rows of the case week); `case/` holds gtopt conversions
 derived from it, which remain subject to the publishers' rights; no
 licence is granted over either.  The conversion layer added by the gtopt
 authors is CC0-1.0, without granting any right in the third-party data.
@@ -32,6 +33,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 
 | Data source | Cases | Rights holder / author | Licence or terms | In this repo |
 |---|---|---|---|---|
+| AEMO — 2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario | `australia/production_cost/isp2026_sc_2027w03` | Australian Energy Market Operator (AEMO) | AEMO copyright permissions: general permission to use AEMO material for any purpose, with accurate and appropriate attribution of the material and of AEMO as its author (confidential and third-party commissioned reports excluded) | Scenario XML unchanged (xz) + the 250 trace files read, cut to the case week + gtopt case |
 | CEN — PCP daily programme (PLEXOS model bases) | `chile/daily_scheduling/pcp_*` (14) | Coordinador Eléctrico Nacional (CEN), Chile | No open licence stated; public CEN publications, CEN keeps the rights; check CEN terms before redistribution | PLEXOS input bundles (`DATOS*.zip.xz`) + gtopt cases; PLEXOS results (`RES*.zip`) not redistributed |
 | CEN — PLP medium/long-term programme | `chile/medium_long_term/plp_*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs + gtopt cases |
 | AMM / EOR — PSR NCP daily/weekly programme | `guatemala/daily_scheduling/ncp_*` (2) | Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR) | No open licence stated; public AMM/EOR publications, they keep the rights; check their terms | Selected converter inputs (xz) + gtopt cases; original `.rar` archives and operator results not redistributed |
@@ -40,6 +42,29 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | MATPOWER `case3375wp` (Polish system, winter 2007-08 evening peak) | `poland/dc_opf/case3375wp` | Roman Korab, Silesian University of Technology; distributed by MATPOWER (PSERC / R. D. Zimmerman, C. E. Murillo-Sánchez) | **No explicit licence**: MATPOWER's BSD-3-Clause licence explicitly does **not** cover its case files; distributed with MATPOWER *"with the permission of Roman Korab"*; MATPOWER asks users of its data files to cite the MATPOWER paper | `.m` file unchanged (xz) + gtopt case |
 
 ## Details and attribution
+
+### AEMO (Australia)
+
+- Publisher: Australian Energy Market Operator, <https://www.aemo.com.au>.
+- Source: 2026 Integrated System Plan (ISP) PLEXOS model and trace files,
+  <https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp>
+  (`2026 ISP Model.zip`, sha256
+  `d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2`, and
+  the Solar, Wind, Hydro and Timeslice trace zips; hashes in the case
+  README).  Scenario: Step Change.
+- Terms: AEMO's copyright permissions
+  (<https://aemo.com.au/privacy-and-legal-notices/copyright-permissions>):
+  *"AEMO confirms its general permission for anyone to use AEMO Material
+  for any purpose, but only with accurate and appropriate attribution of
+  the relevant AEMO Material and AEMO as its author. You do not need to
+  obtain specific permission to use AEMO Material in this way."*
+  Confidential documents and reports commissioned by third parties are
+  excluded.  AEMO gives no warranty on the model, which had confidential
+  data removed.
+- Attribution: *"Source: Australian Energy Market Operator (AEMO), 2026
+  Integrated System Plan PLEXOS model (Step Change), © AEMO, used under
+  AEMO's copyright permissions; converted to gtopt format."*
+- See [`australia/README.md`](australia/README.md).
 
 ### CEN (Chile)
 
