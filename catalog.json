@@ -6136,12 +6136,12 @@
         "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w03/case/isp2026_sc_2027w03.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w03/case\" -d . --solver clp",
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w03/case/isp2026_sc_2027w03.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w03/case\" -d . --solver highs",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w03",
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03",
         "resources": {
           "class": "small",
-          "guide": "~126k-row LP; about a minute with CLP, < 1 GB RAM"
+          "guide": "~126k-row LP; a few seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-01-18 -d 7 -o case -n isp2026_sc_2027w03"
       },
@@ -6234,12 +6234,12 @@
         "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w16/case/isp2026_sc_2027w16.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w16/case\" -d . --solver clp",
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w16/case/isp2026_sc_2027w16.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w16/case\" -d . --solver highs",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w16",
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16",
         "resources": {
           "class": "small",
-          "guide": "~132k-row LP; a few minutes with CLP, < 1 GB RAM"
+          "guide": "~132k-row LP; a few seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-04-19 -d 7 -o case -n isp2026_sc_2027w16"
       },
@@ -6332,12 +6332,12 @@
         "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w29/case/isp2026_sc_2027w29.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w29/case\" -d . --solver clp",
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w29/case/isp2026_sc_2027w29.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w29/case\" -d . --solver highs",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w29",
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29",
         "resources": {
           "class": "small",
-          "guide": "~144k-row LP; a few minutes with CLP, < 1 GB RAM"
+          "guide": "~144k-row LP; a few seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-07-19 -d 7 -o case -n isp2026_sc_2027w29"
       },
@@ -6430,12 +6430,12 @@
         "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w42/case/isp2026_sc_2027w42.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w42/case\" -d . --solver clp",
+        "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w42/case/isp2026_sc_2027w42.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w42/case\" -d . --solver highs",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_2027w42",
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42",
         "resources": {
           "class": "small",
-          "guide": "~151k-row LP; a few minutes with CLP, < 1 GB RAM"
+          "guide": "~151k-row LP; a few seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-10-18 -d 7 -o case -n isp2026_sc_2027w42"
       },

@@ -129,13 +129,13 @@ REPO=$(git rev-parse --show-toplevel)      # this checkout
 C=$REPO/australia/production_cost/isp2026_sc_2027w42/case
 OUT=~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42
 mkdir -p "$OUT/output" && cd "$OUT/output"
-gtopt "$C/isp2026_sc_2027w42.json" --set input_directory="$C" -d . --solver clp
+gtopt "$C/isp2026_sc_2027w42.json" --set input_directory="$C" -d . --solver highs
 ```
 
 - No profile; the case reads its Parquet schedules from `case/`.
 - Solver: any LP solver works (`gtopt --solvers` lists them); the command
-  above uses CLP.
-- Expected resources: **small** — a ~151k-row LP; a few minutes with CLP
+  above uses HiGHS.
+- Expected resources: **small** — a ~151k-row LP; a few seconds with HiGHS
   and well under 1 GB of RAM.
 
 ### Rebuild `case/` from `source/`

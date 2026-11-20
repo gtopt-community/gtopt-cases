@@ -21,7 +21,7 @@ PLEXOS constraints (see the case README, "Limitations").  The four weeks,
 one per season of 2027, come from the same scenario database and differ
 in demand, renewable and hydro traces, seasonal line limits and the fleet
 in service (523 to 542 generators, 85 to 106 batteries as new projects
-enter).  Each one solves in one to a few minutes with CLP.
+enter).  Each one solves in a few seconds with HiGHS.
 
 | | Summer (w03) | Autumn (w16) | Winter (w29) | Spring (w42) |
 |---|---:|---:|---:|---:|
