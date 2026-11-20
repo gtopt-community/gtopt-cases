@@ -8,8 +8,15 @@ and research groups.  Needs gtopt **1.1.0 or later**
 ([releases](https://github.com/gtopt-community/gtopt/releases)).
 
 > [!WARNING]
-> Provided **AS IS**; the data publishers keep all rights.
-> See the [disclaimer](DISCLAIMER.md) and [licensing](LICENSING.md).
+> The cases are provided **AS IS**, without warranty of any kind.  They
+> were built with gtopt's own converters and checked only as far as the
+> gtopt authors can; they are **not validated by the institutions that
+> published the data**, and they must not be used as a reference for
+> official operation, planning or financial analysis.  All rights to the
+> source data remain with their publishers (AEMO, CEN, AMM, EOR, COES,
+> the SEM Committee, R. Korab / MATPOWER); no licence over that data is
+> granted here.  Read the [disclaimer](DISCLAIMER.md) and
+> [licensing](LICENSING.md) before using any case.
 
 ## Countries
 
