@@ -21,7 +21,7 @@ Each release states the minimum gtopt version its cases need.
 
 ## [1.0.0] - 2026-11-20
 
-First public release.  Real power-system cases from six countries, from
+First public release: 41 real power-system cases from six countries, from
 a one-hour DC OPF to a 23-year hydrothermal SDDP.  Needs gtopt **1.1.0
 or later**.
 

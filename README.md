@@ -95,6 +95,29 @@ cd gtopt-cases/poland/dc_opf/case3375wp   # small: runs in a moment
 cat README.md                             # the exact gtopt command to run it
 ```
 
+## Releases
+
+The current release is
+[**1.0.0**](https://github.com/gtopt-community/gtopt-cases/releases/tag/v1.0.0)
+(2026-11-20), the first public release.  It brings 41 cases from six
+countries and needs gtopt **1.1.0 or later**:
+
+- 🇦🇺 **Australia**: 1 weekly dispatch of the NEM (AEMO ISP 2026, Step Change);
+- 🇨🇱 **Chile**: 14 weekly unit commitments from the CEN daily operation
+  programmes, 3 SDDP cases of 2, 5 and 23 years with the Laja and Maule
+  irrigation agreements, and 3 SDDP bases of the PET 2027 transmission
+  planning process;
+- 🇬🇹 **Guatemala**: 2 daily/weekly dispatches, 6 annual SDDP programmes
+  and 6 PSS®E network snapshots;
+- 🇮🇪 **Ireland**: 1 weekly unit commitment of the SEM (recipe only);
+- 🇵🇪 **Peru**: 4 annual SDDP cases of the COES 2026-2029 reserve-margin study;
+- 🇵🇱 **Poland**: 1 DC OPF of 3,374 buses.
+
+Plus `catalog.json` with provenance and model size for every case, the
+[case index](docs/cases.md) and `tools/get_case.py` to download and
+rebuild cases.  Changes between releases are in the
+[changelog](CHANGELOG.md).
+
 ## Documentation
 
 - 📋 [**Case index**](docs/cases.md): all cases by application and country, sizes and resources
