@@ -30,7 +30,7 @@ demand (E01 < E02 < E03), the generation plan of works (`plpcnfce.dat`,
 plp_pet27/
 ├── README.md        this file: the process, scenarios, variants, what is (not) in the base
 ├── methodology/     CEN Anexo II "Metodología" (PDF, as published) and the
-│                    CEN webinar slides used below (assumptions and published diagnosis results)
+│                    CEN report figures and webinar slides used below (process, assumptions, published diagnosis results)
 ├── e01/ e02/ e03/   one case per energy scenario
 │   ├── README.md    how to run, regeneration command, variants
 │   ├── source/      PLP input files as published by the CEN (xz)
@@ -53,6 +53,20 @@ webinar (November 2026, these bases)**, preliminary report (December
 2026), industry comments on it (December 2026) and the final PET 2027
 (January 2027).
 
+The Diagnóstico report summarises the national process in four stages
+(Figura 2-5): **I** information, assumptions and modelling bases;
+**II-A** the generation and storage plan of works (capacity-expansion
+model, PLEXOS, 25 years, reduced network); **II-B** the diagnosis of the
+transmission system (long-term operation with **PLP**, 20 years,
+extended network, plus PowerFactory electrical studies) — the stage
+these bases come from; and **III** the transmission proposals, iterated
+with PLP simulations and technical / economic evaluation into the
+optimal national plan of works.
+
+![CEN process diagram for national transmission expansion: stage I data and modelling bases, II-A generation and storage plan (PLEXOS), II-B diagnosis (PLP + PowerFactory), III proposals and evaluation](methodology/pet27_informe_fig2-5_process.jpg)
+
+*Source: Coordinador Eléctrico Nacional (CEN), “Diagnóstico del Uso Esperado del Sistema de Transmisión 2027” ([`Informe_Diagnostico_PET_2027-1.pdf`](https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf), November 2026), Figura 2-5, p. 24.*
+
 **1. Demand and generation scenarios.**  Demand is projected for
 2026–2046 by combining a top-down econometric forecast with bottom-up
 surveys of free and regulated customers, plus new consumption (green
@@ -69,13 +83,13 @@ resulting plan of works (39, 50 and 67 GW of additional capacity by
 PLP: in these bases it is the fixed set of future units of
 `plpcnfce.dat` / `plpmance.dat`, not candidates.
 
-![Generation plan of works: method, high-uncertainty assumptions and installed capacity per scenario](methodology/pet27_generation_plan_scenarios.jpg)
+![High-uncertainty scenarios and assumptions of the generation and storage plan of works](methodology/pet27_webinar_slide5_scenarios.jpg)
 
 *Source: Coordinador Eléctrico Nacional (CEN), webinar presentation “Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027”, 16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`, slide 5; [CEN publication of the Diagnóstico, 16 November 2026](https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/).*
 
-![Existing and planned capacity by region, scenarios 1 to 3, case CS-I](methodology/pet27_capacity_by_region.jpg)
+![Expected generation matrix, cases CS-I and NC-VI, scenarios 1 to 3](methodology/pet27_informe_fig0-2_generation_matrix.jpg)
 
-*Source: Coordinador Eléctrico Nacional (CEN), webinar presentation “Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027”, 16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`, slide 6; [CEN publication of the Diagnóstico, 16 November 2026](https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/).*
+*Source: Coordinador Eléctrico Nacional (CEN), “Diagnóstico del Uso Esperado del Sistema de Transmisión 2027” ([`Informe_Diagnostico_PET_2027-1.pdf`](https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf), November 2026), Figura 0-2, p. 11.*
 
 **2. Interregional transmission alternatives.**  Interregional lines
 complementing the 2026 proposal are the transmission candidates.  The
@@ -86,9 +100,9 @@ alternative is its total cost minus the scenario's minimum, and the
 alternative with the smallest maximum regret is selected.  The two
 alternatives modelled in these bases:
 
-![CEN model assumptions, expansion alternatives by average cost vs maximum regret (CS-I lowest), and diagnosis metrics](methodology/pet27_cen_model_alternatives_regret.jpg)
+![Average cost vs maximum regret of the transmission cases evaluated](methodology/pet27_informe_fig3-3_regret.jpg)
 
-*Source: Coordinador Eléctrico Nacional (CEN), webinar presentation “Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027”, 16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`, slide 8; [CEN publication of the Diagnóstico, 16 November 2026](https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/).*
+*Source: Coordinador Eléctrico Nacional (CEN), “Diagnóstico del Uso Esperado del Sistema de Transmisión 2027” ([`Informe_Diagnostico_PET_2027-1.pdf`](https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf), November 2026), Figura 3-3, p. 29.*
 
 - **CS-I, Centro–Sur** (the reference case of these bases): HVAC line of
   1500 MVA Lo Aguirre–Charrúa, in operation in 2038.
@@ -120,21 +134,21 @@ corridors that need an expansion.  The zonal systems are diagnosed
 separately with PowerFactory (transformer and line loading against
 coincident peak demand, 2026–2034), outside these bases.
 
-For context on what the PET27 diagnosis produces, two slides of the
-CEN webinar (16 November 2026; CEN results as published, not gtopt runs
-and not reference values for these cases): expected congestion
+For context on what the PET27 diagnosis produces, a slide of the
+CEN webinar and a figure of the Diagnóstico report (CEN results as
+published, not gtopt runs and not reference values for these cases): expected congestion
 2030–2035 by corridor (day / night) and mean annual marginal costs along
 the 500 kV backbone for CS-I and NC-VI.
 
-![CEN diagnosis: probability of congestion 2030-2035 by corridor, day and night](methodology/pet27_cen_congestion_2030_2035.jpg)
+![CEN diagnosis: probability of congestion 2030-2035 by corridor, day and night](methodology/pet27_webinar_slide9_congestion.jpg)
 
 *Source: Coordinador Eléctrico Nacional (CEN), webinar presentation “Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027”, 16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`, slide 9; [CEN publication of the Diagnóstico, 16 November 2026](https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/).*
 
-![CEN diagnosis: mean annual marginal costs by 500 kV bus, 2027-2040, day and night, cases CS-I and NC-VI](methodology/pet27_cen_marginal_costs.jpg)
+![Mean annual marginal cost by 500 kV bus, daytime, average of the hydrologies, cases CS and NC, scenarios 1 to 3](methodology/pet27_informe_fig4-28_marginal_costs_day.jpg)
 
-*Source: Coordinador Eléctrico Nacional (CEN), webinar presentation “Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027”, 16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`, slide 10; [CEN publication of the Diagnóstico, 16 November 2026](https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/).*
+*Source: Coordinador Eléctrico Nacional (CEN), “Diagnóstico del Uso Esperado del Sistema de Transmisión 2027” ([`Informe_Diagnostico_PET_2027-1.pdf`](https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf), November 2026), Figura 4-28, p. 59.*
 
-The minimax-regret chart in step 2 places CS-I at the lowest average
+The minimax-regret chart (Figura 3-3) places CS-I at the lowest average
 cost and maximum regret of the alternatives evaluated (NC-VI, NC-III,
 NCS-IX, NCS-III, NCS-X, NCS-VI); the low daytime marginal costs
 (3–15 USD/MWh) come from the volume of variable renewables, and the low
@@ -229,7 +243,8 @@ converts the same way; drop `-s 12 -y 1 -a 0` for the full 23-year,
 |---|---|
 | Publisher | Coordinador Eléctrico Nacional (CEN), <https://www.coordinador.cl> |
 | Publication | *Propuesta de Expansión de Transmisión del SEN 2027 — Diagnóstico — Anexos*, published 2026-11-13, <https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/> |
-| Files used | Anexo IV.1 *Bases de Datos y Resultados – Parte 1 (Base PLP)* (`Anexo-4.1-Base-PLP.zip`); Anexo II *Metodología de Desarrollo del Diagnóstico* (`methodology/Anexo-II-Metodologia.pdf`); figures from the CEN webinar presentation *Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027* (16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`; announced in <https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/>), slides 5, 6, 8, 9 and 10 |
+| Report | *Diagnóstico del Uso Esperado del Sistema de Transmisión 2027* (`Informe_Diagnostico_PET_2027-1.pdf`), <https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf>; announcement <https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/> |
+| Files used | Anexo IV.1 *Bases de Datos y Resultados – Parte 1 (Base PLP)* (`Anexo-4.1-Base-PLP.zip`); Anexo II *Metodología de Desarrollo del Diagnóstico* (`methodology/Anexo-II-Metodologia.pdf`); figures from the *Informe de Diagnóstico* (<https://www.coordinador.cl/wp-content/uploads/2026/11/Informe_Diagnostico_PET_2027-1.pdf>, Figuras 0-2, 2-5, 3-3 and 4-28) and from the CEN webinar presentation *Diagnóstico del uso esperado del sistema de transmisión — Proceso de Planificación de la Transmisión 2027* (16 November 2026, `20261116-PPT-Diagnostico_PET27_Webinar.pdf`; announced in <https://www.coordinador.cl/novedades/coordinador-publica-diagnostico-que-proyecta-el-uso-del-sistema-de-transmision-entre-2027-y-2047/>), slides 5 and 9 |
 | Not included | IPLP workbooks (`.xlsm`, 48 MB each); Anexo IV.2 PLP results and IV.3 PowerFactory bases and results (available from the CEN; only the CEN's published diagnosis figures are shown above) |
 
 Cite: Coordinador Eléctrico Nacional, *Propuesta de Expansión de
