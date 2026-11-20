@@ -1,4 +1,4 @@
-# <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> Chile — Sistema Eléctrico Nacional (SEN)
+# <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> Chile — Sistema Eléctrico Nacional (SEN)
 
 > [!WARNING]
 > Provided **AS IS**, not validated by the publishers, who keep all
