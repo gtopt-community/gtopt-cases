@@ -1,4 +1,4 @@
-# Poland — Polish transmission system
+# <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> Poland — Polish transmission system
 
 > [!WARNING]
 > Provided **AS IS**, not validated by the data authors, who keep all

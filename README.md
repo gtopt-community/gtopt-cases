@@ -14,19 +14,19 @@ operators and research groups.
 
 | | Country | System | Data from | Cases |
 |:-:|---|---|---|---|
-| 🇨🇱 | [**Chile**](chile/README.md) | SEN | CEN | 14 daily unit commitments (PLEXOS) · 3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements |
-| 🇬🇹 | [**Guatemala**](guatemala/README.md) | SNI | AMM, EOR | 2 daily/weekly dispatches (NCP) · 6 annual SDDP programmes · 6 PSS®E network snapshots |
-| 🇵🇪 | [**Peru**](peru/README.md) | SEIN | COES | 4 annual SDDP cases of the 2026-2029 reserve-margin study |
-| 🇵🇱 | [**Poland**](poland/README.md) | Polish transmission system | R. Korab / MATPOWER | 1 DC OPF of 3,374 buses |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [**Chile**](chile/README.md) | SEN | CEN | 14 daily unit commitments (PLEXOS) · 3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [**Guatemala**](guatemala/README.md) | SNI | AMM, EOR | 2 daily/weekly dispatches (NCP) · 6 annual SDDP programmes · 6 PSS®E network snapshots |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [**Peru**](peru/README.md) | SEIN | COES | 4 annual SDDP cases of the 2026-2029 reserve-margin study |
+| <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> | [**Poland**](poland/README.md) | Polish transmission system | R. Korab / MATPOWER | 1 DC OPF of 3,374 buses |
 
 ### Model size
 
-| | Country | Buses | Lines | Generators | Reservoirs | Batteries |
-|:-:|---|---:|---:|---:|---:|---:|
-| 🇨🇱 | Chile | 237–339 | 305–449 | 1,628–1,892 | 10–12 | 0–112 |
-| 🇬🇹 | Guatemala | 461–877 | 519–955 | 75–230 | 0–44 | — |
-| 🇵🇪 | Peru | 270 | 312–394 | 157–163 | 60 | — |
-| 🇵🇱 | Poland | 3,374 | 4,161 | 489 | — | — |
+| | Country | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
+|:-:|---|---:|---:|---:|---:|---:|---:|
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [Chile](chile/README.md) | 237–339 | 305–449 | 1,628–1,892 | 127–161 | 10–12 | 0–112 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [Guatemala](guatemala/README.md) | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [Peru](peru/README.md) | 270 | 312–394 | 157–163 | 133–135 | 60 | — |
+| <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> | [Poland](poland/README.md) | 3,374 | 4,161 | 489 | 2,414 | — | — |
 
 Ranges over each country's cases.  Per-case detail (demands, turbines,
 water rights, unit commitments, blocks, scenarios, LP size) is in the

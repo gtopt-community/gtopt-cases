@@ -1,4 +1,4 @@
-# Guatemala — Sistema Nacional Interconectado (SNI)
+# <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> Guatemala — Sistema Nacional Interconectado (SNI)
 
 > [!WARNING]
 > Provided **AS IS**, not validated by the publishers, who keep all

@@ -1,4 +1,4 @@
-# Peru — Sistema Eléctrico Interconectado Nacional (SEIN)
+# <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> Peru — Sistema Eléctrico Interconectado Nacional (SEIN)
 
 > [!WARNING]
 > Provided **AS IS**, not validated by the publishers, who keep all

@@ -39,44 +39,44 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 
 | | Case | Buses | Lines | Generators | Demands | Reservoirs | Turbines | Batteries | Water rights | Unit commitments | Blocks | Stages | Scenarios |
 |:-:|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| 🇨🇱 | [daily_scheduling/pcp_2025-10-05](../chile/daily_scheduling/pcp_2025-10-05) | 237 | 305 | 1,739 | 127 | 12 | 35 | 23 | 4 | 1,009 | 168 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2025-10-19](../chile/daily_scheduling/pcp_2025-10-19) | 239 | 306 | 1,747 | 127 | 12 | 37 | 25 | 4 | 1,001 | 107 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2025-11-09](../chile/daily_scheduling/pcp_2025-11-09) | 239 | 307 | 1,751 | 127 | 12 | 34 | 25 | 5 | 1,005 | 118 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2025-11-23](../chile/daily_scheduling/pcp_2025-11-23) | 241 | 310 | 1,753 | 127 | 12 | 35 | 25 | 5 | 996 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2025-12-07](../chile/daily_scheduling/pcp_2025-12-07) | 241 | 309 | 1,753 | 127 | 12 | 34 | 26 | 6 | 1,020 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2025-12-21](../chile/daily_scheduling/pcp_2025-12-21) | 241 | 309 | 1,753 | 127 | 12 | 34 | 26 | 5 | 1,043 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-01-04](../chile/daily_scheduling/pcp_2026-01-04) | 243 | 311 | 1,763 | 127 | 12 | 36 | 29 | 5 | 1,026 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-01-18](../chile/daily_scheduling/pcp_2026-01-18) | 243 | 311 | 1,765 | 127 | 12 | 34 | 29 | 5 | 1,034 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-02-15](../chile/daily_scheduling/pcp_2026-02-15) | 246 | 315 | 1,769 | 127 | 12 | 35 | 32 | 6 | 1,008 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-03-15](../chile/daily_scheduling/pcp_2026-03-15) | 246 | 315 | 1,768 | 127 | 12 | 32 | 33 | 5 | 1,066 | 132 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-04-07](../chile/daily_scheduling/pcp_2026-04-07) | 247 | 317 | 1,772 | 127 | 12 | 30 | 36 | 4 | 1,047 | 111 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-04-12](../chile/daily_scheduling/pcp_2026-04-12) | 247 | 316 | 1,773 | 127 | 12 | 31 | 36 | 4 | 1,097 | 110 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-04-22](../chile/daily_scheduling/pcp_2026-04-22) | 247 | 317 | 1,776 | 127 | 12 | 35 | 36 | 4 | 1,100 | 111 | 1 | 1 |
-| 🇨🇱 | [daily_scheduling/pcp_2026-05-17](../chile/daily_scheduling/pcp_2026-05-17) | 251 | 321 | 1,790 | 139 | 12 | 32 | 41 | 4 | 1,093 | 110 | 1 | 1 |
-| 🇨🇱 | [medium_long_term/plp_23y](../chile/medium_long_term/plp_23y) | 339 | 449 | 1,628 | 161 | 10 | 156 | — | 3 | — | 120 | 12 | 1 |
-| 🇨🇱 | [medium_long_term/plp_2y](../chile/medium_long_term/plp_2y) | 245 | 343 | 1,892 | 137 | 10 | 176 | 112 | 4 | — | 270 | 52 | 4 |
-| 🇨🇱 | [medium_long_term/plp_5y](../chile/medium_long_term/plp_5y) | 241 | 345 | 1,880 | 139 | 10 | 177 | 68 | 4 | — | 234 | 72 | 4 |
-| 🇬🇹 | [daily_scheduling/ncp_pdd_2026-06-22](../guatemala/daily_scheduling/ncp_pdd_2026-06-22) | 830 | 955 | 230 | 241 | 44 | 98 | — | — | — | 168 | 1 | 1 |
-| 🇬🇹 | [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | 830 | 955 | 219 | 241 | — | — | — | — | — | 168 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAEMARMAX27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMAX27) | 877 | 948 | 121 | 260 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAEMARMED27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMED27) | 877 | 948 | 114 | 261 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAEMARMIN27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMIN27) | 877 | 948 | 75 | 259 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAESEPMAX26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMAX26) | 871 | 942 | 122 | 253 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAESEPMED26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMED26) | 871 | 942 | 115 | 255 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/psse_bdd_2026-2027/PAESEPMIN26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMIN26) | 871 | 942 | 96 | 253 | — | — | — | — | — | 1 | 1 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2021-2022](../guatemala/medium_long_term/sddp_plp_2021-2022) | 503 | 539 | 167 | 116 | 40 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2022-2023](../guatemala/medium_long_term/sddp_plp_2022-2023) | 472 | 527 | 149 | 119 | 43 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2023-2024](../guatemala/medium_long_term/sddp_plp_2023-2024) | 461 | 519 | 153 | 121 | 44 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2024-2025](../guatemala/medium_long_term/sddp_plp_2024-2025) | 462 | 524 | 160 | 127 | 44 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2025-2026](../guatemala/medium_long_term/sddp_plp_2025-2026) | 489 | 553 | 178 | 136 | 44 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇬🇹 | [medium_long_term/sddp_plp_2026-2027](../guatemala/medium_long_term/sddp_plp_2026-2027) | 497 | 559 | 217 | 134 | 44 | 58 | — | — | — | 108 | 12 | 1 |
-| 🇵🇪 | [medium_long_term/coes_mrfo_2026-2029/2026](../peru/medium_long_term/coes_mrfo_2026-2029/2026) | 270 | 312 | 157 | 133 | 60 | 56 | — | — | — | 60 | 12 | 56 |
-| 🇵🇪 | [medium_long_term/coes_mrfo_2026-2029/2027](../peru/medium_long_term/coes_mrfo_2026-2029/2027) | 270 | 331 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
-| 🇵🇪 | [medium_long_term/coes_mrfo_2026-2029/2028](../peru/medium_long_term/coes_mrfo_2026-2029/2028) | 270 | 346 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
-| 🇵🇪 | [medium_long_term/coes_mrfo_2026-2029/2029](../peru/medium_long_term/coes_mrfo_2026-2029/2029) | 270 | 394 | 163 | 135 | 60 | 56 | — | — | — | 60 | 12 | 56 |
-| 🇵🇱 | [dc_opf/case3375wp](../poland/dc_opf/case3375wp) | 3,374 | 4,161 | 489 | 2,414 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-10-05](../chile/daily_scheduling/pcp_2025-10-05) | 237 | 305 | 1,739 | 127 | 12 | 35 | 23 | 4 | 1,009 | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-10-19](../chile/daily_scheduling/pcp_2025-10-19) | 239 | 306 | 1,747 | 127 | 12 | 37 | 25 | 4 | 1,001 | 107 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-11-09](../chile/daily_scheduling/pcp_2025-11-09) | 239 | 307 | 1,751 | 127 | 12 | 34 | 25 | 5 | 1,005 | 118 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-11-23](../chile/daily_scheduling/pcp_2025-11-23) | 241 | 310 | 1,753 | 127 | 12 | 35 | 25 | 5 | 996 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-12-07](../chile/daily_scheduling/pcp_2025-12-07) | 241 | 309 | 1,753 | 127 | 12 | 34 | 26 | 6 | 1,020 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2025-12-21](../chile/daily_scheduling/pcp_2025-12-21) | 241 | 309 | 1,753 | 127 | 12 | 34 | 26 | 5 | 1,043 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-01-04](../chile/daily_scheduling/pcp_2026-01-04) | 243 | 311 | 1,763 | 127 | 12 | 36 | 29 | 5 | 1,026 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-01-18](../chile/daily_scheduling/pcp_2026-01-18) | 243 | 311 | 1,765 | 127 | 12 | 34 | 29 | 5 | 1,034 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-02-15](../chile/daily_scheduling/pcp_2026-02-15) | 246 | 315 | 1,769 | 127 | 12 | 35 | 32 | 6 | 1,008 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-03-15](../chile/daily_scheduling/pcp_2026-03-15) | 246 | 315 | 1,768 | 127 | 12 | 32 | 33 | 5 | 1,066 | 132 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-04-07](../chile/daily_scheduling/pcp_2026-04-07) | 247 | 317 | 1,772 | 127 | 12 | 30 | 36 | 4 | 1,047 | 111 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-04-12](../chile/daily_scheduling/pcp_2026-04-12) | 247 | 316 | 1,773 | 127 | 12 | 31 | 36 | 4 | 1,097 | 110 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-04-22](../chile/daily_scheduling/pcp_2026-04-22) | 247 | 317 | 1,776 | 127 | 12 | 35 | 36 | 4 | 1,100 | 111 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [daily_scheduling/pcp_2026-05-17](../chile/daily_scheduling/pcp_2026-05-17) | 251 | 321 | 1,790 | 139 | 12 | 32 | 41 | 4 | 1,093 | 110 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [medium_long_term/plp_23y](../chile/medium_long_term/plp_23y) | 339 | 449 | 1,628 | 161 | 10 | 156 | — | 3 | — | 120 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [medium_long_term/plp_2y](../chile/medium_long_term/plp_2y) | 245 | 343 | 1,892 | 137 | 10 | 176 | 112 | 4 | — | 270 | 52 | 4 |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> | [medium_long_term/plp_5y](../chile/medium_long_term/plp_5y) | 241 | 345 | 1,880 | 139 | 10 | 177 | 68 | 4 | — | 234 | 72 | 4 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [daily_scheduling/ncp_pdd_2026-06-22](../guatemala/daily_scheduling/ncp_pdd_2026-06-22) | 830 | 955 | 230 | 241 | 44 | 98 | — | — | — | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | 830 | 955 | 219 | 241 | — | — | — | — | — | 168 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAEMARMAX27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMAX27) | 877 | 948 | 121 | 260 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAEMARMED27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMED27) | 877 | 948 | 114 | 261 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAEMARMIN27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMIN27) | 877 | 948 | 75 | 259 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAESEPMAX26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMAX26) | 871 | 942 | 122 | 253 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAESEPMED26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMED26) | 871 | 942 | 115 | 255 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/psse_bdd_2026-2027/PAESEPMIN26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMIN26) | 871 | 942 | 96 | 253 | — | — | — | — | — | 1 | 1 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2021-2022](../guatemala/medium_long_term/sddp_plp_2021-2022) | 503 | 539 | 167 | 116 | 40 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2022-2023](../guatemala/medium_long_term/sddp_plp_2022-2023) | 472 | 527 | 149 | 119 | 43 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2023-2024](../guatemala/medium_long_term/sddp_plp_2023-2024) | 461 | 519 | 153 | 121 | 44 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2024-2025](../guatemala/medium_long_term/sddp_plp_2024-2025) | 462 | 524 | 160 | 127 | 44 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2025-2026](../guatemala/medium_long_term/sddp_plp_2025-2026) | 489 | 553 | 178 | 136 | 44 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> | [medium_long_term/sddp_plp_2026-2027](../guatemala/medium_long_term/sddp_plp_2026-2027) | 497 | 559 | 217 | 134 | 44 | 58 | — | — | — | 108 | 12 | 1 |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [medium_long_term/coes_mrfo_2026-2029/2026](../peru/medium_long_term/coes_mrfo_2026-2029/2026) | 270 | 312 | 157 | 133 | 60 | 56 | — | — | — | 60 | 12 | 56 |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [medium_long_term/coes_mrfo_2026-2029/2027](../peru/medium_long_term/coes_mrfo_2026-2029/2027) | 270 | 331 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [medium_long_term/coes_mrfo_2026-2029/2028](../peru/medium_long_term/coes_mrfo_2026-2029/2028) | 270 | 346 | 162 | 134 | 60 | 56 | — | — | — | 60 | 12 | 56 |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> | [medium_long_term/coes_mrfo_2026-2029/2029](../peru/medium_long_term/coes_mrfo_2026-2029/2029) | 270 | 394 | 163 | 135 | 60 | 56 | — | — | — | 60 | 12 | 56 |
+| <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> | [dc_opf/case3375wp](../poland/dc_opf/case3375wp) | 3,374 | 4,161 | 489 | 2,414 | — | — | — | — | — | 1 | 1 | 1 |
 
-## 🇨🇱 Chile: daily scheduling — day-ahead unit commitment (monolithic MIP)
+## <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> Chile: daily scheduling — day-ahead unit commitment (monolithic MIP)
 
 > **Note.** The 14 PCP cases try to reproduce the conditions under which
 > PLEXOS is run for the CEN daily program.  That configuration (model
@@ -106,7 +106,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 Line lifts, converter flags and run instructions:
 [chile/daily_scheduling/README.md](../chile/daily_scheduling/README.md).
 
-## 🇨🇱 Chile: medium / long term — hydrothermal SDDP
+## <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> Chile: medium / long term — hydrothermal SDDP
 
 One folder per CEN PLP input set: `source/` (PLP inputs) and `case/` (the
 gtopt case converted with `plp2gtopt`); other horizons and hydrology sets
@@ -120,7 +120,7 @@ are documented as `plp2gtopt` variants in each README.
 
 See [chile/medium_long_term/README.md](../chile/medium_long_term/README.md).
 
-## 🇬🇹 Guatemala
+## <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> Guatemala
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
@@ -141,7 +141,7 @@ See [chile/medium_long_term/README.md](../chile/medium_long_term/README.md).
 
 See [guatemala/README.md](../guatemala/README.md).
 
-## 🇵🇪 Peru
+## <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> Peru
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
@@ -152,7 +152,7 @@ See [guatemala/README.md](../guatemala/README.md).
 
 See [peru/README.md](../peru/README.md).
 
-## 🇵🇱 Poland
+## <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> Poland
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
@@ -170,10 +170,10 @@ No case yet; see [chile/expansion/README.md](../chile/expansion/README.md).
 
 | Country | System | Data source | Daily scheduling | Medium/long term | Expansion |
 |---|---|---|---:|---:|---:|
-| 🇨🇱 [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
-| 🇬🇹 [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
-| 🇵🇪 [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |
-| 🇵🇱 [Poland](../poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
+| <img src="https://flagcdn.com/w20/cl.png" width="20" alt="Chile"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 | — |
+| <img src="https://flagcdn.com/w20/gt.png" width="20" alt="Guatemala"> [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
+| <img src="https://flagcdn.com/w20/pe.png" width="20" alt="Peru"> [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |
+| <img src="https://flagcdn.com/w20/pl.png" width="20" alt="Poland"> [Poland](../poland/README.md) | Polish transmission system | MATPOWER `case3375wp` (data by R. Korab, Silesian University of Technology) | — | 1 DC OPF snapshot | — |
 
 
 Each country README names the rights holders of its source data (Chile:
