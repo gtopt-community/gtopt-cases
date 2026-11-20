@@ -16,9 +16,9 @@ and research groups.  Needs gtopt **1.1.0 or later**
 | Country | System · data from | Cases |
 |---|---|---|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [**Australia**](australia/README.md) | NEM · AEMO | 1 weekly dispatch (PLEXOS ISP 2026, Step Change) |
-| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [**Chile**](chile/README.md) | SEN · CEN | 14 daily unit commitments (PLEXOS)<br>3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements<br>3 SDDP of the PLP-PET27 transmission planning process (PLP) |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [**Chile**](chile/README.md) | SEN · CEN | 14 daily operation programmes, each scheduling one week: unit commitment (PLEXOS)<br>3 SDDP of 2, 5 and 23 years (PLP), with the Laja and Maule irrigation agreements<br>3 SDDP of the PLP-PET27 transmission planning process (PLP) |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [**Guatemala**](guatemala/README.md) | SNI · AMM, EOR | 2 daily/weekly dispatches (NCP)<br>6 annual SDDP programmes · 6 PSS®E snapshots |
-| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [**Ireland**](ireland/README.md) | SEM · SEM Committee (CRU, UR) | 1 weekly unit commitment (PLEXOS), fetched and converted on demand |
+| <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [**Ireland**](ireland/README.md) | SEM · SEM Committee (CRU, UR) | 1 weekly unit commitment (PLEXOS), 116 units, 61 with commitment; recipe only, fetched and converted on demand |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [**Peru**](peru/README.md) | SEIN · COES | 4 annual SDDP cases (2026-2029 reserve-margin study) |
 | <img src="https://flagcdn.com/w40/pl.png" width="28" align="absmiddle" alt="🇵🇱"> [**Poland**](poland/README.md) | Polish grid · R. Korab / MATPOWER | 1 DC OPF of 3,374 buses |
 
