@@ -55,6 +55,23 @@ Each release states the minimum gtopt version its cases need.
     development revision (the `--import-limit` cap now covers every
     interconnection import, bus voltages), so its LP grows from 160,608
     to 192,024 rows.
+  - **Guatemala** `ncp_pdd_2026-06-22`: same parallel-unit and Jurún fixes
+    as `ncp_week`.
+- **Guatemala** `ncp_pdd_2026-06-22` and `ncp_week_2026-06-21`:
+  interconnection imports are available only in the hours where they
+  have an offer, and neither case adds an aggregate import limit (the
+  sources set none; the old `--import-limit 200` is dropped from the
+  flags).  Rebuilt with `sddp2gtopt` from gtopt commit `5a4fd2ef8`:
+  - `ncp_pdd`: a blank or zero `PRECIOSMEX.csv` price closes the import
+    in that hour, so imports run only on 21–22 Jun (`MEX-I`, never
+    priced, is left out); `EDC-I` keeps its fixed `RESTMEX.csv` schedule.
+    The old cap made the case infeasible, because it cut `EDC-I` below
+    that schedule.  `case/boundary_cuts_gtopt_fcf.csv` (gtopt's own FCF,
+    A/B alternative) is recomputed from the rebuilt case.  LP: 192,056
+    rows, 302,762 columns, 605,654 nnz.
+  - `ncp_week`: without `PRECIOSMEX.csv`, import units whose fuel costs
+    $0 have no offer and are left out (16 units).  LP: 192,024 rows,
+    281,898 columns, 585,262 nnz.
 
 - **Australia** (`isp2026_sc_2027w03`, `w16`, `w29`, `w42`): rebuilt with
   the corrected `plexos2gtopt.aemo_isp` converter and its default flags.

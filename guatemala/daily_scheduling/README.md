@@ -17,9 +17,13 @@ buses, 955 lines, 220 generators and 240 demand nodes.
 The weekly case is a short-term (one-week) dispatch; it is kept here
 because it has the same hourly structure as the daily program.
 
-**Interconnection cap.** The PSR fuel table prices imports from Mexico at
-$0; the cases are converted with `--import-limit 200` (the EOR GUA↔MEX tie
-limit) so that imports are capped as in the operator's model.
+**Interconnection imports.** An import is available only in the hours
+where it has an offer.  `ncp_pdd` reads the hourly offer prices from
+`PRECIOSMEX.csv`: a blank or zero price closes the import in that hour,
+and fixed `RESTMEX.csv` schedules are kept.  `ncp_week` has no
+`PRECIOSMEX.csv`, so an import unit whose fuel costs $0 has no offer and
+is left out.  Neither case adds an aggregate import limit, because the
+sources set none (`sddp2gtopt --import-limit` is opt-in).
 
 **Single-stage model.** Each case is one stage over the dispatch horizon;
 the inter-temporal water-value floor of PSR's multi-stage model is only

@@ -2933,7 +2933,7 @@
       "profile": null,
       "size": {
         "buses": 830,
-        "generators": 230,
+        "generators": 229,
         "lines": 955,
         "batteries": 0,
         "blocks": 168,
@@ -2944,9 +2944,9 @@
         "lp": {
           "lps": 1,
           "rows": 192056,
-          "cols": 302930,
-          "nnz": 600446,
-          "gtopt_revision": "3b70b4ee9eca-dirty"
+          "cols": 302762,
+          "nnz": 605654,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -3057,13 +3057,10 @@
       },
       "converter": {
         "tool": "sddp2gtopt",
-        "flags": [
-          "--import-limit",
-          "200"
-        ],
-        "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
-        "converter_last_change": "c96c30fdbc4e81b68ebb980b6ddf1a82fcdec702",
-        "note": "case JSON produced with an earlier gtopt development revision (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
+        "flags": [],
+        "gtopt_revision": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
+        "converter_last_change": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
+        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule; not yet on public master); no --import-limit: the source sets no aggregate import limit"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case/ncp_pdd_22jun.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case\" -d .",
@@ -3100,8 +3097,8 @@
       "notes": [
         "Self-contained case (no application profile); run as is.",
         "Daily PSR NCP model (PDD 22-Jun-2026) over a 168-hour horizon, single stage, 1 block per hour.",
-        "Terminal water value: system.future_cost_array 'fcf' -> case/boundary_cuts.csv (watervcp single-cut proxy). case/boundary_cuts_gtopt_fcf.csv holds gtopt's own FCF from the two-run pipeline (A/B alternative, not used by default).",
-        "Economics: thermal merit costs, water values, inflow-limited run-of-river, Mexico import capped at 200 MW (EOR tie limit)."
+        "Terminal water value: system.future_cost_array 'fcf' -> case/boundary_cuts.csv (watervcp single-cut proxy). case/boundary_cuts_gtopt_fcf.csv holds gtopt's own FCF from the two-run pipeline (12-week deterministic SDDP built from this case; A/B alternative, not used by default: point future_cost_array[0].cuts_file at it).",
+        "Economics: thermal merit costs, water values, inflow-limited run-of-river. Imports are offered only in hours with a PRECIOSMEX price (21-22 Jun); hours without an offer close the import (MEX-I has none at all), except the fixed RESTMEX schedule of EDC-I (120 MW, 22 Jun only). No aggregate import limit."
       ]
     },
     {
@@ -3115,7 +3112,7 @@
       "profile": null,
       "size": {
         "buses": 830,
-        "generators": 219,
+        "generators": 203,
         "lines": 955,
         "batteries": 0,
         "blocks": 168,
@@ -3126,8 +3123,8 @@
         "lp": {
           "lps": 1,
           "rows": 192024,
-          "cols": 284586,
-          "nnz": 587950,
+          "cols": 281898,
+          "nnz": 585262,
           "gtopt_revision": "18548ca102a8-dirty"
         }
       },
@@ -3184,13 +3181,10 @@
       },
       "converter": {
         "tool": "sddp2gtopt",
-        "flags": [
-          "--import-limit",
-          "200"
-        ],
-        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
-        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
-        "note": "converted with sddp2gtopt from gtopt master 16d307666; rebuild with gtopt master 16d307666 or later"
+        "flags": [],
+        "gtopt_revision": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
+        "converter_last_change": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
+        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule; not yet on public master); no --import-limit"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case/sddp_ncp_week.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case\" -d .",
@@ -3226,7 +3220,7 @@
       "notes": [
         "Self-contained case (no application profile); run as is.",
         "Weekly NCP dispatch 21-27 Jun 2026 (short-term weekly program), 168 hourly blocks, single stage; kept under daily_scheduling (dispatch with hourly resolution).",
-        "No water-value file shipped: thermal merit costs + import cap only."
+        "No water-value file shipped: thermal merit costs only. The bundle has no PRECIOSMEX, so the fuel table prices the imports: import units whose fuel costs $0 (MEX-I, IMP-01) have no offer and are left out (16 units). EDC-I (38.89 $/MWh, 120 MW) and ESA-I, HON-I, MEX-01 (INTER-SAL, 1000 $/MWh) stay available. No aggregate import limit."
       ]
     },
     {
