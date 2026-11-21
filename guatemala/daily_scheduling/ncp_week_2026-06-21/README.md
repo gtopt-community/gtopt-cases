@@ -10,11 +10,11 @@
 | Horizon | 168 blocks covering 168 h, 1 stage, 1 scenario |
 | Network | 830 buses, 955 lines |
 | Units | 219 generators, 0 batteries |
-| LP (`--lp-only`) | 160,608 rows, 236,830 cols, 535,366 nnz (gtopt development revision `3b70b4ee9eca`, local build) |
+| LP (`--lp-only`) | 192,024 rows, 284,586 cols, 587,950 nnz (gtopt development revision `18548ca102a8`, local build) |
 | Method / profile | monolithic, no profile (self-contained JSON) |
 | Source | `source/Volt.dat.xz`, `source/ccombuGU.dat.xz`, `source/chidroGU.dat.xz`, `source/cpdexbus.dat.xz`, `source/ctermigu.dat.xz`, `source/dbus.dat.xz`, `source/dcirc.dat.xz`, `source/sddp.dat.xz`, `source/sistem.dat.xz` |
 | Origin | AMM weekly NCP model '26 - Semana del 21 al 27 de junio de 2026 NCP.5.29.b.rar' (not redistributed) |
-| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master `16d307666` or later (revision used: `catalog.json`) |
 | Flags | `--import-limit 200` |
 
 ## How to run
@@ -52,16 +52,16 @@ gtopt_check_cases --repo "$REPO" --only ncp_week_2026-06-21    # LP only: rows/c
 
 ### Regenerate `case/` from `source/`
 
-The case JSON was produced with an earlier gtopt development revision.  To
-regenerate it with the installed converter and the
-flags pinned in `catalog.json`:
+The case JSON was produced with `sddp2gtopt` from gtopt master
+`16d307666`.  To regenerate it with the installed converter and the flags
+pinned in `catalog.json`:
 
 ```bash
 tools/get_case.py rebuild ncp_week_2026-06-21 --out <dir>
 ```
 
-The converters have evolved since this case was produced, so a rebuild may
-differ from the committed case; check it with `gtopt_check_cases`.
+A rebuild with a later converter may differ from the committed case;
+check it with `gtopt_check_cases`.
 
 ## Notes
 

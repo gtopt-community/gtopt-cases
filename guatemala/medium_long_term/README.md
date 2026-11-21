@@ -7,7 +7,7 @@
 **AMM long-term SDDP programmes** (`sddp_plp_<years>/`): the PSR SDDP
 databases of the AMM *Programación de Largo Plazo* (*Versión Definitiva*)
 of six consecutive years, converted with `sddp2gtopt` from gtopt (rebuild
-with gtopt master of November 2026 or later).  Each is a one-year
+with gtopt master `16d307666` or later).  Each is a one-year
 hydrothermal case (12 monthly SDDP phases, the study's single hydrology,
 DC network with losses) with its converter inputs in `source/` (xz) and
 the gtopt case in `case/`; the AMM archives are linked from each README

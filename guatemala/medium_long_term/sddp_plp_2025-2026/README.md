@@ -20,7 +20,7 @@ series) and models the DC network with losses.
 | Network | 489 buses, 553 lines |
 | LP (`--lp-only`) | 200,025 rows, 393,897 cols, 893,310 nnz over 12 phase LPs (gtopt development revision `75d9cec1ce81`) |
 | Method / profile | sddp, no profile (options in the case JSON) |
-| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master `16d307666` or later (revision used: `catalog.json`) |
 
 ## Source and data terms
 
@@ -66,7 +66,7 @@ gtopt "$C/sddp_plp_2025-2026.json" --set input_directory="$C" -d . \
 
 ## How to regenerate
 
-With `sddp2gtopt` from gtopt master of November 2026 or later (it reads the `.xz`
+With `sddp2gtopt` from gtopt master `16d307666` or later (it reads the `.xz`
 files directly), from this folder:
 
 ```bash

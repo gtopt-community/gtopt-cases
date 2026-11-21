@@ -169,7 +169,7 @@ See [chile/transmission_planning/plp_pet27/README.md](../chile/transmission_plan
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
 | [daily_scheduling/ncp_pdd_2026-06-22](../guatemala/daily_scheduling/ncp_pdd_2026-06-22) | daily_scheduling | 830 | 168 | 192,056 | medium |
-| [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | daily_scheduling | 830 | 168 | 160,608 | medium |
+| [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | daily_scheduling | 830 | 168 | 192,024 | medium |
 | [medium_long_term/psse_bdd_2026-2027/PAESEPMIN26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMIN26) | medium_long_term | 871 | 1 | 943 | small |
 | [medium_long_term/psse_bdd_2026-2027/PAESEPMED26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMED26) | medium_long_term | 871 | 1 | 943 | small |
 | [medium_long_term/psse_bdd_2026-2027/PAESEPMAX26](../guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMAX26) | medium_long_term | 871 | 1 | 943 | small |

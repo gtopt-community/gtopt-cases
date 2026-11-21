@@ -13,10 +13,10 @@ losses, solved with SDDP (one phase per month, one scene per hydrology).
 
 | Case | Horizon | Buses | Lines | Generators | Reservoirs | LP (`--lp-only`) |
 |---|---|---:|---:|---:|---:|---|
-| [2026](2026) | 2026-01 … 2026-12, 60 blocks | 270 | 312 | 157 | 60 | 6,457,304 rows, 13,066,424 cols, 31,612,448 nnz over 672 LPs |
-| [2027](2027) | 2027-01 … 2027-12, 60 blocks | 270 | 331 | 162 | 60 | 6,640,984 rows, 13,452,824 cols, 32,908,848 nnz over 672 LPs |
-| [2028](2028) | 2028-01 … 2028-12, 60 blocks | 270 | 346 | 162 | 60 | 6,915,664 rows, 14,049,224 cols, 34,917,008 nnz over 672 LPs |
-| [2029](2029) | 2029-01 … 2029-12, 60 blocks | 270 | 394 | 163 | 60 | 7,514,584 rows, 15,364,664 cols, 39,082,008 nnz over 672 LPs |
+| [2026](2026) | 2026-01 … 2026-12, 60 blocks | 270 | 312 | 157 | 60 | 6,457,304 rows, 13,086,584 cols, 31,659,488 nnz over 672 LPs |
+| [2027](2027) | 2027-01 … 2027-12, 60 blocks | 270 | 331 | 162 | 60 | 6,640,984 rows, 13,472,984 cols, 32,955,888 nnz over 672 LPs |
+| [2028](2028) | 2028-01 … 2028-12, 60 blocks | 270 | 346 | 162 | 60 | 6,915,664 rows, 14,069,384 cols, 34,964,048 nnz over 672 LPs |
+| [2029](2029) | 2029-01 … 2029-12, 60 blocks | 270 | 394 | 163 | 60 | 7,514,584 rows, 15,384,824 cols, 39,129,048 nnz over 672 LPs |
 
 The four source studies differ **only** in `sddp.dat` (start year and
 one parameter line), so the inputs are stored once:
@@ -81,7 +81,7 @@ gtopt "$C/coes_mrfo_$Y.json" --set input_directory="$C" -d . \
 ## How to regenerate
 
 The cases were converted with `sddp2gtopt` from gtopt; rebuild with gtopt
-master of November 2026 or later.  Running the cases needs only a recent
+master `16d307666` or later (the hydro cascade fix, see the CHANGELOG).  Running the cases needs only a recent
 gtopt.
 
 ```bash

@@ -14,9 +14,9 @@ COES), modelling notes and how to regenerate.
 | Scenarios | 56 historical hydrologies (1966–2021), one scene each |
 | Network | 270 buses, 331 lines (DC, Kirchhoff + losses) |
 | Units | 162 generators, 60 reservoirs |
-| LP (`--lp-only`) | 6,640,984 rows, 13,452,824 cols, 32,908,848 nnz over 672 (scene, phase) LPs (gtopt development revision `75d9cec1ce81`) |
+| LP (`--lp-only`) | 6,640,984 rows, 13,472,984 cols, 32,955,888 nnz over 672 (scene, phase) LPs (gtopt development revision `18548ca102a8`) |
 | Inputs | `../source/` (common) + `../source/2027/sddp.dat.xz` |
-| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |
+| Converter | `sddp2gtopt` from gtopt; rebuild with gtopt master `16d307666` or later (revision used: `catalog.json`) |
 
 ## How to run
 

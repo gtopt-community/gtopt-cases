@@ -8,8 +8,9 @@ Cases of the Guatemalan power system built from models and data published
 by the **AMM** (*Administrador del Mercado Mayorista*, the system and market
 operator) and the **EOR** (*Ente Operador Regional*, the Central American
 regional operator).  They were converted with `sddp2gtopt` and
-`psse2gtopt` from gtopt; rebuild with gtopt master of November 2026 or
-later.  The long-term SDDP programmes (`medium_long_term/sddp_plp_*`)
+`psse2gtopt` from gtopt; rebuild with gtopt master `16d307666` or later
+(`sddp2gtopt`, hydro cascade fix) or of November 2026 or later
+(`psse2gtopt`).  The long-term SDDP programmes (`medium_long_term/sddp_plp_*`)
 were converted from the AMM databases published at
 <https://www.amm.org.gt/pdfs2/programas_despacho/03_PROGRAMAS_DE_LARGO_PLAZO/>.
 

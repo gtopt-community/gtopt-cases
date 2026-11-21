@@ -9409,9 +9409,7 @@
       },
       {
         "uid": 14,
-        "name": "j_Viconga_Em",
-        "drain": true,
-        "drain_cost": 0.36
+        "name": "j_Viconga_Em"
       },
       {
         "uid": 15,
@@ -9457,13 +9455,13 @@
       },
       {
         "uid": 25,
-        "name": "j_Sibinacoc_Em",
-        "drain": true,
-        "drain_cost": 0.36
+        "name": "j_Sibinacoc_Em"
       },
       {
         "uid": 26,
-        "name": "j_Machupicchu"
+        "name": "j_Machupicchu",
+        "drain": true,
+        "drain_cost": 0.36
       },
       {
         "uid": 27,
@@ -9493,11 +9491,15 @@
       },
       {
         "uid": 33,
-        "name": "j_El_Pañe_Em"
+        "name": "j_El_Pañe_Em",
+        "drain": true,
+        "drain_cost": 0.36
       },
       {
         "uid": 34,
-        "name": "j_Españoles_To"
+        "name": "j_Españoles_To",
+        "drain": true,
+        "drain_cost": 0.36
       },
       {
         "uid": 35,
@@ -9525,9 +9527,7 @@
       },
       {
         "uid": 41,
-        "name": "jo_Charcani123",
-        "drain": true,
-        "drain_cost": 0.36
+        "name": "jo_Charcani123"
       },
       {
         "uid": 42,
@@ -9551,7 +9551,9 @@
       },
       {
         "uid": 47,
-        "name": "j_Manto_To"
+        "name": "j_Manto_To",
+        "drain": true,
+        "drain_cost": 0.36
       },
       {
         "uid": 48,
@@ -9793,9 +9795,7 @@
       },
       {
         "uid": 98,
-        "name": "j_Runatullu3",
-        "drain": true,
-        "drain_cost": 0.36
+        "name": "j_Runatullu3"
       },
       {
         "uid": 99,
@@ -9831,7 +9831,9 @@
       },
       {
         "uid": 106,
-        "name": "j_Yuncan_Re"
+        "name": "j_Yuncan_Re",
+        "drain": true,
+        "drain_cost": 0.36
       },
       {
         "uid": 107,
@@ -9881,14 +9883,14 @@
         "uid": 1,
         "name": "q_Yuracmayo_Em",
         "junction_a": "j_Yuracmayo_Em",
-        "junction_b": "j_Matucana",
+        "junction_b": "j_Huanchor",
         "fmax": 10.0
       },
       {
         "uid": 2,
         "name": "s_Yuracmayo_Em",
         "junction_a": "j_Yuracmayo_Em",
-        "junction_b": "j_Huanchor",
+        "junction_b": "j_Matucana",
         "fcost": 0.36
       },
       {
@@ -9910,21 +9912,21 @@
         "uid": 5,
         "name": "s_Matucana",
         "junction_a": "j_Matucana",
-        "junction_b": "j_Callahuanca",
+        "junction_b": "j_Surco_Toma",
         "fcost": 0.36
       },
       {
         "uid": 6,
         "name": "q_Surco_Toma",
         "junction_a": "j_Surco_Toma",
-        "junction_b": "j_Huampani",
+        "junction_b": "j_Callahuanca",
         "fmax": 12.5
       },
       {
         "uid": 7,
         "name": "s_Surco_Toma",
         "junction_a": "j_Surco_Toma",
-        "junction_b": "j_Callahuanca",
+        "junction_b": "j_Huampani",
         "fcost": 0.36
       },
       {
@@ -9938,14 +9940,14 @@
         "uid": 9,
         "name": "q_Eulalia_Toma",
         "junction_a": "j_Eulalia_Toma",
-        "junction_b": "j_Moyopampa",
+        "junction_b": "j_Callahuanca",
         "fmax": 10.5
       },
       {
         "uid": 10,
         "name": "s_Eulalia_Toma",
         "junction_a": "j_Eulalia_Toma",
-        "junction_b": "j_Callahuanca",
+        "junction_b": "j_Moyopampa",
         "fcost": 0.36
       },
       {
@@ -9994,47 +9996,54 @@
       },
       {
         "uid": 17,
+        "name": "s_Viconga_Em",
+        "junction_a": "j_Viconga_Em",
+        "junction_b": "j_Cahua",
+        "fcost": 0.36
+      },
+      {
+        "uid": 18,
         "name": "s_Cahua",
         "junction_a": "j_Cahua",
         "junction_b": "j_Roncador",
         "fcost": 0.36
       },
       {
-        "uid": 18,
+        "uid": 19,
         "name": "s_Pariac",
         "junction_a": "j_Pariac",
         "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 19,
+        "uid": 20,
         "name": "q_Paron_Em",
         "junction_a": "j_Paron_Em",
         "junction_b": "j_CañonPato"
       },
       {
-        "uid": 20,
+        "uid": 21,
         "name": "s_Paron_Em",
         "junction_a": "j_Paron_Em",
         "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 21,
+        "uid": 22,
         "name": "q_Cullicoch_Em",
         "junction_a": "j_Cullicoch_Em",
         "junction_b": "j_CañonPato",
         "fmax": 2.0
       },
       {
-        "uid": 22,
+        "uid": 23,
         "name": "s_Cullicoch_Em",
         "junction_a": "j_Cullicoch_Em",
         "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 23,
+        "uid": 24,
         "name": "irr_Cullicoch_Em",
         "junction_a": "j_Cullicoch_Em",
         "fmin": "fmin",
@@ -10042,21 +10051,21 @@
         "fmin_fcost": 36.0
       },
       {
-        "uid": 24,
+        "uid": 25,
         "name": "q_Aguascoch_Em",
         "junction_a": "j_Aguascoch_Em",
         "junction_b": "j_CañonPato",
         "fmax": 2.0
       },
       {
-        "uid": 25,
+        "uid": 26,
         "name": "s_Aguascoch_Em",
         "junction_a": "j_Aguascoch_Em",
         "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 26,
+        "uid": 27,
         "name": "out_CañonPato",
         "junction_a": "j_CañonPato",
         "junction_b": "jo_CañonPato",
@@ -10064,84 +10073,91 @@
         "fmin_fcost": 21.599999999999998
       },
       {
-        "uid": 27,
+        "uid": 28,
         "name": "s_CañonPato",
         "junction_a": "jo_CañonPato",
         "junction_b": "j_SantaRita_To",
         "fcost": 0.36
       },
       {
-        "uid": 28,
+        "uid": 29,
         "name": "s_Carhuaquero",
         "junction_a": "j_Carhuaquero",
         "junction_b": "j_Caña_Brava",
         "fcost": 0.36
       },
       {
-        "uid": 29,
+        "uid": 30,
         "name": "s_Yanango",
         "junction_a": "j_Yanango",
         "junction_b": "j_LaVirgen",
         "fcost": 0.36
       },
       {
-        "uid": 30,
-        "name": "s_Machupicchu",
-        "junction_a": "j_Machupicchu",
-        "junction_b": "j_StaTeresa",
+        "uid": 31,
+        "name": "q_Sibinacoc_Em",
+        "junction_a": "j_Sibinacoc_Em",
+        "junction_b": "j_Machupicchu",
+        "fmax": 100.0
+      },
+      {
+        "uid": 32,
+        "name": "s_Sibinacoc_Em",
+        "junction_a": "j_Sibinacoc_Em",
+        "junction_b": "j_Machupicchu",
         "fcost": 0.36
       },
       {
-        "uid": 31,
+        "uid": 33,
         "name": "q_Macusani_Em",
         "junction_a": "j_Macusani_Em",
         "junction_b": "j_SanGaban2_To",
         "fmax": 5.0
       },
       {
-        "uid": 32,
+        "uid": 34,
         "name": "s_Macusani_Em",
         "junction_a": "j_Macusani_Em",
         "junction_b": "j_SanGaban2_To",
         "fcost": 0.36
       },
       {
-        "uid": 33,
+        "uid": 35,
         "name": "q_Pillones_Em",
         "junction_a": "j_Pillones_Em",
         "junction_b": "j_Charcani5",
         "fmax": 50.0
       },
       {
-        "uid": 34,
+        "uid": 36,
         "name": "s_Pillones_Em",
         "junction_a": "j_Pillones_Em",
         "junction_b": "j_Charcani5",
         "fcost": 0.36
       },
       {
-        "uid": 35,
+        "uid": 37,
         "name": "s_SanGaban",
         "junction_a": "j_SanGaban",
         "junction_b": "j_SanGaban3_To",
         "fcost": 0.36
       },
       {
-        "uid": 36,
+        "uid": 38,
         "name": "s_AricotaI",
         "junction_a": "j_AricotaI",
         "junction_b": "j_AricotaII",
         "fcost": 0.36
       },
       {
-        "uid": 37,
+        "uid": 39,
         "name": "s_AricotaII",
         "junction_a": "j_AricotaII",
         "junction_b": "j_Aricota_rieg",
         "fcost": 0.36
       },
       {
-        "uid": 38,
+        "uid": 40,
         "name": "irr_Aricota_rieg",
         "junction_a": "j_Aricota_rieg",
         "fmin": "fmin",
@@ -10149,77 +10165,77 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 39,
-        "name": "s_El_Pañe_Em",
+        "uid": 41,
+        "name": "q_El_Pañe_Em",
         "junction_a": "j_El_Pañe_Em",
         "junction_b": "j_Españoles_To",
-        "fcost": 0.36
-      },
-      {
-        "uid": 40,
-        "name": "s_Españoles_To",
-        "junction_a": "j_Españoles_To",
-        "junction_b": "j_Imata_To",
-        "fcost": 0.36
-      },
-      {
-        "uid": 41,
-        "name": "q_Imata_To",
-        "junction_a": "j_Imata_To",
-        "junction_b": "j_Charcani5",
-        "fmax": 50.0
+        "fmax": 6.0
       },
       {
         "uid": 42,
-        "name": "s_Imata_To",
-        "junction_a": "j_Imata_To",
-        "junction_b": "j_Pillones_Em",
-        "fcost": 0.36
+        "name": "q_Españoles_To",
+        "junction_a": "j_Españoles_To",
+        "junction_b": "j_Imata_To",
+        "fmax": 20.0
       },
       {
         "uid": 43,
+        "name": "q_Imata_To",
+        "junction_a": "j_Imata_To",
+        "junction_b": "j_Pillones_Em",
+        "fmax": 50.0
+      },
+      {
+        "uid": 44,
+        "name": "s_Imata_To",
+        "junction_a": "j_Imata_To",
+        "junction_b": "j_Charcani5",
+        "fcost": 0.36
+      },
+      {
+        "uid": 45,
         "name": "q_El_Frayle_Em",
         "junction_a": "j_El_Frayle_Em",
         "junction_b": "j_Charcani5",
         "fmax": 100.0
       },
       {
-        "uid": 44,
+        "uid": 46,
         "name": "s_El_Frayle_Em",
         "junction_a": "j_El_Frayle_Em",
         "junction_b": "j_Charcani5",
         "fcost": 0.36
       },
       {
-        "uid": 45,
+        "uid": 47,
         "name": "s_Charcani5",
         "junction_a": "j_Charcani5",
         "junction_b": "j_Charcani4",
         "fcost": 0.36
       },
       {
-        "uid": 46,
+        "uid": 48,
         "name": "s_Charcani4",
         "junction_a": "j_Charcani4",
         "junction_b": "j_Charcani6",
         "fcost": 0.36
       },
       {
-        "uid": 47,
+        "uid": 49,
         "name": "q_Charcani6",
         "junction_a": "j_Charcani6",
         "junction_b": "j_Charcani123",
         "fmax": 14.9698
       },
       {
-        "uid": 48,
+        "uid": 50,
         "name": "s_Charcani6",
         "junction_a": "j_Charcani6",
         "junction_b": "j_Charcani123",
         "fcost": 0.36
       },
       {
-        "uid": 49,
+        "uid": 51,
         "name": "out_Charcani123",
         "junction_a": "j_Charcani123",
         "junction_b": "jo_Charcani123",
@@ -10227,21 +10243,28 @@
         "fmin_fcost": 72.0
       },
       {
-        "uid": 50,
+        "uid": 52,
+        "name": "s_Charcani123",
+        "junction_a": "jo_Charcani123",
+        "junction_b": "j_Chili_riego",
+        "fcost": 0.36
+      },
+      {
+        "uid": 53,
         "name": "q_Chili_riego",
         "junction_a": "j_Chili_riego",
         "junction_b": "j_La_Joya",
         "fmax": 14.8
       },
       {
-        "uid": 51,
+        "uid": 54,
         "name": "s_Chili_riego",
         "junction_a": "j_Chili_riego",
         "junction_b": "j_La_Joya",
         "fcost": 0.36
       },
       {
-        "uid": 52,
+        "uid": 55,
         "name": "irr_Chili_riego",
         "junction_a": "j_Chili_riego",
         "fmin": "fmin",
@@ -10249,126 +10272,126 @@
         "fmin_fcost": 36.0
       },
       {
-        "uid": 53,
+        "uid": 56,
         "name": "q_Huachon_Em",
         "junction_a": "j_Huachon_Em",
         "junction_b": "j_Huaramayo_To",
         "fmax": 8.0
       },
       {
-        "uid": 54,
+        "uid": 57,
         "name": "s_Huachon_Em",
         "junction_a": "j_Huachon_Em",
         "junction_b": "j_Huaramayo_To",
         "fcost": 0.36
       },
       {
-        "uid": 55,
+        "uid": 58,
         "name": "q_Uchuhu._To",
         "junction_a": "j_Uchuhu._To",
-        "junction_b": "j_Yuncan_Re",
+        "junction_b": "j_Yuncan",
         "fmax": 20.0
       },
       {
-        "uid": 56,
+        "uid": 59,
         "name": "s_Uchuhu._To",
         "junction_a": "j_Uchuhu._To",
-        "junction_b": "j_Yuncan",
+        "junction_b": "j_Yuncan_Re",
         "fcost": 0.36
       },
       {
-        "uid": 57,
+        "uid": 60,
         "name": "q_Victoria_Em",
         "junction_a": "j_Victoria_Em",
         "junction_b": "j_Huallamay_Em",
         "fmax": 100.0
       },
       {
-        "uid": 58,
+        "uid": 61,
         "name": "s_Victoria_Em",
         "junction_a": "j_Victoria_Em",
         "junction_b": "j_Huallamay_Em",
         "fcost": 0.36
       },
       {
-        "uid": 59,
+        "uid": 62,
         "name": "s_Yuncan",
         "junction_a": "j_Yuncan",
         "junction_b": "j_Yuncan_Re",
         "fcost": 0.36
       },
       {
-        "uid": 60,
-        "name": "s_Manto_To",
+        "uid": 63,
+        "name": "q_Manto_To",
         "junction_a": "j_Manto_To",
         "junction_b": "j_Yaupi",
-        "fcost": 0.36
+        "fmax": 11.764
       },
       {
-        "uid": 61,
+        "uid": 64,
         "name": "q_Pomacocha_Em",
         "junction_a": "j_Pomacocha_Em",
-        "junction_b": "j_Oroya",
+        "junction_b": "j_Pachachaca",
         "fmax": 9.9
       },
       {
-        "uid": 62,
+        "uid": 65,
         "name": "s_Pomacocha_Em",
         "junction_a": "j_Pomacocha_Em",
-        "junction_b": "j_Pachachaca",
+        "junction_b": "j_Oroya",
         "fcost": 0.36
       },
       {
-        "uid": 63,
+        "uid": 66,
         "name": "s_Pachachaca",
         "junction_a": "j_Pachachaca",
         "junction_b": "j_Oroya",
         "fcost": 0.36
       },
       {
-        "uid": 64,
+        "uid": 67,
         "name": "q_Junin_Lago",
         "junction_a": "j_Junin_Lago",
         "junction_b": "j_Malpaso",
         "fmax": 300.0
       },
       {
-        "uid": 65,
+        "uid": 68,
         "name": "s_Junin_Lago",
         "junction_a": "j_Junin_Lago",
         "junction_b": "j_Malpaso",
         "fcost": 0.36
       },
       {
-        "uid": 66,
+        "uid": 69,
         "name": "s_Malpaso",
         "junction_a": "j_Malpaso",
         "junction_b": "j_Mantaro",
         "fcost": 0.36
       },
       {
-        "uid": 67,
+        "uid": 70,
         "name": "s_Oroya",
         "junction_a": "j_Oroya",
         "junction_b": "j_Mantaro",
         "fcost": 0.36
       },
       {
-        "uid": 68,
+        "uid": 71,
         "name": "q_LagunasEP_Em",
         "junction_a": "j_LagunasEP_Em",
         "junction_b": "j_Mantaro",
         "fmax": 30.0
       },
       {
-        "uid": 69,
+        "uid": 72,
         "name": "s_LagunasEP_Em",
         "junction_a": "j_LagunasEP_Em",
         "junction_b": "j_Mantaro",
         "fcost": 0.36
       },
       {
-        "uid": 70,
+        "uid": 73,
         "name": "out_Mantaro",
         "junction_a": "j_Mantaro",
         "junction_b": "jo_Mantaro",
@@ -10376,49 +10399,49 @@
         "fmin_fcost": 360.0
       },
       {
-        "uid": 71,
+        "uid": 74,
         "name": "s_Mantaro",
         "junction_a": "jo_Mantaro",
-        "junction_b": "j_Restitucion",
+        "junction_b": "j_CAguila",
         "fcost": 0.36
       },
       {
-        "uid": 72,
+        "uid": 75,
         "name": "q_Arcata_Em",
         "junction_a": "j_Arcata_Em",
         "junction_b": "j_Arcata",
         "fmax": 100.0
       },
       {
-        "uid": 73,
+        "uid": 76,
         "name": "s_Arcata_Em",
         "junction_a": "j_Arcata_Em",
         "junction_b": "j_Arcata",
         "fcost": 0.36
       },
       {
-        "uid": 74,
+        "uid": 77,
         "name": "s_Restitucion",
         "junction_a": "j_Restitucion",
         "junction_b": "j_CAguila",
         "fcost": 0.36
       },
       {
-        "uid": 75,
+        "uid": 78,
         "name": "q_Rajucolta_Em",
         "junction_a": "j_Rajucolta_Em",
         "junction_b": "j_Pariac",
         "fmax": 2.5
       },
       {
-        "uid": 76,
+        "uid": 79,
         "name": "s_Rajucolta_Em",
         "junction_a": "j_Rajucolta_Em",
         "junction_b": "j_Pariac",
         "fcost": 0.36
       },
       {
-        "uid": 77,
+        "uid": 80,
         "name": "out_Platanal",
         "junction_a": "j_Platanal",
         "junction_b": "jo_Platanal",
@@ -10426,14 +10449,14 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 78,
+        "uid": 81,
         "name": "s_Platanal",
         "junction_a": "jo_Platanal",
         "junction_b": "j_Imperial",
         "fcost": 0.36
       },
       {
-        "uid": 79,
+        "uid": 82,
         "name": "irr_Platanal",
         "junction_a": "j_Platanal",
         "fmin": "fmin",
@@ -10441,7 +10464,7 @@
         "fmin_fcost": 36.0
       },
       {
-        "uid": 80,
+        "uid": 83,
         "name": "out_Paucar_Em",
         "junction_a": "j_Paucar_Em",
         "junction_b": "jo_Paucar_Em",
@@ -10449,21 +10472,21 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 81,
+        "uid": 84,
         "name": "q_Paucar_Em",
         "junction_a": "jo_Paucar_Em",
         "junction_b": "j_Platanal",
         "fmax": 42.25
       },
       {
-        "uid": 82,
+        "uid": 85,
         "name": "s_Paucar_Em",
         "junction_a": "jo_Paucar_Em",
         "junction_b": "j_Platanal",
         "fcost": 0.36
       },
       {
-        "uid": 83,
+        "uid": 86,
         "name": "out_GCiego",
         "junction_a": "j_GCiego",
         "junction_b": "jo_GCiego",
@@ -10471,21 +10494,21 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 84,
+        "uid": 87,
         "name": "q_LA_Aricota",
         "junction_a": "j_LA_Aricota",
         "junction_b": "j_AricotaI",
         "fmax": 1.5
       },
       {
-        "uid": 85,
+        "uid": 88,
         "name": "s_LA_Aricota",
         "junction_a": "j_LA_Aricota",
         "junction_b": "j_AricotaI",
         "fcost": 0.36
       },
       {
-        "uid": 86,
+        "uid": 89,
         "name": "irr_Roncador",
         "junction_a": "j_Roncador",
         "fmin": "fmin",
@@ -10493,35 +10516,35 @@
         "fmin_fcost": 36.0
       },
       {
-        "uid": 87,
+        "uid": 90,
         "name": "s_StaCruz1",
         "junction_a": "j_StaCruz1",
         "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 88,
+        "uid": 91,
         "name": "s_StaCruz2",
         "junction_a": "j_StaCruz2",
-        "junction_b": "j_StaCruz1",
+        "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 89,
+        "uid": 92,
         "name": "s_Poechos1",
         "junction_a": "j_Poechos1",
         "junction_b": "j_Poechos_Rgo1",
         "fcost": 0.36
       },
       {
-        "uid": 90,
+        "uid": 93,
         "name": "s_Poechos2",
         "junction_a": "j_Poechos2",
         "junction_b": "j_Poechos_Rgo2",
         "fcost": 0.36
       },
       {
-        "uid": 91,
+        "uid": 94,
         "name": "out_Poechos_Rgo1",
         "junction_a": "j_Poechos_Rgo1",
         "junction_b": "jo_Poechos_Rgo1",
@@ -10529,21 +10552,21 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 92,
+        "uid": 95,
         "name": "q_Poechos_Rgo2",
         "junction_a": "j_Poechos_Rgo2",
         "junction_b": "j_Curumuy",
         "fmax": 12.0
       },
       {
-        "uid": 93,
+        "uid": 96,
         "name": "s_Poechos_Rgo2",
         "junction_a": "j_Poechos_Rgo2",
         "junction_b": "j_Curumuy",
         "fcost": 0.36
       },
       {
-        "uid": 94,
+        "uid": 97,
         "name": "irr_Poechos_Rgo2",
         "junction_a": "j_Poechos_Rgo2",
         "fmin": "fmin",
@@ -10551,7 +10574,7 @@
         "fmin_fcost": 36.0
       },
       {
-        "uid": 95,
+        "uid": 98,
         "name": "out_Curumuy",
         "junction_a": "j_Curumuy",
         "junction_b": "jo_Curumuy",
@@ -10559,7 +10582,7 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 96,
+        "uid": 99,
         "name": "out_Carhuaquero4",
         "junction_a": "j_Carhuaquero4",
         "junction_b": "jo_Carhuaquero4",
@@ -10567,28 +10590,28 @@
         "fmin_fcost": 18.0
       },
       {
-        "uid": 97,
+        "uid": 100,
         "name": "s_Carhuaquero4",
         "junction_a": "jo_Carhuaquero4",
         "junction_b": "j_Caña_Brava",
         "fcost": 0.36
       },
       {
-        "uid": 98,
+        "uid": 101,
         "name": "q_Cirato_Em",
         "junction_a": "j_Cirato_Em",
-        "junction_b": "j_Carhuaquero4",
+        "junction_b": "j_Carhuaquero",
         "fmax": 23.0
       },
       {
-        "uid": 99,
+        "uid": 102,
         "name": "s_Cirato_Em",
         "junction_a": "j_Cirato_Em",
-        "junction_b": "j_Carhuaquero",
+        "junction_b": "j_Carhuaquero4",
         "fcost": 0.36
       },
       {
-        "uid": 100,
+        "uid": 103,
         "name": "irr_Cirato_Em",
         "junction_a": "j_Cirato_Em",
         "fmin": "fmin",
@@ -10596,21 +10619,21 @@
         "fmin_fcost": 21.599999999999998
       },
       {
-        "uid": 101,
+        "uid": 104,
         "name": "s_Angel123",
         "junction_a": "j_Angel123",
         "junction_b": "j_SanGaban3_To",
         "fcost": 0.36
       },
       {
-        "uid": 102,
+        "uid": 105,
         "name": "s_Huanza",
         "junction_a": "j_Huanza",
         "junction_b": "j_Toma_Carhuac",
         "fcost": 0.36
       },
       {
-        "uid": 103,
+        "uid": 106,
         "name": "out_Quitaracsa",
         "junction_a": "j_Quitaracsa",
         "junction_b": "jo_Quitaracsa",
@@ -10618,189 +10641,203 @@
         "fmin_fcost": 21.599999999999998
       },
       {
-        "uid": 104,
+        "uid": 107,
         "name": "s_Quitaracsa",
         "junction_a": "jo_Quitaracsa",
         "junction_b": "j_SantaRita_To",
         "fcost": 0.36
       },
       {
-        "uid": 105,
+        "uid": 108,
+        "name": "s_Runatullu3",
+        "junction_a": "j_Runatullu3",
+        "junction_b": "j_Chimay",
+        "fcost": 0.36
+      },
+      {
+        "uid": 109,
         "name": "s_Runatullu2",
         "junction_a": "j_Runatullu2",
         "junction_b": "j_Runatullu3",
         "fcost": 0.36
       },
       {
-        "uid": 106,
+        "uid": 110,
         "name": "q_Corani_To",
         "junction_a": "j_Corani_To",
         "junction_b": "j_SanGaban2_To",
         "fmax": 100.0
       },
       {
-        "uid": 107,
+        "uid": 111,
         "name": "s_Corani_To",
         "junction_a": "j_Corani_To",
         "junction_b": "j_SanGaban2_To",
         "fcost": 0.36
       },
       {
-        "uid": 108,
+        "uid": 112,
         "name": "q_SanGaban2_To",
         "junction_a": "j_SanGaban2_To",
         "junction_b": "j_SanGaban",
         "fmax": 100.0
       },
       {
-        "uid": 109,
+        "uid": 113,
         "name": "s_SanGaban2_To",
         "junction_a": "j_SanGaban2_To",
         "junction_b": "j_SanGaban",
         "fcost": 0.36
       },
       {
-        "uid": 110,
+        "uid": 114,
         "name": "q_SanGaban3_To",
         "junction_a": "j_SanGaban3_To",
         "junction_b": "j_San_Gaban_3",
         "fmax": 100.0
       },
       {
-        "uid": 111,
+        "uid": 115,
         "name": "s_SanGaban3_To",
         "junction_a": "j_SanGaban3_To",
         "junction_b": "j_San_Gaban_3",
         "fcost": 0.36
       },
       {
-        "uid": 112,
+        "uid": 116,
         "name": "q_Huallamay_Em",
         "junction_a": "j_Huallamay_Em",
-        "junction_b": "j_Yuncan_Re",
+        "junction_b": "j_Yuncan",
         "fmax": 30.0
       },
       {
-        "uid": 113,
+        "uid": 117,
         "name": "s_Huallamay_Em",
         "junction_a": "j_Huallamay_Em",
-        "junction_b": "j_Yuncan",
+        "junction_b": "j_Yuncan_Re",
         "fcost": 0.36
       },
       {
-        "uid": 114,
-        "name": "s_Yuncan_Re",
+        "uid": 118,
+        "name": "q_Yuncan_Re",
         "junction_a": "j_Yuncan_Re",
         "junction_b": "j_Yaupi",
-        "fcost": 0.36
+        "fmax": 20.0
       },
       {
-        "uid": 115,
+        "uid": 119,
+        "name": "q_Huaramayo_To",
+        "junction_a": "j_Huaramayo_To",
+        "junction_b": "j_Uchuhu._To",
+        "fmax": 100.0
+      },
+      {
+        "uid": 120,
         "name": "s_Huaramayo_To",
         "junction_a": "j_Huaramayo_To",
         "junction_b": "j_Uchuhu._To",
         "fcost": 0.36
       },
       {
-        "uid": 116,
+        "uid": 121,
         "name": "q_Eulalia14_Em",
         "junction_a": "j_Eulalia14_Em",
         "junction_b": "j_Reser_Huanza",
         "fmax": 260.0
       },
       {
-        "uid": 117,
+        "uid": 122,
         "name": "s_Eulalia14_Em",
         "junction_a": "j_Eulalia14_Em",
         "junction_b": "j_Reser_Huanza",
         "fcost": 0.36
       },
       {
-        "uid": 118,
+        "uid": 123,
         "name": "s_Carhuac_RER",
         "junction_a": "j_Carhuac_RER",
         "junction_b": "j_Reser_Sheque",
         "fcost": 0.36
       },
       {
-        "uid": 119,
+        "uid": 124,
         "name": "q_Toma_Carhuac",
         "junction_a": "j_Toma_Carhuac",
-        "junction_b": "j_Reser_Sheque",
+        "junction_b": "j_Carhuac_RER",
         "fmax": 14.0
       },
       {
-        "uid": 120,
+        "uid": 125,
         "name": "s_Toma_Carhuac",
         "junction_a": "j_Toma_Carhuac",
-        "junction_b": "j_Carhuac_RER",
+        "junction_b": "j_Reser_Sheque",
         "fcost": 0.36
       },
       {
-        "uid": 121,
+        "uid": 126,
         "name": "q_Eulalia2_Em",
         "junction_a": "j_Eulalia2_Em",
         "junction_b": "j_Reser_Sheque",
         "fmax": 30.0
       },
       {
-        "uid": 122,
+        "uid": 127,
         "name": "s_Eulalia2_Em",
         "junction_a": "j_Eulalia2_Em",
         "junction_b": "j_Reser_Sheque",
         "fcost": 0.36
       },
       {
-        "uid": 123,
+        "uid": 128,
         "name": "q_Reser_Huanza",
         "junction_a": "j_Reser_Huanza",
-        "junction_b": "j_Toma_Carhuac",
+        "junction_b": "j_Huanza",
         "fmax": 15.8
       },
       {
-        "uid": 124,
+        "uid": 129,
         "name": "s_Reser_Huanza",
         "junction_a": "j_Reser_Huanza",
-        "junction_b": "j_Huanza",
+        "junction_b": "j_Toma_Carhuac",
         "fcost": 0.36
       },
       {
-        "uid": 125,
+        "uid": 130,
         "name": "q_Reser_Sheque",
         "junction_a": "j_Reser_Sheque",
-        "junction_b": "j_Eulalia_Toma",
+        "junction_b": "j_Huinco",
         "fmax": 25.0
       },
       {
-        "uid": 126,
+        "uid": 131,
         "name": "s_Reser_Sheque",
         "junction_a": "j_Reser_Sheque",
-        "junction_b": "j_Huinco",
+        "junction_b": "j_Eulalia_Toma",
         "fcost": 0.36
       },
       {
-        "uid": 127,
+        "uid": 132,
         "name": "q_Toma_StaCruz",
         "junction_a": "j_Toma_StaCruz",
-        "junction_b": "j_CañonPato",
+        "junction_b": "j_StaCruz2",
         "fmax": 50.0
       },
       {
-        "uid": 128,
+        "uid": 133,
         "name": "s_Toma_StaCruz",
         "junction_a": "j_Toma_StaCruz",
-        "junction_b": "j_StaCruz2",
+        "junction_b": "j_CañonPato",
         "fcost": 0.36
       },
       {
-        "uid": 129,
+        "uid": 134,
         "name": "q_Runatullo_To",
         "junction_a": "j_Runatullo_To",
         "junction_b": "j_Runatullu2",
         "fmax": 7.2
       },
       {
-        "uid": 130,
+        "uid": 135,
         "name": "s_Runatullo_To",
         "junction_a": "j_Runatullo_To",
         "junction_b": "j_Runatullu2",
@@ -11607,7 +11644,7 @@
         "uid": 2,
         "name": "tb_Matucana",
         "junction_a": "j_Matucana",
-        "junction_b": "j_Surco_Toma",
+        "junction_b": "j_Callahuanca",
         "generator": "Matucana",
         "production_factor": 8.6504,
         "capacity": 15.84
@@ -11705,6 +11742,7 @@
         "uid": 13,
         "name": "tb_Machupicchu",
         "junction_a": "j_Machupicchu",
+        "junction_b": "j_StaTeresa",
         "generator": "Machupicchu",
         "production_factor": 3.024,
         "capacity": 55.8284
@@ -11758,6 +11796,7 @@
         "uid": 19,
         "name": "tb_Charcani123",
         "junction_a": "jo_Charcani123",
+        "junction_b": "j_Chili_riego",
         "generator": "Charcani123",
         "production_factor": 0.671912,
         "capacity": 10.2375
@@ -11810,7 +11849,7 @@
         "uid": 25,
         "name": "tb_Mantaro",
         "junction_a": "jo_Mantaro",
-        "junction_b": "j_CAguila",
+        "junction_b": "j_Restitucion",
         "generator": "Mantaro",
         "production_factor": 6.403,
         "capacity": 105.999
@@ -11894,7 +11933,7 @@
         "uid": 35,
         "name": "tb_StaCruz2",
         "junction_a": "j_StaCruz2",
-        "junction_b": "j_CañonPato",
+        "junction_b": "j_StaCruz1",
         "generator": "StaCruz2",
         "production_factor": 1.0365,
         "capacity": 6.27303
@@ -12045,6 +12084,7 @@
         "uid": 53,
         "name": "tb_Runatullu3",
         "junction_a": "j_Runatullu3",
+        "junction_b": "j_Chimay",
         "generator": "Runatullu3",
         "production_factor": 3.6236,
         "capacity": 5.50999

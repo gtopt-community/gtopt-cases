@@ -3125,10 +3125,10 @@
         "horizon_hours": 168.0,
         "lp": {
           "lps": 1,
-          "rows": 160608,
-          "cols": 236830,
-          "nnz": 535366,
-          "gtopt_revision": "3b70b4ee9eca-dirty"
+          "rows": 192024,
+          "cols": 284586,
+          "nnz": 587950,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -3188,9 +3188,9 @@
           "--import-limit",
           "200"
         ],
-        "gtopt_revision": "cbb030aaa55bbd2f0bbca46bf8f1b54f3d4af3c0",
-        "converter_last_change": "c96c30fdbc4e81b68ebb980b6ddf1a82fcdec702",
-        "note": "case JSON produced with an earlier gtopt development revision (FutureCost-migrated); regenerate with sddp2gtopt -i source -o <dir> --import-limit 200"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt master 16d307666; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case/sddp_ncp_week.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case\" -d .",
@@ -3954,9 +3954,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2021-2022/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2021-2022/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2021-2022/case/sddp_plp_2021-2022.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2021-2022/case\" -d .",
@@ -3966,7 +3966,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2021-2022 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4130,9 +4130,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2022-2023/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2022-2023/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2022-2023/case/sddp_plp_2022-2023.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2022-2023/case\" -d .",
@@ -4142,7 +4142,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2022-2023 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4316,9 +4316,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2023-2024/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2023-2024/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2023-2024/case/sddp_plp_2023-2024.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2023-2024/case\" -d .",
@@ -4328,7 +4328,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2023-2024 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4497,9 +4497,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2024-2025/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2024-2025/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2024-2025/case/sddp_plp_2024-2025.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2024-2025/case\" -d .",
@@ -4509,7 +4509,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2024-2025 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4683,9 +4683,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2025-2026/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2025-2026/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2025-2026/case/sddp_plp_2025-2026.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2025-2026/case\" -d .",
@@ -4695,7 +4695,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2025-2026 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4889,9 +4889,9 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later"
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2026-2027/output && cd ~/gtopt-cases-out/guatemala/medium_long_term/sddp_plp_2026-2027/output && gtopt \"$REPO/guatemala/medium_long_term/sddp_plp_2026-2027/case/sddp_plp_2026-2027.json\" --set input_directory=\"$REPO/guatemala/medium_long_term/sddp_plp_2026-2027/case\" -d .",
@@ -4901,7 +4901,7 @@
           "class": "medium",
           "guide": "SDDP over 12 phase LPs, 1 scene; a few GB RAM"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild sddp_plp_2026-2027 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -4945,9 +4945,9 @@
         "lp": {
           "lps": 672,
           "rows": 6457304,
-          "cols": 13066424,
-          "nnz": 31612448,
-          "gtopt_revision": "75d9cec1ce81"
+          "cols": 13086584,
+          "nnz": 31659488,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -5151,12 +5151,12 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
         "input": "../source",
         "overlay": "../source/2026",
         "join_parts": true,
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2026/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2026/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2026/case/coes_mrfo_2026.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2026/case\" -d .",
@@ -5166,7 +5166,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2026 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -5210,9 +5210,9 @@
         "lp": {
           "lps": 672,
           "rows": 6640984,
-          "cols": 13452824,
-          "nnz": 32908848,
-          "gtopt_revision": "75d9cec1ce81"
+          "cols": 13472984,
+          "nnz": 32955888,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -5416,12 +5416,12 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
         "input": "../source",
         "overlay": "../source/2027",
         "join_parts": true,
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2027/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2027/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2027/case/coes_mrfo_2027.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2027/case\" -d .",
@@ -5431,7 +5431,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2027 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -5475,9 +5475,9 @@
         "lp": {
           "lps": 672,
           "rows": 6915664,
-          "cols": 14049224,
-          "nnz": 34917008,
-          "gtopt_revision": "75d9cec1ce81"
+          "cols": 14069384,
+          "nnz": 34964048,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -5681,12 +5681,12 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
         "input": "../source",
         "overlay": "../source/2028",
         "join_parts": true,
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2028/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2028/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2028/case/coes_mrfo_2028.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2028/case\" -d .",
@@ -5696,7 +5696,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2028 --out <dir outside the repo>"
       },
       "rights_holders": [
@@ -5740,9 +5740,9 @@
         "lp": {
           "lps": 672,
           "rows": 7514584,
-          "cols": 15364664,
-          "nnz": 39082008,
-          "gtopt_revision": "75d9cec1ce81"
+          "cols": 15384824,
+          "nnz": 39129048,
+          "gtopt_revision": "18548ca102a8-dirty"
         }
       },
       "source": {
@@ -5946,12 +5946,12 @@
       "converter": {
         "tool": "sddp2gtopt",
         "flags": [],
-        "gtopt_revision": "2e06ab17f8e197f390acc53aa10943f96a054329",
-        "converter_last_change": "86807d8af2c425cd7c7c2c32cb7dcf1895acd7d4",
+        "gtopt_revision": "16d307666711371b1458cb2a7b323511e9a424c1",
+        "converter_last_change": "8c31278c9665766ee9bb3ab8eed923df51d64778",
         "input": "../source",
         "overlay": "../source/2029",
         "join_parts": true,
-        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master of November 2026 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
+        "note": "converted with sddp2gtopt from gtopt; rebuild with gtopt master 16d307666 or later; input = ../source with ../source/<year>/ overlaid and the split parts joined (tools/get_case.py does this)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2029/output && cd ~/gtopt-cases-out/peru/medium_long_term/coes_mrfo_2026-2029/2029/output && gtopt \"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2029/case/coes_mrfo_2029.json\" --set input_directory=\"$REPO/peru/medium_long_term/coes_mrfo_2026-2029/2029/case\" -d .",
@@ -5961,7 +5961,7 @@
           "class": "large",
           "guide": "SDDP over 56 scenes x 12 phases (672 phase LPs); plan for 8+ cores and 16+ GB RAM, or fewer apertures"
         },
-        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master of November 2026 or later; any recent gtopt runs the case",
+        "gtopt_build": "sddp2gtopt (to rebuild) from gtopt master 16d307666 or later; any recent gtopt runs the case",
         "rebuild": "tools/get_case.py rebuild peru/medium_long_term/coes_mrfo_2026-2029/2029 --out <dir outside the repo>"
       },
       "rights_holders": [

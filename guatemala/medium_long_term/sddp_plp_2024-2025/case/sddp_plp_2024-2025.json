@@ -10456,7 +10456,8 @@
       },
       {
         "uid": 16,
-        "name": "j_HKC-H"
+        "name": "j_HKC-H",
+        "drain": true
       },
       {
         "uid": 17,
@@ -10535,11 +10536,13 @@
       },
       {
         "uid": 33,
-        "name": "j_MNL-H4"
+        "name": "j_MNL-H4",
+        "drain": true
       },
       {
         "uid": 34,
-        "name": "j_MTO-H"
+        "name": "j_MTO-H",
+        "drain": true
       },
       {
         "uid": 35,
@@ -10670,7 +10673,7 @@
         "uid": 2,
         "name": "s_CAN-H",
         "junction_a": "j_CAN-H",
-        "junction_b": "j_MTO-H"
+        "junction_b": "j_REC-H"
       },
       {
         "uid": 3,
@@ -10688,96 +10691,78 @@
       },
       {
         "uid": 5,
-        "name": "s_HKC-H",
-        "junction_a": "j_HKC-H",
-        "junction_b": "j_PVE-H"
-      },
-      {
-        "uid": 6,
         "name": "s_JUR-H",
         "junction_a": "j_JUR-H",
         "junction_b": "j_HSM-H"
       },
       {
-        "uid": 7,
+        "uid": 6,
         "name": "s_MNL-H1",
         "junction_a": "j_MNL-H1",
         "junction_b": "j_LFU-H"
       },
       {
-        "uid": 8,
+        "uid": 7,
         "name": "s_MNL-H2-2U",
         "junction_a": "j_MNL-H2-2U",
         "junction_b": "j_MNL-H1"
       },
       {
-        "uid": 9,
+        "uid": 8,
         "name": "s_MNL-H2-6U",
         "junction_a": "j_MNL-H2-6U",
-        "junction_b": "j_LFU-H"
+        "junction_b": "j_MNL-H2-2U"
       },
       {
-        "uid": 10,
+        "uid": 9,
         "name": "s_MNL-H3",
         "junction_a": "j_MNL-H3",
         "junction_b": "j_LFU-H"
       },
       {
-        "uid": 11,
-        "name": "s_MNL-H4",
-        "junction_a": "j_MNL-H4",
-        "junction_b": "j_MNL-H2-6U"
-      },
-      {
-        "uid": 12,
-        "name": "s_MTO-H",
-        "junction_a": "j_MTO-H",
-        "junction_b": "j_REC-H"
-      },
-      {
-        "uid": 13,
+        "uid": 10,
         "name": "s_PAL-H",
         "junction_a": "j_PAL-H",
         "junction_b": "j_JUR-H"
       },
       {
-        "uid": 14,
+        "uid": 11,
         "name": "s_PNA-H3",
         "junction_a": "j_PNA-H3",
         "junction_b": "j_PNA-H"
       },
       {
-        "uid": 15,
+        "uid": 12,
         "name": "s_REN-H",
         "junction_a": "j_REN-H",
         "junction_b": "j_RE2-H"
       },
       {
-        "uid": 16,
+        "uid": 13,
         "name": "s_RE2-H",
         "junction_a": "j_RE2-H",
         "junction_b": "j_RE3-H"
       },
       {
-        "uid": 17,
+        "uid": 14,
         "name": "s_REC-H",
         "junction_a": "j_REC-H",
         "junction_b": "j_RC2-H"
       },
       {
-        "uid": 18,
+        "uid": 15,
         "name": "s_SEC-H",
         "junction_a": "j_SEC-H",
         "junction_b": "j_CND-H"
       },
       {
-        "uid": 19,
+        "uid": 16,
         "name": "s_SMA-H",
         "junction_a": "j_SMA-H",
         "junction_b": "j_CAN-H"
       },
       {
-        "uid": 20,
+        "uid": 17,
         "name": "s_XAD-H",
         "junction_a": "j_XAD-H",
         "junction_b": "j_XAC-H"
@@ -11379,7 +11364,7 @@
         "uid": 3,
         "name": "tb_CAN-H",
         "junction_a": "j_CAN-H",
-        "junction_b": "j_REC-H",
+        "junction_b": "j_MTO-H",
         "generator": "CAN-H",
         "production_factor": 3.08241,
         "capacity": 14.9
@@ -11477,6 +11462,7 @@
         "uid": 15,
         "name": "tb_HKC-H",
         "junction_a": "j_HKC-H",
+        "junction_b": "j_PVE-H",
         "generator": "HKC-H",
         "production_factor": 0.19442,
         "capacity": 8.7182
@@ -11600,7 +11586,7 @@
         "uid": 30,
         "name": "tb_MNL-H2-6U",
         "junction_a": "j_MNL-H2-6U",
-        "junction_b": "j_MNL-H2-2U",
+        "junction_b": "j_LFU-H",
         "generator": "MNL-H2-6U",
         "production_factor": 2.91958,
         "capacity": 7.2
@@ -11618,6 +11604,7 @@
         "uid": 32,
         "name": "tb_MNL-H4",
         "junction_a": "j_MNL-H4",
+        "junction_b": "j_MNL-H2-6U",
         "generator": "MNL-H4",
         "production_factor": 3.68353,
         "capacity": 3.498
@@ -11626,6 +11613,7 @@
         "uid": 33,
         "name": "tb_MTO-H",
         "junction_a": "j_MTO-H",
+        "junction_b": "j_REC-H",
         "generator": "MTO-H",
         "production_factor": 0.8753,
         "capacity": 14.9

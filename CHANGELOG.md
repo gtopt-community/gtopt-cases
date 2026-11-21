@@ -31,6 +31,31 @@ Each release states the minimum gtopt version its cases need.
   Greenlink interconnector.  As for `sem_2025w03`, the data are not
   redistributed; `tools/get_case.py fetch <case>` builds them locally.
 
+### Fixed
+
+- **Hydro cascade topology of the `sddp2gtopt` cases** (Peru and
+  Guatemala).  PSR SDDP gives each hydro plant two downstream plants:
+  `TAA` receives the turbined water and `VAA` the spilled water.  Earlier
+  `sddp2gtopt` swapped them (SDDP cases) or read only `VAA` (NCP cases),
+  so water reached the wrong plants.  Rebuilt with gtopt master
+  `16d307666` or later:
+  - **Peru** `coes_mrfo_2026-2029/2026` … `2029`: Machupicchu now turbines
+    into Santa Teresa and Mantaro into Restitución, and cascades pass
+    through plants not yet in service (Sibinacocha → … → Machupicchu).
+    6 turbines and 24 spill paths change destination; the LPs keep their
+    rows and gain 20,160 columns (spill arcs to the next plant).
+  - **Guatemala** `sddp_plp_2021-2022` … `sddp_plp_2026-2027`: 5 turbines
+    and 5 spill paths change destination (e.g. `MTO-H` now turbines into
+    `REC-H`, and `CAN-H` spills past `MTO-H`); LP size unchanged.
+  - **Guatemala** `ncp_week_2026-06-21`: the parallel units of a plant
+    (`CHX-H1`…`H5`, `JUR-H1`…`H3`, `LVA-H1`…`H4`, …) spill into the next
+    unit but turbine to the river, so the same water is no longer
+    turbined several times; the `JUR-H` units now turbine into `HSM-H`.  This
+    rebuild also picks up the converter changes since the earlier
+    development revision (the `--import-limit` cap now covers every
+    interconnection import, bus voltages), so its LP grows from 160,608
+    to 192,024 rows.
+
 ### Changed
 
 - `tools/get_case.py fetch`: cases that use the same archives share one
