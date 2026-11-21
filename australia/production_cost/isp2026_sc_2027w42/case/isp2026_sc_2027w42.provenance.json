@@ -16,7 +16,7 @@
   },
   "converter": {
     "tool": "python -m plexos2gtopt.aemo_isp",
-    "gtopt_revision": "2fd3927eedcb40c24987180ed830bf7013596ab1",
+    "gtopt_revision": "f1fd5e63a4e1a49af1bccbd74a8e66fd6e3c4e0c",
     "args": [
       "-s",
       "2027-10-18",

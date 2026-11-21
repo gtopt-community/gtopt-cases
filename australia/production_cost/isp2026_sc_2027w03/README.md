@@ -42,7 +42,7 @@ database; see the [Australia README](../../README.md).
 | Constraints | 83 user constraints: REZ group, transmission group and purchaser-network limits per block, daily energy and gas-zone daily fuel-offtake limits (`daily_sum`); 5 hydrogen demands (pro-rated monthly H2 consumption); 7 emission zones (tracking, no cap) |
 | LP | 143,688 rows, 251,920 cols, 593,025 nonzeros |
 | Method / profile | monolithic LP, no profile |
-| Converter | `python -m plexos2gtopt.aemo_isp`, default flags, gtopt 1.1.0 or later (revision used: `2fd3927ee`) |
+| Converter | `python -m plexos2gtopt.aemo_isp`, default flags, gtopt 1.1.0 or later (revision used: `f1fd5e63a`) |
 
 ## Files
 
@@ -185,7 +185,7 @@ This rebuild reproduces the JSON and every Parquet file exactly.
 ## Provenance
 
 - Converter: `plexos2gtopt.aemo_isp` (default flags), gtopt revision
-  `2fd3927ee`; in gtopt 1.1.0 or later.
+  `f1fd5e63a`; in gtopt 1.1.0 or later.
 - Archive hashes, converter arguments and file checksums:
   `case/isp2026_sc_2027w03.provenance.json` and
   [`catalog.json`](../../../catalog.json).

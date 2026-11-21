@@ -42,7 +42,7 @@ database; see the [Australia README](../../README.md).
 | Constraints | 91 user constraints: REZ group, transmission group and purchaser-network limits per block, daily energy and gas-zone daily fuel-offtake limits (`daily_sum`); 5 hydrogen demands (pro-rated monthly H2 consumption); 7 emission zones (tracking, no cap) |
 | LP | 162,695 rows, 274,962 cols, 657,123 nonzeros |
 | Method / profile | monolithic LP, no profile |
-| Converter | `python -m plexos2gtopt.aemo_isp`, default flags, gtopt 1.1.0 or later (revision used: `2fd3927ee`) |
+| Converter | `python -m plexos2gtopt.aemo_isp`, default flags, gtopt 1.1.0 or later (revision used: `f1fd5e63a`) |
 
 ## Files
 
