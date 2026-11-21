@@ -6082,14 +6082,14 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 126129,
-          "cols": 241022,
-          "nnz": 449427,
-          "gtopt_revision": "61a0ba430b0c"
+          "rows": 143688,
+          "cols": 251920,
+          "nnz": 593025,
+          "gtopt_revision": "2fd3927eedcb"
         },
-        "buses": 15,
+        "buses": 35,
         "generators": 523,
-        "lines": 18,
+        "lines": 38,
         "batteries": 85,
         "reservoirs": 22,
         "blocks": 168,
@@ -6107,15 +6107,15 @@
           },
           {
             "path": "source/traces.sha256",
-            "sha256": "df102f707199c51764495462bfd9109ae09c2ba523d94f602bb8b9c17d412105",
-            "bytes": 26757,
+            "sha256": "705dc9de1c906b9471de3fd895b5ea5c4a08121daf873d9fadac5e07eefc99cb",
+            "bytes": 32814,
             "manifest": "source/traces",
-            "note": "sha256 manifest of the 250 window-cut trace files under source/traces/ (629,806 bytes), paths relative to source/traces"
+            "note": "sha256 manifest of the 299 window-cut trace files under source/traces/ (673,720 bytes), paths relative to source/traces"
           },
           {
             "path": "source/NOT_KEPT.txt",
-            "sha256": "39a14d8c13fb16c8beac8d86536467a5dd8210ed22fb2682941c6a3c714871dd",
-            "bytes": 1369
+            "sha256": "12e914caeee05a7165fdb79514ad7bf0ca0342ae19a1fbb3d09b5589d355b790",
+            "bytes": 1383
           }
         ],
         "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w03.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
@@ -6132,8 +6132,8 @@
           "-n",
           "isp2026_sc_2027w03"
         ],
-        "gtopt_revision": "da204a77f83cca6ec8cd9141bc7f912f20c72af5",
-        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+        "gtopt_revision": "2fd3927eedcb40c24987180ed830bf7013596ab1",
+        "note": "python -m plexos2gtopt.aemo_isp with its default flags (hydro, ISP constraints, purchasers, emissions, fuel offtake and REZ buses on), in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w03/case/isp2026_sc_2027w03.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w03/case\" -d . --solver highs",
@@ -6141,7 +6141,7 @@
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w03",
         "resources": {
           "class": "small",
-          "guide": "~126k-row LP; a few seconds with HiGHS, < 1 GB RAM"
+          "guide": "~144k-row LP; seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-01-18 -d 7 -o case -n isp2026_sc_2027w03"
       },
@@ -6163,8 +6163,8 @@
       },
       "notes": [
         "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-01-18; no capacity expansion.",
-        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
-        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "15 sub-regional and 20 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
+        "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
       ]
     },
@@ -6180,14 +6180,14 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 132012,
-          "cols": 248410,
-          "nnz": 465892,
-          "gtopt_revision": "5de60c22b78c"
+          "rows": 149907,
+          "cols": 259308,
+          "nnz": 614520,
+          "gtopt_revision": "2fd3927eedcb"
         },
-        "buses": 15,
+        "buses": 35,
         "generators": 527,
-        "lines": 18,
+        "lines": 38,
         "batteries": 90,
         "reservoirs": 22,
         "blocks": 168,
@@ -6205,15 +6205,15 @@
           },
           {
             "path": "source/traces.sha256",
-            "sha256": "056829dbe0841dca5e68c78496847dc6ac1eb22cac2ec56dd391f4788e33087b",
-            "bytes": 26865,
+            "sha256": "d269d3de7e1a934bcd649c178b8721c9158e26a22f9d086b87630bec963caeae",
+            "bytes": 32922,
             "manifest": "source/traces",
-            "note": "sha256 manifest of the 251 window-cut trace files under source/traces/ (629,826 bytes), paths relative to source/traces"
+            "note": "sha256 manifest of the 300 window-cut trace files under source/traces/ (672,853 bytes), paths relative to source/traces"
           },
           {
             "path": "source/NOT_KEPT.txt",
-            "sha256": "eb0b38e08c64b004d270865073701ce1926a0b8082511ca41d516f45e440b96b",
-            "bytes": 1369
+            "sha256": "9426244eeb02689406cbfad78eb71290c7a3d7d7c9349885a4117afc3b440940",
+            "bytes": 1383
           }
         ],
         "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w16.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
@@ -6230,8 +6230,8 @@
           "-n",
           "isp2026_sc_2027w16"
         ],
-        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
-        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+        "gtopt_revision": "2fd3927eedcb40c24987180ed830bf7013596ab1",
+        "note": "python -m plexos2gtopt.aemo_isp with its default flags (hydro, ISP constraints, purchasers, emissions, fuel offtake and REZ buses on), in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w16/case/isp2026_sc_2027w16.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w16/case\" -d . --solver highs",
@@ -6239,7 +6239,7 @@
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w16",
         "resources": {
           "class": "small",
-          "guide": "~132k-row LP; a few seconds with HiGHS, < 1 GB RAM"
+          "guide": "~150k-row LP; seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-04-19 -d 7 -o case -n isp2026_sc_2027w16"
       },
@@ -6261,8 +6261,8 @@
       },
       "notes": [
         "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-04-19; no capacity expansion.",
-        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
-        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "15 sub-regional and 20 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
+        "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
       ]
     },
@@ -6278,14 +6278,14 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 143792,
-          "cols": 264232,
-          "nnz": 500204,
-          "gtopt_revision": "5de60c22b78c"
+          "rows": 162695,
+          "cols": 274962,
+          "nnz": 657123,
+          "gtopt_revision": "2fd3927eedcb"
         },
-        "buses": 15,
+        "buses": 34,
         "generators": 540,
-        "lines": 18,
+        "lines": 37,
         "batteries": 100,
         "reservoirs": 22,
         "blocks": 168,
@@ -6303,15 +6303,15 @@
           },
           {
             "path": "source/traces.sha256",
-            "sha256": "94b49f58b9f279ed8ab0d2cc8df8b4f4dc9f3871c906fea3ca28795f881f0ca8",
-            "bytes": 28106,
+            "sha256": "16e3f0a95c2cbf17b8f8c298d0526972837fa797636bd50626ffa6538b25b07c",
+            "bytes": 34163,
             "manifest": "source/traces",
-            "note": "sha256 manifest of the 263 window-cut trace files under source/traces/ (657,608 bytes), paths relative to source/traces"
+            "note": "sha256 manifest of the 312 window-cut trace files under source/traces/ (701,489 bytes), paths relative to source/traces"
           },
           {
             "path": "source/NOT_KEPT.txt",
-            "sha256": "097695523e462ffc6f7caa7692ec3fb2ce93efa1dc33c032dde961ad80acd4fa",
-            "bytes": 1369
+            "sha256": "d45253cff259eaa9a4f6119a1860a40f148dcb00c52975258bfc2a13bb881c52",
+            "bytes": 1383
           }
         ],
         "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w29.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
@@ -6328,8 +6328,8 @@
           "-n",
           "isp2026_sc_2027w29"
         ],
-        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
-        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+        "gtopt_revision": "2fd3927eedcb40c24987180ed830bf7013596ab1",
+        "note": "python -m plexos2gtopt.aemo_isp with its default flags (hydro, ISP constraints, purchasers, emissions, fuel offtake and REZ buses on), in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w29/case/isp2026_sc_2027w29.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w29/case\" -d . --solver highs",
@@ -6337,7 +6337,7 @@
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w29",
         "resources": {
           "class": "small",
-          "guide": "~144k-row LP; a few seconds with HiGHS, < 1 GB RAM"
+          "guide": "~163k-row LP; seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-07-19 -d 7 -o case -n isp2026_sc_2027w29"
       },
@@ -6359,8 +6359,8 @@
       },
       "notes": [
         "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-07-19; no capacity expansion.",
-        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
-        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "15 sub-regional and 19 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
+        "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
       ]
     },
@@ -6376,14 +6376,14 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 150860,
-          "cols": 272590,
-          "nnz": 519656,
-          "gtopt_revision": "5de60c22b78c"
+          "rows": 170267,
+          "cols": 283320,
+          "nnz": 680949,
+          "gtopt_revision": "2fd3927eedcb"
         },
-        "buses": 15,
+        "buses": 34,
         "generators": 542,
-        "lines": 18,
+        "lines": 37,
         "batteries": 106,
         "reservoirs": 22,
         "blocks": 168,
@@ -6401,15 +6401,15 @@
           },
           {
             "path": "source/traces.sha256",
-            "sha256": "fc5a279a0c822db1568af52bae2f3663eef6650a457b91ccc36a1f4020923a78",
-            "bytes": 28206,
+            "sha256": "ab579efa26ef577c56e019d4cf4e20f6a1ff082bc7a6acadbbb756780c44bbc5",
+            "bytes": 34263,
             "manifest": "source/traces",
-            "note": "sha256 manifest of the 264 window-cut trace files under source/traces/ (662,346 bytes), paths relative to source/traces"
+            "note": "sha256 manifest of the 313 window-cut trace files under source/traces/ (706,028 bytes), paths relative to source/traces"
           },
           {
             "path": "source/NOT_KEPT.txt",
-            "sha256": "ccaf288c03a76541e9a4b0645faa47bf02ac54e51f2e249df187026eb2e2a4bf",
-            "bytes": 1369
+            "sha256": "44e91e7afb45b993ac0ebeac60566c5a9ca7add4caad5d66b44bd026a8b00b2a",
+            "bytes": 1383
           }
         ],
         "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_2027w42.provenance.json); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
@@ -6426,8 +6426,8 @@
           "-n",
           "isp2026_sc_2027w42"
         ],
-        "gtopt_revision": "7d92e51ea3ddcf816111ab9110eb416e7c4aab95",
-        "note": "python -m plexos2gtopt.aemo_isp, in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
+        "gtopt_revision": "2fd3927eedcb40c24987180ed830bf7013596ab1",
+        "note": "python -m plexos2gtopt.aemo_isp with its default flags (hydro, ISP constraints, purchasers, emissions, fuel offtake and REZ buses on), in gtopt 1.1.0 or later; reads the scenario XML and the trace folder (-t source/traces)"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && cd ~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42/output && gtopt \"$REPO/australia/production_cost/isp2026_sc_2027w42/case/isp2026_sc_2027w42.json\" --set input_directory=\"$REPO/australia/production_cost/isp2026_sc_2027w42/case\" -d . --solver highs",
@@ -6435,7 +6435,7 @@
         "output": "~/gtopt-cases-out/australia/production_cost/isp2026_sc_2027w42",
         "resources": {
           "class": "small",
-          "guide": "~151k-row LP; a few seconds with HiGHS, < 1 GB RAM"
+          "guide": "~170k-row LP; seconds with HiGHS, < 1 GB RAM"
         },
         "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp 'source/2026 ISP Step Change Model.xml' -t source/traces -s 2027-10-18 -d 7 -o case -n isp2026_sc_2027w42"
       },
@@ -6457,8 +6457,8 @@
       },
       "notes": [
         "Prototype: one week of the ISP Step Change DLT database dispatched with the fleet in service on 2027-10-18; no capacity expansion.",
-        "15 sub-regional buses, 18 notional flow paths (transport, lossless); the 590 PLEXOS Constraint objects (REZ, transmission groups, policy) are not converted.",
-        "Hydro as reservoirs/turbines with natural inflows, end volume >= start volume; pumping, outages, MLFs, purchasers (electrolysers) and reserves are not modelled.",
+        "15 sub-regional and 19 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
+        "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
       ]
     },

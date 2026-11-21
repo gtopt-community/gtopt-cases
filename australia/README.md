@@ -10,14 +10,17 @@ Cases of the Australian National Electricity Market (NEM) built from the
 
 | Application | Folder | Source | Converter |
 |---|---|---|---|
-| Production cost (weekly dispatch), summer | [production_cost/isp2026_sc_2027w03](production_cost/isp2026_sc_2027w03/README.md) | 2026 ISP PLEXOS model, Step Change scenario: 18-24 January 2027, 15 sub-regions | `plexos2gtopt.aemo_isp` (gtopt 1.1.0 or later) |
+| Production cost (weekly dispatch), summer | [production_cost/isp2026_sc_2027w03](production_cost/isp2026_sc_2027w03/README.md) | 2026 ISP PLEXOS model, Step Change scenario: 18-24 January 2027, 15 sub-regions and 20 REZ buses | `plexos2gtopt.aemo_isp` (gtopt 1.1.0 or later) |
 | Production cost (weekly dispatch), autumn | [production_cost/isp2026_sc_2027w16](production_cost/isp2026_sc_2027w16/README.md) | same model: 19-25 April 2027 | same |
 | Production cost (weekly dispatch), winter | [production_cost/isp2026_sc_2027w29](production_cost/isp2026_sc_2027w29/README.md) | same model: 19-25 July 2027 | same |
 | Production cost (weekly dispatch), spring | [production_cost/isp2026_sc_2027w42](production_cost/isp2026_sc_2027w42/README.md) | same model: 18-24 October 2027 | same |
 
 Each case is a prototype: one hourly week of the ISP capacity-outlook
-database with the fleet in service on its first day, no expansion and no
-PLEXOS constraints (see the case README, "Limitations").  The four weeks,
+database with the fleet in service on its first day and no expansion.
+The operational PLEXOS constraints (REZ, transmission group, purchaser
+network, gas-zone offtake), pumped storage, purchasers and hydrogen demand
+are converted; long-period policy targets are not enforced (see the case
+README, "Limitations").  The four weeks,
 one per season of 2027, come from the same scenario database and differ
 in demand, renewable and hydro traces, seasonal line limits and the fleet
 in service (523 to 542 generators, 85 to 106 batteries as new projects
@@ -30,7 +33,7 @@ enter).  Each one solves in a few seconds with HiGHS.
 | Wind capability (MW) | 12,066 | 11,030 | 12,375 | 13,789 |
 | Solar + rooftop PV (MW) | 31,648 | 28,596 | 27,943 | 35,885 |
 | Batteries (MW) | 10,952 | 12,025 | 14,456 | 15,480 |
-| LP rows | 126,129 | 132,012 | 143,792 | 150,860 |
+| LP rows | 143,688 | 149,907 | 162,695 | 170,267 |
 
 ## Provenance and rights
 

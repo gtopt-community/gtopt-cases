@@ -3,7 +3,7 @@ Files kept here (AEMO material, used under AEMO's copyright permissions with
 attribution):
   2026 ISP Step Change Model.xml.xz   the scenario database, unchanged,
                                       xz-compressed (from "2026 ISP Model.zip")
-  traces/<kind>/<file>.csv             the 264 trace files the converter reads
+  traces/<kind>/<file>.csv             the 313 trace files the converter reads
                                       for this case, cut to the rows of
                                       2027-10-18..2027-10-24 (Year,Month,Day
                                       files); the year-by-column hydro energy
@@ -12,8 +12,8 @@ attribution):
 
 Downloaded but NOT kept (not needed to rebuild this case):
   - the rest of every trace file (2026-07-01..2051-06-30 half-hourly);
-  - the other trace kinds in the model folder: dnsp, gas, load_subtractor
-    (load subtracters only shape PLEXOS LDC blocks);
+  - the dnsp and gas trace files the case does not read, and the
+    load_subtractor traces (load subtracters only shape PLEXOS LDC blocks);
   - the Accelerated Transition and Slower Growth scenario folders;
   - the per-state "ISP Demand Traces <STATE> Step Change POE50" archives
     (the model itself uses the POE10 sub-regional traces kept here);

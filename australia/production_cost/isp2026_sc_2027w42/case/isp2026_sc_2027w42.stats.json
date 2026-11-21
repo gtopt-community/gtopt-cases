@@ -1,9 +1,18 @@
 {
+ "approximations": [
+  "RHS Month / RHS Year / RHS Custom (and emission budgets) are pro-rated to the window by hours: a window-sum constraint replaces the period one",
+  "period RHS are read as GWh (TJ for fuel offtake) and period penalties as $/GWh; both are converted to MWh (GJ)",
+  "RHS Day becomes one daily_sum row per day (1 h blocks)",
+  "H2 consumption targets: electrolyser GWh_e \u00d7 efficiency (IASR PEM kWh/kg, not in the XML) \u2192 HydrogenDemand MWh_LHV; free intra-window H2 storage",
+  "capacity terms (Installed Capacity, Generation Capacity) are folded with the start-day Units; build terms are zero (fixed fleet)",
+  "period targets longer than one month (RHS Year / RHS Custom policy targets and emission budgets) are not enforced by default: emission budgets become EmissionZones without cap (--long-periods prorate enforces the pro-rated share)",
+  "fuel cost, gas-zone fuel offtake and emission rates all use the sent-out heat rate Heat Rate / (1 \u2212 Aux Incr) (the legacy gcost keeps the unadjusted Heat Rate)"
+ ],
  "batteries": 106,
  "battery_mw": 15480.128999999999,
  "battery_mwh": 41717.76620000001,
  "blocks": 168,
- "buses": 15,
+ "buses": 34,
  "cap_coal_mw": 20016.9831,
  "cap_dsp_mw": 404.0,
  "cap_gas_mw": 11024.435219999996,
@@ -12,10 +21,93 @@
  "cap_other_mw": 64.6,
  "cap_solar_mw": 35885.04654879,
  "cap_wind_mw": 13789.268900495004,
+ "constraint_groups": {
+  "capacity_build": {
+   "skipped: capacity / build condition (fixed fleet)": 190,
+   "skipped: disabled (Include in LT Plan = 0)": 65,
+   "total": 255
+  },
+  "company_vret": {
+   "skipped: company-level yearly policy (VRET)": 2,
+   "total": 2
+  },
+  "emissions": {
+   "converted: EmissionZone tracking only (long-period budget, no cap)": 6,
+   "skipped: budget period does not overlap the window": 16,
+   "total": 22
+  },
+  "fuel_offtake": {
+   "converted: daily_sum": 10,
+   "skipped: no term in the case (trivially satisfied)": 1,
+   "total": 11
+  },
+  "h2_consumption": {
+   "converted: HydrogenDemand (pro-rated period RHS)": 5,
+   "skipped: disabled (Include in LT Plan = 0)": 2,
+   "skipped: no electrolyser in the case": 14,
+   "total": 21
+  },
+  "no_coefficients": {
+   "skipped: disabled (Include in LT Plan = 0)": 43,
+   "skipped: no coefficients in the XML": 33,
+   "total": 76
+  },
+  "operational": {
+   "converted: REZ radial line (export limit)": 1,
+   "converted: daily_sum": 1,
+   "converted: per block": 20,
+   "skipped: disabled (Include in LT Plan = 0)": 1,
+   "skipped: long-period target (> 1 month) not enforced in a week": 9,
+   "skipped: no term in the case (trivially satisfied)": 19,
+   "total": 51
+  },
+  "operational_capacity": {
+   "converted: REZ radial line (export limit)": 8,
+   "converted: per block": 24,
+   "skipped: disabled (Include in LT Plan = 0)": 27,
+   "skipped: no term in the case (trivially satisfied)": 33,
+   "total": 92
+  },
+  "purchaser_network": {
+   "converted: REZ radial line (export limit)": 10,
+   "converted: REZ radial line (import limit)": 8,
+   "converted: per block": 17,
+   "skipped: disabled (Include in LT Plan = 0)": 20,
+   "skipped: no term in the case (trivially satisfied)": 5,
+   "total": 60
+  }
+ },
+ "constraint_notes": [
+  "2030 Emissions Budget 1: RHS Custom pro-rated \u2192 reference (not enforced) 1,389,632 t for the window (290036 \u00d7 0.001 t over 2026-07-01..2030-06-30 \u00d7 0.00479) \u2014 APPROXIMATION",
+  "2050 Emissions Budget 1: RHS Custom pro-rated \u2192 reference (not enforced) 1,101,856 t for the window (345038 \u00d7 0.001 t over 2026-07-01..2032-06-30 \u00d7 0.00319) \u2014 APPROXIMATION",
+  "2050 Emissions Budget NSW 1: RHS Custom pro-rated \u2192 reference (not enforced) 475,182 t for the window (148800 \u00d7 0.001 t over 2026-07-01..2032-06-30 \u00d7 0.00319) \u2014 APPROXIMATION",
+  "2050 Emissions Budget QLD 1: RHS Custom pro-rated \u2192 reference (not enforced) 638,047 t for the window (199800 \u00d7 0.001 t over 2026-07-01..2032-06-30 \u00d7 0.00319) \u2014 APPROXIMATION",
+  "2050 Emissions Budget SA 1: RHS Custom pro-rated \u2192 reference (not enforced) 27,144 t for the window (8500 \u00d7 0.001 t over 2026-07-01..2032-06-30 \u00d7 0.00319) \u2014 APPROXIMATION",
+  "2050 Emissions Budget VIC 1: RHS Custom pro-rated \u2192 reference (not enforced) 437,181 t for the window (136900 \u00d7 0.001 t over 2026-07-01..2032-06-30 \u00d7 0.00319) \u2014 APPROXIMATION",
+  "CQ H2 Domestic Consumption Purchaser: RHS Month pro-rated \u2192 3,224.7 MWh_e = 1,893.6 MWh_LHV H2 for the window (1 electrolysers; 14.281 GWh 2027-10-01..2027-10-31)",
+  "CSA H2 Domestic Consumption Purchaser: RHS Month pro-rated \u2192 139.1 MWh_e = 81.7 MWh_LHV H2 for the window (1 electrolysers; 0.616 GWh 2027-10-01..2027-10-31)",
+  "Catagunya Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 335.1)",
+  "Gordon Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 1,047.1)",
+  "Kareeya Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 209.4)",
+  "Liapootah Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 837.7)",
+  "Poatina Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 0.0)",
+  "SNSW H2 Domestic Consumption Purchaser: RHS Month pro-rated \u2192 7.5 MWh_e = 4.4 MWh_LHV H2 for the window (1 electrolysers; 0.033 GWh 2027-10-01..2027-10-31)",
+  "SNW H2 Domestic Consumption Purchaser: RHS Month pro-rated \u2192 55.3 MWh_e = 32.5 MWh_LHV H2 for the window (1 electrolysers; 0.245 GWh 2027-10-01..2027-10-31)",
+  "SRET: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 0.0)",
+  "TRET: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 241,327.9)",
+  "Tarraleah Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 2,890.1)",
+  "WNV H2 Domestic Consumption Purchaser: RHS Month pro-rated \u2192 1,338.4 MWh_e = 785.9 MWh_LHV H2 for the window (1 electrolysers; 5.927 GWh 2027-10-01..2027-10-31)",
+  "Wayatinah Min Gen: RHS Year over 2027-07-01..2028-06-30 not enforced (--long-periods prorate to enforce the pro-rated share 460.7)"
+ ],
  "days": 7,
  "demand_energy_mwh": 3925427.0,
  "demand_peak_mw": 28811.0,
- "demands": 15,
+ "demands": 31,
+ "directional_flow_variables": 8,
+ "electrolyser_mw": 34.0,
+ "emission_sources": 714,
+ "emission_zones": 7,
+ "emitting_generators": 180,
  "flows": 13,
  "gen_coal": 44,
  "gen_dsp": 5,
@@ -28,12 +120,317 @@
  "gen_skipped_no_units": 346,
  "gen_solar": 152,
  "gen_wind": 98,
+ "generator_properties": {
+  "Mark-up \u2192 gcost": 19,
+  "Min Capacity Factor Year: not enforced (long period)": 106,
+  "Min Load \u2192 pmin": 2,
+  "approximations": [
+   "Mark-up [$/MWh] is added to gcost (rooftop PV \u22121 $/MWh: dispatched before utility VRE is curtailed)",
+   "Min Load [MW, timesliced] is a per-block pmin, capped at pmax",
+   "Min Capacity Factor Year [%] is a yearly energy floor: not enforced by default (long-period policy); --long-periods prorate enforces CF \u00d7 Units \u00d7 Max Capacity \u00d7 (1 \u2212 Aux Incr) \u00d7 window hours, capped at the window's \u03a3 pmax",
+   "Min Capacity Factor (no period) is not mapped (only a zero value in the XML)",
+   "Outage Factor (bands 2-3, partial forced outages) and Maintenance Rate (new entrants) are not modelled: no outages in a deterministic week"
+  ]
+ },
  "generators": 542,
+ "hydro_end_rule": {
+  "hold": 7,
+  "recycle": 11,
+  "target_week": 4
+ },
+ "hydro_level_rule": {
+  "initial_volume": 16,
+  "mid_level": 2,
+  "target_week": 4
+ },
+ "hydro_pump_mw": 1645.0,
+ "hydro_pumps": 11,
  "hydro_storage_hm3": 19810.3242,
  "junctions": 22,
- "lines": 18,
+ "lines": 37,
  "missing_traces": [],
+ "pumps": 11,
+ "purchaser_fixed_mw": 2.0999999999999996,
+ "purchasers": {
+  "fixed": 5,
+  "flexible": 5,
+  "skipped_no_units": 33,
+  "skipped_zero_load": 40
+ },
  "reservoirs": 22,
+ "rez_buses": {
+  "N12_Illawarra": {
+   "bus": "REZ_N12_Illawarra",
+   "elements": 2,
+   "export_mw": [
+    1000.0,
+    1000.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    1000.0,
+    1000.0
+   ],
+   "sub_region": "SNW"
+  },
+  "N1_North West NSW": {
+   "bus": "REZ_N1_North_West_NSW",
+   "elements": 2,
+   "export_mw": [
+    171.0,
+    171.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    56.0,
+    56.0
+   ],
+   "sub_region": "NNSW"
+  },
+  "N3_Central-West Orana": {
+   "bus": "REZ_N3_Central_West_Orana",
+   "elements": 19,
+   "export_mw": [
+    900.0,
+    900.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    900.0,
+    900.0
+   ],
+   "sub_region": "CNSW"
+  },
+  "N4_Broken Hill": {
+   "bus": "REZ_N4_Broken_Hill",
+   "elements": 3,
+   "export_mw": [
+    250.0,
+    250.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    51.0,
+    51.0
+   ],
+   "sub_region": "SNSW"
+  },
+  "N5_South West NSW": {
+   "bus": "REZ_N5_South_West_NSW",
+   "elements": 8,
+   "export_mw": [
+    450.0,
+    450.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    51.0,
+    51.0
+   ],
+   "sub_region": "SNSW"
+  },
+  "N6_Wagga Wagga": {
+   "bus": "REZ_N6_Wagga_Wagga",
+   "elements": 8,
+   "export_mw": [
+    1100.0,
+    1100.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    110.9,
+    110.9
+   ],
+   "sub_region": "SNSW"
+  },
+  "N7_Tumut": {
+   "bus": "REZ_N7_Tumut",
+   "elements": 4,
+   "export_mw": [
+    0.0,
+    0.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    111.0,
+    111.0
+   ],
+   "sub_region": "SNSW"
+  },
+  "N8_Cooma-Monaro": {
+   "bus": "REZ_N8_Cooma_Monaro",
+   "elements": 3,
+   "export_mw": [
+    350.0,
+    350.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    135.0,
+    135.0
+   ],
+   "sub_region": "SNSW"
+  },
+  "Q1_Far North Qld": {
+   "bus": "REZ_Q1_Far_North_Qld",
+   "elements": 2,
+   "export_mw": [
+    750.0,
+    750.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    92.0,
+    92.0
+   ],
+   "sub_region": "NQ"
+  },
+  "Q2_North Qld Clean Energy Hub": {
+   "bus": "REZ_Q2_North_Qld_Clean_Energy_Hub",
+   "elements": 4,
+   "export_mw": [
+    700.0,
+    700.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    1.0,
+    1.0
+   ],
+   "sub_region": "NQ"
+  },
+  "Q5_Barcaldine": {
+   "bus": "REZ_Q5_Barcaldine",
+   "elements": 1,
+   "export_mw": [
+    85.0,
+    85.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    1.0,
+    1.0
+   ],
+   "sub_region": "CQ"
+  },
+  "S2_Riverland": {
+   "bus": "REZ_S2_Riverland",
+   "elements": 6,
+   "export_mw": [
+    130.0,
+    130.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    101.0,
+    101.0
+   ],
+   "sub_region": "CSA"
+  },
+  "S4_Yorke Peninsula": {
+   "bus": "REZ_S4_Yorke_Peninsula",
+   "elements": 2,
+   "export_mw": [
+    100.0,
+    100.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    31.0,
+    31.0
+   ],
+   "sub_region": "CSA"
+  },
+  "S7_Eastern Eyre Peninsula": {
+   "bus": "REZ_S7_Eastern_Eyre_Peninsula",
+   "elements": 2,
+   "export_mw": [
+    300.0,
+    300.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    151.0,
+    151.0
+   ],
+   "sub_region": "NSA"
+  },
+  "T2_North West Tasmania": {
+   "bus": "REZ_T2_North_West_Tasmania",
+   "elements": 1,
+   "export_mw": [
+    112.0,
+    112.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    1.0,
+    1.0
+   ],
+   "sub_region": "TAS"
+  },
+  "T3_Central Highlands": {
+   "bus": "REZ_T3_Central_Highlands",
+   "elements": 1,
+   "export_mw": [
+    843.0,
+    843.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    550.0,
+    550.0
+   ],
+   "sub_region": "TAS"
+  },
+  "V2_Central Highlands VIC": {
+   "bus": "REZ_V2_Central_Highlands_VIC",
+   "elements": 9,
+   "export_mw": [
+    800.0,
+    800.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    305.9,
+    305.9
+   ],
+   "sub_region": "WNV"
+  },
+  "V4_Wimmera Southern Mallee": {
+   "bus": "REZ_V4_Wimmera_Southern_Mallee",
+   "elements": 2,
+   "export_mw": [
+    725.0,
+    725.0
+   ],
+   "import_limit": false,
+   "import_mw": [
+    1.0,
+    1.0
+   ],
+   "sub_region": "WNV"
+  },
+  "V7_Central North VIC": {
+   "bus": "REZ_V7_Central_North_VIC",
+   "elements": 14,
+   "export_mw": [
+    1300.0,
+    1300.0
+   ],
+   "import_limit": true,
+   "import_mw": [
+    500.0,
+    500.0
+   ],
+   "sub_region": "WNV"
+  }
+ },
+ "rez_not_line_equivalent": {
+  "elements on several sub-region buses": 1,
+  "import limit without an export limit": 2,
+  "no element in the case": 14
+ },
  "start": "2027-10-18",
  "trace_files": [
   "Traces\\demand\\CNSW_RefYear_5000_STEP_CHANGE_POE10_OPSO_MODELLING_PVLITE.csv",
@@ -51,6 +448,55 @@
   "Traces\\demand\\SQ_RefYear_5000_STEP_CHANGE_POE10_OPSO_MODELLING_PVLITE.csv",
   "Traces\\demand\\TAS_RefYear_5000_STEP_CHANGE_POE10_OPSO_MODELLING_PVLITE.csv",
   "Traces\\demand\\WNV_RefYear_5000_STEP_CHANGE_POE10_OPSO_MODELLING_PVLITE.csv",
+  "Traces\\dnsp\\CNSW_ESS_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\CNSW_ESS_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\CQ_ECL_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\CQ_ECL_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\CSA_SAPN_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\CSA_SAPN_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\GG_ECL_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\GG_ECL_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\MEL_AST_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\MEL_AST_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\MEL_CP_JEN_PAL_UE_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\MEL_CP_JEN_PAL_UE_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\NNSW_ESS_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\NNSW_ESS_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\NQ_ECL_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\NQ_ECL_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\NSA_SAPN_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\NSA_SAPN_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SESA_SAPN_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SESA_SAPN_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SEV_AST_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SEV_AST_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SNSW_ESS_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SNSW_ESS_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SNSW_EVO_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SNSW_EVO_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SNW_AGD_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SNW_AGD_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SNW_END_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SNW_END_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\SQ_ECL_EGX_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\SQ_ECL_EGX_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\TAS_TAS_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\TAS_TAS_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\WNV_AST_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\WNV_AST_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\dnsp\\WNV_PAL_RefYear_5000_STEP_CHANGE_LV_C1.csv",
+  "Traces\\dnsp\\WNV_PAL_RefYear_5000_STEP_CHANGE_LV_CER_LIMIT.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Colongra_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Gippsland_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Gladstone_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Kurri Kurri_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Melbourne_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Moomba_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__NQGP_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Newcastle_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Northern_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Port Campbell_GPG_Limit_TJ_5000_POE10.csv",
+  "Traces\\gas\\GPG_Limit_Step_Change_S__Southern_GPG_Limit_TJ_5000_POE10.csv",
   "Traces\\hydro\\HalfHourlyNaturalInflow_Blowering_RefYear5000_Flat.csv",
   "Traces\\hydro\\HalfHourlyNaturalInflow_Dartmouth_RefYear5000_Flat.csv",
   "Traces\\hydro\\HalfHourlyNaturalInflow_Eildon_RefYear5000_Flat.csv",
@@ -302,7 +748,7 @@
   "Traces\\wind\\YSWF1_RefYear5000.csv"
  ],
  "turbines": 95,
- "user_constraints": 14,
+ "user_constraints": 94,
  "voll": 36356.0,
- "waterways": 25
+ "waterways": 36
 }

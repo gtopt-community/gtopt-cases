@@ -56,6 +56,35 @@ Each release states the minimum gtopt version its cases need.
     interconnection import, bus voltages), so its LP grows from 160,608
     to 192,024 rows.
 
+- **Australia** (`isp2026_sc_2027w03`, `w16`, `w29`, `w42`): rebuilt with
+  the corrected `plexos2gtopt.aemo_isp` converter and its default flags.
+  - **Hydro water units.**  Reservoirs declare
+    `flow_conversion_rate = 0.0036` hm³ per m³/s·h.  Older gtopt builds
+    assumed 3.6 when it was absent, so turbines moved 1000 times the water
+    the inflows supplied.
+  - **Pumped storage.**  Kidston, Shoalhaven, Wivenhoe and Tumut 3 pump
+    from their tail to their head storage (`Waterway` + `Pump` + flexible
+    `Demand`).  Before, they could only generate.
+  - **Start and end levels.**  Week-start levels follow the source data
+    (horizon-start `Initial Volume`, else `Target Week` / `Target`, else
+    mid level), not an empty or arbitrary level.  End levels follow
+    `Target Week` and `End Effects Method` Recycle.  Other storages end at
+    their start volume, with no water value and no 10,000 $/hm³ penalty.
+  - **Fuel cost per sent-out MWh.**  Fuel cost, gas offtake and
+    emissions use `Heat Rate / (1 − Aux Incr)`, because the generator
+    capacity is already net of auxiliary load.
+  - Constraint terms on one flow direction (`Flow Forward` /
+    `Flow Back`) use a directional flow variable instead of the signed
+    flow.
+
+  The default converter also adds the operational PLEXOS constraints:
+  REZ buses with radial export / import lines, transmission group and
+  purchaser-network limits, gas-zone daily offtake, electrolyser and
+  industrial purchasers with pro-rated hydrogen demand, and emission
+  tracking.  Each `source/traces/` therefore also keeps the DNSP and
+  gas-zone trace files the case reads, cut to the week.  Objective values
+  differ from 1.0.0.
+
 ### Changed
 
 - `tools/get_case.py fetch`: cases that use the same archives share one

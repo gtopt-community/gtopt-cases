@@ -7,8 +7,9 @@
 > [!NOTE]
 > **Prototype.**  An operational week of the ISP capacity-outlook
 > database, built with `python -m plexos2gtopt.aemo_isp` (gtopt 1.1.0 or
-> later).  There is no expansion, and the PLEXOS constraint set is not
-> converted (see [Limitations](#limitations)).
+> later, default flags).  There is no expansion; the operational
+> PLEXOS constraints are converted, long-period policy targets are not
+> enforced (see [Limitations](#limitations)).
 
 This case covers one week, Monday 18 to Sunday 24 January 2027 (168 hourly
 blocks).  The source is the **Step Change** scenario of AEMO's **2026
@@ -16,12 +17,14 @@ Integrated System Plan (ISP)** PLEXOS model, which is the "DLT" (Detailed
 Long-Term) capacity-outlook database.  The week is dispatched with the fleet
 in service on 18 January 2027:
 
-- 15 sub-regional buses;
-- 18 notional inter-sub-regional flow paths;
+- 15 sub-regional buses and 20 renewable-energy-zone (REZ) buses;
+- 18 notional inter-sub-regional flow paths and 20 radial REZ lines
+  carrying the REZ export / import limits;
 - the ISP half-hourly demand, solar, wind and rooftop-PV traces, averaged to
   hourly values;
 - the Snowy, Tasmanian, Victorian and Queensland hydro storages with their
-  natural inflows;
+  natural inflows, and pumping at the four pumped-storage stations
+  (Kidston, Shoalhaven, Wivenhoe, Tumut 3);
 - 85 battery and coordinated consumer-storage aggregates.
 
 This is the summer week of four seasonal weeks of 2027
@@ -32,21 +35,22 @@ database; see the [Australia README](../../README.md).
 |---|---|
 | Case id | `australia/production_cost/isp2026_sc_2027w03` |
 | Horizon | 2027-01-18 00:00 to 2027-01-24 24:00: 168 blocks of 1 h, 1 stage, 1 scenario |
-| Network | 15 buses (sub-regions NQ, CQ, GG, SQ, NNSW, CNSW, SNW, SNSW, VIC: MEL, SEV, WNV, TAS, CSA, NSA, SESA); 18 flow paths with seasonal (timesliced) limits; transport model, lossless |
+| Network | 35 buses: 15 sub-regions (NQ, CQ, GG, SQ, NNSW, CNSW, SNW, SNSW, VIC: MEL, SEV, WNV, TAS, CSA, NSA, SESA) and 20 REZ buses; 38 lines: 18 flow paths with seasonal (timesliced) limits and 20 radial REZ lines; transport model, lossless |
 | Units | 523 generators.  Maximum hourly capability: coal 19,612 MW, gas 10,414 MW, hydro 7,801 MW, liquid fuel 535 MW, wind 12,066 MW, utility solar plus rooftop PV 31,648 MW, DSP 496 MW |
-| Storage | 85 batteries (10,952 MW, 28,925 MWh); 22 hydro reservoirs (19,810 hm³ capacity), 25 waterways, 95 turbines, 12 inflow series |
-| Demand | 15 sub-regional loads; 17,832 to 30,650 MW; 4,154,706 MWh in the week (POE10 operational sent-out "PVLITE" traces) |
-| Constraints | 15 daily energy limits (`daily_sum`): 3 DSP `Max Energy Day` (NSW, QLD, VIC) and 12 non-storage hydro units (Bogong, McKay, West Kiewa) `Max Energy Year` / 365 |
-| LP | 126,129 rows, 241,022 cols, 449,427 nonzeros |
+| Storage | 85 batteries (10,952 MW, 28,925 MWh); 22 hydro reservoirs (19,810 hm³ capacity), 36 waterways, 95 turbines, 11 pumps (1,645 MW), 12 inflow series |
+| Demand | 15 sub-regional loads plus 16 purchaser and pump loads; 17,832 to 30,650 MW; 4,154,706 MWh in the week (POE10 operational sent-out "PVLITE" traces) |
+| Constraints | 83 user constraints: REZ group, transmission group and purchaser-network limits per block, daily energy and gas-zone daily fuel-offtake limits (`daily_sum`); 5 hydrogen demands (pro-rated monthly H2 consumption); 7 emission zones (tracking, no cap) |
+| LP | 143,688 rows, 251,920 cols, 593,025 nonzeros |
 | Method / profile | monolithic LP, no profile |
-| Converter | `python -m plexos2gtopt.aemo_isp`, gtopt 1.1.0 or later (development revision used: `da204a77f`) |
+| Converter | `python -m plexos2gtopt.aemo_isp`, default flags, gtopt 1.1.0 or later (revision used: `2fd3927ee`) |
 
 ## Files
 
 - `case/isp2026_sc_2027w03.json`: the gtopt planning.
-- `case/Generator/pmax.parquet`, `case/Demand/lmax.parquet`,
-  `case/Line/tmax_ab.parquet`, `case/Line/tmax_ba.parquet` and
-  `case/Flow/discharge.parquet`: hourly schedules in long format
+- `case/Demand/lmax.parquet`, `case/Flow/discharge.parquet`,
+  `case/Generator/pmax.parquet`, `case/Generator/pmin.parquet`,
+  `case/Line/tmax_ab.parquet`, `case/Line/tmax_ba.parquet`,
+  `case/UserConstraint/rhs.parquet`: hourly schedules in long format
   (`[scenario,] stage, block, uid, value`).
 - `case/isp2026_sc_2027w03.stats.json`: converter statistics, including the
   list of PLEXOS trace files read.
@@ -54,7 +58,7 @@ database; see the [Australia README](../../README.md).
   revision and arguments.
 - `source/2026 ISP Step Change Model.xml.xz`: the scenario database,
   unchanged, xz-compressed.
-- `source/traces/`: the 250 trace files read for this week, cut to the
+- `source/traces/`: the 299 trace files read for this week, cut to the
   week's rows.  `source/traces.sha256` lists their checksums.
 - `source/NOT_KEPT.txt`: what was downloaded but is not kept here.
 
@@ -104,8 +108,12 @@ not reproduce AEMO's published outcomes.
 | `Generator` with `Units > 0` on 2027-01-18 (523 of 1,194; candidates, network-augmentation pseudo-units and load subtracters skipped) | `Generator`: `pmax = Units × (Rating trace or timesliced Rating, else Max Capacity) × Rating Factor × (1 − Aux Incr)`; `gcost = Heat Rate × Fuel Price (dated) + VO&M` |
 | `Battery` with `Units > 0` (85 of 432) | `Battery`: `Capacity × Units`, Max/Min SoC, charge/discharge efficiency, power = window maximum of `Max Power`; SoC 50 % at start and end |
 | `Line` Max/Min Flow, rows set by season timeslice (`<STATE> Hot Day / Typical Summer / Winter`) and date | `Line.tmax_ab` / `tmax_ba` per hour |
-| `Storage` (ML → hm³), `Waterway` (Max Flow), generator `Head/Tail Storage` + `Efficiency Incr` (MW per m³/s), `Natural Inflow` traces (m³/s) | `Reservoir` (end ≥ start), `Junction` (drain allowed), `Waterway`, `Turbine`, `Flow` |
+| `Storage` (ML → hm³), `Waterway` (Max Flow), generator `Head/Tail Storage` + `Efficiency Incr` (MW per m³/s), `Natural Inflow` traces (m³/s) | `Reservoir` (`flow_conversion_rate` 0.0036 hm³ per m³/s·h, `Max Spill`), `Junction`, `Waterway`, `Turbine`, `Flow`.  Start level: horizon-start `Initial Volume`, else `Target Week` / `Target`, else `Initial Volume` above `Min Volume`, else mid level.  End: `Target Week` → `efin`, `End Effects Method` Recycle → `efin = eini`, other storages held at their start volume (no water value) |
+| `Pump Load` / `Pump Efficiency` (Kidston, Shoalhaven, Wivenhoe, Tumut 3) | tail → head `Waterway` + `Pump` + flexible `Demand` |
 | `Max Energy Day` (DSP, GWh); `Max Energy Year` (hydro units with no storage, GWh) | daily-sum `UserConstraint` |
+| `Constraint` objects (REZ export / import, transmission groups, purchaser network, gas-zone daily offtake, hours of operation) | REZ buses with radial lines, or per-block / `daily_sum` `UserConstraint`; period RHS pro-rated to the week (month); targets longer than one month not enforced |
+| `Purchaser` (electrolysers, fixed industrial loads) and H2 consumption constraints | `Demand`; electrolyser `CarrierConverter` → `HydrogenNode` → `HydrogenDemand` |
+| `Heat Rate`, `Aux Incr`, fuel prices, emission rates | fuel cost and emissions per sent-out MWh (`Heat Rate / (1 − Aux Incr)`); `EmissionZone` tracking (budgets not enforced) |
 | `Region.VoLL` | `demand_fail_cost` = 36,356 |
 
 Timeslices come from three sources:
@@ -156,27 +164,28 @@ This rebuild reproduces the JSON and every Parquet file exactly.
   `WACC`, `Economic Life`), retirement and the REZ transmission
   augmentation pseudo-generators are not used.  The fleet is the one in
   service on the first day.
-- **No PLEXOS constraints.**  None of the 590 `Constraint` objects is
-  converted.  That covers REZ export and import limits, transmission group
-  limits, renewable and emission policy, gas-offtake limits and system
-  strength.
+- **Long-period constraints.**  Yearly and multi-year targets (VRET,
+  emission budgets, `Min Capacity Factor Year`, `RHS Year` minimum
+  generation) are not enforced in a single week; emission budgets are
+  tracked without a cap.  Capacity / build constraints are skipped
+  (fixed fleet).
 - **Network.**  Transport model over the ISP notional flow paths.  No losses
   (the PLEXOS quadratic loss and MLF data are not converted) and no
   marginal loss factors on units.
-- **Units.**  No forced or planned outages, no minimum stable levels, no
-  unit commitment.
-- **Hydro.**  Pumping is not modelled: pumped-hydro units only generate from
-  their upper storage.  End volume is at least the start volume, and there
-  are no water values.
-- **Not modelled:** purchasers (electrolyser loads), DSP bid bands, reserves
-  and emission prices.
+- **Units.**  No forced or planned outages and no unit commitment.  Minimum
+  stable levels only where the source sets a `Min Load` (2 units).
+- **Hydro.**  There are no water values: storages without a target in
+  the source data end at their start volume.  A single week has no
+  future value of water; it should come from a longer-term model.
+- **Not modelled:** DSP bid bands, reserves, emission prices and the
+  system-strength constraints.
 - **Not validated against AEMO.**  The public package contains no PLEXOS
   solution.
 
 ## Provenance
 
-- Converter: `plexos2gtopt.aemo_isp`, gtopt development revision
-  `da204a77f` (pre-publication history); in gtopt 1.1.0 or later.
+- Converter: `plexos2gtopt.aemo_isp` (default flags), gtopt revision
+  `2fd3927ee`; in gtopt 1.1.0 or later.
 - Archive hashes, converter arguments and file checksums:
   `case/isp2026_sc_2027w03.provenance.json` and
   [`catalog.json`](../../../catalog.json).
