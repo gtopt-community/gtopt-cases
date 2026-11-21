@@ -14,7 +14,7 @@
 | Method / profile | monolithic, no profile (self-contained JSON) |
 | Source | `source/Volt.dat.xz`, `source/ccombuGU.dat.xz`, `source/chidroGU.dat.xz`, `source/cpdexbus.dat.xz`, `source/ctermigu.dat.xz`, `source/dbus.dat.xz`, `source/dcirc.dat.xz`, `source/sddp.dat.xz`, `source/sistem.dat.xz` |
 | Origin | AMM weekly NCP model '26 - Semana del 21 al 27 de junio de 2026 NCP.5.29.b.rar' (not redistributed) |
-| Converter | `sddp2gtopt` from gtopt commit `5a4fd2ef8` (no-offer import rule, not yet on public master); rebuild with a gtopt that includes it |
+| Converter | `sddp2gtopt` from gtopt commit `5a4fd2ef8` (no-offer import rule) or later |
 | Flags | none |
 
 ## How to run

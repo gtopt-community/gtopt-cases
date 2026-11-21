@@ -3060,7 +3060,7 @@
         "flags": [],
         "gtopt_revision": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
         "converter_last_change": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
-        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule; not yet on public master); no --import-limit: the source sets no aggregate import limit"
+        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule); no --import-limit: the source sets no aggregate import limit"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_pdd_2026-06-22/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case/ncp_pdd_22jun.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_pdd_2026-06-22/case\" -d .",
@@ -3184,7 +3184,7 @@
         "flags": [],
         "gtopt_revision": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
         "converter_last_change": "5a4fd2ef851cba85ebbd39c6b40855211a332927",
-        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule; not yet on public master); no --import-limit"
+        "note": "converted with sddp2gtopt from gtopt commit 5a4fd2ef8 (no-offer import rule); no --import-limit"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && cd ~/gtopt-cases-out/guatemala/daily_scheduling/ncp_week_2026-06-21/output && gtopt \"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case/sddp_ncp_week.json\" --set input_directory=\"$REPO/guatemala/daily_scheduling/ncp_week_2026-06-21/case\" -d .",
