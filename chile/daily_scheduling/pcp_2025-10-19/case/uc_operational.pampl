@@ -1,6 +1,6 @@
 # ========================================================================
-# operational user constraints (284) — emitted by plexos2gtopt
-#   hard:   250   soft:    34
+# operational user constraints (283) — emitted by plexos2gtopt
+#   hard:   249   soft:    34
 # Origin: PLEXOS Constraint objects (DBSEN_PRGDIARIO.xml)
 # Soft rows declare a named slack column via the AMPL-style
 # ``var slack_<ident>;`` syntax — the PAMPL parser binds each
@@ -627,10 +627,6 @@ inactive constraint QUINTERO_1B_GNL_X_OFF:
 # PLEXOS Constraint 'QUINTERO_1B_GNL_X_ON': Σ commitment status [0/1] ≤ 1 — active=False (excluded from PLEXOS ST schedule / contingency row) (File: DBSEN_PRGDIARIO.xml)
 inactive constraint QUINTERO_1B_GNL_X_ON:
   1 * commitment("uc_ENELQUINTERO_NOGNL_INF").status + 1 * commitment("uc_ENELQUINTERO_NOGNL_X").status <= 1;
-
-# PLEXOS Constraint 'Quintero_priority2': Σ commitment status [0/1] ≤ 0 — active=False (excluded from PLEXOS ST schedule / contingency row) (File: DBSEN_PRGDIARIO.xml)
-inactive constraint Quintero_priority2:
-  -1 * commitment("uc_QUINTERO_1A_CA_GNL").status + 1 * commitment("uc_QUINTERO_1B_CA_GNL").status <= 0;
 
 # PLEXOS Constraint 'Rahue_Prropulli': Σ line flow [MW] ≤ 183 (File: DBSEN_PRGDIARIO.xml)
 constraint Rahue_Prropulli:

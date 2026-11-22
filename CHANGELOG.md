@@ -41,6 +41,31 @@ Each release states the minimum gtopt version its cases need.
 
 ### Fixed
 
+- **Chile PCP cases** (the 14 `pcp_*` weeks): rebuilt with
+  `plexos2gtopt` from gtopt master `1d112feb1` (public `3dfa808d8`),
+  flags unchanged.  The rebuild picks up the converter changes since the
+  earlier development revision:
+  - the end-of-horizon water values move from
+    `monolithic_options.boundary_cuts_file` to `system.future_cost_array`
+    (same `boundary_cuts.csv`);
+  - BESS reserves are modelled natively (default `--bess-reserve
+    native`) in the 12 weeks from 2025-11-09 on: the batteries that offer
+    reserve carry `reserve_sustain_hours: 1`, their reserve provisions
+    use provision factor 1 (instead of the hourly PLEXOS factors, e.g.
+    0.2-0.82), and the PLEXOS `*_CF_GEN_COMP`, `*_CF_LOAD_COMP` and
+    `UP/DOWNStorageBound_*` constraints that emulated them are kept but
+    inactive;
+  - the inactive constraint `Quintero_priority2` moves from
+    `uc_operational.pampl` to the planning JSON (still inactive).
+  The converter fix in this revision (battery charge power taken from the
+  `Gen_Rating` data file instead of the 2 MW `Max Load` placeholder) has
+  no effect on the published inputs, which predate the regression: every
+  battery keeps `pmax_charge = pmax_discharge`.
+  3 of 14 checked with CPLEX (`gtopt --lp-only`, gtopt `ef27b5f59`):
+  `pcp_2025-10-05` (LP unchanged), `pcp_2026-04-22` and `pcp_2026-05-17`
+  (4,440 and 4,400 fewer rows, same columns: the deactivated BESS
+  constraints); `catalog.json` `size.lp` and the README LP rows are
+  updated for those three only.
 - **Chile PLP cases** (`plp_2y`, `plp_5y`, `plp_23y` and the three
   `plp_pet27` scenarios): the irrigation-diversion flow rights
   `RieSur123SCDZ_irrigation_right` and `RieSaltos_irrigation_right`,

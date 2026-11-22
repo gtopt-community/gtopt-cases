@@ -19,7 +19,7 @@ Spring week with 168 hourly blocks (no block aggregation): the largest LP of the
 | Horizon | 168 blocks covering 168 h (PLEXOS ST block layout) |
 | Network | 237 buses, 305 lines |
 | Units | 1739 generators, 23 batteries, 1009 commitments, 12 reservoirs |
-| LP (`--lp-only`) | 1,288,403 rows, 1,636,065 cols, 5,750,362 nnz (gtopt development revision `3b70b4ee9eca`) |
+| LP (`--lp-only`) | 1,292,267 rows, 1,636,065 cols, 5,758,090 nnz (gtopt development revision `ef27b5f59bef`) |
 | Method / profile | monolithic MIP, [`profiles/daily_scheduling.json`](../../../profiles/daily_scheduling.json) |
 | Source | [`source/DATOS20251005.zip.xz`](source/DATOS20251005.zip.xz) (sha256 `9cbe3eef41c8e822…`) |
 | Converter | `plexos2gtopt` from gtopt; rebuild with gtopt master of November 2026 or later (development revision used: `catalog.json`) |

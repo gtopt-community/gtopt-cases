@@ -255,7 +255,7 @@
     },
     "UserConstraint": {
       "plexos_source": "Constraint",
-      "count": 21,
+      "count": 22,
       "units": {
         "rhs": "per-LHS-variable (see each constraint description)"
       },

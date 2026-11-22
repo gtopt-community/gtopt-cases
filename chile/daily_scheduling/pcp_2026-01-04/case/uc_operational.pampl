@@ -1,6 +1,6 @@
 # ========================================================================
-# operational user constraints (310) — emitted by plexos2gtopt
-#   hard:   284   soft:    26
+# operational user constraints (309) — emitted by plexos2gtopt
+#   hard:   283   soft:    26
 # Origin: PLEXOS Constraint objects (DBSEN_PRGDIARIO.xml)
 # Soft rows declare a named slack column via the AMPL-style
 # ``var slack_<ident>;`` syntax — the PAMPL parser binds each
@@ -618,10 +618,6 @@ inactive constraint QUINTERO_1B_GNL_X_OFF:
 inactive constraint QUINTERO_1B_GNL_X_ON:
   1 * commitment("uc_ENELQUINTERO_NOGNL_INF").status + 1 * commitment("uc_ENELQUINTERO_NOGNL_X").status <= 1;
 
-# PLEXOS Constraint 'Quintero_priority2': Σ commitment status [0/1] ≤ 0 — active=False (excluded from PLEXOS ST schedule / contingency row) (File: DBSEN_PRGDIARIO.xml)
-inactive constraint Quintero_priority2:
-  -1 * commitment("uc_QUINTERO_1A_CA_GNL").status + 1 * commitment("uc_QUINTERO_1B_CA_GNL").status <= 0;
-
 # PLEXOS Constraint 'Rahue_Prropulli': Σ line flow [MW] ≤ 183 (File: DBSEN_PRGDIARIO.xml)
 constraint Rahue_Prropulli:
   1 * line("Prrahue220->Rahue220").flow + 1 * line("Prropulli220->Rahue220").flow <= 183;
@@ -1197,40 +1193,40 @@ inactive constraint GEN_BAT_VICTOR_JARA_FV:
 inactive constraint LOAD_BAT_VICTOR_JARA_FV:
   1 * battery("BAT_VICTOR_JARA_FV").charge >= 0;
 
-# PLEXOS Constraint 'DOWNStorageBound_BAT_MANZANO_FV': Σ reserve provision [MW] ≤ 120 (File: DBSEN_PRGDIARIO.xml)
-constraint DOWNStorageBound_BAT_MANZANO_FV:
+# PLEXOS Constraint 'DOWNStorageBound_BAT_MANZANO_FV': Σ reserve provision [MW] ≤ 120 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint DOWNStorageBound_BAT_MANZANO_FV:
   0.98 * reserve_provision("provision_BAT_MANZANO_FV_gen__CPF_LW_BESS").dn + 0.98 * reserve_provision("provision_BAT_MANZANO_FV_gen__CSF_LW_BESS").dn + 1 * battery("BAT_MANZANO_FV").energy <= 120;
 
-# PLEXOS Constraint 'UPStorageBound_BAT_MANZANO_FV': Σ reserve provision [MW] ≤ 0 (File: DBSEN_PRGDIARIO.xml)
-constraint UPStorageBound_BAT_MANZANO_FV:
+# PLEXOS Constraint 'UPStorageBound_BAT_MANZANO_FV': Σ reserve provision [MW] ≤ 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint UPStorageBound_BAT_MANZANO_FV:
   1 * reserve_provision("provision_BAT_MANZANO_FV_gen__CPF_RS_BESS").up + 1 * reserve_provision("provision_BAT_MANZANO_FV_gen__CSF_RS_BESS").up - 0.98 * battery("BAT_MANZANO_FV").energy <= 0;
 
-# PLEXOS Constraint 'BAT_MANZANO_FV_CF_GEN_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml)
-constraint BAT_MANZANO_FV_CF_GEN_COMP:
+# PLEXOS Constraint 'BAT_MANZANO_FV_CF_GEN_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint BAT_MANZANO_FV_CF_GEN_COMP:
   -1 * battery("BAT_MANZANO_FV").discharge - 1 * battery("BAT_MANZANO_FV").charge + 0.3 * reserve_provision("provision_BAT_MANZANO_FV_gen__CSF_LW_BESS").dn = 0;
 
-# PLEXOS Constraint 'BAT_MANZANO_FV_CF_LOAD_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml)
-constraint BAT_MANZANO_FV_CF_LOAD_COMP:
+# PLEXOS Constraint 'BAT_MANZANO_FV_CF_LOAD_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint BAT_MANZANO_FV_CF_LOAD_COMP:
   -1 * battery("BAT_MANZANO_FV").charge - 1 * battery("BAT_MANZANO_FV").discharge + 0.3 * reserve_provision("provision_BAT_MANZANO_FV_gen__CSF_RS_BESS").up = 0;
 
 # PLEXOS Constraint 'InertiaGlobalMin_New': decision variable ≥ 6 (File: DBSEN_PRGDIARIO.xml)
 constraint InertiaGlobalMin_New:
   1 * decision_variable("Inertia_SEN").value >= 6;
 
-# PLEXOS Constraint 'BAT_DON_HUMBERTO_FV_CF_GEN_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml)
-constraint BAT_DON_HUMBERTO_FV_CF_GEN_COMP:
+# PLEXOS Constraint 'BAT_DON_HUMBERTO_FV_CF_GEN_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint BAT_DON_HUMBERTO_FV_CF_GEN_COMP:
   -1 * battery("BAT_DON_HUMBERTO_FV").discharge - 1 * battery("BAT_DON_HUMBERTO_FV").charge + 0.3 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CSF_LW_BESS").dn = 0;
 
-# PLEXOS Constraint 'BAT_DON_HUMBERTO_FV_CF_LOAD_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml)
-constraint BAT_DON_HUMBERTO_FV_CF_LOAD_COMP:
+# PLEXOS Constraint 'BAT_DON_HUMBERTO_FV_CF_LOAD_COMP': Σ battery charge/discharge [MW] + reserve provision [MW] = 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint BAT_DON_HUMBERTO_FV_CF_LOAD_COMP:
   -1 * battery("BAT_DON_HUMBERTO_FV").charge - 1 * battery("BAT_DON_HUMBERTO_FV").discharge + 0.3 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CSF_RS_BESS").up = 0;
 
-# PLEXOS Constraint 'DOWNStorageBound_BAT_DON_HUMBERTO_FV': Σ reserve provision [MW] ≤ 120 (File: DBSEN_PRGDIARIO.xml)
-constraint DOWNStorageBound_BAT_DON_HUMBERTO_FV:
+# PLEXOS Constraint 'DOWNStorageBound_BAT_DON_HUMBERTO_FV': Σ reserve provision [MW] ≤ 120 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint DOWNStorageBound_BAT_DON_HUMBERTO_FV:
   0.97 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CPF_LW_BESS").dn + 0.97 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CSF_LW_BESS").dn + 1 * battery("BAT_DON_HUMBERTO_FV").energy <= 120;
 
-# PLEXOS Constraint 'UPStorageBound_BAT_DON_HUMBERTO_FV': Σ reserve provision [MW] ≤ 0 (File: DBSEN_PRGDIARIO.xml)
-constraint UPStorageBound_BAT_DON_HUMBERTO_FV:
+# PLEXOS Constraint 'UPStorageBound_BAT_DON_HUMBERTO_FV': Σ reserve provision [MW] ≤ 0 (File: DBSEN_PRGDIARIO.xml) [--bess-reserve native: replaced by Battery.reserve_sustain_hours]
+inactive constraint UPStorageBound_BAT_DON_HUMBERTO_FV:
   1 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CPF_RS_BESS").up + 1 * reserve_provision("provision_BAT_DON_HUMBERTO_FV_gen__CSF_RS_BESS").up - 0.97 * battery("BAT_DON_HUMBERTO_FV").energy <= 0;
 
 # PLEXOS Constraint 'GxManzano': Σ generator dispatch [MW] + battery charge/discharge [MW] ≤ 89.44 (File: DBSEN_PRGDIARIO.xml)

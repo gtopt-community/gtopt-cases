@@ -59,10 +59,10 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 1288403,
+          "rows": 1292267,
           "cols": 1636065,
-          "nnz": 5750362,
-          "gtopt_revision": "3b70b4ee9eca"
+          "nnz": 5758090,
+          "gtopt_revision": "ef27b5f59bef"
         },
         "buses": 237,
         "generators": 1739,
@@ -93,8 +93,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -188,8 +188,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -283,8 +283,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -378,8 +378,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -473,8 +473,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -568,8 +568,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -663,8 +663,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -758,8 +758,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -853,8 +853,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -948,8 +948,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -1043,8 +1043,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -1138,8 +1138,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -1201,10 +1201,10 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 918500,
+          "rows": 918056,
           "cols": 1125802,
-          "nnz": 4087208,
-          "gtopt_revision": "3b70b4ee9eca"
+          "nnz": 4089095,
+          "gtopt_revision": "ef27b5f59bef"
         },
         "buses": 247,
         "generators": 1776,
@@ -1235,8 +1235,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
@@ -1298,10 +1298,10 @@
       "size": {
         "lp": {
           "lps": 1,
-          "rows": 915043,
+          "rows": 915153,
           "cols": 1136220,
-          "nnz": 4057816,
-          "gtopt_revision": "3b70b4ee9eca"
+          "nnz": 4060786,
+          "gtopt_revision": "ef27b5f59bef"
         },
         "buses": 251,
         "generators": 1790,
@@ -1332,8 +1332,8 @@
       },
       "converter": {
         "tool": "plexos2gtopt",
-        "gtopt_revision": "d92e4cf145d0ce5af41bb1d366e33303588aab94",
-        "converter_last_change": "53079a43f0afc395f14df9118aae1bdbf642b61a",
+        "gtopt_revision": "1d112feb11cf46e63981145ea0cfeeead39973b9",
+        "converter_last_change": "1d112feb11cf46e63981145ea0cfeeead39973b9",
         "flags": [
           "--no-check",
           "--write-out",
