@@ -1624,8 +1624,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "75d9cec1ce811e007828e73bff9fa1753ca28f8f",
-        "converter_last_change": "801bf32b32bd0863b10363bc1276cdead37f1df8",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/cen_long_term_1y.json -n cen_long_term_1y -s 12 -y 1 -a 0 --method sddp` (case/plp2gtopt_state.json); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {
@@ -1884,8 +1884,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
-        "converter_last_change": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/pet27_e01_cs_i_1y.json -n pet27_e01_cs_i_1y -s 12 -y 1 -a 0 --method sddp`; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {
@@ -2146,8 +2146,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
-        "converter_last_change": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/pet27_e02_cs_i_1y.json -n pet27_e02_cs_i_1y -s 12 -y 1 -a 0 --method sddp`; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {
@@ -2408,8 +2408,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
-        "converter_last_change": "256a6d0e3dda69d27b7a16a54a34c75fc16ef3f2",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/pet27_e03_cs_i_1y.json -n pet27_e03_cs_i_1y -s 12 -y 1 -a 0 --method sddp`; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {
@@ -2654,8 +2654,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "75d9cec1ce811e007828e73bff9fa1753ca28f8f",
-        "converter_last_change": "801bf32b32bd0863b10363bc1276cdead37f1df8",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/gtopt_case_2y.json -n gtopt_case_2y -y 2,17,52,67 -a all --method sddp` (case/plp2gtopt_state.json); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {
@@ -2888,8 +2888,8 @@
           "--method",
           "sddp"
         ],
-        "gtopt_revision": "75d9cec1ce811e007828e73bff9fa1753ca28f8f",
-        "converter_last_change": "801bf32b32bd0863b10363bc1276cdead37f1df8",
+        "gtopt_revision": "ef27b5f59bef56b751e66516449be056c677f28d",
+        "converter_last_change": "88ac7ae295b076a267600717a7b40ce3105148ed",
         "note": "run from the case folder as `plp2gtopt -i source -o case -f case/gtopt_case_5y.json -n gtopt_case_5y -y 16,17,19,48 -a all --method sddp` (case/plp2gtopt_state.json); case/ = converter output without logs/README, solver-file comments removed"
       },
       "run": {

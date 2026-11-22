@@ -26464,7 +26464,8 @@
         "consumptive": true,
         "direction": -1,
         "fmin": 0.0,
-        "fcost": 25200.0
+        "fcost": 25200.0,
+        "fmax": 9999.0
       },
       {
         "uid": 6040,
@@ -26485,7 +26486,8 @@
         "consumptive": true,
         "direction": -1,
         "fmin": 0.0,
-        "fcost": 25200.0
+        "fcost": 25200.0,
+        "fmax": 9999.0
       }
     ],
     "battery_array": [

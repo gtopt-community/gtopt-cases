@@ -41,6 +41,16 @@ Each release states the minimum gtopt version its cases need.
 
 ### Fixed
 
+- **Chile PLP cases** (`plp_2y`, `plp_5y`, `plp_23y` and the three
+  `plp_pet27` scenarios): the irrigation-diversion flow rights
+  `RieSur123SCDZ_irrigation_right` and `RieSaltos_irrigation_right`,
+  whose PLP `PotMax` is the 9999 "no limit" sentinel, now carry an
+  explicit `fmax: 9999`.  Without it gtopt read the missing bound as
+  zero and blocked those districts' offtake.  Rebuilt with `plp2gtopt`
+  from gtopt master `ef27b5f59`; nothing else changes (the Parquet files
+  are identical, and the LP keeps its size).  These sources have no
+  `plpess.dat`, so the batteries still carry no `annual_loss` and gtopt
+  applies its default battery self-discharge.
 - **Hydro cascade topology of the `sddp2gtopt` cases** (Peru and
   Guatemala).  PSR SDDP gives each hydro plant two downstream plants:
   `TAA` receives the turbined water and `VAA` the spilled water.  Earlier
