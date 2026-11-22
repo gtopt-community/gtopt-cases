@@ -1,0 +1,16 @@
+AEMO 2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario.
+Files kept here (AEMO material, used under AEMO's copyright permissions with
+attribution):
+  2026 ISP Step Change Model.xml.xz   the scenario database, unchanged,
+                                      xz-compressed (from "2026 ISP Model.zip")
+
+Downloaded but NOT kept:
+  - the trace files (demand, solar, wind, rooftop PV, hydro inflows,
+    timeslices).  This case reads the rows of 2027-07-01..2031-06-30 of
+    several hundred half-hourly trace files, hundreds of MB even when cut
+    to the horizon; download the trace archives listed in ../README.md to
+    rebuild case/;
+  - the Accelerated Transition and Slower Growth scenario folders;
+  - the per-state "ISP Demand Traces <STATE> Step Change POE50" archives;
+  - the Inputs and Assumptions workbook and the PLEXOS model instructions PDF.
+Archive names, sizes and sha256: see ../README.md.

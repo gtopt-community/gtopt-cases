@@ -18,6 +18,7 @@ gtopt-cases/
 ├── profiles/            shared gtopt options per application
 ├── tools/               get_case.py: download sources + run the converters
 ├── australia/           National Electricity Market (NEM), data from AEMO
+│   ├── expansion/           2026 ISP PLEXOS model, FY2028-FY2030 expansion (plexos2gtopt.aemo_isp_expansion)
 │   └── production_cost/     2026 ISP PLEXOS model, one-week dispatch (plexos2gtopt.aemo_isp)
 ├── chile/               Sistema Eléctrico Nacional (SEN), data from the CEN
 │   ├── daily_scheduling/    CEN PCP daily unit commitment (PLEXOS → gtopt)
@@ -44,6 +45,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 
 | Case | Buses | Lines | Generators | Demands | Reservoirs | Turbines | Batteries | Water rights | Unit commitments | Blocks | Stages | Scenarios |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [expansion/isp2026_sc_exp_fy28_3y](../australia/expansion/isp2026_sc_exp_fy28_3y) | 15 | 18 | 765 | 32 | 22 | 101 | 223 | — | — | 1,152 | 48 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | 15 | 18 | 523 | 15 | 22 | 95 | 85 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | 15 | 18 | 527 | 15 | 22 | 95 | 90 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | 15 | 18 | 540 | 15 | 22 | 95 | 100 | — | — | 168 | 1 | 1 |
@@ -96,6 +98,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
+| [expansion/isp2026_sc_exp_fy28_3y](../australia/expansion/isp2026_sc_exp_fy28_3y) | expansion | 15 | 1,152 | 1,681,763 | medium |
 | [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | production_cost | 15 | 168 | 126,129 | small |
 | [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | production_cost | 15 | 168 | 132,012 | small |
 | [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | production_cost | 15 | 168 | 143,792 | small |
@@ -104,7 +107,9 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 Four one-week hourly dispatches, one per season of 2027 (18-24 January,
 19-25 April, 19-25 July and 18-24 October), of the AEMO 2026 ISP PLEXOS
 model, Step Change scenario; prototype without expansion or PLEXOS
-constraints.  See [australia/README.md](../australia/README.md).
+constraints.  See [australia/README.md](../australia/README.md).  The expansion case plans generation,
+storage and network augmentations over FY2028-FY2030 (plus a fill year)
+with one representative day of 24 hourly blocks per month.
 
 ## <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> Chile: daily scheduling — day-ahead unit commitment (monolithic MIP)
 

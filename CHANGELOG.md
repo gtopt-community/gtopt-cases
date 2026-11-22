@@ -18,6 +18,14 @@ Each release states the minimum gtopt version its cases need.
 ### Added
 
 - This changelog.
+- **Australia**: a first expansion-planning case,
+  `australia/expansion/isp2026_sc_exp_fy28_3y`, from the AEMO 2026 ISP
+  Step Change database: generation, storage and network-augmentation
+  candidates over FY2028-FY2030 (plus a fill year), one representative
+  day of 24 hourly blocks per month, solved as one monolithic LP.
+  `source/` keeps the scenario XML only (the trace archives are not
+  kept; see `source/NOT_KEPT.txt`).  Needs a gtopt build newer than the
+  current release.
 - **Australia**: three more weekly dispatches from the AEMO 2026 ISP
   Step Change database, so there is one week per season of 2027:
   `isp2026_sc_2027w16` (19-25 April), `isp2026_sc_2027w29` (19-25 July)
