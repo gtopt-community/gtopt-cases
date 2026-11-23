@@ -4,7 +4,11 @@
   "Programa de Operación" portal.  `source/` keeps the PLEXOS input
   (`DATOS*.zip.xz`).  The PLEXOS solution (`RES*.zip`) is a result and is
   not redistributed; it is needed only to rebuild a case (block layout) and
-  is fetched from the CEN portal by `tools/get_case.py`.
+  is fetched from the CEN portal by `tools/get_case.py`.  Ten source-only
+  PCP days (2021 to September 2025) are not kept: `tools/get_case.py fetch`
+  downloads their public `PLEXOS<YYYYMMDD>.zip` from
+  `www.coordinador.cl/wp-content/uploads/` and checks the sha256 pinned
+  in `catalog.json`.
 * **Medium/long term**: CEN PLP input sets, kept in `source/` (xz) and
   converted with `plp2gtopt` from gtopt.
 * **Chile, transmission planning (PLP-PET27)**: PLP bases of the CEN

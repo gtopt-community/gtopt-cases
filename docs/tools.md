@@ -13,7 +13,7 @@ pip install -e <gtopt checkout>/scripts      # plexos2gtopt, plp2gtopt, ...
 | `tools/get_case.py pcp <date>` | CEN PCP day: download `DATOS`/`RES` (only if not local), convert with `plexos2gtopt` and the flags/line lifts of `catalog.json` |
 | `tools/get_case.py plp <date>` | CEN PLP bundle in force on a date: download, compress into `source/`, convert with `plp2gtopt` |
 | `tools/get_case.py rebuild <case>` | reconvert a catalogued case from its `source/` (`--out` to write elsewhere) |
-| `tools/get_case.py fetch <case>` | case whose data may not be redistributed (`"redistributed": false`, e.g. `sem_2025w03`): download the archives from the publisher into `$GTOPT_CASES_CACHE`, check their sha256, extract the members it uses and convert (`--out` to write elsewhere) |
+| `tools/get_case.py fetch <case>` | case whose data are not kept here (`"redistributed": false`, e.g. `sem_2025w03`, `pcp_2024-09-01`): download the archives from the publisher into `$GTOPT_CASES_CACHE`, check their sha256, extract the members it uses and convert (`--out` to write elsewhere); on a PCP day with its bundle in `source/` (e.g. `pcp_2026-05-10`), check its sha256 and run `pcp`.  Prints the gtopt command to run the case |
 
 `get_case.py` uses the Python standard library only and calls the gtopt
 console scripts `cen2gtopt-pcp-archive`, `plexos2gtopt`, `plp2gtopt`,

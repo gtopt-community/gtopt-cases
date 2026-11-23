@@ -138,6 +138,16 @@ with one representative day of 24 hourly blocks per month.
 | [pcp_2026-04-22](../chile/daily_scheduling/pcp_2026-04-22) | 247 | 1776 | 111 (168 h) | 918,500 | large |
 | [pcp_2026-05-17](../chile/daily_scheduling/pcp_2026-05-17) | 251 | 1790 | 110 (168 h) | 915,043 | large |
 
+**Source-only days** (no gtopt case built or checked; sizes unknown):
+14 further PCP days, test days for the study of negative nodal prices
+(2024-09-01, 2024-10-03, 2024-12-15, 2025-02-17, 2025-04-10, 2025-04-27,
+2025-06-26, 2025-09-16) and for the comparison of line-loss models
+(2021-10-17, 2021-10-24, 2026-05-10, 2026-05-25, 2026-11-03, 2026-11-09).
+The four 2026 days keep their PLEXOS input in `source/`; the other ten
+are fetched from the public CEN files.  `tools/get_case.py fetch
+pcp_<date>` builds any of them; see the
+[daily-scheduling README](../chile/daily_scheduling/README.md#source-only-days).
+
 Line lifts, converter flags and run instructions:
 [chile/daily_scheduling/README.md](../chile/daily_scheduling/README.md).
 

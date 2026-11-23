@@ -142,3 +142,45 @@ output.  `cen2gtopt-pcp-solution summary --res <RES bundle> --output <dir>`
 
 Files already present (`source/DATOS<date>.zip.xz`, the cached RES) are
 not downloaded again.  The CEN bucket only serves Chilean IP addresses.
+
+## Source-only days
+
+Fourteen further PCP days are kept as PLEXOS input only, with no gtopt
+case built or checked by the gtopt authors: test days for the study of
+negative nodal prices and for the comparison of line-loss models (PLEXOS
+and gtopt).  Their catalog entries carry `"status": "source_only"` and no
+`case_json`, so `gtopt_check_cases` skips them.  The CEN terms are the
+same as for the 14 cases above; ten of the days are not kept in the
+repository only because of its 400 MB size limit: the CEN publishes them
+at stable public URLs on `www.coordinador.cl` (reachable from any
+country), and `tools/get_case.py fetch` downloads and checks them.
+
+| Day | Purpose | PLEXOS version | Source |
+|---|---|---|---|
+| [pcp_2021-10-17](pcp_2021-10-17) | loss-model comparison | 8.100 | fetched: public CEN file `PLEXOS20211017.zip` |
+| [pcp_2021-10-24](pcp_2021-10-24) | loss-model comparison | 8.100 | fetched: public CEN file `PLEXOS20211024.zip` |
+| [pcp_2024-09-01](pcp_2024-09-01) | negative nodal prices | 9.000 | fetched: public CEN file `PLEXOS20240901.zip` |
+| [pcp_2024-10-03](pcp_2024-10-03) | negative nodal prices | 9.000 | fetched: public CEN file `PLEXOS20241003.zip` |
+| [pcp_2024-12-15](pcp_2024-12-15) | negative nodal prices | 9.000 | fetched: public CEN file `PLEXOS20241215.zip` |
+| [pcp_2025-02-17](pcp_2025-02-17) | negative nodal prices | 10.000 | fetched: public CEN file `PLEXOS20250217.zip` |
+| [pcp_2025-04-10](pcp_2025-04-10) | negative nodal prices | 10.000 | fetched: public CEN file `PLEXOS20250410.zip` |
+| [pcp_2025-04-27](pcp_2025-04-27) | negative nodal prices | 10.000 | fetched: public CEN file `PLEXOS20250427.zip` |
+| [pcp_2025-06-26](pcp_2025-06-26) | negative nodal prices | 10.000 | fetched: public CEN file `PLEXOS20250626.zip` |
+| [pcp_2025-09-16](pcp_2025-09-16) | negative nodal prices | 10.000 | fetched: public CEN file `PLEXOS20250916.zip` |
+| [pcp_2026-05-10](pcp_2026-05-10) | loss-model comparison | 10.000 | input bundle in `source/`; CEN PCP portal |
+| [pcp_2026-05-25](pcp_2026-05-25) | loss-model comparison | 10.000 | input bundle in `source/`; CEN PCP portal |
+| [pcp_2026-11-03](pcp_2026-11-03) | loss-model comparison | 10.000 | input bundle in `source/`; CEN PCP portal |
+| [pcp_2026-11-09](pcp_2026-11-09) | loss-model comparison | 10.000 | input bundle in `source/`; CEN PCP portal |
+
+```bash
+tools/get_case.py fetch pcp_2024-09-01     # any of the 14 days
+```
+
+`fetch` downloads the public file (or, for the 2026 days, checks the
+bundle in `source/` and downloads the PLEXOS solution from the CEN
+portal), checks the sha256 pinned in `catalog.json`, converts it with
+`plexos2gtopt` (the flags above plus `--source-version`, and the `common`
+line lifts) into the git-ignored `case/`, and prints the gtopt command to
+run it, with output outside the repository.  It needs `plexos2gtopt` from
+gtopt master of November 2026 or later, which reads PLEXOS 8.100, 9.000
+and 10.000 databases.

@@ -18,6 +18,21 @@ Each release states the minimum gtopt version its cases need.
 ### Added
 
 - This changelog.
+- **Chile**: 14 source-only CEN PCP days, with no gtopt case built:
+  test days for the study of negative nodal prices (2024-09-01,
+  2024-10-03, 2024-12-15, 2025-02-17, 2025-04-10, 2025-04-27, 2025-06-26,
+  2025-09-16) and for the comparison of line-loss models (2021-10-17,
+  2021-10-24, 2026-05-10, 2026-05-25, 2026-11-03, 2026-11-09).  The four
+  2026 days keep their PLEXOS input (`DATOS*.zip.xz`) in `source/`; the
+  other ten are fetched on demand from the public `PLEXOS<date>.zip`
+  files on www.coordinador.cl (sha256 in `catalog.json`), to keep the
+  repository under its 400 MB limit.  PLEXOS databases 8.100 (2021),
+  9.000 (2024) and 10.000 (2025-2026); they need `plexos2gtopt` from
+  gtopt master of November 2026 or later.
+- `tools/get_case.py fetch`: CEN PCP days (public PLEXOS file, or the
+  bundle in `source/` plus the portal), `cache_members` extracted into
+  the download cache, a default `case_json` for source-only entries, and
+  the gtopt run command printed after each conversion.
 - **Australia**: a first expansion-planning case,
   `australia/expansion/isp2026_sc_exp_fy28_3y`, from the AEMO 2026 ISP
   Step Change database: generation, storage and network-augmentation

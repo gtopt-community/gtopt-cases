@@ -1,0 +1,4 @@
+# CEN data of this day are fetched, not kept: tools/get_case.py fetch pcp_2025-04-10
+# downloads them into source/ and converts them into case/.
+source/
+case/

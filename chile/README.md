@@ -23,7 +23,11 @@ Operación" portal (`programa.coordinador.cl`).  `tools/get_case.py pcp
 fetcher `cen2gtopt-pcp-archive` and convert them.  **The portal's download
 bucket only serves Chilean IP addresses**: from abroad, use a relay/VPN in
 Chile, or copy the files by hand (PCP: `DATOS<date>.zip.xz` into the case
-`source/` and pass the solution bundle with `--res`).
+`source/` and pass the solution bundle with `--res`).  Many PCP days up
+to September 2025 are also published as `PLEXOS<date>.zip` on
+`www.coordinador.cl`, reachable from any country; ten source-only PCP days
+are fetched from there with `tools/get_case.py fetch <case>` (see
+[daily_scheduling/](daily_scheduling/README.md#source-only-days)).
 
 ## Provenance and rights
 

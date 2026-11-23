@@ -18,6 +18,7 @@ path = [
   ".gitattributes",
   ".gitignore",
   "ireland/**/.gitignore",
+  "chile/**/.gitignore",
   "ruff.toml",
   "REUSE.toml",
 ]

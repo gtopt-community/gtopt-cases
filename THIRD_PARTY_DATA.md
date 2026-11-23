@@ -34,7 +34,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | Data source | Cases | Rights holder / author | Licence or terms | In this repo |
 |---|---|---|---|---|
 | AEMO — 2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario | `australia/production_cost/isp2026_sc_2027w03`, `w16`, `w29`, `w42` | Australian Energy Market Operator (AEMO) | AEMO copyright permissions: general permission to use AEMO material for any purpose, with accurate and appropriate attribution of the material and of AEMO as its author (confidential and third-party commissioned reports excluded) | Scenario XML unchanged (xz) + the 250 to 264 trace files read by each case, cut to the case week + gtopt case |
-| CEN — PCP daily programme (PLEXOS model bases) | `chile/daily_scheduling/pcp_*` (14) | Coordinador Eléctrico Nacional (CEN), Chile | No open licence stated; public CEN publications, CEN keeps the rights; check CEN terms before redistribution | PLEXOS input bundles (`DATOS*.zip.xz`) + gtopt cases; PLEXOS results (`RES*.zip`) not redistributed |
+| CEN — PCP daily programme (PLEXOS model bases) | `chile/daily_scheduling/pcp_*` (28: 14 cases + 14 source-only days) | Coordinador Eléctrico Nacional (CEN), Chile | No open licence stated; public CEN publications, CEN keeps the rights; check CEN terms before redistribution | PLEXOS input bundles (`DATOS*.zip.xz`) + gtopt cases (14 days); input bundles only (4 source-only days); README and catalog entry only (10 source-only days fetched by `tools/get_case.py fetch` from the public `PLEXOS<date>.zip` files on www.coordinador.cl, to keep the repository under its size limit); PLEXOS results (`RES*.zip`) not redistributed |
 | CEN — PLP medium/long-term programme | `chile/medium_long_term/plp_*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs + gtopt cases |
 | CEN — transmission planning PET 2027 (PLP-PET27) | `chile/transmission_planning/plp_pet27/*` (3) | Coordinador Eléctrico Nacional (CEN), Chile | As above | PLP inputs (Diagnóstico Anexo IV.1) + gtopt cases + Anexo II methodology PDF |
 | AMM / EOR — PSR NCP daily/weekly programme | `guatemala/daily_scheduling/ncp_*` (2) | Administrador del Mercado Mayorista (AMM) and Ente Operador Regional (EOR) | No open licence stated; public AMM/EOR publications, they keep the rights; check their terms | Selected converter inputs (xz) + gtopt cases; original `.rar` archives and operator results not redistributed |
@@ -74,6 +74,11 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 - PCP model bases (PLEXOS): "Programa de Operación" portal,
   <https://programa.coordinador.cl/operacion/pcp/bases-modelo> (download
   bucket serves Chilean IP addresses only).  PLP data: same portal.
+  Many earlier PCP days (up to September 2025) are also published as
+  `PLEXOS<YYYYMMDD>.zip` under
+  `https://www.coordinador.cl/wp-content/uploads/<YYYY>/<MM>/`; ten
+  source-only days are fetched from there (URL and sha256 in
+  `catalog.json`), not redistributed.
 - Transmission planning (PET 2027): Diagnóstico annexes,
   <https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/>
   (Anexo IV.1 Base PLP, Anexo II Metodología); attribution *"Source:

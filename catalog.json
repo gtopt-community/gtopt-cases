@@ -48,6 +48,856 @@
   },
   "cases": [
     {
+      "id": "chile/daily_scheduling/pcp_2021-10-17",
+      "path": "chile/daily_scheduling/pcp_2021-10-17",
+      "date": "2021-10-17",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2021-10-17 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20211017.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2021/10/PLEXOS20211017.zip",
+            "sha256": "538d605c32de902f073b452a0faf9c46abc15b2647bd7ee2a2c1508919062d71",
+            "bytes": 59004653,
+            "members": {
+              "Datos20211017.zip": "source/DATOS20211017.zip"
+            },
+            "cache_members": {
+              "Res20211017.zip": "RES20211017.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20211017.zip on www.coordinador.cl; inner PLEXOS input Datos20211017.zip sha256 6f672bd69a8e45cbb39f45c1cc457999c8b7163e8c6d5eb89615a98541df6cf9 (2393135 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20211017"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "8.100"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 8.100 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-17/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-17/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2021-10-17/case/pcp_2021-10-17.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2021-10-17/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-17",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2021-10-17"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2021-10-17; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2021-10-24",
+      "path": "chile/daily_scheduling/pcp_2021-10-24",
+      "date": "2021-10-24",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2021-10-24 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20211024.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2021/10/PLEXOS20211024.zip",
+            "sha256": "4c4619f79897555b31399b22e5bd183fc30d167ba69ef92db2cf81718194893c",
+            "bytes": 37618570,
+            "members": {
+              "Datos20211024.zip": "source/DATOS20211024.zip"
+            },
+            "cache_members": {
+              "RES20211024.zip": "RES20211024.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20211024.zip on www.coordinador.cl; inner PLEXOS input Datos20211024.zip sha256 12200e09ffe7ebdef60eb6d08c9419dbdab2e7d1820fb1de6180e0f7b282feab (2403509 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20211024"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "8.100"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 8.100 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-24/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-24/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2021-10-24/case/pcp_2021-10-24.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2021-10-24/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2021-10-24",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2021-10-24"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2021-10-24; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2024-09-01",
+      "path": "chile/daily_scheduling/pcp_2024-09-01",
+      "date": "2024-09-01",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2024-09-01 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20240901.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2024/08/PLEXOS20240901.zip",
+            "sha256": "f6a63aeea9ff0d9003a19d3645409914ed4e3ff9acdba8d2d114c29d88faa96e",
+            "bytes": 25785381,
+            "members": {
+              "DATOS20240901.zip": "source/DATOS20240901.zip"
+            },
+            "cache_members": {
+              "RES20240901.zip": "RES20240901.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20240901.zip on www.coordinador.cl; inner PLEXOS input DATOS20240901.zip sha256 5870e3dc294937c06fb4f4f68176a9f8956c6688f5b4f9648c6cfb79553626e8 (4981388 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20240901"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "9.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 9.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-09-01/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-09-01/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2024-09-01/case/pcp_2024-09-01.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2024-09-01/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-09-01",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2024-09-01"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2024-09-01; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2024-10-03",
+      "path": "chile/daily_scheduling/pcp_2024-10-03",
+      "date": "2024-10-03",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2024-10-03 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20241003.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2024/10/PLEXOS20241003.zip",
+            "sha256": "9a0f5c0983336ad0fa7c5f1a8fa86270da6387c8e4fa93ef47fba7b878338df1",
+            "bytes": 27089500,
+            "members": {
+              "DATOS20241003.zip": "source/DATOS20241003.zip"
+            },
+            "cache_members": {
+              "RES20241003.zip": "RES20241003.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20241003.zip on www.coordinador.cl; inner PLEXOS input DATOS20241003.zip sha256 8c6626990feb7f3ffd41218fd44f773238687c1bc76cb6aaa0111290d45422ae (5071014 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20241003"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "9.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 9.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-10-03/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-10-03/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2024-10-03/case/pcp_2024-10-03.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2024-10-03/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-10-03",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2024-10-03"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2024-10-03; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2024-12-15",
+      "path": "chile/daily_scheduling/pcp_2024-12-15",
+      "date": "2024-12-15",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2024-12-15 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20241215.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2024/12/PLEXOS20241215.zip",
+            "sha256": "be07059b8dd6f9c6f2587e2f52e0cacbb05be1110811090bfd9d8de19eb890ea",
+            "bytes": 29137375,
+            "members": {
+              "DATOS20241215.zip": "source/DATOS20241215.zip"
+            },
+            "cache_members": {
+              "RES20241215.zip": "RES20241215.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20241215.zip on www.coordinador.cl; inner PLEXOS input DATOS20241215.zip sha256 59a6a17a216fc2da817a78a7a169ae1c5c34606dd594b7a9ffbe31c65b07b984 (5346890 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20241215"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "9.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 9.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-12-15/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-12-15/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2024-12-15/case/pcp_2024-12-15.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2024-12-15/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2024-12-15",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2024-12-15"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2024-12-15; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2025-02-17",
+      "path": "chile/daily_scheduling/pcp_2025-02-17",
+      "date": "2025-02-17",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2025-02-17 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20250217.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2025/02/PLEXOS20250217.zip",
+            "sha256": "8d4f153d3ad4299e228db66072e1d1aea92fe106172eb648546d2e5d87a9665c",
+            "bytes": 26200883,
+            "members": {
+              "DATOS20250217.zip": "source/DATOS20250217.zip"
+            },
+            "cache_members": {
+              "RES20250217.zip": "RES20250217.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20250217.zip on www.coordinador.cl; inner PLEXOS input DATOS20250217.zip sha256 9f0e89e49b06246394f159499d77a957aaede8574d8c3c6a21229b93d582e89e (5424430 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20250217"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-02-17/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-02-17/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2025-02-17/case/pcp_2025-02-17.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2025-02-17/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-02-17",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2025-02-17"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-02-17; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2025-04-10",
+      "path": "chile/daily_scheduling/pcp_2025-04-10",
+      "date": "2025-04-10",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2025-04-10 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20250410.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2025/04/PLEXOS20250410.zip",
+            "sha256": "219defadafdb524b7703ca521888ffb85ff3d2b34616f22487f674a174ad7f8c",
+            "bytes": 38634946,
+            "members": {
+              "DATOS20250410.zip": "source/DATOS20250410.zip"
+            },
+            "cache_members": {
+              "RES20250410.zip": "RES20250410.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20250410.zip on www.coordinador.cl; inner PLEXOS input DATOS20250410.zip sha256 6dda55d9e13521d3fe8626e606fdfd76a201683a61ea54575ee045f3ed2782ed (7447235 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20250410"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-10/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-10/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2025-04-10/case/pcp_2025-04-10.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2025-04-10/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-10",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2025-04-10"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-04-10; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2025-04-27",
+      "path": "chile/daily_scheduling/pcp_2025-04-27",
+      "date": "2025-04-27",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2025-04-27 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20250427.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2025/04/PLEXOS20250427.zip",
+            "sha256": "a4f4604beaa6296467897611e16842541ec465f69093d8677c79375913b96e54",
+            "bytes": 32650742,
+            "members": {
+              "DATOS20250427.zip": "source/DATOS20250427.zip"
+            },
+            "cache_members": {
+              "RES20250427.zip": "RES20250427.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20250427.zip on www.coordinador.cl; inner PLEXOS input DATOS20250427.zip sha256 eb3c2e93098439c4bd8b921564e959c42995db4099851bac748ee8bd883dd09a (5973026 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20250427"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-27/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-27/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2025-04-27/case/pcp_2025-04-27.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2025-04-27/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-04-27",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2025-04-27"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-04-27; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2025-06-26",
+      "path": "chile/daily_scheduling/pcp_2025-06-26",
+      "date": "2025-06-26",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2025-06-26 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20250626.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2025/06/PLEXOS20250626.zip",
+            "sha256": "83f2f14c7241b6ea23e1e04b7ba181d281fd92195b1aeb3a333e4a1b3f0507c1",
+            "bytes": 37793993,
+            "members": {
+              "DATOS20250626.zip": "source/DATOS20250626.zip"
+            },
+            "cache_members": {
+              "RES20250626.zip": "RES20250626.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20250626.zip on www.coordinador.cl; inner PLEXOS input DATOS20250626.zip sha256 04ef28762073f27bf39866e23e02b16e1aa6514eb91d8aa702e9376b16e018f0 (5974778 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20250626"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-06-26/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-06-26/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2025-06-26/case/pcp_2025-06-26.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2025-06-26/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-06-26",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2025-06-26"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-06-26; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2025-09-16",
+      "path": "chile/daily_scheduling/pcp_2025-09-16",
+      "date": "2025-09-16",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not kept in this repository only to stay under its 400 MB size limit (tools/check_repo.sh); the CEN terms are those of the other PCP days. tools/get_case.py fetch pcp_2025-09-16 downloads the public CEN file below, checks its sha256, extracts the PLEXOS input into the git-ignored source/ and the PLEXOS solution (a result, needed only for the block layout) into $GTOPT_CASES_CACHE, and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "archive": "PLEXOS20250916.zip",
+            "url": "https://www.coordinador.cl/wp-content/uploads/2025/09/PLEXOS20250916.zip",
+            "sha256": "acd4e722168109510b51b778b2222658fa841840c0ff36891d880df04266b6ae",
+            "bytes": 39011453,
+            "members": {
+              "DATOS20250916.zip": "source/DATOS20250916.zip"
+            },
+            "cache_members": {
+              "RES20250916.zip": "RES20250916.zip"
+            }
+          }
+        ],
+        "origin": "public CEN file PLEXOS20250916.zip on www.coordinador.cl; inner PLEXOS input DATOS20250916.zip sha256 3ffb090bdc202f981863846ed543e2a11792703a341739e83432c530acd678ad (6119029 bytes)",
+        "publisher": "Coordinador Eléctrico Nacional (CEN)",
+        "licence": "No licence stated by the publisher; CEN keeps the rights (see THIRD_PARTY_DATA.md).",
+        "cache": "20250916"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-09-16/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-09-16/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2025-09-16/case/pcp_2025-09-16.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2025-09-16/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2025-09-16",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2025-09-16"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2025-09-16; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
+        "Kept as a test day for the study of negative nodal prices."
+      ]
+    },
+    {
       "id": "chile/daily_scheduling/pcp_2025-10-05",
       "path": "chile/daily_scheduling/pcp_2025-10-05",
       "date": "2025-10-05",
@@ -1287,6 +2137,80 @@
       ]
     },
     {
+      "id": "chile/daily_scheduling/pcp_2026-05-10",
+      "path": "chile/daily_scheduling/pcp_2026-05-10",
+      "date": "2026-05-10",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "files": [
+          {
+            "path": "source/DATOS20260510.zip.xz",
+            "sha256": "24b828157bf75ff00291a5d2076035d7dba65fb0351c9c4a8e9e51aadd9adfdb",
+            "bytes": 3515292
+          }
+        ],
+        "origin": "CEN PCP portal, PLEXOS20260510.zip; inner PLEXOS input DATOS20260510.zip sha256 3b8a6c73e54eb0a02b917b41e06957e8d6bc8096948aa66d8ea84ec57ed079db (6586801 bytes)",
+        "url": "https://programa.coordinador.cl/operacion/pcp/bases-modelo"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-10/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-10/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2026-05-10/case/pcp_2026-05-10.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2026-05-10/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-10",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2026-05-10"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-05-10; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "source: unmodified except xz compression; case: not built here (tools/get_case.py builds it locally)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
+      ]
+    },
+    {
       "id": "chile/daily_scheduling/pcp_2026-05-17",
       "path": "chile/daily_scheduling/pcp_2026-05-17",
       "date": "2026-05-17",
@@ -1381,6 +2305,228 @@
       },
       "notes": [
         "Lift list contains both 'Futuro033_CRCA2B>Andes220' (common) and 'Futuro033_CRCA2B->Andes220' (extra); both names exist in the bundle."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2026-05-25",
+      "path": "chile/daily_scheduling/pcp_2026-05-25",
+      "date": "2026-05-25",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "files": [
+          {
+            "path": "source/DATOS20260525.zip.xz",
+            "sha256": "83f99ed0c8c426d3764fbb2d0bb9ce83de31a2c1dd3828af219407af4797d278",
+            "bytes": 3636708
+          }
+        ],
+        "origin": "CEN PCP portal, PLEXOS20260525.zip; inner PLEXOS input DATOS20260525.zip sha256 8fac73899783a613265e042b1f35e566a0bfa924f8127a88bdee6172c7f2a4b7 (6656416 bytes)",
+        "url": "https://programa.coordinador.cl/operacion/pcp/bases-modelo"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-25/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-25/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2026-05-25/case/pcp_2026-05-25.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2026-05-25/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-05-25",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2026-05-25"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-05-25; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "source: unmodified except xz compression; case: not built here (tools/get_case.py builds it locally)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2026-11-03",
+      "path": "chile/daily_scheduling/pcp_2026-11-03",
+      "date": "2026-11-03",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "files": [
+          {
+            "path": "source/DATOS20261103.zip.xz",
+            "sha256": "cff4c3a6ea608a30ad4c3bb4da831517448ccc2a29dc59107fa894759c79ece2",
+            "bytes": 3721340
+          }
+        ],
+        "origin": "CEN PCP portal, PLEXOS20261103.zip; inner PLEXOS input DATOS20261103.zip sha256 0420242e940648077c9e5a77e3e8815cae4c496782f65f1a628cd7c8f6c79791 (7006054 bytes)",
+        "url": "https://programa.coordinador.cl/operacion/pcp/bases-modelo"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-03/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-03/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2026-11-03/case/pcp_2026-11-03.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2026-11-03/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-03",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2026-11-03"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-11-03; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "source: unmodified except xz compression; case: not built here (tools/get_case.py builds it locally)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
+      ]
+    },
+    {
+      "id": "chile/daily_scheduling/pcp_2026-11-09",
+      "path": "chile/daily_scheduling/pcp_2026-11-09",
+      "date": "2026-11-09",
+      "country": "chile",
+      "application": "daily_scheduling",
+      "method": "monolithic",
+      "status": "source_only",
+      "profile": "profiles/daily_scheduling.json",
+      "source": {
+        "files": [
+          {
+            "path": "source/DATOS20261109.zip.xz",
+            "sha256": "d1a9a12b94499b3af49bce269de6abf81ce781242c8e4351d8b47454bdb88fda",
+            "bytes": 3938552
+          }
+        ],
+        "origin": "CEN PCP portal, PLEXOS20261109.zip; inner PLEXOS input DATOS20261109.zip sha256 60f876a9f7345dbadb754433dab6124652e9c1b2bc862920b2a283366c84eff0 (7174439 bytes)",
+        "url": "https://programa.coordinador.cl/operacion/pcp/bases-modelo"
+      },
+      "converter": {
+        "tool": "plexos2gtopt",
+        "flags": [
+          "--no-check",
+          "--write-out",
+          "all",
+          "--plexos-legacy",
+          "--no-battery-efin-pin",
+          "--line-losses-mode",
+          "piecewise",
+          "--loss-cost-eps",
+          "0",
+          "--source-version",
+          "10.000"
+        ],
+        "lifts": {
+          "mode": "common",
+          "file": "chile/daily_scheduling/line_lifts.json",
+          "count": 35,
+          "names_source": "common"
+        },
+        "flavor": "cen-trad0 + common lifts",
+        "note": "PLEXOS 10.000 database; plexos2gtopt from gtopt master of November 2026 or later (PLEXOS 8.100/9.000/10.000 support, --source-version). Not converted or checked by the gtopt authors."
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-09/output && cd ~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-09/output && gtopt \"$REPO/chile/daily_scheduling/pcp_2026-11-09/case/pcp_2026-11-09.json\" \"$REPO/profiles/daily_scheduling.json\" --set input_directory=\"$REPO/chile/daily_scheduling/pcp_2026-11-09/case\" -d .",
+        "output": "~/gtopt-cases-out/chile/daily_scheduling/pcp_2026-11-09",
+        "resources": {
+          "class": "large",
+          "guide": "not measured for this day; the catalogued PCP cases are ~1M-row MIPs (unit commitment): plan for a multi-core machine and 5-30 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch pcp_2026-11-09"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Programa de Operación, PCP model bases of 2026-11-09; converted to gtopt by the user with the gtopt tools.",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)",
+        "modified": "source: unmodified except xz compression; case: not built here (tools/get_case.py builds it locally)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data"
+      },
+      "notes": [
+        "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
+        "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
       ]
     },
     {

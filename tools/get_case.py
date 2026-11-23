@@ -6,6 +6,7 @@
     tools/get_case.py plp 2026-05-15   # -> chile/medium_long_term/plp_<date>/
     tools/get_case.py rebuild pcp_2025-10-19 --res RES20251019.zip.xz --out ~/x
     tools/get_case.py fetch sem_2025w03  # data not redistributed: download
+    tools/get_case.py fetch pcp_2024-09-01  # CEN day from coordinador.cl
 
 All the work is done by the gtopt Python tools, installed from a gtopt
 checkout (``pip install -e <gtopt>/scripts``) and called here as console
@@ -20,7 +21,10 @@ case directory (``source/``, ``case/``); the PLEXOS solution bundle
 repository.  ``fetch`` downloads the publisher's archives of a case whose
 data are not redistributed here (``source.redistributed: false``) into
 the cache, checks their sha256 and extracts the members the converter
-reads into the (git-ignored) ``source/`` of the case.  The CEN portal
+reads into the (git-ignored) ``source/`` of the case; ``cache_members``
+(e.g. the PLEXOS solution bundle) are extracted next to the archive in
+the cache.  On a CEN PCP day whose input bundle is in ``source/``,
+``fetch`` checks its sha256 and runs ``pcp``.  The CEN portal
 only serves Chilean IP addresses.  Cases are
 provided AS IS (see DISCLAIMER.md); run them as the READMEs show.
 """
@@ -195,7 +199,10 @@ def stage_input(inp: Path, overlay: Path | None, stage: Path) -> Path:
 def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
     """Run the catalogued converter on the case source; returns the JSON."""
     case_dir = REPO / entry["path"]
-    conv, case_json = entry["converter"], Path(entry["case_json"])
+    # source-only cases have no catalogued case_json: name it after the case
+    name = entry["path"].rsplit("/", 1)[-1]
+    conv = entry["converter"]
+    case_json = Path(entry.get("case_json") or f"case/{name}.json")
     dest = Path(args.out).expanduser() if args.out else case_dir / case_json.parent
     if dest.resolve() == case_dir.resolve():
         sys.exit("case JSON lives at the case root: pass --out")
@@ -221,7 +228,9 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
             d8 = entry["date"].replace("-", "")
             stage = Path(tmp) / case_json.stem  # names the planning JSON
             stage.mkdir()
-            (stage / f"DATOS{d8}.zip.xz").symlink_to(inp / f"DATOS{d8}.zip.xz")
+            names = (f"DATOS{d8}.zip.xz", f"DATOS{d8}.zip")  # kept or fetched
+            datos = next((p for n in names if (p := inp / n).is_file()), inp / names[0])
+            (stage / datos.name).symlink_to(datos)
             res = args.res or next(iter(sorted((CACHE / d8).glob("RES*.zip*"))), None)
             if res is not None:
                 (stage / Path(res).name).symlink_to(Path(res).expanduser().resolve())
@@ -230,7 +239,18 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
             flags += lift_flags(entry, args.lifts)
             inp = cwd = stage
         run(conv["tool"], "-i", inp, "-o", raw, *flags, cwd=cwd)
-        return postprocess(raw, dest, case_json.name, profile, conv.get("drop", []))
+        out = postprocess(raw, dest, case_json.name, profile, conv.get("drop", []))
+    print_run(entry, out, profile)
+    return out
+
+
+def print_run(entry: dict[str, Any], case_json: Path, profile: Path | None) -> None:
+    """The gtopt command that runs the built case, output outside the repo."""
+    out = f"~/gtopt-cases-out/{entry['path']}/output"
+    gtopt = ["gtopt", str(case_json), *([str(profile)] if profile else [])]
+    gtopt += ["--set", f"input_directory={case_json.parent}", "-d", "."]
+    print(f"run:\n  ulimit -c unlimited\n  mkdir -p {out} && cd {out}")
+    print("  " + shlex.join(gtopt))
 
 
 def cmd_pcp(args: argparse.Namespace) -> Path:
@@ -267,8 +287,17 @@ def cmd_plp(args: argparse.Namespace) -> Path | None:
 def cmd_fetch(args: argparse.Namespace) -> Path:
     """Download, check and extract the publisher's archives, then convert."""
     entry = catalog_entry(args.case)
-    if entry is None or entry["source"].get("redistributed", True):
-        sys.exit(f"{args.case}: not a catalogued fetch-on-demand case")
+    if entry is None:
+        sys.exit(f"{args.case}: no such case in catalog.json")
+    if entry["source"].get("redistributed", True):
+        if entry.get("converter", {}).get("tool") != "plexos2gtopt":
+            sys.exit(f"{args.case}: source/ is in the repository: use rebuild")
+        for f in entry["source"]["files"]:  # PCP day: input bundle in source/
+            path = REPO / entry["path"] / f["path"]
+            if hashlib.sha256(path.read_bytes()).hexdigest() != f["sha256"]:
+                sys.exit(f"{path}: sha256 differs from catalog.json")
+        args.date = entry["date"]
+        return cmd_pcp(args)
     # cases that share the same archives name a common "cache" folder
     key = entry["source"].get("cache") or entry["id"].rsplit("/", 1)[-1]
     case_dir, dl = REPO / entry["path"], CACHE / key
@@ -282,9 +311,11 @@ def cmd_fetch(args: argparse.Namespace) -> Path:
                 shutil.copyfileobj(r, fo)
         if hashlib.sha256(archive.read_bytes()).hexdigest() != f["sha256"]:
             sys.exit(f"{archive}: sha256 differs from catalog.json")
+        # members -> case dir (git-ignored); cache_members (results) -> cache
+        targets = [(m, case_dir / p) for m, p in f["members"].items()]
+        targets += [(m, dl / p) for m, p in f.get("cache_members", {}).items()]
         with zipfile.ZipFile(archive) as z:
-            for member, path in f["members"].items():
-                out = case_dir / path
+            for member, out in targets:
                 out.parent.mkdir(parents=True, exist_ok=True)
                 with z.open(member) as zi, out.open("wb") as fo:
                     shutil.copyfileobj(zi, fo)
