@@ -85,7 +85,7 @@ downloads (pinned commit, sha256-checked) and converts on your machine.
 | [**UnitCommitment.jl**](benchmarks/unitcommitment_jl/README.md) | 3 unit-commitment MIPs (IEEE 14 and 118 buses) | UnitCommitment.jl fixtures · BSD-3-Clause | source + case |
 | [**NREL**](benchmarks/nrel/README.md) | NREL-118, one week hourly | Sienna PowerSystemsTestData · no licence | recipe only |
 | [**Sienna**](benchmarks/sienna/README.md) | 7 small PowerSimulations.jl test systems (PJM 5-bus) | Sienna PowerSystemsTestData · no licence | recipe only |
-| [**Papers**](benchmarks/papers/README.md) | Morales-España and Tejada-Arango (2019), clustered UC: IEEE 39 and 118 buses | CUC-data · no licence | recipe only (converter in progress) |
+| [**Papers**](benchmarks/papers/README.md) | Morales-España and Tejada-Arango (2019), clustered UC: IEEE 39 and 118 buses | CUC-data · no licence | recipe only |
 
 ## What each case contains
 

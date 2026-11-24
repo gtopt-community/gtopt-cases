@@ -19,11 +19,11 @@ pip install -e <gtopt checkout>/scripts      # plexos2gtopt, plp2gtopt, ...
 console scripts `cen2gtopt-pcp-archive`, `plexos2gtopt`, `plp2gtopt`,
 `plp_compress_case`, `sddp2gtopt` and `psse2gtopt`; for `benchmarks/`
 also `pp2gtopt` (with the `matpower` extra), `nrel118_to_gtopt`,
-`sienna_to_gtopt` and `tools/ucjl2gtopt.py` of a gtopt checkout (set
+`sienna2gtopt` and `tools/ucjl2gtopt.py` of a gtopt checkout (set
 `GTOPT_SRC=<gtopt checkout>`).  A benchmark recipe (`fetch`) downloads the
 files of a pinned upstream commit and checks each sha256 (listed in
 `catalog.json` or in the case's `upstream.sha256`); the Sienna recipes
-let `sienna_to_gtopt` download and check its own pinned files.  Downloads not kept in
+let `sienna2gtopt` download and check its own pinned files.  Downloads not kept in
 git (the PLEXOS solution bundle, archives of non-redistributable cases) go to `$GTOPT_CASES_CACHE` (default
 `~/.cache/gtopt-cases`).  Install the gtopt tools editable (or from a
 revision whose wheel ships their data files): without the converter data

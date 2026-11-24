@@ -9663,21 +9663,21 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system batt_test_case_b_sys; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "battery_degeneracy",
           "--subcase",
           "b"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "battery_degeneracy",
           "--subcase",
           "b",
@@ -9685,7 +9685,7 @@
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/batt_test_case_b/output && cd ~/gtopt-cases-out/benchmarks/sienna/batt_test_case_b/output && gtopt \"$REPO/benchmarks/sienna/batt_test_case_b/case/batt_test_case_b.json\" --set input_directory=\"$REPO/benchmarks/sienna/batt_test_case_b/case\" -d .",
@@ -9755,25 +9755,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_dc; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "hvdc"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "hvdc",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_dc/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_dc/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_dc/case/c_sys5_dc.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_dc/case\" -d .",
@@ -9843,25 +9843,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_hy_cascading_turbine_energy; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "cascading_hydro"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "cascading_hydro",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_hy_cascading/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_hy_cascading/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_hy_cascading/case/c_sys5_hy_cascading.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_hy_cascading/case\" -d .",
@@ -9931,25 +9931,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_il; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "interruptible_load"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "interruptible_load",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_il/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_il/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_il/case/c_sys5_il.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_il/case\" -d .",
@@ -10019,25 +10019,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_ml; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "monitored_line"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "monitored_line",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_ml/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_ml/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_ml/case/c_sys5_ml.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_ml/case\" -d .",
@@ -10107,25 +10107,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_phes_ed; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "pumped_storage"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "pumped_storage",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_phes_ed/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_phes_ed/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_phes_ed/case/c_sys5_phes_ed.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_phes_ed/case\" -d .",
@@ -10195,25 +10195,25 @@
       "source": {
         "redistributed": false,
         "fetched_by": "converter",
-        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna2gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna2gtopt/_bundle.py).",
         "files": [],
         "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_re_fuel_cost; PJM 5-bus system of F. Li and R. Bo (2010)",
         "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
         "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
       },
       "converter": {
-        "tool": "sienna_to_gtopt",
+        "tool": "sienna2gtopt",
         "flags": [
           "fuel_cost_ts"
         ],
         "argv": [
-          "sienna_to_gtopt",
+          "sienna2gtopt",
           "fuel_cost_ts",
           "-o",
           "{out_json}"
         ],
         "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
-        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+        "note": "sienna2gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
       },
       "run": {
         "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_re_fuel_cost/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_re_fuel_cost/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_re_fuel_cost/case/c_sys5_re_fuel_cost.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_re_fuel_cost/case\" -d .",
@@ -10280,7 +10280,7 @@
       "method": "monolithic",
       "case_json": "case/cuc_ieee118.json",
       "profile": null,
-      "status": "converter_in_progress",
+      "status": null,
       "source": {
         "redistributed": false,
         "redistribution_note": "Not in this repository: the CUC-data repository has no licence. tools/get_case.py fetch morales_espana_2019_cuc/ieee118 downloads the workbook from the pinned commit and checks its sha256.",
@@ -10298,24 +10298,34 @@
       },
       "converter": {
         "tool": "cucdata2gtopt",
-        "flags": [],
+        "flags": [
+          "--system",
+          "118",
+          "--reserve",
+          "5"
+        ],
         "input": "source/CUC_IEEE118-busSystem.xlsx",
         "argv": [
           "cucdata2gtopt",
+          "--system",
+          "118",
+          "--reserve",
+          "5",
+          "--input",
           "{input}",
           "-o",
-          "{out_json}"
+          "{out_dir}"
         ],
-        "gtopt_revision": null,
-        "note": "converter in progress in gtopt (scripts/cucdata2gtopt, branch feat/cucdata2gtopt); command line provisional"
+        "gtopt_revision": "7447c1b490d477f7e0e016a69b148d9890d430ed",
+        "note": "cucdata2gtopt --system 118 --reserve 5: the paper's 5 % reserve case; defaults: paper formulation (GAMS start-up/shut-down capability and reserve-coupled ramps as user constraints), individual-unit UC on one chronological stage"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case\" -d . --solver highs",
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case\" -d . --mip-gap 1e-4",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only ieee118",
         "output": "~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118",
         "resources": {
           "class": "small",
-          "guide": "unit-commitment MIP; size to be recorded once the converter is merged"
+          "guide": "24-h individual-unit UC MIP, 540 units; about 12 min with CPLEX (6 threads, 1e-3 gap, objective 14.26 M EUR), 40-60 min at 1e-4; HiGHS much slower; < 4 GB RAM"
         },
         "rebuild": "tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee118"
       },
@@ -10337,9 +10347,23 @@
       },
       "notes": [
         "Recipe only: no CUC-data files and no converted case files are in this repository.",
-        "The converter (cucdata2gtopt) is not yet in gtopt master; this entry is a placeholder recipe until it is."
+        "MIP: solve with a MIP-capable solver (CPLEX, Gurobi, HiGHS, CBC, ...); never CLP. HiGHS solves it but is much slower than CPLEX here."
       ],
-      "size": null
+      "size": {
+        "buses": 118,
+        "generators": 543,
+        "lines": 186,
+        "demands": 91,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 540,
+        "user_constraints": 3780,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
     },
     {
       "id": "benchmarks/papers/morales_espana_2019_cuc/ieee39",
@@ -10353,7 +10377,7 @@
       "method": "monolithic",
       "case_json": "case/cuc_ieee39.json",
       "profile": null,
-      "status": "converter_in_progress",
+      "status": null,
       "source": {
         "redistributed": false,
         "redistribution_note": "Not in this repository: the CUC-data repository has no licence. tools/get_case.py fetch morales_espana_2019_cuc/ieee39 downloads the workbook from the pinned commit and checks its sha256.",
@@ -10371,24 +10395,34 @@
       },
       "converter": {
         "tool": "cucdata2gtopt",
-        "flags": [],
+        "flags": [
+          "--system",
+          "39",
+          "--reserve",
+          "10"
+        ],
         "input": "source/CUC_IEEE39-busSystem.xlsx",
         "argv": [
           "cucdata2gtopt",
+          "--system",
+          "39",
+          "--reserve",
+          "10",
+          "--input",
           "{input}",
           "-o",
-          "{out_json}"
+          "{out_dir}"
         ],
-        "gtopt_revision": null,
-        "note": "converter in progress in gtopt (scripts/cucdata2gtopt, branch feat/cucdata2gtopt); command line provisional"
+        "gtopt_revision": "7447c1b490d477f7e0e016a69b148d9890d430ed",
+        "note": "cucdata2gtopt --system 39 --reserve 10: the paper's 10 % reserve case; defaults: paper formulation (GAMS start-up/shut-down capability and reserve-coupled ramps as user constraints), individual-unit UC on one chronological stage"
       },
       "run": {
-        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case/cuc_ieee39.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case\" -d . --solver highs",
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case/cuc_ieee39.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case\" -d . --mip-gap 1e-4",
         "tool": "gtopt_check_cases --repo \"$REPO\" --only ieee39",
         "output": "~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39",
         "resources": {
           "class": "small",
-          "guide": "unit-commitment MIP; size to be recorded once the converter is merged"
+          "guide": "24-h individual-unit UC MIP, 90 units; about 2.5 min with CPLEX (6 threads, 1e-4 gap, objective 980 822.80 EUR); HiGHS takes well over 30 min; < 2 GB RAM"
         },
         "rebuild": "tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee39"
       },
@@ -10410,9 +10444,23 @@
       },
       "notes": [
         "Recipe only: no CUC-data files and no converted case files are in this repository.",
-        "The converter (cucdata2gtopt) is not yet in gtopt master; this entry is a placeholder recipe until it is."
+        "MIP: solve with a MIP-capable solver (CPLEX, Gurobi, HiGHS, CBC, ...); never CLP. HiGHS solves it but is much slower than CPLEX here."
       ],
-      "size": null
+      "size": {
+        "buses": 30,
+        "generators": 90,
+        "lines": 41,
+        "demands": 21,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 90,
+        "user_constraints": 630,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
     }
   ],
   "results_policy": "No results of any kind are published here; run gtopt and the gtopt analysis tools with their output outside the repository (e.g. ~/gtopt-cases-out)."

@@ -33,10 +33,10 @@ Each release states the minimum gtopt version its cases need.
   - recipes only, no data redistributed (the sources have no licence):
     `benchmarks/nrel/nrel118_2024w01` (NREL-118, first week, from Sienna
     PowerSystemsTestData, `nrel118_to_gtopt`), 7 Sienna PowerSimulations.jl
-    5-bus systems in `benchmarks/sienna/` (`sienna_to_gtopt`), and the two
+    5-bus systems in `benchmarks/sienna/` (`sienna2gtopt`), and the two
     clustered unit-commitment case studies of Morales-España and
     Tejada-Arango (2019) in `benchmarks/papers/morales_espana_2019_cuc/`
-    (CUC-data; converter `cucdata2gtopt` in progress).
+    (CUC-data; converter `cucdata2gtopt`).
   Licence texts `LICENSES/CC-BY-4.0.txt` and `LICENSES/BSD-3-Clause.txt`.
 - `tools/get_case.py`: plain-file and sha256-manifest downloads from a
   pinned upstream commit, cases whose converter fetches its own data

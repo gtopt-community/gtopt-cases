@@ -6,7 +6,7 @@
 
 Small test systems of NREL's Sienna
 (PowerSimulations.jl / PowerSystemCaseBuilder.jl), each exercising one
-modelling feature, ported by gtopt's `sienna_to_gtopt`.  Their data
+modelling feature, ported by gtopt's `sienna2gtopt`.  Their data
 (`PowerSystemsTestData`) have no licence: every case here is a recipe,
 built locally by `tools/get_case.py fetch` (the converter downloads the
 pinned, sha256-checked files itself).

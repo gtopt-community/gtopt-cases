@@ -45,7 +45,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | PGLib-OPF v23.07 (IEEE PES Power Grid Library) | `benchmarks/ieee/pglib_opf_*` (9) | Authors named in each file: R. D. Christie, University of Washington (IEEE 14, 30, 57, 118, 300); IEEE (RTS-79, RTS-96, New England 39, PJM 5-bus); distributed by PGLib-OPF | **CC BY 4.0** (data licence of PGLib-OPF, repeated in each file header) | `.m` files unchanged (xz) + gtopt cases |
 | UnitCommitment.jl test fixtures | `benchmarks/unitcommitment_jl/*` (3) | UChicago Argonne, LLC (Argonne National Laboratory) | **BSD-3-Clause** (UnitCommitment.jl `LICENSE.md`, reproduced in each `source/NOTICE.md`) | fixtures unchanged (gzip) + gtopt cases |
 | Sienna PowerSystemsTestData (`118-Bus/`; `5-Bus/` and `psy_data/`) | `benchmarks/nrel/nrel118_2024w01`, `benchmarks/sienna/*` (7) | NREL / Alliance for Sustainable Energy, LLC; NREL-118 data by I. Peña, C. B. Martinez-Anido and B.-M. Hodge | **No licence** (no licence file in the repository) | **Nothing redistributed**: README, sha256 manifest and catalog entry only; `tools/get_case.py fetch` downloads the pinned commit and converts locally |
-| CUC-data (Morales-España and Tejada-Arango, 2019) | `benchmarks/papers/morales_espana_2019_cuc/*` (2) | G. Morales-España and D. A. Tejada-Arango | **No licence** (no licence file in the repository) | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads the pinned workbook (converter in progress) |
+| CUC-data (Morales-España and Tejada-Arango, 2019) | `benchmarks/papers/morales_espana_2019_cuc/*` (2) | G. Morales-España and D. A. Tejada-Arango | **No licence** (no licence file in the repository) | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads the pinned workbook and converts it with `cucdata2gtopt` |
 
 ## Details and attribution
 
@@ -215,7 +215,7 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 - Terms: **no licence** file or statement in the repository.  **Nothing
   is redistributed here**: the NREL-118 recipe lists the 125 files it
   needs with their sha256 (`upstream.sha256`); the Sienna 5-bus recipes
-  rely on gtopt's `sienna_to_gtopt`, which pins the commit and the sha256
+  rely on gtopt's `sienna2gtopt`, which pins the commit and the sha256
   of the 13 files it downloads.
 - Citation (NREL-118): I. Peña, C. B. Martinez-Anido and B.-M. Hodge, "An
   Extended IEEE 118-Bus Test System With High Renewable Penetration,"

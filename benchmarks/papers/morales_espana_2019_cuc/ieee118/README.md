@@ -10,12 +10,6 @@
 > original data belong to their authors.  See
 > [DISCLAIMER.md](../../../../DISCLAIMER.md).
 
-> [!NOTE]
-> **Converter in progress.**  `cucdata2gtopt` is being written in gtopt
-> (branch `feat/cucdata2gtopt`) and is not in gtopt master yet; the
-> command line below is provisional and `tools/get_case.py fetch` stops at
-> the conversion step until it is merged.
-
 **Recipe only: nothing of this case is redistributed here.**  The
 upstream data have no licence, so this folder holds only this README
 (and, where needed, a sha256 manifest); `tools/get_case.py fetch` downloads
@@ -33,9 +27,9 @@ code `StarGenLite_Clustered-UC.gms` of the same repository.  See the
 | Field | Value |
 |---|---|
 | Case id | `benchmarks/papers/morales_espana_2019_cuc/ieee118` |
-| Size | recorded in `catalog.json` once the case can be built |
+| Size | 118 buses, 540 units with commitment, 24 hourly blocks, 3780 user constraints |
 | Method / profile | monolithic, no profile |
-| Converter | `cucdata2gtopt` (in progress) |
+| Converter | `cucdata2gtopt --system 118 --reserve 5` |
 
 ## Source and licence
 
@@ -57,11 +51,18 @@ tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee118
 ```
 
 `fetch` downloads `CUC_IEEE118-busSystem.xlsx` into `source/`, checks its sha256 and
-runs (provisional command line):
+runs, in effect:
 
 ```bash
-cucdata2gtopt source/CUC_IEEE118-busSystem.xlsx -o case/cuc_ieee118.json
+cucdata2gtopt --system 118 --reserve 5 --input source/CUC_IEEE118-busSystem.xlsx -o case/
 ```
+
+and saves the planning JSON as `case/cuc_ieee118.json`.  `--reserve 5`
+is the paper's 5 % up / down reserve case; the converter's other
+defaults are the paper formulation (the GAMS start-up / shut-down
+capability and reserve-coupled ramps as user constraints) and an
+individual-unit commitment of the clustered units on one chronological
+stage (`cucdata2gtopt --help`).
 
 ## How to run
 
@@ -74,15 +75,14 @@ REPO=$(git rev-parse --show-toplevel)      # this checkout
 C=$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case
 OUT=~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118
 mkdir -p "$OUT/output" && cd "$OUT/output"
-gtopt "$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.json" --set input_directory="$C" -d . --solver highs
+gtopt "$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.json" --set input_directory="$C" -d . --mip-gap 1e-4
 ```
 
 - Self-contained case: no profile.
-- MIP (unit commitment): use a MIP-capable solver (HiGHS, CBC, CPLEX, Gurobi, …), never CLP.
-- Expected resources: unit-commitment MIP; size to be recorded once the converter is merged.
+- MIP (unit commitment): use a MIP-capable solver (CPLEX, Gurobi, HiGHS, CBC, …; add `--solver <name>`), never CLP.
+- Expected resources: individual-unit UC MIP; about 12 min with CPLEX (6 threads, 10⁻³ gap), 40–60 min at 10⁻⁴; HiGHS is much slower.
 
 ## Limitations
 
-- The gtopt conversion is not available yet (see the note above).
 - Any figures quoted from the paper are the paper's own results, obtained
   with the authors' GAMS model, not gtopt results.

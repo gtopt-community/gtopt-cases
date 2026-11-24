@@ -19,7 +19,7 @@ machine into the git-ignored `source/` and `case/`.
 A test system of NREL's **Sienna** PowerSimulations.jl /
 PowerSystemCaseBuilder.jl, built on the PJM 5-bus system (F. Li and R. Bo,
 2010) with Sienna's time series: a pumped-storage hydro plant, mapped to a gtopt battery with pump and turbine efficiencies.  gtopt's
-`sienna_to_gtopt` ports it to a gtopt LP (variant `pumped_storage`).
+`sienna2gtopt` ports it to a gtopt LP (variant `pumped_storage`).
 
 | Field | Value |
 |---|---|
@@ -30,13 +30,13 @@ PowerSystemCaseBuilder.jl, built on the PJM 5-bus system (F. Li and R. Bo,
 | Time | 2 block(s), 1 stage(s), 1 scenario(s), 12 h |
 | LP | 11 rows, 17 cols, 32 nonzeros (gtopt `0794d659fc37`, `--lp-only`) |
 | Method / profile | monolithic, no profile |
-| Converter | `sienna_to_gtopt` (gtopt `211c82db7`) |
+| Converter | `sienna2gtopt` (gtopt `211c82db7`) |
 
 ## Source and licence
 
 | | |
 |---|---|
-| Data | Sienna `PowerSystemsTestData`, `5-Bus/` (12 files) and `psy_data/data_5bus_pu.jl`, <https://github.com/Sienna-Platform/PowerSystemsTestData>, commit `a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9`; the file list and the sha256 of every file are pinned in gtopt `scripts/sienna_to_gtopt/_bundle.py` |
+| Data | Sienna `PowerSystemsTestData`, `5-Bus/` (12 files) and `psy_data/data_5bus_pu.jl`, <https://github.com/Sienna-Platform/PowerSystemsTestData>, commit `a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9`; the file list and the sha256 of every file are pinned in gtopt `scripts/sienna2gtopt/_bundle.py` |
 | System definitions | PowerSystemCaseBuilder.jl (BSD-3-Clause), <https://github.com/Sienna-Platform/PowerSystemCaseBuilder.jl> |
 | Licence | **None stated**: `PowerSystemsTestData` has no licence file, so the data are **not redistributed** here (the converted case is not either) |
 
@@ -54,10 +54,10 @@ tools/get_case.py fetch benchmarks/sienna/c_sys5_phes_ed
 `fetch` runs, in effect:
 
 ```bash
-sienna_to_gtopt pumped_storage -o case/c_sys5_phes_ed.json
+sienna2gtopt pumped_storage -o case/c_sys5_phes_ed.json
 ```
 
-`sienna_to_gtopt` downloads the 13 files from the pinned commit on first
+`sienna2gtopt` downloads the 13 files from the pinned commit on first
 use, checks every sha256 and caches them in `~/.cache/gtopt/sienna/`
 (`GTOPT_OFFLINE=1` forbids downloads; `GTOPT_SIENNA_DATA_DIR` points at a
 pre-staged copy).

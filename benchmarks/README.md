@@ -25,7 +25,7 @@ Each source's licence was checked before anything was copied here:
 | [unitcommitment_jl/](unitcommitment_jl/README.md) | 3 unit-commitment MIPs (IEEE 14 and 118 buses) | UnitCommitment.jl test fixtures · BSD-3-Clause | source + case |
 | [nrel/](nrel/README.md) | 1 one-week dispatch of the NREL-118 system | Sienna PowerSystemsTestData · no licence | recipe only |
 | [sienna/](sienna/README.md) | 7 small PowerSimulations.jl test systems (PJM 5-bus) | Sienna PowerSystemsTestData · no licence | recipe only |
-| [papers/](papers/README.md) | 2 clustered unit-commitment case studies (Morales-España and Tejada-Arango, 2019) | CUC-data · no licence | recipe only (converter in progress) |
+| [papers/](papers/README.md) | 2 clustered unit-commitment case studies (Morales-España and Tejada-Arango, 2019) | CUC-data · no licence | recipe only |
 
 Layout: `benchmarks/<family>/<case>/` (papers:
 `benchmarks/papers/<author_year_topic>/<case>/`) with a `README.md`,

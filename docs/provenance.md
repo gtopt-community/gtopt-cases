@@ -53,8 +53,8 @@
   redistributed**: `tools/get_case.py fetch <case>` downloads the files of
   a pinned upstream commit, checks their sha256 (in `catalog.json`, the
   case `upstream.sha256` manifest, or the converter's own manifest) and
-  converts them with `nrel118_to_gtopt`, `sienna_to_gtopt` or
-  `cucdata2gtopt` (in progress).
+  converts them with `nrel118_to_gtopt`, `sienna2gtopt` or
+  `cucdata2gtopt`.
 
 * Every case was converted with the named tool (`plexos2gtopt`,
   `plp2gtopt`, `sddp2gtopt`, `psse2gtopt`, `pp2gtopt`,

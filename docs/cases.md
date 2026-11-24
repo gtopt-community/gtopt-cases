@@ -38,7 +38,7 @@ gtopt-cases/
     ├── ieee/                PGLib-OPF IEEE systems, single-hour DC OPF (pp2gtopt)
     ├── unitcommitment_jl/   UnitCommitment.jl fixtures, unit-commitment MIP (ucjl2gtopt)
     ├── nrel/                NREL-118, recipe only (nrel118_to_gtopt)
-    ├── sienna/              Sienna PowerSimulations.jl 5-bus systems, recipe only (sienna_to_gtopt)
+    ├── sienna/              Sienna PowerSimulations.jl 5-bus systems, recipe only (sienna2gtopt)
     └── papers/              published case studies, one folder per paper
 ```
 
@@ -264,8 +264,8 @@ sources are kept with their case, the others are recipes that
 | [ieee/pglib_opf_case5_pjm](../benchmarks/ieee/pglib_opf_case5_pjm) | dc_opf | 5 | 1 | 7 | source + case |
 | [ieee/pglib_opf_case73_ieee_rts](../benchmarks/ieee/pglib_opf_case73_ieee_rts) | dc_opf | 73 | 1 | 121 | source + case |
 | [nrel/nrel118_2024w01](../benchmarks/nrel/nrel118_2024w01) | production_cost | 118 | 168 | 54,096 | recipe only |
-| [papers/morales_espana_2019_cuc/ieee118](../benchmarks/papers/morales_espana_2019_cuc/ieee118) | unit_commitment | — | — | — | recipe only (converter in progress) |
-| [papers/morales_espana_2019_cuc/ieee39](../benchmarks/papers/morales_espana_2019_cuc/ieee39) | unit_commitment | — | — | — | recipe only (converter in progress) |
+| [papers/morales_espana_2019_cuc/ieee118](../benchmarks/papers/morales_espana_2019_cuc/ieee118) | unit_commitment | 118 | 24 | — | recipe only |
+| [papers/morales_espana_2019_cuc/ieee39](../benchmarks/papers/morales_espana_2019_cuc/ieee39) | unit_commitment | 30 | 24 | — | recipe only |
 | [sienna/batt_test_case_b](../benchmarks/sienna/batt_test_case_b) | production_cost | 1 | 3 | 17 | recipe only |
 | [sienna/c_sys5_dc](../benchmarks/sienna/c_sys5_dc) | production_cost | 5 | 24 | 168 | recipe only |
 | [sienna/c_sys5_hy_cascading](../benchmarks/sienna/c_sys5_hy_cascading) | production_cost | 5 | 24 | 360 | recipe only |

@@ -5,12 +5,6 @@
 > data, who keep all rights over the data.  See the
 > [disclaimer](../../../DISCLAIMER.md).
 
-> [!NOTE]
-> **Converter in progress.**  The gtopt converter for these data,
-> `cucdata2gtopt`, is being written (gtopt branch `feat/cucdata2gtopt`)
-> and is not in gtopt master yet.  The cases below are recipes whose
-> conversion step will work once it is merged.
-
 G. Morales-España and D. A. Tejada-Arango, "Modeling the Hidden
 Flexibility of Clustered Unit Commitment," *IEEE Transactions on Power
 Systems*, vol. 34, no. 4, pp. 3294-3296, July 2019, doi:
