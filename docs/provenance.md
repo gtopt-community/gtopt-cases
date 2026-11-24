@@ -44,6 +44,18 @@
   kept unchanged in `source/` (xz) and converted with `pp2gtopt` (gtopt,
   `matpower` extra of the scripts).
 
+* **Benchmarks** (`benchmarks/`): PGLib-OPF v23.07 `.m` files (CC BY
+  4.0) and UnitCommitment.jl test fixtures (BSD-3-Clause), kept unchanged
+  in `source/` (xz; the fixtures gzip as published) and converted with
+  `pp2gtopt` and `tools/ucjl2gtopt.py`.  Sources without a licence (Sienna
+  `PowerSystemsTestData` for NREL-118 and the Sienna 5-bus systems, the
+  `CUC-data` workbooks of Morales-España and Tejada-Arango 2019) are **not
+  redistributed**: `tools/get_case.py fetch <case>` downloads the files of
+  a pinned upstream commit, checks their sha256 (in `catalog.json`, the
+  case `upstream.sha256` manifest, or the converter's own manifest) and
+  converts them with `nrel118_to_gtopt`, `sienna_to_gtopt` or
+  `cucdata2gtopt` (in progress).
+
 * Every case was converted with the named tool (`plexos2gtopt`,
   `plp2gtopt`, `sddp2gtopt`, `psse2gtopt`, `pp2gtopt`,
   `plexos2gtopt.aemo_isp`) from gtopt; rebuild with gtopt master of

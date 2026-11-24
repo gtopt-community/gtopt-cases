@@ -14,8 +14,9 @@ and research groups.  Needs gtopt **1.1.0 or later**
 > published the data**, and they must not be used as a reference for
 > official operation, planning or financial analysis.  All rights to the
 > source data remain with their publishers (AEMO, CEN, AMM, EOR, COES,
-> the SEM Committee, R. Korab / MATPOWER); no licence over that data is
-> granted here.  Read the [disclaimer](DISCLAIMER.md) and
+> the SEM Committee, R. Korab / MATPOWER, and the authors of the benchmark
+> data); no licence over that data is granted here beyond the open
+> licences under which some benchmark data are published.  Read the [disclaimer](DISCLAIMER.md) and
 > [licensing](LICENSING.md) before using any case.
 
 ## Countries
@@ -70,10 +71,26 @@ Per-case detail (demands, turbines,
 water rights, unit commitments, blocks, scenarios, LP size) is in the
 [case index](docs/cases.md) and [`catalog.json`](catalog.json).
 
+## Benchmark cases
+
+Standard test systems, example systems of other tools and published case
+studies, in [`benchmarks/`](benchmarks/README.md), grouped by family.
+Where the source has an open licence its files are kept with the case;
+otherwise the folder holds a recipe that `tools/get_case.py fetch`
+downloads (pinned commit, sha256-checked) and converts on your machine.
+
+| Family | Cases | Source · licence | In this repository |
+|---|---|---|---|
+| [**IEEE**](benchmarks/ieee/README.md) | 9 single-hour DC OPF, 5 to 300 buses (PJM 5, IEEE 14, 30, 57, 118, 300, RTS-79, RTS-96, New England 39) | PGLib-OPF v23.07 · CC BY 4.0 | source + case |
+| [**UnitCommitment.jl**](benchmarks/unitcommitment_jl/README.md) | 3 unit-commitment MIPs (IEEE 14 and 118 buses) | UnitCommitment.jl fixtures · BSD-3-Clause | source + case |
+| [**NREL**](benchmarks/nrel/README.md) | NREL-118, one week hourly | Sienna PowerSystemsTestData · no licence | recipe only |
+| [**Sienna**](benchmarks/sienna/README.md) | 7 small PowerSimulations.jl test systems (PJM 5-bus) | Sienna PowerSystemsTestData · no licence | recipe only |
+| [**Papers**](benchmarks/papers/README.md) | Morales-España and Tejada-Arango (2019), clustered UC: IEEE 39 and 118 buses | CUC-data · no licence | recipe only (converter in progress) |
+
 ## What each case contains
 
 ```
-<country>/<application>/<case>/
+<country>/<application>/<case>/     (benchmarks: benchmarks/<family>/<case>/)
 ├── README.md   what it is, how to run it, how to rebuild it
 ├── source/     the data exactly as published (xz-compressed)
 └── case/       the gtopt case built from it
@@ -83,7 +100,8 @@ Inputs only: no gtopt results, logs or solutions.  Run the cases and
 compare on your own.  A few case READMEs show figures the publisher itself
 released (e.g. CEN's PET 2027 diagnosis), with their source, as context.
 
-Where the data may not be redistributed (Ireland), or a public file is
+Where the data may not be redistributed (Ireland, the benchmark sources
+without a licence), or a public file is
 left out to keep the repository small (ten Chilean PCP days), the case
 folder holds only a recipe: `tools/get_case.py fetch <case>` downloads the
 files from the publisher, checks their hashes and converts them on your

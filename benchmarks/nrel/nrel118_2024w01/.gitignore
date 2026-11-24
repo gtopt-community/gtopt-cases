@@ -1,0 +1,4 @@
+# NREL-118 data are not redistributed: tools/get_case.py fetch nrel118_2024w01
+# downloads them into source/ and converts them into case/.
+source/
+case/

@@ -17,6 +17,33 @@ Each release states the minimum gtopt version its cases need.
 
 ### Added
 
+- **Benchmarks**: a new top-level collection, `benchmarks/`, for standard
+  test systems, example systems of other tools and published case
+  studies, grouped by family (catalog entries with
+  `"collection": "benchmarks"` and a `family`; the country entries get
+  `"collection": "countries"`):
+  - `benchmarks/ieee/`: 9 single-hour DC OPF cases from PGLib-OPF v23.07
+    (CC BY 4.0): PJM 5-bus, IEEE 14, 30, 57, 118 and 300 buses, IEEE
+    RTS-79 (24 buses) and RTS-96 (73 buses), New England 39-bus; source
+    `.m` files kept (xz), converted with `pp2gtopt`;
+  - `benchmarks/unitcommitment_jl/`: 3 unit-commitment MIPs from the
+    UnitCommitment.jl test fixtures (BSD-3-Clause): `case14`,
+    `case14_profiled`, `case118_initcond`; converted with
+    `tools/ucjl2gtopt.py --mip`;
+  - recipes only, no data redistributed (the sources have no licence):
+    `benchmarks/nrel/nrel118_2024w01` (NREL-118, first week, from Sienna
+    PowerSystemsTestData, `nrel118_to_gtopt`), 7 Sienna PowerSimulations.jl
+    5-bus systems in `benchmarks/sienna/` (`sienna_to_gtopt`), and the two
+    clustered unit-commitment case studies of Morales-España and
+    Tejada-Arango (2019) in `benchmarks/papers/morales_espana_2019_cuc/`
+    (CUC-data; converter `cucdata2gtopt` in progress).
+  Licence texts `LICENSES/CC-BY-4.0.txt` and `LICENSES/BSD-3-Clause.txt`.
+- `tools/get_case.py`: plain-file and sha256-manifest downloads from a
+  pinned upstream commit, cases whose converter fetches its own data
+  (`"fetched_by": "converter"`), converters with their own command line
+  (`converter.argv`, placeholders `{input}`, `{out_json}`, `{gtopt_src}`),
+  `.xz`/`.gz` source decompression and `flatten` of a converter's
+  time-series folder.
 - This changelog.
 - **Chile**: 14 source-only CEN PCP days, with no gtopt case built:
   test days for the study of negative nodal prices (2024-09-01,

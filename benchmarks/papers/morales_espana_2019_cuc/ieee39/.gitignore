@@ -1,0 +1,4 @@
+# CUC-data are not redistributed: tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee39
+# downloads them into source/ and converts them into case/.
+source/
+case/

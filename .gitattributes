@@ -2,6 +2,7 @@
 *.xz       binary -diff
 *.parquet  binary -diff
 *.zip      binary -diff
+*.gz       binary -diff
 
 # Generated gtopt case JSON (collapsed in GitHub diffs, excluded from
 # language statistics); the hand-maintained catalog is not generated.

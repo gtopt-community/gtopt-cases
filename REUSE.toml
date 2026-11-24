@@ -19,6 +19,8 @@ path = [
   ".gitignore",
   "ireland/**/.gitignore",
   "chile/**/.gitignore",
+  "benchmarks/**/.gitignore",
+  "benchmarks/**/upstream.sha256",
   "ruff.toml",
   "REUSE.toml",
 ]
@@ -140,6 +142,46 @@ SPDX-FileCopyrightText = [
   "2026 The gtopt authors (conversion layer only)",
 ]
 SPDX-License-Identifier = "LicenseRef-third-party-no-licence AND CC0-1.0"
+
+# ---- Benchmarks: PGLib-OPF (CC BY 4.0, holders named in each file)
+[[annotations]]
+path = "benchmarks/ieee/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "1999 Richard D. Christie, University of Washington Electrical Engineering (IEEE 14, 30, 57, 118, 300)",
+  "The Institute of Electrical and Electronics Engineers (IEEE) (RTS-79, RTS-96, New England 39, PJM 5-bus)",
+  "Distributed by PGLib-OPF (https://github.com/power-grid-lib/pglib-opf)",
+]
+SPDX-License-Identifier = "CC-BY-4.0"
+
+[[annotations]]
+path = "benchmarks/ieee/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "1999 Richard D. Christie, University of Washington Electrical Engineering (IEEE 14, 30, 57, 118, 300)",
+  "The Institute of Electrical and Electronics Engineers (IEEE) (RTS-79, RTS-96, New England 39, PJM 5-bus)",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "CC-BY-4.0 AND CC0-1.0"
+
+# ---- Benchmarks: UnitCommitment.jl fixtures (BSD-3-Clause)
+[[annotations]]
+path = "benchmarks/unitcommitment_jl/**/source/**"
+precedence = "override"
+SPDX-FileCopyrightText = "2020-2022 UChicago Argonne, LLC"
+SPDX-License-Identifier = "BSD-3-Clause"
+
+[[annotations]]
+path = "benchmarks/unitcommitment_jl/**/case/**"
+precedence = "override"
+SPDX-FileCopyrightText = [
+  "2020-2022 UChicago Argonne, LLC",
+  "2026 The gtopt authors (conversion layer only)",
+]
+SPDX-License-Identifier = "BSD-3-Clause AND CC0-1.0"
+
+# (benchmarks/nrel, benchmarks/sienna, benchmarks/papers: recipes only, no
+# third-party data in the repository)
 
 # NOTICE.md files inside source/ and case/ are written by the gtopt authors.
 [[annotations]]

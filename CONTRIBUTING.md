@@ -10,7 +10,8 @@ profiles and instructions.  It never holds results.
    [new case form](https://github.com/gtopt-community/gtopt-cases/issues/new?template=new-case.yml)
    before preparing a pull request, so the data terms can be checked
    first.
-2. Lay the case out as `<country>/<application>/<case>/` with `source/`,
+2. Lay the case out as `<country>/<application>/<case>/` (test systems
+   and published case studies: `benchmarks/<family>/<case>/`) with `source/`,
    `case/` and a `README.md` that follows the existing ones (AS-IS banner,
    provenance, how to run, how to rebuild).
 3. Add the case to `catalog.json` (including the `terms` object) and write

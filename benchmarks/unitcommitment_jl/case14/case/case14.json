@@ -1,0 +1,2704 @@
+{
+  "options": {
+    "method": "monolithic",
+    "annual_discount_rate": 0.0,
+    "output_format": "csv",
+    "output_compression": "uncompressed",
+    "model_options": {
+      "use_single_bus": false,
+      "use_kirchhoff": true,
+      "demand_fail_cost": 1000.0,
+      "scale_objective": 1.0
+    }
+  },
+  "simulation": {
+    "block_array": [
+      {
+        "uid": 1,
+        "duration": 1.0
+      },
+      {
+        "uid": 2,
+        "duration": 1.0
+      },
+      {
+        "uid": 3,
+        "duration": 1.0
+      },
+      {
+        "uid": 4,
+        "duration": 1.0
+      }
+    ],
+    "stage_array": [
+      {
+        "uid": 1,
+        "first_block": 0,
+        "count_block": 4,
+        "active": 1,
+        "chronological": true
+      }
+    ],
+    "scenario_array": [
+      {
+        "uid": 1,
+        "probability_factor": 1.0
+      }
+    ]
+  },
+  "system": {
+    "name": "case14",
+    "bus_array": [
+      {
+        "uid": 1,
+        "name": "b1"
+      },
+      {
+        "uid": 2,
+        "name": "b2"
+      },
+      {
+        "uid": 3,
+        "name": "b3"
+      },
+      {
+        "uid": 4,
+        "name": "b4"
+      },
+      {
+        "uid": 5,
+        "name": "b5"
+      },
+      {
+        "uid": 6,
+        "name": "b6"
+      },
+      {
+        "uid": 7,
+        "name": "b7"
+      },
+      {
+        "uid": 8,
+        "name": "b8"
+      },
+      {
+        "uid": 9,
+        "name": "b9"
+      },
+      {
+        "uid": 10,
+        "name": "b10"
+      },
+      {
+        "uid": 11,
+        "name": "b11"
+      },
+      {
+        "uid": 12,
+        "name": "b12"
+      },
+      {
+        "uid": 13,
+        "name": "b13"
+      },
+      {
+        "uid": 14,
+        "name": "b14"
+      }
+    ],
+    "fuel_array": [
+      {
+        "uid": 1,
+        "name": "_ucjl_unit",
+        "price": 1.0
+      }
+    ],
+    "generator_array": [
+      {
+        "uid": 1,
+        "name": "g1",
+        "bus": 1,
+        "pmin": 0.0,
+        "pmax": 135.0,
+        "gcost": 0,
+        "capacity": 135.0,
+        "pmax_segments": [
+          110.0,
+          130.0,
+          135.0
+        ],
+        "heat_rate_segments": [
+          20.0,
+          30.0,
+          40.0
+        ],
+        "fuel": "_ucjl_unit"
+      },
+      {
+        "uid": 2,
+        "name": "g2",
+        "bus": 2,
+        "pmin": 0.0,
+        "pmax": 140.0,
+        "gcost": 0,
+        "capacity": 140.0,
+        "pmax_segments": [
+          47.0,
+          94.0,
+          140.0
+        ],
+        "heat_rate_segments": [
+          48.0,
+          52.71,
+          57.87
+        ],
+        "fuel": "_ucjl_unit"
+      },
+      {
+        "uid": 3,
+        "name": "g3",
+        "bus": 3,
+        "pmin": 0.0,
+        "pmax": 100.0,
+        "gcost": 0,
+        "capacity": 100.0,
+        "pmax_segments": [
+          33.0,
+          66.0,
+          100.0
+        ],
+        "heat_rate_segments": [
+          33.75,
+          38.04,
+          44.778529
+        ],
+        "fuel": "_ucjl_unit"
+      },
+      {
+        "uid": 4,
+        "name": "g4",
+        "bus": 6,
+        "pmin": 0.0,
+        "pmax": 100.0,
+        "gcost": 0,
+        "capacity": 100.0,
+        "pmax_segments": [
+          66.0,
+          100.0
+        ],
+        "heat_rate_segments": [
+          38.04,
+          44.778529
+        ],
+        "fuel": "_ucjl_unit"
+      },
+      {
+        "uid": 5,
+        "name": "g5",
+        "bus": 8,
+        "pmin": 0.0,
+        "pmax": 100.0,
+        "gcost": 0,
+        "capacity": 100.0,
+        "pmax_segments": [
+          66.0,
+          100.0
+        ],
+        "heat_rate_segments": [
+          38.04,
+          44.778529
+        ],
+        "fuel": "_ucjl_unit"
+      },
+      {
+        "uid": 6,
+        "name": "g6",
+        "bus": 8,
+        "pmin": 0.0,
+        "pmax": 100.0,
+        "gcost": 100.0,
+        "capacity": 100.0
+      }
+    ],
+    "demand_array": [
+      {
+        "uid": 1,
+        "name": "d1",
+        "bus": 2,
+        "lmax": [
+          [
+            26.01527,
+            24.46212,
+            23.29725,
+            22.90897
+          ]
+        ]
+      },
+      {
+        "uid": 2,
+        "name": "d2",
+        "bus": 3,
+        "lmax": [
+          [
+            112.93263,
+            106.19039,
+            101.1337,
+            99.44814
+          ]
+        ]
+      },
+      {
+        "uid": 3,
+        "name": "d3",
+        "bus": 4,
+        "lmax": [
+          [
+            57.30552,
+            53.88429,
+            51.31838,
+            50.46307
+          ]
+        ]
+      },
+      {
+        "uid": 4,
+        "name": "d4",
+        "bus": 5,
+        "lmax": [
+          [
+            9.11134,
+            8.56738,
+            8.15941,
+            8.02342
+          ]
+        ]
+      },
+      {
+        "uid": 5,
+        "name": "d5",
+        "bus": 6,
+        "lmax": [
+          [
+            13.42723,
+            12.62561,
+            12.02439,
+            11.82398
+          ]
+        ]
+      },
+      {
+        "uid": 6,
+        "name": "d6",
+        "bus": 9,
+        "lmax": [
+          [
+            35.36638,
+            33.25495,
+            31.67138,
+            31.14353
+          ]
+        ]
+      },
+      {
+        "uid": 7,
+        "name": "d7",
+        "bus": 10,
+        "lmax": [
+          [
+            10.78974,
+            10.14558,
+            9.66246,
+            9.50141
+          ]
+        ]
+      },
+      {
+        "uid": 8,
+        "name": "d8",
+        "bus": 11,
+        "lmax": [
+          [
+            4.19601,
+            3.9455,
+            3.75762,
+            3.69499
+          ]
+        ]
+      },
+      {
+        "uid": 9,
+        "name": "d9",
+        "bus": 12,
+        "lmax": [
+          [
+            7.31305,
+            6.87645,
+            6.549,
+            6.43985
+          ]
+        ]
+      },
+      {
+        "uid": 10,
+        "name": "d10",
+        "bus": 13,
+        "lmax": [
+          [
+            16.18461,
+            15.21837,
+            14.49368,
+            14.25212
+          ]
+        ]
+      },
+      {
+        "uid": 11,
+        "name": "d11",
+        "bus": 14,
+        "lmax": [
+          [
+            17.86302,
+            16.79657,
+            15.99673,
+            15.73012
+          ]
+        ]
+      },
+      {
+        "uid": 12,
+        "name": "ps1",
+        "bus": 3,
+        "lmax": [
+          [
+            50.0,
+            50.0,
+            50.0,
+            50.0
+          ]
+        ],
+        "fcost": 100.0
+      }
+    ],
+    "line_array": [
+      {
+        "uid": 1,
+        "name": "l1",
+        "bus_a": 1,
+        "bus_b": 2,
+        "reactance": 0.05917,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 2,
+        "name": "l2",
+        "bus_a": 1,
+        "bus_b": 5,
+        "reactance": 0.22304,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 3,
+        "name": "l3",
+        "bus_a": 2,
+        "bus_b": 3,
+        "reactance": 0.19797,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 4,
+        "name": "l4",
+        "bus_a": 2,
+        "bus_b": 4,
+        "reactance": 0.17632,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 5,
+        "name": "l5",
+        "bus_a": 2,
+        "bus_b": 5,
+        "reactance": 0.17388,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 6,
+        "name": "l6",
+        "bus_a": 3,
+        "bus_b": 4,
+        "reactance": 0.17103,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 7,
+        "name": "l7",
+        "bus_a": 4,
+        "bus_b": 5,
+        "reactance": 0.04211,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 8,
+        "name": "l8",
+        "bus_a": 4,
+        "bus_b": 7,
+        "reactance": 0.20912,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 9,
+        "name": "l9",
+        "bus_a": 4,
+        "bus_b": 9,
+        "reactance": 0.55618,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 10,
+        "name": "l10",
+        "bus_a": 5,
+        "bus_b": 6,
+        "reactance": 0.25202,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 11,
+        "name": "l11",
+        "bus_a": 6,
+        "bus_b": 11,
+        "reactance": 0.1989,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 12,
+        "name": "l12",
+        "bus_a": 6,
+        "bus_b": 12,
+        "reactance": 0.25581,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 13,
+        "name": "l13",
+        "bus_a": 6,
+        "bus_b": 13,
+        "reactance": 0.13027,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 14,
+        "name": "l14",
+        "bus_a": 7,
+        "bus_b": 8,
+        "reactance": 0.17615,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 15,
+        "name": "l15",
+        "bus_a": 7,
+        "bus_b": 9,
+        "reactance": 0.11001,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 16,
+        "name": "l16",
+        "bus_a": 9,
+        "bus_b": 10,
+        "reactance": 0.0845,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 17,
+        "name": "l17",
+        "bus_a": 9,
+        "bus_b": 14,
+        "reactance": 0.27038,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 18,
+        "name": "l18",
+        "bus_a": 10,
+        "bus_b": 11,
+        "reactance": 0.19207,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 19,
+        "name": "l19",
+        "bus_a": 12,
+        "bus_b": 13,
+        "reactance": 0.19988,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      },
+      {
+        "uid": 20,
+        "name": "l20",
+        "bus_a": 13,
+        "bus_b": 14,
+        "reactance": 0.34802,
+        "tmax_ab": 99999.0,
+        "tmax_ba": 99999.0
+      }
+    ],
+    "commitment_array": [
+      {
+        "uid": 1,
+        "name": "g1_uc",
+        "generator": "g1",
+        "relax": false,
+        "pmin": 100.0,
+        "initial_status": 0.0,
+        "initial_hours": 100.0,
+        "initial_power": 0.0,
+        "hot_start_cost": 1000.0,
+        "warm_start_cost": 1500.0,
+        "cold_start_cost": 2000.0,
+        "hot_start_time": 1.0,
+        "cold_start_time": 3.0,
+        "noload_cost": -600.0
+      },
+      {
+        "uid": 2,
+        "name": "g2_uc",
+        "generator": "g2",
+        "relax": false,
+        "min_up_time": 4,
+        "min_down_time": 4,
+        "ramp_up": 98.0,
+        "ramp_down": 98.0,
+        "startup_ramp": 98.0,
+        "shutdown_ramp": 98.0,
+        "initial_status": 0.0,
+        "initial_hours": 8.0,
+        "initial_power": 0.0,
+        "hot_start_cost": 3000.0,
+        "cold_start_cost": 4000.0,
+        "hot_start_time": 1.0,
+        "cold_start_time": 4.0
+      },
+      {
+        "uid": 3,
+        "name": "g3_uc",
+        "generator": "g3",
+        "relax": false,
+        "min_up_time": 1,
+        "min_down_time": 1,
+        "ramp_up": 70.0,
+        "ramp_down": 70.0,
+        "startup_ramp": 70.0,
+        "shutdown_ramp": 70.0,
+        "initial_status": 0.0,
+        "initial_hours": 6.0,
+        "initial_power": 0.0,
+        "hot_start_cost": 1000.0,
+        "warm_start_cost": 2000.0,
+        "cold_start_cost": 3000.0,
+        "hot_start_time": 1.0,
+        "cold_start_time": 8.0
+      },
+      {
+        "uid": 4,
+        "name": "g4_uc",
+        "generator": "g4",
+        "relax": false,
+        "pmin": 33.0,
+        "initial_status": 0.0,
+        "initial_hours": 100.0,
+        "initial_power": 0.0,
+        "noload_cost": -141.57
+      },
+      {
+        "uid": 5,
+        "name": "g5_uc",
+        "generator": "g5",
+        "relax": false,
+        "pmin": 33.0,
+        "initial_status": 0.0,
+        "initial_hours": 100.0,
+        "initial_power": 0.0,
+        "noload_cost": -141.57
+      },
+      {
+        "uid": 6,
+        "name": "g6_uc",
+        "generator": "g6",
+        "relax": false,
+        "pmin": 100.0,
+        "initial_status": 0.0,
+        "initial_hours": 100.0,
+        "initial_power": 0.0
+      }
+    ],
+    "reserve_zone_array": [
+      {
+        "uid": 1,
+        "name": "r1",
+        "urreq": [
+          [
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        ],
+        "urcost": 1000.0
+      }
+    ],
+    "reserve_provision_array": [
+      {
+        "uid": 1,
+        "name": "g2_rp",
+        "generator": "g2",
+        "reserve_zones": [
+          "r1"
+        ],
+        "urmax": [
+          [
+            140.0,
+            140.0,
+            140.0,
+            140.0
+          ]
+        ],
+        "ur_provision_factor": 1.0
+      },
+      {
+        "uid": 2,
+        "name": "g3_rp",
+        "generator": "g3",
+        "reserve_zones": [
+          "r1"
+        ],
+        "urmax": [
+          [
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        ],
+        "ur_provision_factor": 1.0
+      },
+      {
+        "uid": 3,
+        "name": "g4_rp",
+        "generator": "g4",
+        "reserve_zones": [
+          "r1"
+        ],
+        "urmax": [
+          [
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        ],
+        "ur_provision_factor": 1.0
+      },
+      {
+        "uid": 4,
+        "name": "g5_rp",
+        "generator": "g5",
+        "reserve_zones": [
+          "r1"
+        ],
+        "urmax": [
+          [
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        ],
+        "ur_provision_factor": 1.0
+      },
+      {
+        "uid": 5,
+        "name": "g6_rp",
+        "generator": "g6",
+        "reserve_zones": [
+          "r1"
+        ],
+        "urmax": [
+          [
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        ],
+        "ur_provision_factor": 1.0
+      }
+    ],
+    "battery_array": [],
+    "user_constraint_array": [
+      {
+        "uid": 1,
+        "name": "ctg_l1_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 1.000000 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 2,
+        "name": "ctg_l1_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 1.000000 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 3,
+        "name": "ctg_l1_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + -0.168814 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 4,
+        "name": "ctg_l1_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + -0.168814 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 5,
+        "name": "ctg_l1_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + -0.353292 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 6,
+        "name": "ctg_l1_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + -0.353292 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 7,
+        "name": "ctg_l1_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + -0.477894 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 8,
+        "name": "ctg_l1_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + -0.477894 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 9,
+        "name": "ctg_l1_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + -0.168814 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 10,
+        "name": "ctg_l1_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + -0.168814 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 11,
+        "name": "ctg_l1_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.494035 * line('l1').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 12,
+        "name": "ctg_l1_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.494035 * line('l1').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 13,
+        "name": "ctg_l2_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + 1.000000 * line('l2').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 14,
+        "name": "ctg_l2_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + 1.000000 * line('l2').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 15,
+        "name": "ctg_l2_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + 0.168814 * line('l2').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 16,
+        "name": "ctg_l2_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + 0.168814 * line('l2').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 17,
+        "name": "ctg_l2_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + 0.353292 * line('l2').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 18,
+        "name": "ctg_l2_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + 0.353292 * line('l2').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 19,
+        "name": "ctg_l2_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + 0.477894 * line('l2').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 20,
+        "name": "ctg_l2_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + 0.477894 * line('l2').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 21,
+        "name": "ctg_l2_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + 0.168814 * line('l2').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 22,
+        "name": "ctg_l2_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + 0.168814 * line('l2').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 23,
+        "name": "ctg_l2_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.494035 * line('l2').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 24,
+        "name": "ctg_l2_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.494035 * line('l2').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 25,
+        "name": "ctg_l3_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + -0.207627 * line('l3').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 26,
+        "name": "ctg_l3_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + -0.207627 * line('l3').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 27,
+        "name": "ctg_l3_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 0.207627 * line('l3').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 28,
+        "name": "ctg_l3_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 0.207627 * line('l3').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 29,
+        "name": "ctg_l3_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + 0.455392 * line('l3').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 30,
+        "name": "ctg_l3_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + 0.455392 * line('l3').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 31,
+        "name": "ctg_l3_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + 0.336981 * line('l3').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 32,
+        "name": "ctg_l3_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + 0.336981 * line('l3').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 33,
+        "name": "ctg_l3_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + -1.000000 * line('l3').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 34,
+        "name": "ctg_l3_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + -1.000000 * line('l3').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 35,
+        "name": "ctg_l3_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.515327 * line('l3').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 36,
+        "name": "ctg_l3_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.515327 * line('l3').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 37,
+        "name": "ctg_l4_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + -0.272401 * line('l4').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 38,
+        "name": "ctg_l4_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + -0.272401 * line('l4').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 39,
+        "name": "ctg_l4_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 0.272401 * line('l4').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 40,
+        "name": "ctg_l4_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 0.272401 * line('l4').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 41,
+        "name": "ctg_l4_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + 0.285487 * line('l4').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 42,
+        "name": "ctg_l4_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + 0.285487 * line('l4').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 43,
+        "name": "ctg_l4_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + 0.442112 * line('l4').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 44,
+        "name": "ctg_l4_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + 0.442112 * line('l4').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 45,
+        "name": "ctg_l4_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + 0.285487 * line('l4').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 46,
+        "name": "ctg_l4_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + 0.285487 * line('l4').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 47,
+        "name": "ctg_l4_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.676097 * line('l4').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 48,
+        "name": "ctg_l4_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.676097 * line('l4').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 49,
+        "name": "ctg_l5_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + -0.360598 * line('l5').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 50,
+        "name": "ctg_l5_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + -0.360598 * line('l5').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 51,
+        "name": "ctg_l5_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 0.360598 * line('l5').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 52,
+        "name": "ctg_l5_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 0.360598 * line('l5').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 53,
+        "name": "ctg_l5_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + 0.206740 * line('l5').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 54,
+        "name": "ctg_l5_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + 0.206740 * line('l5').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 55,
+        "name": "ctg_l5_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + 0.432662 * line('l5').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 56,
+        "name": "ctg_l5_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + 0.432662 * line('l5').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 57,
+        "name": "ctg_l5_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + 0.206740 * line('l5').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 58,
+        "name": "ctg_l5_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + 0.206740 * line('l5').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 59,
+        "name": "ctg_l5_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.605024 * line('l5').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 60,
+        "name": "ctg_l5_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.605024 * line('l5').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 61,
+        "name": "ctg_l6_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + -0.207627 * line('l6').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 62,
+        "name": "ctg_l6_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + -0.207627 * line('l6').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 63,
+        "name": "ctg_l6_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 0.207627 * line('l6').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 64,
+        "name": "ctg_l6_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 0.207627 * line('l6').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 65,
+        "name": "ctg_l6_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + -1.000000 * line('l6').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 66,
+        "name": "ctg_l6_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + -1.000000 * line('l6').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 67,
+        "name": "ctg_l6_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + 0.455392 * line('l6').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 68,
+        "name": "ctg_l6_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + 0.455392 * line('l6').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 69,
+        "name": "ctg_l6_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + 0.336981 * line('l6').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 70,
+        "name": "ctg_l6_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + 0.336981 * line('l6').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 71,
+        "name": "ctg_l6_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.515327 * line('l6').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 72,
+        "name": "ctg_l6_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.515327 * line('l6').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 73,
+        "name": "ctg_l7_mon_l1_upper",
+        "expression": "1.0 * line('l1').flow + -0.291879 * line('l7').flow <= 400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 74,
+        "name": "ctg_l7_mon_l1_lower",
+        "expression": "1.0 * line('l1').flow + -0.291879 * line('l7').flow >= -400.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 75,
+        "name": "ctg_l7_mon_l2_upper",
+        "expression": "1.0 * line('l2').flow + 0.291879 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 76,
+        "name": "ctg_l7_mon_l2_lower",
+        "expression": "1.0 * line('l2').flow + 0.291879 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 77,
+        "name": "ctg_l7_mon_l3_upper",
+        "expression": "1.0 * line('l3').flow + -0.247545 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 78,
+        "name": "ctg_l7_mon_l3_lower",
+        "expression": "1.0 * line('l3').flow + -0.247545 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 79,
+        "name": "ctg_l7_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + -0.518058 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 80,
+        "name": "ctg_l7_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + -0.518058 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 81,
+        "name": "ctg_l7_mon_l5_upper",
+        "expression": "1.0 * line('l5').flow + 0.473724 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 82,
+        "name": "ctg_l7_mon_l5_lower",
+        "expression": "1.0 * line('l5').flow + 0.473724 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 83,
+        "name": "ctg_l7_mon_l6_upper",
+        "expression": "1.0 * line('l6').flow + -0.247545 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 84,
+        "name": "ctg_l7_mon_l6_lower",
+        "expression": "1.0 * line('l6').flow + -0.247545 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 85,
+        "name": "ctg_l7_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.148938 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 86,
+        "name": "ctg_l7_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.148938 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 87,
+        "name": "ctg_l7_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + -0.234397 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 88,
+        "name": "ctg_l7_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + -0.234397 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 89,
+        "name": "ctg_l7_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + -0.141148 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 90,
+        "name": "ctg_l7_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + -0.141148 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 91,
+        "name": "ctg_l7_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.148938 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 92,
+        "name": "ctg_l7_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.148938 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 93,
+        "name": "ctg_l7_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + 0.141148 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 94,
+        "name": "ctg_l7_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + 0.141148 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 95,
+        "name": "ctg_l7_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + 0.141148 * line('l7').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 96,
+        "name": "ctg_l7_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + 0.141148 * line('l7').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 97,
+        "name": "ctg_l8_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.415135 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 98,
+        "name": "ctg_l8_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.415135 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 99,
+        "name": "ctg_l8_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + 0.507821 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 100,
+        "name": "ctg_l8_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + 0.507821 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 101,
+        "name": "ctg_l8_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.492179 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 102,
+        "name": "ctg_l8_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.492179 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 103,
+        "name": "ctg_l8_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 0.296379 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 104,
+        "name": "ctg_l8_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 0.296379 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 105,
+        "name": "ctg_l8_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.152270 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 106,
+        "name": "ctg_l8_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.152270 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 107,
+        "name": "ctg_l8_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + -1.000000 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 108,
+        "name": "ctg_l8_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + -1.000000 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 109,
+        "name": "ctg_l8_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -0.296379 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 110,
+        "name": "ctg_l8_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -0.296379 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 111,
+        "name": "ctg_l8_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + -0.195800 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 112,
+        "name": "ctg_l8_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + -0.195800 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 113,
+        "name": "ctg_l8_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -0.296379 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 114,
+        "name": "ctg_l8_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -0.296379 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 115,
+        "name": "ctg_l8_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + 0.195800 * line('l8').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 116,
+        "name": "ctg_l8_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + 0.195800 * line('l8').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 117,
+        "name": "ctg_l9_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.301432 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 118,
+        "name": "ctg_l9_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.301432 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 119,
+        "name": "ctg_l9_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.642626 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 120,
+        "name": "ctg_l9_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.642626 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 121,
+        "name": "ctg_l9_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.357374 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 122,
+        "name": "ctg_l9_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.357374 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 123,
+        "name": "ctg_l9_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 0.215202 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 124,
+        "name": "ctg_l9_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 0.215202 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 125,
+        "name": "ctg_l9_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.110564 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 126,
+        "name": "ctg_l9_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.110564 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 127,
+        "name": "ctg_l9_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.642626 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 128,
+        "name": "ctg_l9_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.642626 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 129,
+        "name": "ctg_l9_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -0.215202 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 130,
+        "name": "ctg_l9_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -0.215202 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 131,
+        "name": "ctg_l9_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + -0.142172 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 132,
+        "name": "ctg_l9_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + -0.142172 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 133,
+        "name": "ctg_l9_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -0.215202 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 134,
+        "name": "ctg_l9_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -0.215202 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 135,
+        "name": "ctg_l9_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + 0.142172 * line('l9').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 136,
+        "name": "ctg_l9_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + 0.142172 * line('l9').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 137,
+        "name": "ctg_l10_mon_l4_upper",
+        "expression": "1.0 * line('l4').flow + 0.105923 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 138,
+        "name": "ctg_l10_mon_l4_lower",
+        "expression": "1.0 * line('l4').flow + 0.105923 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 139,
+        "name": "ctg_l10_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.843463 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 140,
+        "name": "ctg_l10_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.843463 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 141,
+        "name": "ctg_l10_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.635409 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 142,
+        "name": "ctg_l10_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.635409 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 143,
+        "name": "ctg_l10_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + 0.364591 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 144,
+        "name": "ctg_l10_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + 0.364591 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 145,
+        "name": "ctg_l10_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + -0.602177 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 146,
+        "name": "ctg_l10_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + -0.602177 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 147,
+        "name": "ctg_l10_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + -0.309380 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 148,
+        "name": "ctg_l10_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + -0.309380 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 149,
+        "name": "ctg_l10_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.635409 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 150,
+        "name": "ctg_l10_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.635409 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 151,
+        "name": "ctg_l10_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + 0.602177 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 152,
+        "name": "ctg_l10_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + 0.602177 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 153,
+        "name": "ctg_l10_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.397823 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 154,
+        "name": "ctg_l10_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.397823 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 155,
+        "name": "ctg_l10_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + 0.602177 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 156,
+        "name": "ctg_l10_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + 0.602177 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 157,
+        "name": "ctg_l10_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.397823 * line('l10').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 158,
+        "name": "ctg_l10_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.397823 * line('l10').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 159,
+        "name": "ctg_l11_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.501682 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 160,
+        "name": "ctg_l11_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.501682 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 161,
+        "name": "ctg_l11_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.377934 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 162,
+        "name": "ctg_l11_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.377934 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 163,
+        "name": "ctg_l11_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + 0.216854 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 164,
+        "name": "ctg_l11_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + 0.216854 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 165,
+        "name": "ctg_l11_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + -0.594788 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 166,
+        "name": "ctg_l11_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + -0.594788 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 167,
+        "name": "ctg_l11_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.315126 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 168,
+        "name": "ctg_l11_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.315126 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 169,
+        "name": "ctg_l11_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.377934 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 170,
+        "name": "ctg_l11_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.377934 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 171,
+        "name": "ctg_l11_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + 1.000000 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 172,
+        "name": "ctg_l11_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + 1.000000 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 173,
+        "name": "ctg_l11_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + -0.405212 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 174,
+        "name": "ctg_l11_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + -0.405212 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 175,
+        "name": "ctg_l11_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + 1.000000 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 176,
+        "name": "ctg_l11_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + 1.000000 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 177,
+        "name": "ctg_l11_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + 0.405212 * line('l11').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 178,
+        "name": "ctg_l11_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + 0.405212 * line('l11').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 179,
+        "name": "ctg_l12_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.868422 * line('l12').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 180,
+        "name": "ctg_l12_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.868422 * line('l12').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 181,
+        "name": "ctg_l12_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.131578 * line('l12').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 182,
+        "name": "ctg_l12_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.131578 * line('l12').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 183,
+        "name": "ctg_l12_mon_l19_upper",
+        "expression": "1.0 * line('l19').flow + -1.000000 * line('l12').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 184,
+        "name": "ctg_l12_mon_l19_lower",
+        "expression": "1.0 * line('l19').flow + -1.000000 * line('l12').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 185,
+        "name": "ctg_l12_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.131578 * line('l12').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 186,
+        "name": "ctg_l12_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.131578 * line('l12').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 187,
+        "name": "ctg_l13_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.143845 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 188,
+        "name": "ctg_l13_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.143845 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 189,
+        "name": "ctg_l13_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.108363 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 190,
+        "name": "ctg_l13_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.108363 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 191,
+        "name": "ctg_l13_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + -0.170540 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 192,
+        "name": "ctg_l13_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + -0.170540 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 193,
+        "name": "ctg_l13_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 0.175866 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 194,
+        "name": "ctg_l13_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 0.175866 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 195,
+        "name": "ctg_l13_mon_l12_upper",
+        "expression": "1.0 * line('l12').flow + 0.653594 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 196,
+        "name": "ctg_l13_mon_l12_lower",
+        "expression": "1.0 * line('l12').flow + 0.653594 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 197,
+        "name": "ctg_l13_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.108363 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 198,
+        "name": "ctg_l13_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.108363 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 199,
+        "name": "ctg_l13_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -0.175866 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 200,
+        "name": "ctg_l13_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -0.175866 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 201,
+        "name": "ctg_l13_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.346406 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 202,
+        "name": "ctg_l13_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.346406 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 203,
+        "name": "ctg_l13_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -0.175866 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 204,
+        "name": "ctg_l13_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -0.175866 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 205,
+        "name": "ctg_l13_mon_l19_upper",
+        "expression": "1.0 * line('l19').flow + 0.653594 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 206,
+        "name": "ctg_l13_mon_l19_lower",
+        "expression": "1.0 * line('l19').flow + 0.653594 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 207,
+        "name": "ctg_l13_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.346406 * line('l13').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 208,
+        "name": "ctg_l13_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.346406 * line('l13').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 209,
+        "name": "ctg_l15_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.415135 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 210,
+        "name": "ctg_l15_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.415135 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 211,
+        "name": "ctg_l15_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + -1.000000 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 212,
+        "name": "ctg_l15_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + -1.000000 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 213,
+        "name": "ctg_l15_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + 0.507821 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 214,
+        "name": "ctg_l15_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + 0.507821 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 215,
+        "name": "ctg_l15_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.492179 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 216,
+        "name": "ctg_l15_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.492179 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 217,
+        "name": "ctg_l15_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 0.296379 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 218,
+        "name": "ctg_l15_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 0.296379 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 219,
+        "name": "ctg_l15_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.152270 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 220,
+        "name": "ctg_l15_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.152270 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 221,
+        "name": "ctg_l15_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -0.296379 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 222,
+        "name": "ctg_l15_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -0.296379 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 223,
+        "name": "ctg_l15_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + -0.195800 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 224,
+        "name": "ctg_l15_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + -0.195800 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 225,
+        "name": "ctg_l15_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -0.296379 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 226,
+        "name": "ctg_l15_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -0.296379 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 227,
+        "name": "ctg_l15_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + 0.195800 * line('l15').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 228,
+        "name": "ctg_l15_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + 0.195800 * line('l15').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 229,
+        "name": "ctg_l16_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.501682 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 230,
+        "name": "ctg_l16_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.501682 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 231,
+        "name": "ctg_l16_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + -0.377934 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 232,
+        "name": "ctg_l16_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + -0.377934 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 233,
+        "name": "ctg_l16_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + -0.216854 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 234,
+        "name": "ctg_l16_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + -0.216854 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 235,
+        "name": "ctg_l16_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.594788 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 236,
+        "name": "ctg_l16_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.594788 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 237,
+        "name": "ctg_l16_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 1.000000 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 238,
+        "name": "ctg_l16_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 1.000000 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 239,
+        "name": "ctg_l16_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + -0.315126 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 240,
+        "name": "ctg_l16_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + -0.315126 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 241,
+        "name": "ctg_l16_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + -0.377934 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 242,
+        "name": "ctg_l16_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + -0.377934 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 243,
+        "name": "ctg_l16_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.405212 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 244,
+        "name": "ctg_l16_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.405212 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 245,
+        "name": "ctg_l16_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -1.000000 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 246,
+        "name": "ctg_l16_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -1.000000 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 247,
+        "name": "ctg_l16_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.405212 * line('l16').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 248,
+        "name": "ctg_l16_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.405212 * line('l16').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 249,
+        "name": "ctg_l17_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.415248 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 250,
+        "name": "ctg_l17_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.415248 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 251,
+        "name": "ctg_l17_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + -0.312821 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 252,
+        "name": "ctg_l17_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + -0.312821 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 253,
+        "name": "ctg_l17_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + -0.179493 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 254,
+        "name": "ctg_l17_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + -0.179493 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 255,
+        "name": "ctg_l17_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.492314 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 256,
+        "name": "ctg_l17_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.492314 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 257,
+        "name": "ctg_l17_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + -0.507686 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 258,
+        "name": "ctg_l17_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + -0.507686 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 259,
+        "name": "ctg_l17_mon_l12_upper",
+        "expression": "1.0 * line('l12').flow + 0.222319 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 260,
+        "name": "ctg_l17_mon_l12_lower",
+        "expression": "1.0 * line('l12').flow + 0.222319 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 261,
+        "name": "ctg_l17_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.777681 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 262,
+        "name": "ctg_l17_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.777681 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 263,
+        "name": "ctg_l17_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + -0.312821 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 264,
+        "name": "ctg_l17_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + -0.312821 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 265,
+        "name": "ctg_l17_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + 0.507686 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 266,
+        "name": "ctg_l17_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + 0.507686 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 267,
+        "name": "ctg_l17_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + 0.507686 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 268,
+        "name": "ctg_l17_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + 0.507686 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 269,
+        "name": "ctg_l17_mon_l19_upper",
+        "expression": "1.0 * line('l19').flow + 0.222319 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 270,
+        "name": "ctg_l17_mon_l19_lower",
+        "expression": "1.0 * line('l19').flow + 0.222319 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 271,
+        "name": "ctg_l17_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + 1.000000 * line('l17').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 272,
+        "name": "ctg_l17_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + 1.000000 * line('l17').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 273,
+        "name": "ctg_l18_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + 0.501682 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 274,
+        "name": "ctg_l18_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + 0.501682 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 275,
+        "name": "ctg_l18_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + -0.377934 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 276,
+        "name": "ctg_l18_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + -0.377934 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 277,
+        "name": "ctg_l18_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + -0.216854 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 278,
+        "name": "ctg_l18_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + -0.216854 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 279,
+        "name": "ctg_l18_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + 0.594788 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 280,
+        "name": "ctg_l18_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + 0.594788 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 281,
+        "name": "ctg_l18_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 1.000000 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 282,
+        "name": "ctg_l18_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 1.000000 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 283,
+        "name": "ctg_l18_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + -0.315126 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 284,
+        "name": "ctg_l18_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + -0.315126 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 285,
+        "name": "ctg_l18_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + -0.377934 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 286,
+        "name": "ctg_l18_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + -0.377934 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 287,
+        "name": "ctg_l18_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -1.000000 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 288,
+        "name": "ctg_l18_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -1.000000 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 289,
+        "name": "ctg_l18_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.405212 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 290,
+        "name": "ctg_l18_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.405212 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 291,
+        "name": "ctg_l18_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.405212 * line('l18').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 292,
+        "name": "ctg_l18_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.405212 * line('l18').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 293,
+        "name": "ctg_l19_mon_l12_upper",
+        "expression": "1.0 * line('l12').flow + -1.000000 * line('l19').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 294,
+        "name": "ctg_l19_mon_l12_lower",
+        "expression": "1.0 * line('l12').flow + -1.000000 * line('l19').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 295,
+        "name": "ctg_l19_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + 0.868422 * line('l19').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 296,
+        "name": "ctg_l19_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + 0.868422 * line('l19').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 297,
+        "name": "ctg_l19_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 0.131578 * line('l19').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 298,
+        "name": "ctg_l19_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 0.131578 * line('l19').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 299,
+        "name": "ctg_l19_mon_l20_upper",
+        "expression": "1.0 * line('l20').flow + -0.131578 * line('l19').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 300,
+        "name": "ctg_l19_mon_l20_lower",
+        "expression": "1.0 * line('l20').flow + -0.131578 * line('l19').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 301,
+        "name": "ctg_l20_mon_l7_upper",
+        "expression": "1.0 * line('l7').flow + -0.415248 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 302,
+        "name": "ctg_l20_mon_l7_lower",
+        "expression": "1.0 * line('l7').flow + -0.415248 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 303,
+        "name": "ctg_l20_mon_l8_upper",
+        "expression": "1.0 * line('l8').flow + 0.312821 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 304,
+        "name": "ctg_l20_mon_l8_lower",
+        "expression": "1.0 * line('l8').flow + 0.312821 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 305,
+        "name": "ctg_l20_mon_l9_upper",
+        "expression": "1.0 * line('l9').flow + 0.179493 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 306,
+        "name": "ctg_l20_mon_l9_lower",
+        "expression": "1.0 * line('l9').flow + 0.179493 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 307,
+        "name": "ctg_l20_mon_l10_upper",
+        "expression": "1.0 * line('l10').flow + -0.492314 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 308,
+        "name": "ctg_l20_mon_l10_lower",
+        "expression": "1.0 * line('l10').flow + -0.492314 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 309,
+        "name": "ctg_l20_mon_l11_upper",
+        "expression": "1.0 * line('l11').flow + 0.507686 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 310,
+        "name": "ctg_l20_mon_l11_lower",
+        "expression": "1.0 * line('l11').flow + 0.507686 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 311,
+        "name": "ctg_l20_mon_l12_upper",
+        "expression": "1.0 * line('l12').flow + -0.222319 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 312,
+        "name": "ctg_l20_mon_l12_lower",
+        "expression": "1.0 * line('l12').flow + -0.222319 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 313,
+        "name": "ctg_l20_mon_l13_upper",
+        "expression": "1.0 * line('l13').flow + -0.777681 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 314,
+        "name": "ctg_l20_mon_l13_lower",
+        "expression": "1.0 * line('l13').flow + -0.777681 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 315,
+        "name": "ctg_l20_mon_l15_upper",
+        "expression": "1.0 * line('l15').flow + 0.312821 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 316,
+        "name": "ctg_l20_mon_l15_lower",
+        "expression": "1.0 * line('l15').flow + 0.312821 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 317,
+        "name": "ctg_l20_mon_l16_upper",
+        "expression": "1.0 * line('l16').flow + -0.507686 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 318,
+        "name": "ctg_l20_mon_l16_lower",
+        "expression": "1.0 * line('l16').flow + -0.507686 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 319,
+        "name": "ctg_l20_mon_l17_upper",
+        "expression": "1.0 * line('l17').flow + 1.000000 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 320,
+        "name": "ctg_l20_mon_l17_lower",
+        "expression": "1.0 * line('l17').flow + 1.000000 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 321,
+        "name": "ctg_l20_mon_l18_upper",
+        "expression": "1.0 * line('l18').flow + -0.507686 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 322,
+        "name": "ctg_l20_mon_l18_lower",
+        "expression": "1.0 * line('l18').flow + -0.507686 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 323,
+        "name": "ctg_l20_mon_l19_upper",
+        "expression": "1.0 * line('l19').flow + -0.222319 * line('l20').flow <= 99999.0",
+        "penalty": 1000.0
+      },
+      {
+        "uid": 324,
+        "name": "ctg_l20_mon_l19_lower",
+        "expression": "1.0 * line('l19').flow + -0.222319 * line('l20').flow >= -99999.0",
+        "penalty": 1000.0
+      }
+    ],
+    "generator_profile_array": []
+  }
+}

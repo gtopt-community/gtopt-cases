@@ -1,0 +1,445 @@
+{
+  "options": {
+    "method": "monolithic",
+    "annual_discount_rate": 0.0,
+    "output_format": "csv",
+    "output_compression": "uncompressed",
+    "model_options": {
+      "use_single_bus": false,
+      "demand_fail_cost": 1000.0,
+      "scale_objective": 1000.0,
+      "use_kirchhoff": true
+    }
+  },
+  "simulation": {
+    "block_array": [
+      {
+        "uid": 1,
+        "duration": 1
+      }
+    ],
+    "stage_array": [
+      {
+        "uid": 1,
+        "first_block": 0,
+        "count_block": 1,
+        "active": 1
+      }
+    ],
+    "scenario_array": [
+      {
+        "uid": 1,
+        "probability_factor": 1
+      }
+    ]
+  },
+  "system": {
+    "name": "pglib_opf_case14_ieee",
+    "bus_array": [
+      {
+        "uid": 1,
+        "name": "b1",
+        "reference_theta": 0
+      },
+      {
+        "uid": 2,
+        "name": "b2"
+      },
+      {
+        "uid": 3,
+        "name": "b3"
+      },
+      {
+        "uid": 4,
+        "name": "b4"
+      },
+      {
+        "uid": 5,
+        "name": "b5"
+      },
+      {
+        "uid": 6,
+        "name": "b6"
+      },
+      {
+        "uid": 7,
+        "name": "b7"
+      },
+      {
+        "uid": 8,
+        "name": "b8"
+      },
+      {
+        "uid": 9,
+        "name": "b9"
+      },
+      {
+        "uid": 10,
+        "name": "b10"
+      },
+      {
+        "uid": 11,
+        "name": "b11"
+      },
+      {
+        "uid": 12,
+        "name": "b12"
+      },
+      {
+        "uid": 13,
+        "name": "b13"
+      },
+      {
+        "uid": 14,
+        "name": "b14"
+      }
+    ],
+    "generator_array": [
+      {
+        "uid": 1,
+        "name": "g1",
+        "bus": 1,
+        "pmin": 0.0,
+        "pmax": 340.0,
+        "gcost": 7.920951,
+        "capacity": 340.0
+      },
+      {
+        "uid": 2,
+        "name": "g2",
+        "bus": 2,
+        "pmin": 0.0,
+        "pmax": 59.0,
+        "gcost": 23.269494,
+        "capacity": 59.0
+      },
+      {
+        "uid": 3,
+        "name": "g3",
+        "bus": 3,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      },
+      {
+        "uid": 4,
+        "name": "g4",
+        "bus": 6,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      },
+      {
+        "uid": 5,
+        "name": "g5",
+        "bus": 8,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      }
+    ],
+    "demand_array": [
+      {
+        "uid": 1,
+        "name": "d1",
+        "bus": 2,
+        "lmax": [
+          [
+            21.7
+          ]
+        ]
+      },
+      {
+        "uid": 2,
+        "name": "d2",
+        "bus": 3,
+        "lmax": [
+          [
+            94.2
+          ]
+        ]
+      },
+      {
+        "uid": 3,
+        "name": "d3",
+        "bus": 4,
+        "lmax": [
+          [
+            47.8
+          ]
+        ]
+      },
+      {
+        "uid": 4,
+        "name": "d4",
+        "bus": 5,
+        "lmax": [
+          [
+            7.6
+          ]
+        ]
+      },
+      {
+        "uid": 5,
+        "name": "d5",
+        "bus": 6,
+        "lmax": [
+          [
+            11.2
+          ]
+        ]
+      },
+      {
+        "uid": 6,
+        "name": "d6",
+        "bus": 9,
+        "lmax": [
+          [
+            29.5
+          ]
+        ]
+      },
+      {
+        "uid": 7,
+        "name": "d7",
+        "bus": 10,
+        "lmax": [
+          [
+            9.0
+          ]
+        ]
+      },
+      {
+        "uid": 8,
+        "name": "d8",
+        "bus": 11,
+        "lmax": [
+          [
+            3.5
+          ]
+        ]
+      },
+      {
+        "uid": 9,
+        "name": "d9",
+        "bus": 12,
+        "lmax": [
+          [
+            6.1
+          ]
+        ]
+      },
+      {
+        "uid": 10,
+        "name": "d10",
+        "bus": 13,
+        "lmax": [
+          [
+            13.5
+          ]
+        ]
+      },
+      {
+        "uid": 11,
+        "name": "d11",
+        "bus": 14,
+        "lmax": [
+          [
+            14.9
+          ]
+        ]
+      }
+    ],
+    "line_array": [
+      {
+        "name": "l1_2",
+        "bus_a": 1,
+        "bus_b": 2,
+        "reactance": 0.05917,
+        "tmax_ab": 472.0,
+        "tmax_ba": 472.0,
+        "uid": 1
+      },
+      {
+        "name": "l1_5",
+        "bus_a": 1,
+        "bus_b": 5,
+        "reactance": 0.22304,
+        "tmax_ab": 128.0,
+        "tmax_ba": 128.0,
+        "uid": 2
+      },
+      {
+        "name": "l2_3",
+        "bus_a": 2,
+        "bus_b": 3,
+        "reactance": 0.19797,
+        "tmax_ab": 145.0,
+        "tmax_ba": 145.0,
+        "uid": 3
+      },
+      {
+        "name": "l2_4",
+        "bus_a": 2,
+        "bus_b": 4,
+        "reactance": 0.17632,
+        "tmax_ab": 158.0,
+        "tmax_ba": 158.0,
+        "uid": 4
+      },
+      {
+        "name": "l2_5",
+        "bus_a": 2,
+        "bus_b": 5,
+        "reactance": 0.17388,
+        "tmax_ab": 161.0,
+        "tmax_ba": 161.0,
+        "uid": 5
+      },
+      {
+        "name": "l3_4",
+        "bus_a": 3,
+        "bus_b": 4,
+        "reactance": 0.17103,
+        "tmax_ab": 160.0,
+        "tmax_ba": 160.0,
+        "uid": 6
+      },
+      {
+        "name": "l4_5",
+        "bus_a": 4,
+        "bus_b": 5,
+        "reactance": 0.04211,
+        "tmax_ab": 664.0,
+        "tmax_ba": 664.0,
+        "uid": 7
+      },
+      {
+        "name": "l6_11",
+        "bus_a": 6,
+        "bus_b": 11,
+        "reactance": 0.1989,
+        "tmax_ab": 134.0,
+        "tmax_ba": 134.0,
+        "uid": 8
+      },
+      {
+        "name": "l6_12",
+        "bus_a": 6,
+        "bus_b": 12,
+        "reactance": 0.25581,
+        "tmax_ab": 104.0,
+        "tmax_ba": 104.0,
+        "uid": 9
+      },
+      {
+        "name": "l6_13",
+        "bus_a": 6,
+        "bus_b": 13,
+        "reactance": 0.13027,
+        "tmax_ab": 201.0,
+        "tmax_ba": 201.0,
+        "uid": 10
+      },
+      {
+        "name": "l7_8",
+        "bus_a": 7,
+        "bus_b": 8,
+        "reactance": 0.17615,
+        "tmax_ab": 167.0,
+        "tmax_ba": 167.0,
+        "uid": 11
+      },
+      {
+        "name": "l7_9",
+        "bus_a": 7,
+        "bus_b": 9,
+        "reactance": 0.11001,
+        "tmax_ab": 267.0,
+        "tmax_ba": 267.0,
+        "uid": 12
+      },
+      {
+        "name": "l9_10",
+        "bus_a": 9,
+        "bus_b": 10,
+        "reactance": 0.0845,
+        "tmax_ab": 325.0,
+        "tmax_ba": 325.0,
+        "uid": 13
+      },
+      {
+        "name": "l9_14",
+        "bus_a": 9,
+        "bus_b": 14,
+        "reactance": 0.27038,
+        "tmax_ab": 99.0,
+        "tmax_ba": 99.0,
+        "uid": 14
+      },
+      {
+        "name": "l10_11",
+        "bus_a": 10,
+        "bus_b": 11,
+        "reactance": 0.19207,
+        "tmax_ab": 141.0,
+        "tmax_ba": 141.0,
+        "uid": 15
+      },
+      {
+        "name": "l12_13",
+        "bus_a": 12,
+        "bus_b": 13,
+        "reactance": 0.19988,
+        "tmax_ab": 99.0,
+        "tmax_ba": 99.0,
+        "uid": 16
+      },
+      {
+        "name": "l13_14",
+        "bus_a": 13,
+        "bus_b": 14,
+        "reactance": 0.34802,
+        "tmax_ab": 76.0,
+        "tmax_ba": 76.0,
+        "uid": 17
+      },
+      {
+        "name": "t4_7",
+        "bus_a": 4,
+        "bus_b": 7,
+        "reactance": 0.20912,
+        "type": "transformer",
+        "tmax_ab": 141.0,
+        "tmax_ba": 141.0,
+        "tap_ratio": 0.978,
+        "uid": 18
+      },
+      {
+        "name": "t4_9",
+        "bus_a": 4,
+        "bus_b": 9,
+        "reactance": 0.55618,
+        "type": "transformer",
+        "tmax_ab": 53.0,
+        "tmax_ba": 53.0,
+        "tap_ratio": 0.969,
+        "uid": 19
+      },
+      {
+        "name": "t5_6",
+        "bus_a": 5,
+        "bus_b": 6,
+        "reactance": 0.25202,
+        "type": "transformer",
+        "tmax_ab": 117.0,
+        "tmax_ba": 117.0,
+        "tap_ratio": 0.932,
+        "uid": 20
+      }
+    ]
+  }
+}

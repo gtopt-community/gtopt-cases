@@ -1,0 +1,2851 @@
+{
+  "options": {
+    "method": "monolithic",
+    "annual_discount_rate": 0.0,
+    "output_format": "csv",
+    "output_compression": "uncompressed",
+    "model_options": {
+      "use_single_bus": false,
+      "demand_fail_cost": 1000.0,
+      "scale_objective": 1000.0,
+      "use_kirchhoff": true
+    }
+  },
+  "simulation": {
+    "block_array": [
+      {
+        "uid": 1,
+        "duration": 1
+      }
+    ],
+    "stage_array": [
+      {
+        "uid": 1,
+        "first_block": 0,
+        "count_block": 1,
+        "active": 1
+      }
+    ],
+    "scenario_array": [
+      {
+        "uid": 1,
+        "probability_factor": 1
+      }
+    ]
+  },
+  "system": {
+    "name": "pglib_opf_case73_ieee_rts",
+    "bus_array": [
+      {
+        "uid": 101,
+        "name": "b101"
+      },
+      {
+        "uid": 102,
+        "name": "b102"
+      },
+      {
+        "uid": 103,
+        "name": "b103"
+      },
+      {
+        "uid": 104,
+        "name": "b104"
+      },
+      {
+        "uid": 105,
+        "name": "b105"
+      },
+      {
+        "uid": 106,
+        "name": "b106"
+      },
+      {
+        "uid": 107,
+        "name": "b107"
+      },
+      {
+        "uid": 108,
+        "name": "b108"
+      },
+      {
+        "uid": 109,
+        "name": "b109"
+      },
+      {
+        "uid": 110,
+        "name": "b110"
+      },
+      {
+        "uid": 111,
+        "name": "b111"
+      },
+      {
+        "uid": 112,
+        "name": "b112"
+      },
+      {
+        "uid": 113,
+        "name": "b113",
+        "reference_theta": 0
+      },
+      {
+        "uid": 114,
+        "name": "b114"
+      },
+      {
+        "uid": 115,
+        "name": "b115"
+      },
+      {
+        "uid": 116,
+        "name": "b116"
+      },
+      {
+        "uid": 117,
+        "name": "b117"
+      },
+      {
+        "uid": 118,
+        "name": "b118"
+      },
+      {
+        "uid": 119,
+        "name": "b119"
+      },
+      {
+        "uid": 120,
+        "name": "b120"
+      },
+      {
+        "uid": 121,
+        "name": "b121"
+      },
+      {
+        "uid": 122,
+        "name": "b122"
+      },
+      {
+        "uid": 123,
+        "name": "b123"
+      },
+      {
+        "uid": 124,
+        "name": "b124"
+      },
+      {
+        "uid": 201,
+        "name": "b201"
+      },
+      {
+        "uid": 202,
+        "name": "b202"
+      },
+      {
+        "uid": 203,
+        "name": "b203"
+      },
+      {
+        "uid": 204,
+        "name": "b204"
+      },
+      {
+        "uid": 205,
+        "name": "b205"
+      },
+      {
+        "uid": 206,
+        "name": "b206"
+      },
+      {
+        "uid": 207,
+        "name": "b207"
+      },
+      {
+        "uid": 208,
+        "name": "b208"
+      },
+      {
+        "uid": 209,
+        "name": "b209"
+      },
+      {
+        "uid": 210,
+        "name": "b210"
+      },
+      {
+        "uid": 211,
+        "name": "b211"
+      },
+      {
+        "uid": 212,
+        "name": "b212"
+      },
+      {
+        "uid": 213,
+        "name": "b213"
+      },
+      {
+        "uid": 214,
+        "name": "b214"
+      },
+      {
+        "uid": 215,
+        "name": "b215"
+      },
+      {
+        "uid": 216,
+        "name": "b216"
+      },
+      {
+        "uid": 217,
+        "name": "b217"
+      },
+      {
+        "uid": 218,
+        "name": "b218"
+      },
+      {
+        "uid": 219,
+        "name": "b219"
+      },
+      {
+        "uid": 220,
+        "name": "b220"
+      },
+      {
+        "uid": 221,
+        "name": "b221"
+      },
+      {
+        "uid": 222,
+        "name": "b222"
+      },
+      {
+        "uid": 223,
+        "name": "b223"
+      },
+      {
+        "uid": 224,
+        "name": "b224"
+      },
+      {
+        "uid": 301,
+        "name": "b301"
+      },
+      {
+        "uid": 302,
+        "name": "b302"
+      },
+      {
+        "uid": 303,
+        "name": "b303"
+      },
+      {
+        "uid": 304,
+        "name": "b304"
+      },
+      {
+        "uid": 305,
+        "name": "b305"
+      },
+      {
+        "uid": 306,
+        "name": "b306"
+      },
+      {
+        "uid": 307,
+        "name": "b307"
+      },
+      {
+        "uid": 308,
+        "name": "b308"
+      },
+      {
+        "uid": 309,
+        "name": "b309"
+      },
+      {
+        "uid": 310,
+        "name": "b310"
+      },
+      {
+        "uid": 311,
+        "name": "b311"
+      },
+      {
+        "uid": 312,
+        "name": "b312"
+      },
+      {
+        "uid": 313,
+        "name": "b313"
+      },
+      {
+        "uid": 314,
+        "name": "b314"
+      },
+      {
+        "uid": 315,
+        "name": "b315"
+      },
+      {
+        "uid": 316,
+        "name": "b316"
+      },
+      {
+        "uid": 317,
+        "name": "b317"
+      },
+      {
+        "uid": 318,
+        "name": "b318"
+      },
+      {
+        "uid": 319,
+        "name": "b319"
+      },
+      {
+        "uid": 320,
+        "name": "b320"
+      },
+      {
+        "uid": 321,
+        "name": "b321"
+      },
+      {
+        "uid": 322,
+        "name": "b322"
+      },
+      {
+        "uid": 323,
+        "name": "b323"
+      },
+      {
+        "uid": 324,
+        "name": "b324"
+      },
+      {
+        "uid": 325,
+        "name": "b325"
+      }
+    ],
+    "generator_array": [
+      {
+        "uid": 1,
+        "name": "g1",
+        "bus": 113,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 2,
+        "name": "g2",
+        "bus": 101,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 3,
+        "name": "g3",
+        "bus": 102,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 4,
+        "name": "g4",
+        "bus": 107,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 5,
+        "name": "g5",
+        "bus": 114,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      },
+      {
+        "uid": 6,
+        "name": "g6",
+        "bus": 115,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 7,
+        "name": "g7",
+        "bus": 116,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 8,
+        "name": "g8",
+        "bus": 118,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 9,
+        "name": "g9",
+        "bus": 121,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 10,
+        "name": "g10",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 11,
+        "name": "g11",
+        "bus": 123,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 12,
+        "name": "g12",
+        "bus": 201,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 13,
+        "name": "g13",
+        "bus": 202,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 14,
+        "name": "g14",
+        "bus": 207,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 15,
+        "name": "g15",
+        "bus": 213,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 16,
+        "name": "g16",
+        "bus": 214,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      },
+      {
+        "uid": 17,
+        "name": "g17",
+        "bus": 215,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 18,
+        "name": "g18",
+        "bus": 216,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 19,
+        "name": "g19",
+        "bus": 218,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 20,
+        "name": "g20",
+        "bus": 221,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 21,
+        "name": "g21",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 22,
+        "name": "g22",
+        "bus": 223,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 23,
+        "name": "g23",
+        "bus": 301,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 24,
+        "name": "g24",
+        "bus": 302,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 25,
+        "name": "g25",
+        "bus": 307,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 26,
+        "name": "g26",
+        "bus": 313,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 27,
+        "name": "g27",
+        "bus": 314,
+        "pmin": 0.0,
+        "pmax": 0.0,
+        "gcost": 0.0,
+        "capacity": 0.0
+      },
+      {
+        "uid": 28,
+        "name": "g28",
+        "bus": 315,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 29,
+        "name": "g29",
+        "bus": 316,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 30,
+        "name": "g30",
+        "bus": 318,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 31,
+        "name": "g31",
+        "bus": 321,
+        "pmin": 100.0,
+        "pmax": 400.0,
+        "gcost": 4.4231,
+        "capacity": 400.0
+      },
+      {
+        "uid": 32,
+        "name": "g32",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 33,
+        "name": "g33",
+        "bus": 323,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 34,
+        "name": "g34",
+        "bus": 101,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 35,
+        "name": "g35",
+        "bus": 101,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 36,
+        "name": "g36",
+        "bus": 101,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 37,
+        "name": "g37",
+        "bus": 102,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 38,
+        "name": "g38",
+        "bus": 102,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 39,
+        "name": "g39",
+        "bus": 102,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 40,
+        "name": "g40",
+        "bus": 107,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 41,
+        "name": "g41",
+        "bus": 107,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 42,
+        "name": "g42",
+        "bus": 113,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 43,
+        "name": "g43",
+        "bus": 113,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 44,
+        "name": "g44",
+        "bus": 115,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 45,
+        "name": "g45",
+        "bus": 115,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 46,
+        "name": "g46",
+        "bus": 115,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 47,
+        "name": "g47",
+        "bus": 115,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 48,
+        "name": "g48",
+        "bus": 115,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 49,
+        "name": "g49",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 50,
+        "name": "g50",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 51,
+        "name": "g51",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 52,
+        "name": "g52",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 53,
+        "name": "g53",
+        "bus": 122,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 54,
+        "name": "g54",
+        "bus": 123,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 55,
+        "name": "g55",
+        "bus": 123,
+        "pmin": 140.0,
+        "pmax": 350.0,
+        "gcost": 11.8495,
+        "capacity": 350.0
+      },
+      {
+        "uid": 56,
+        "name": "g56",
+        "bus": 201,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 57,
+        "name": "g57",
+        "bus": 201,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 58,
+        "name": "g58",
+        "bus": 201,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 59,
+        "name": "g59",
+        "bus": 202,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 60,
+        "name": "g60",
+        "bus": 202,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 61,
+        "name": "g61",
+        "bus": 202,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 62,
+        "name": "g62",
+        "bus": 207,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 63,
+        "name": "g63",
+        "bus": 207,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 64,
+        "name": "g64",
+        "bus": 213,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 65,
+        "name": "g65",
+        "bus": 213,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 66,
+        "name": "g66",
+        "bus": 215,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 67,
+        "name": "g67",
+        "bus": 215,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 68,
+        "name": "g68",
+        "bus": 215,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 69,
+        "name": "g69",
+        "bus": 215,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 70,
+        "name": "g70",
+        "bus": 215,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 71,
+        "name": "g71",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 72,
+        "name": "g72",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 73,
+        "name": "g73",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 74,
+        "name": "g74",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 75,
+        "name": "g75",
+        "bus": 222,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 76,
+        "name": "g76",
+        "bus": 223,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 77,
+        "name": "g77",
+        "bus": 223,
+        "pmin": 140.0,
+        "pmax": 350.0,
+        "gcost": 11.8495,
+        "capacity": 350.0
+      },
+      {
+        "uid": 78,
+        "name": "g78",
+        "bus": 301,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 79,
+        "name": "g79",
+        "bus": 301,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 80,
+        "name": "g80",
+        "bus": 301,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 81,
+        "name": "g81",
+        "bus": 302,
+        "pmin": 16.0,
+        "pmax": 20.0,
+        "gcost": 130.0,
+        "capacity": 20.0
+      },
+      {
+        "uid": 82,
+        "name": "g82",
+        "bus": 302,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 83,
+        "name": "g83",
+        "bus": 302,
+        "pmin": 15.2,
+        "pmax": 76.0,
+        "gcost": 16.0811,
+        "capacity": 76.0
+      },
+      {
+        "uid": 84,
+        "name": "g84",
+        "bus": 307,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 85,
+        "name": "g85",
+        "bus": 307,
+        "pmin": 25.0,
+        "pmax": 100.0,
+        "gcost": 43.6615,
+        "capacity": 100.0
+      },
+      {
+        "uid": 86,
+        "name": "g86",
+        "bus": 313,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 87,
+        "name": "g87",
+        "bus": 313,
+        "pmin": 69.0,
+        "pmax": 197.0,
+        "gcost": 48.5804,
+        "capacity": 197.0
+      },
+      {
+        "uid": 88,
+        "name": "g88",
+        "bus": 315,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 89,
+        "name": "g89",
+        "bus": 315,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 90,
+        "name": "g90",
+        "bus": 315,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 91,
+        "name": "g91",
+        "bus": 315,
+        "pmin": 2.4,
+        "pmax": 12.0,
+        "gcost": 56.564,
+        "capacity": 12.0
+      },
+      {
+        "uid": 92,
+        "name": "g92",
+        "bus": 315,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 93,
+        "name": "g93",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 94,
+        "name": "g94",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 95,
+        "name": "g95",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 96,
+        "name": "g96",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 97,
+        "name": "g97",
+        "bus": 322,
+        "pmin": 10.0,
+        "pmax": 50.0,
+        "gcost": 0.001,
+        "capacity": 50.0
+      },
+      {
+        "uid": 98,
+        "name": "g98",
+        "bus": 323,
+        "pmin": 54.3,
+        "pmax": 155.0,
+        "gcost": 12.3883,
+        "capacity": 155.0
+      },
+      {
+        "uid": 99,
+        "name": "g99",
+        "bus": 323,
+        "pmin": 140.0,
+        "pmax": 350.0,
+        "gcost": 11.8495,
+        "capacity": 350.0
+      }
+    ],
+    "demand_array": [
+      {
+        "uid": 1,
+        "name": "d1",
+        "bus": 101,
+        "lmax": [
+          [
+            108.0
+          ]
+        ]
+      },
+      {
+        "uid": 2,
+        "name": "d2",
+        "bus": 102,
+        "lmax": [
+          [
+            97.0
+          ]
+        ]
+      },
+      {
+        "uid": 3,
+        "name": "d3",
+        "bus": 103,
+        "lmax": [
+          [
+            180.0
+          ]
+        ]
+      },
+      {
+        "uid": 4,
+        "name": "d4",
+        "bus": 104,
+        "lmax": [
+          [
+            74.0
+          ]
+        ]
+      },
+      {
+        "uid": 5,
+        "name": "d5",
+        "bus": 105,
+        "lmax": [
+          [
+            71.0
+          ]
+        ]
+      },
+      {
+        "uid": 6,
+        "name": "d6",
+        "bus": 106,
+        "lmax": [
+          [
+            136.0
+          ]
+        ]
+      },
+      {
+        "uid": 7,
+        "name": "d7",
+        "bus": 107,
+        "lmax": [
+          [
+            125.0
+          ]
+        ]
+      },
+      {
+        "uid": 8,
+        "name": "d8",
+        "bus": 108,
+        "lmax": [
+          [
+            171.0
+          ]
+        ]
+      },
+      {
+        "uid": 9,
+        "name": "d9",
+        "bus": 109,
+        "lmax": [
+          [
+            175.0
+          ]
+        ]
+      },
+      {
+        "uid": 10,
+        "name": "d10",
+        "bus": 110,
+        "lmax": [
+          [
+            195.0
+          ]
+        ]
+      },
+      {
+        "uid": 11,
+        "name": "d11",
+        "bus": 113,
+        "lmax": [
+          [
+            265.0
+          ]
+        ]
+      },
+      {
+        "uid": 12,
+        "name": "d12",
+        "bus": 114,
+        "lmax": [
+          [
+            194.0
+          ]
+        ]
+      },
+      {
+        "uid": 13,
+        "name": "d13",
+        "bus": 115,
+        "lmax": [
+          [
+            317.0
+          ]
+        ]
+      },
+      {
+        "uid": 14,
+        "name": "d14",
+        "bus": 116,
+        "lmax": [
+          [
+            100.0
+          ]
+        ]
+      },
+      {
+        "uid": 15,
+        "name": "d15",
+        "bus": 118,
+        "lmax": [
+          [
+            333.0
+          ]
+        ]
+      },
+      {
+        "uid": 16,
+        "name": "d16",
+        "bus": 119,
+        "lmax": [
+          [
+            181.0
+          ]
+        ]
+      },
+      {
+        "uid": 17,
+        "name": "d17",
+        "bus": 120,
+        "lmax": [
+          [
+            128.0
+          ]
+        ]
+      },
+      {
+        "uid": 18,
+        "name": "d18",
+        "bus": 201,
+        "lmax": [
+          [
+            108.0
+          ]
+        ]
+      },
+      {
+        "uid": 19,
+        "name": "d19",
+        "bus": 202,
+        "lmax": [
+          [
+            97.0
+          ]
+        ]
+      },
+      {
+        "uid": 20,
+        "name": "d20",
+        "bus": 203,
+        "lmax": [
+          [
+            180.0
+          ]
+        ]
+      },
+      {
+        "uid": 21,
+        "name": "d21",
+        "bus": 204,
+        "lmax": [
+          [
+            74.0
+          ]
+        ]
+      },
+      {
+        "uid": 22,
+        "name": "d22",
+        "bus": 205,
+        "lmax": [
+          [
+            71.0
+          ]
+        ]
+      },
+      {
+        "uid": 23,
+        "name": "d23",
+        "bus": 206,
+        "lmax": [
+          [
+            136.0
+          ]
+        ]
+      },
+      {
+        "uid": 24,
+        "name": "d24",
+        "bus": 207,
+        "lmax": [
+          [
+            125.0
+          ]
+        ]
+      },
+      {
+        "uid": 25,
+        "name": "d25",
+        "bus": 208,
+        "lmax": [
+          [
+            171.0
+          ]
+        ]
+      },
+      {
+        "uid": 26,
+        "name": "d26",
+        "bus": 209,
+        "lmax": [
+          [
+            175.0
+          ]
+        ]
+      },
+      {
+        "uid": 27,
+        "name": "d27",
+        "bus": 210,
+        "lmax": [
+          [
+            195.0
+          ]
+        ]
+      },
+      {
+        "uid": 28,
+        "name": "d28",
+        "bus": 213,
+        "lmax": [
+          [
+            265.0
+          ]
+        ]
+      },
+      {
+        "uid": 29,
+        "name": "d29",
+        "bus": 214,
+        "lmax": [
+          [
+            194.0
+          ]
+        ]
+      },
+      {
+        "uid": 30,
+        "name": "d30",
+        "bus": 215,
+        "lmax": [
+          [
+            317.0
+          ]
+        ]
+      },
+      {
+        "uid": 31,
+        "name": "d31",
+        "bus": 216,
+        "lmax": [
+          [
+            100.0
+          ]
+        ]
+      },
+      {
+        "uid": 32,
+        "name": "d32",
+        "bus": 218,
+        "lmax": [
+          [
+            333.0
+          ]
+        ]
+      },
+      {
+        "uid": 33,
+        "name": "d33",
+        "bus": 219,
+        "lmax": [
+          [
+            181.0
+          ]
+        ]
+      },
+      {
+        "uid": 34,
+        "name": "d34",
+        "bus": 220,
+        "lmax": [
+          [
+            128.0
+          ]
+        ]
+      },
+      {
+        "uid": 35,
+        "name": "d35",
+        "bus": 301,
+        "lmax": [
+          [
+            108.0
+          ]
+        ]
+      },
+      {
+        "uid": 36,
+        "name": "d36",
+        "bus": 302,
+        "lmax": [
+          [
+            97.0
+          ]
+        ]
+      },
+      {
+        "uid": 37,
+        "name": "d37",
+        "bus": 303,
+        "lmax": [
+          [
+            180.0
+          ]
+        ]
+      },
+      {
+        "uid": 38,
+        "name": "d38",
+        "bus": 304,
+        "lmax": [
+          [
+            74.0
+          ]
+        ]
+      },
+      {
+        "uid": 39,
+        "name": "d39",
+        "bus": 305,
+        "lmax": [
+          [
+            71.0
+          ]
+        ]
+      },
+      {
+        "uid": 40,
+        "name": "d40",
+        "bus": 306,
+        "lmax": [
+          [
+            136.0
+          ]
+        ]
+      },
+      {
+        "uid": 41,
+        "name": "d41",
+        "bus": 307,
+        "lmax": [
+          [
+            125.0
+          ]
+        ]
+      },
+      {
+        "uid": 42,
+        "name": "d42",
+        "bus": 308,
+        "lmax": [
+          [
+            171.0
+          ]
+        ]
+      },
+      {
+        "uid": 43,
+        "name": "d43",
+        "bus": 309,
+        "lmax": [
+          [
+            175.0
+          ]
+        ]
+      },
+      {
+        "uid": 44,
+        "name": "d44",
+        "bus": 310,
+        "lmax": [
+          [
+            195.0
+          ]
+        ]
+      },
+      {
+        "uid": 45,
+        "name": "d45",
+        "bus": 313,
+        "lmax": [
+          [
+            265.0
+          ]
+        ]
+      },
+      {
+        "uid": 46,
+        "name": "d46",
+        "bus": 314,
+        "lmax": [
+          [
+            194.0
+          ]
+        ]
+      },
+      {
+        "uid": 47,
+        "name": "d47",
+        "bus": 315,
+        "lmax": [
+          [
+            317.0
+          ]
+        ]
+      },
+      {
+        "uid": 48,
+        "name": "d48",
+        "bus": 316,
+        "lmax": [
+          [
+            100.0
+          ]
+        ]
+      },
+      {
+        "uid": 49,
+        "name": "d49",
+        "bus": 318,
+        "lmax": [
+          [
+            333.0
+          ]
+        ]
+      },
+      {
+        "uid": 50,
+        "name": "d50",
+        "bus": 319,
+        "lmax": [
+          [
+            181.0
+          ]
+        ]
+      },
+      {
+        "uid": 51,
+        "name": "d51",
+        "bus": 320,
+        "lmax": [
+          [
+            128.0
+          ]
+        ]
+      }
+    ],
+    "line_array": [
+      {
+        "name": "l101_102",
+        "bus_a": 101,
+        "bus_b": 102,
+        "reactance": 0.014,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 1
+      },
+      {
+        "name": "l101_103",
+        "bus_a": 101,
+        "bus_b": 103,
+        "reactance": 0.211,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 2
+      },
+      {
+        "name": "l101_105",
+        "bus_a": 101,
+        "bus_b": 105,
+        "reactance": 0.085,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 3
+      },
+      {
+        "name": "l102_104",
+        "bus_a": 102,
+        "bus_b": 104,
+        "reactance": 0.127,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 4
+      },
+      {
+        "name": "l102_106",
+        "bus_a": 102,
+        "bus_b": 106,
+        "reactance": 0.192,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 5
+      },
+      {
+        "name": "l103_109",
+        "bus_a": 103,
+        "bus_b": 109,
+        "reactance": 0.119,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 6
+      },
+      {
+        "name": "l104_109",
+        "bus_a": 104,
+        "bus_b": 109,
+        "reactance": 0.104,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 7
+      },
+      {
+        "name": "l105_110",
+        "bus_a": 105,
+        "bus_b": 110,
+        "reactance": 0.088,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 8
+      },
+      {
+        "name": "l106_110",
+        "bus_a": 106,
+        "bus_b": 110,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 9
+      },
+      {
+        "name": "l107_108",
+        "bus_a": 107,
+        "bus_b": 108,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 10
+      },
+      {
+        "name": "l107_203",
+        "bus_a": 107,
+        "bus_b": 203,
+        "reactance": 0.161,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 11
+      },
+      {
+        "name": "l108_109",
+        "bus_a": 108,
+        "bus_b": 109,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 12
+      },
+      {
+        "name": "l108_110",
+        "bus_a": 108,
+        "bus_b": 110,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 13
+      },
+      {
+        "name": "l111_113",
+        "bus_a": 111,
+        "bus_b": 113,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 14
+      },
+      {
+        "name": "l111_114",
+        "bus_a": 111,
+        "bus_b": 114,
+        "reactance": 0.042,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 15
+      },
+      {
+        "name": "l112_113",
+        "bus_a": 112,
+        "bus_b": 113,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 16
+      },
+      {
+        "name": "l112_123",
+        "bus_a": 112,
+        "bus_b": 123,
+        "reactance": 0.097,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 17
+      },
+      {
+        "name": "l113_123",
+        "bus_a": 113,
+        "bus_b": 123,
+        "reactance": 0.087,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 18
+      },
+      {
+        "name": "l113_215",
+        "bus_a": 113,
+        "bus_b": 215,
+        "reactance": 0.075,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 19
+      },
+      {
+        "name": "l114_116",
+        "bus_a": 114,
+        "bus_b": 116,
+        "reactance": 0.059,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 20
+      },
+      {
+        "name": "l115_116",
+        "bus_a": 115,
+        "bus_b": 116,
+        "reactance": 0.017,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 21
+      },
+      {
+        "name": "l115_121",
+        "bus_a": 115,
+        "bus_b": 121,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 22
+      },
+      {
+        "name": "l115_121_2",
+        "bus_a": 115,
+        "bus_b": 121,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 23
+      },
+      {
+        "name": "l115_124",
+        "bus_a": 115,
+        "bus_b": 124,
+        "reactance": 0.052,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 24
+      },
+      {
+        "name": "l116_117",
+        "bus_a": 116,
+        "bus_b": 117,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 25
+      },
+      {
+        "name": "l116_119",
+        "bus_a": 116,
+        "bus_b": 119,
+        "reactance": 0.023,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 26
+      },
+      {
+        "name": "l117_118",
+        "bus_a": 117,
+        "bus_b": 118,
+        "reactance": 0.014,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 27
+      },
+      {
+        "name": "l117_122",
+        "bus_a": 117,
+        "bus_b": 122,
+        "reactance": 0.105,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 28
+      },
+      {
+        "name": "l118_121",
+        "bus_a": 118,
+        "bus_b": 121,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 29
+      },
+      {
+        "name": "l118_121_2",
+        "bus_a": 118,
+        "bus_b": 121,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 30
+      },
+      {
+        "name": "l119_120",
+        "bus_a": 119,
+        "bus_b": 120,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 31
+      },
+      {
+        "name": "l119_120_2",
+        "bus_a": 119,
+        "bus_b": 120,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 32
+      },
+      {
+        "name": "l120_123",
+        "bus_a": 120,
+        "bus_b": 123,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 33
+      },
+      {
+        "name": "l120_123_2",
+        "bus_a": 120,
+        "bus_b": 123,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 34
+      },
+      {
+        "name": "l121_122",
+        "bus_a": 121,
+        "bus_b": 122,
+        "reactance": 0.068,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 35
+      },
+      {
+        "name": "l123_217",
+        "bus_a": 123,
+        "bus_b": 217,
+        "reactance": 0.074,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 36
+      },
+      {
+        "name": "l201_202",
+        "bus_a": 201,
+        "bus_b": 202,
+        "reactance": 0.014,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 37
+      },
+      {
+        "name": "l201_203",
+        "bus_a": 201,
+        "bus_b": 203,
+        "reactance": 0.211,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 38
+      },
+      {
+        "name": "l201_205",
+        "bus_a": 201,
+        "bus_b": 205,
+        "reactance": 0.085,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 39
+      },
+      {
+        "name": "l202_204",
+        "bus_a": 202,
+        "bus_b": 204,
+        "reactance": 0.127,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 40
+      },
+      {
+        "name": "l202_206",
+        "bus_a": 202,
+        "bus_b": 206,
+        "reactance": 0.192,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 41
+      },
+      {
+        "name": "l203_209",
+        "bus_a": 203,
+        "bus_b": 209,
+        "reactance": 0.119,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 42
+      },
+      {
+        "name": "l204_209",
+        "bus_a": 204,
+        "bus_b": 209,
+        "reactance": 0.104,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 43
+      },
+      {
+        "name": "l205_210",
+        "bus_a": 205,
+        "bus_b": 210,
+        "reactance": 0.088,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 44
+      },
+      {
+        "name": "l206_210",
+        "bus_a": 206,
+        "bus_b": 210,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 45
+      },
+      {
+        "name": "l207_208",
+        "bus_a": 207,
+        "bus_b": 208,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 46
+      },
+      {
+        "name": "l208_209",
+        "bus_a": 208,
+        "bus_b": 209,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 47
+      },
+      {
+        "name": "l208_210",
+        "bus_a": 208,
+        "bus_b": 210,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 48
+      },
+      {
+        "name": "l211_213",
+        "bus_a": 211,
+        "bus_b": 213,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 49
+      },
+      {
+        "name": "l211_214",
+        "bus_a": 211,
+        "bus_b": 214,
+        "reactance": 0.042,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 50
+      },
+      {
+        "name": "l212_213",
+        "bus_a": 212,
+        "bus_b": 213,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 51
+      },
+      {
+        "name": "l212_223",
+        "bus_a": 212,
+        "bus_b": 223,
+        "reactance": 0.097,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 52
+      },
+      {
+        "name": "l213_223",
+        "bus_a": 213,
+        "bus_b": 223,
+        "reactance": 0.087,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 53
+      },
+      {
+        "name": "l214_216",
+        "bus_a": 214,
+        "bus_b": 216,
+        "reactance": 0.059,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 54
+      },
+      {
+        "name": "l215_216",
+        "bus_a": 215,
+        "bus_b": 216,
+        "reactance": 0.017,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 55
+      },
+      {
+        "name": "l215_221",
+        "bus_a": 215,
+        "bus_b": 221,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 56
+      },
+      {
+        "name": "l215_221_2",
+        "bus_a": 215,
+        "bus_b": 221,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 57
+      },
+      {
+        "name": "l215_224",
+        "bus_a": 215,
+        "bus_b": 224,
+        "reactance": 0.052,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 58
+      },
+      {
+        "name": "l216_217",
+        "bus_a": 216,
+        "bus_b": 217,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 59
+      },
+      {
+        "name": "l216_219",
+        "bus_a": 216,
+        "bus_b": 219,
+        "reactance": 0.023,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 60
+      },
+      {
+        "name": "l217_218",
+        "bus_a": 217,
+        "bus_b": 218,
+        "reactance": 0.014,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 61
+      },
+      {
+        "name": "l217_222",
+        "bus_a": 217,
+        "bus_b": 222,
+        "reactance": 0.105,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 62
+      },
+      {
+        "name": "l218_221",
+        "bus_a": 218,
+        "bus_b": 221,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 63
+      },
+      {
+        "name": "l218_221_2",
+        "bus_a": 218,
+        "bus_b": 221,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 64
+      },
+      {
+        "name": "l219_220",
+        "bus_a": 219,
+        "bus_b": 220,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 65
+      },
+      {
+        "name": "l219_220_2",
+        "bus_a": 219,
+        "bus_b": 220,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 66
+      },
+      {
+        "name": "l220_223",
+        "bus_a": 220,
+        "bus_b": 223,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 67
+      },
+      {
+        "name": "l220_223_2",
+        "bus_a": 220,
+        "bus_b": 223,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 68
+      },
+      {
+        "name": "l221_222",
+        "bus_a": 221,
+        "bus_b": 222,
+        "reactance": 0.068,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 69
+      },
+      {
+        "name": "l301_302",
+        "bus_a": 301,
+        "bus_b": 302,
+        "reactance": 0.014,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 70
+      },
+      {
+        "name": "l301_303",
+        "bus_a": 301,
+        "bus_b": 303,
+        "reactance": 0.211,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 71
+      },
+      {
+        "name": "l301_305",
+        "bus_a": 301,
+        "bus_b": 305,
+        "reactance": 0.085,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 72
+      },
+      {
+        "name": "l302_304",
+        "bus_a": 302,
+        "bus_b": 304,
+        "reactance": 0.127,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 73
+      },
+      {
+        "name": "l302_306",
+        "bus_a": 302,
+        "bus_b": 306,
+        "reactance": 0.192,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 74
+      },
+      {
+        "name": "l303_309",
+        "bus_a": 303,
+        "bus_b": 309,
+        "reactance": 0.119,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 75
+      },
+      {
+        "name": "l304_309",
+        "bus_a": 304,
+        "bus_b": 309,
+        "reactance": 0.104,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 76
+      },
+      {
+        "name": "l305_310",
+        "bus_a": 305,
+        "bus_b": 310,
+        "reactance": 0.088,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 77
+      },
+      {
+        "name": "l306_310",
+        "bus_a": 306,
+        "bus_b": 310,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 78
+      },
+      {
+        "name": "l307_308",
+        "bus_a": 307,
+        "bus_b": 308,
+        "reactance": 0.061,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 79
+      },
+      {
+        "name": "l308_309",
+        "bus_a": 308,
+        "bus_b": 309,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 80
+      },
+      {
+        "name": "l308_310",
+        "bus_a": 308,
+        "bus_b": 310,
+        "reactance": 0.165,
+        "tmax_ab": 175.0,
+        "tmax_ba": 175.0,
+        "uid": 81
+      },
+      {
+        "name": "l311_313",
+        "bus_a": 311,
+        "bus_b": 313,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 82
+      },
+      {
+        "name": "l311_314",
+        "bus_a": 311,
+        "bus_b": 314,
+        "reactance": 0.042,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 83
+      },
+      {
+        "name": "l312_313",
+        "bus_a": 312,
+        "bus_b": 313,
+        "reactance": 0.048,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 84
+      },
+      {
+        "name": "l312_323",
+        "bus_a": 312,
+        "bus_b": 323,
+        "reactance": 0.097,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 85
+      },
+      {
+        "name": "l313_323",
+        "bus_a": 313,
+        "bus_b": 323,
+        "reactance": 0.087,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 86
+      },
+      {
+        "name": "l314_316",
+        "bus_a": 314,
+        "bus_b": 316,
+        "reactance": 0.059,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 87
+      },
+      {
+        "name": "l315_316",
+        "bus_a": 315,
+        "bus_b": 316,
+        "reactance": 0.017,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 88
+      },
+      {
+        "name": "l315_321",
+        "bus_a": 315,
+        "bus_b": 321,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 89
+      },
+      {
+        "name": "l315_321_2",
+        "bus_a": 315,
+        "bus_b": 321,
+        "reactance": 0.049,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 90
+      },
+      {
+        "name": "l315_324",
+        "bus_a": 315,
+        "bus_b": 324,
+        "reactance": 0.052,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 91
+      },
+      {
+        "name": "l316_317",
+        "bus_a": 316,
+        "bus_b": 317,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 92
+      },
+      {
+        "name": "l316_319",
+        "bus_a": 316,
+        "bus_b": 319,
+        "reactance": 0.023,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 93
+      },
+      {
+        "name": "l317_318",
+        "bus_a": 317,
+        "bus_b": 318,
+        "reactance": 0.014,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 94
+      },
+      {
+        "name": "l317_322",
+        "bus_a": 317,
+        "bus_b": 322,
+        "reactance": 0.105,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 95
+      },
+      {
+        "name": "l318_321",
+        "bus_a": 318,
+        "bus_b": 321,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 96
+      },
+      {
+        "name": "l318_321_2",
+        "bus_a": 318,
+        "bus_b": 321,
+        "reactance": 0.026,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 97
+      },
+      {
+        "name": "l319_320",
+        "bus_a": 319,
+        "bus_b": 320,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 98
+      },
+      {
+        "name": "l319_320_2",
+        "bus_a": 319,
+        "bus_b": 320,
+        "reactance": 0.04,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 99
+      },
+      {
+        "name": "l320_323",
+        "bus_a": 320,
+        "bus_b": 323,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 100
+      },
+      {
+        "name": "l320_323_2",
+        "bus_a": 320,
+        "bus_b": 323,
+        "reactance": 0.022,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 101
+      },
+      {
+        "name": "l321_322",
+        "bus_a": 321,
+        "bus_b": 322,
+        "reactance": 0.068,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 102
+      },
+      {
+        "name": "l325_121",
+        "bus_a": 325,
+        "bus_b": 121,
+        "reactance": 0.097,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 103
+      },
+      {
+        "name": "l318_223",
+        "bus_a": 318,
+        "bus_b": 223,
+        "reactance": 0.104,
+        "tmax_ab": 500.0,
+        "tmax_ba": 500.0,
+        "uid": 104
+      },
+      {
+        "name": "l323_325",
+        "bus_a": 323,
+        "bus_b": 325,
+        "reactance": 0.009,
+        "tmax_ab": 722.0,
+        "tmax_ba": 722.0,
+        "uid": 105
+      },
+      {
+        "name": "t124_103",
+        "bus_a": 124,
+        "bus_b": 103,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 106
+      },
+      {
+        "name": "t111_109",
+        "bus_a": 111,
+        "bus_b": 109,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 107
+      },
+      {
+        "name": "t112_109",
+        "bus_a": 112,
+        "bus_b": 109,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 108
+      },
+      {
+        "name": "t111_110",
+        "bus_a": 111,
+        "bus_b": 110,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 109
+      },
+      {
+        "name": "t112_110",
+        "bus_a": 112,
+        "bus_b": 110,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 110
+      },
+      {
+        "name": "t224_203",
+        "bus_a": 224,
+        "bus_b": 203,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 111
+      },
+      {
+        "name": "t211_209",
+        "bus_a": 211,
+        "bus_b": 209,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 112
+      },
+      {
+        "name": "t212_209",
+        "bus_a": 212,
+        "bus_b": 209,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 113
+      },
+      {
+        "name": "t211_210",
+        "bus_a": 211,
+        "bus_b": 210,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 114
+      },
+      {
+        "name": "t212_210",
+        "bus_a": 212,
+        "bus_b": 210,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 115
+      },
+      {
+        "name": "t324_303",
+        "bus_a": 324,
+        "bus_b": 303,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 116
+      },
+      {
+        "name": "t311_309",
+        "bus_a": 311,
+        "bus_b": 309,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 117
+      },
+      {
+        "name": "t312_309",
+        "bus_a": 312,
+        "bus_b": 309,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.03,
+        "uid": 118
+      },
+      {
+        "name": "t311_310",
+        "bus_a": 311,
+        "bus_b": 310,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 119
+      },
+      {
+        "name": "t312_310",
+        "bus_a": 312,
+        "bus_b": 310,
+        "reactance": 0.084,
+        "type": "transformer",
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "tap_ratio": 1.015,
+        "uid": 120
+      }
+    ]
+  }
+}

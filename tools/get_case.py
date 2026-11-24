@@ -7,6 +7,7 @@
     tools/get_case.py rebuild pcp_2025-10-19 --res RES20251019.zip.xz --out ~/x
     tools/get_case.py fetch sem_2025w03  # data not redistributed: download
     tools/get_case.py fetch pcp_2024-09-01  # CEN day from coordinador.cl
+    tools/get_case.py fetch nrel118_2024w01 # benchmark: pinned upstream files
 
 All the work is done by the gtopt Python tools, installed from a gtopt
 checkout (``pip install -e <gtopt>/scripts``) and called here as console
@@ -21,7 +22,9 @@ case directory (``source/``, ``case/``); the PLEXOS solution bundle
 repository.  ``fetch`` downloads the publisher's archives of a case whose
 data are not redistributed here (``source.redistributed: false``) into
 the cache, checks their sha256 and extracts the members the converter
-reads into the (git-ignored) ``source/`` of the case; ``cache_members``
+reads into the (git-ignored) ``source/`` of the case (plain files and
+``sha256sum``-style manifests of files at a pinned upstream commit are
+downloaded straight into ``source/``); ``cache_members``
 (e.g. the PLEXOS solution bundle) are extracted next to the archive in
 the cache.  On a CEN PCP day whose input bundle is in ``source/``,
 ``fetch`` checks its sha256 and runs ``pcp``.  The CEN portal
@@ -33,6 +36,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import gzip
 import hashlib
 import json
 import lzma
@@ -43,6 +47,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import urllib.parse
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -196,6 +201,58 @@ def stage_input(inp: Path, overlay: Path | None, stage: Path) -> Path:
     return stage
 
 
+def decompress_input(inp: Path, stage: Path) -> Path:
+    """Copy of ``inp`` (a file or a directory) in ``stage`` with every
+    ``.xz`` / ``.gz`` file decompressed; returns the staged path."""
+    stage.mkdir(parents=True)
+    files = sorted(inp.iterdir()) if inp.is_dir() else [inp]
+    base = stage / inp.name if inp.is_dir() else stage
+    base.mkdir(exist_ok=True)
+    out = base
+    for f in files:
+        if not f.is_file():
+            continue
+        if f.suffix in (".xz", ".gz"):
+            opener = lzma.open if f.suffix == ".xz" else gzip.open
+            target = base / f.name[: -len(f.suffix)]
+            with opener(f, "rb") as fi, target.open("wb") as fo:
+                shutil.copyfileobj(fi, fo)
+        else:
+            target = base / f.name
+            shutil.copy2(f, target)
+        if not inp.is_dir():
+            out = target
+    return out
+
+
+def download(url: str, dest: Path, sha256: str) -> None:
+    """``url`` to ``dest`` unless already there; check its sha256."""
+    if not (dest.is_file() and hashlib.sha256(dest.read_bytes()).hexdigest() == sha256):
+        print(f"+ download {url}", flush=True)
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        req = urllib.request.Request(url, headers={"User-Agent": "gtopt"})
+        with urllib.request.urlopen(req) as r, dest.open("wb") as fo:
+            shutil.copyfileobj(r, fo)
+    if hashlib.sha256(dest.read_bytes()).hexdigest() != sha256:
+        sys.exit(f"{dest}: sha256 differs from catalog.json")
+
+
+def fetch_files(entry: dict[str, Any]) -> None:
+    """Plain files (``url`` + ``path``) and pinned upstream manifests
+    (``manifest``: base URL + sha256sum-style file) into the case dir."""
+    case_dir = REPO / entry["path"]
+    for f in entry["source"]["files"]:
+        if "manifest" in f:
+            dest = case_dir / f.get("dest", "source")
+            for line in (case_dir / f["manifest"]).read_text().splitlines():
+                digest, _, rel = line.partition("  ")
+                name = rel.rsplit("/", 1)[-1] if f.get("flat") else rel
+                url = f"{f['base_url']}/{urllib.parse.quote(rel)}"
+                download(url, dest / name, digest)
+        elif "url" in f and "path" in f:
+            download(f["url"], case_dir / f["path"], f["sha256"])
+
+
 def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
     """Run the catalogued converter on the case source; returns the JSON."""
     case_dir = REPO / entry["path"]
@@ -209,7 +266,8 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
     profile = REPO / entry["profile"] if entry.get("profile") else None
     src = Path(args.source).expanduser() if args.source else None
     inp = (src or case_dir / conv.get("input", "source")).resolve()
-    if not inp.exists():
+    needs_input = not conv.get("argv") or any("{input}" in a for a in conv["argv"])
+    if needs_input and not inp.exists():
         sys.exit(f"no {inp}: pass --source")
     with tempfile.TemporaryDirectory(prefix="get-case-") as tmp:
         raw = Path(tmp) / "out" / case_json.stem
@@ -219,6 +277,28 @@ def convert(entry: dict[str, Any], args: argparse.Namespace) -> Path:
             ovl = (case_dir / overlay).resolve() if overlay else None
             inp = stage_input(inp, ovl, Path(tmp) / "in")
         cwd = inp if inp.is_dir() else inp.parent
+        if conv.get("decompress") and needs_input:  # .xz / .gz files
+            inp = decompress_input(inp, Path(tmp) / "plain")
+        if "argv" in conv:  # converter with its own command line
+            raw.mkdir(parents=True)
+            subst = {
+                "input": str(inp),
+                "out_dir": str(raw),
+                "out_json": str(raw / case_json.name),
+                "gtopt_src": os.environ.get("GTOPT_SRC", "<set GTOPT_SRC>"),
+            }
+            argv = [a.format(**subst) for a in conv["argv"]]
+            if any("<set GTOPT_SRC>" in a for a in argv):
+                sys.exit("set GTOPT_SRC to a gtopt checkout (see the case README)")
+            run(*argv, *getattr(args, "extra", []), cwd=Path(tmp))
+            sub = raw / case_json.stem  # time series next to the JSON instead
+            if conv.get("flatten") and sub.is_dir():
+                for item in sub.iterdir():
+                    shutil.move(item, raw / item.name)
+                sub.rmdir()
+            out = postprocess(raw, dest, case_json.name, profile, conv.get("drop", []))
+            print_run(entry, out, profile)
+            return out
         if conv.get("rename_input"):  # the input name names the planning JSON
             stage = Path(tmp) / "in"
             stage.mkdir()
@@ -298,10 +378,15 @@ def cmd_fetch(args: argparse.Namespace) -> Path:
                 sys.exit(f"{path}: sha256 differs from catalog.json")
         args.date = entry["date"]
         return cmd_pcp(args)
+    if entry["source"].get("fetched_by") == "converter":
+        return convert(entry, args)  # the converter downloads + checks them
+    archives = [f for f in entry["source"]["files"] if "archive" in f]
+    if len(archives) < len(entry["source"]["files"]):
+        fetch_files(entry)
     # cases that share the same archives name a common "cache" folder
     key = entry["source"].get("cache") or entry["id"].rsplit("/", 1)[-1]
     case_dir, dl = REPO / entry["path"], CACHE / key
-    for f in entry["source"]["files"]:
+    for f in archives:
         archive = dl / f["archive"]
         if not archive.is_file():
             print(f"+ download {f['url']}", flush=True)

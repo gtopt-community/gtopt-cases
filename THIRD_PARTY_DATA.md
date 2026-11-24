@@ -42,6 +42,10 @@ rewrite the git history and ask GitHub Support to purge cached views; see
 | SEM Committee — SEM-25-010, SEM PLEXOS Forecast Model 2024-2032 (public version) | `ireland/unit_commitment/sem_2025w03`, `w16`, `w29`, `w42` | SEM Committee: Commission for Regulation of Utilities (CRU), Ireland, and Utility Regulator (UR), Northern Ireland; model by NERA Economic Consulting | No licence stated; redistribution needs the publishers' written permission | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads and converts the public files locally |
 | COES — MRFO 2026-2029 study, Anexo D (PSR SDDP base cases) | `peru/medium_long_term/coes_mrfo_2026-2029/*` (4) | Comité de Operación Económica del Sistema Interconectado Nacional (COES), Peru | No open licence stated; public COES publication, COES keeps the rights; cite COES; check its terms | SDDP inputs read by the converter (xz) + gtopt cases; original zip and PSR results not redistributed |
 | MATPOWER `case3375wp` (Polish system, winter 2007-08 evening peak) | `poland/dc_opf/case3375wp` | Roman Korab, Silesian University of Technology; distributed by MATPOWER (PSERC / R. D. Zimmerman, C. E. Murillo-Sánchez) | **No explicit licence**: MATPOWER's BSD-3-Clause licence explicitly does **not** cover its case files; distributed with MATPOWER *"with the permission of Roman Korab"*; MATPOWER asks users of its data files to cite the MATPOWER paper | `.m` file unchanged (xz) + gtopt case |
+| PGLib-OPF v23.07 (IEEE PES Power Grid Library) | `benchmarks/ieee/pglib_opf_*` (9) | Authors named in each file: R. D. Christie, University of Washington (IEEE 14, 30, 57, 118, 300); IEEE (RTS-79, RTS-96, New England 39, PJM 5-bus); distributed by PGLib-OPF | **CC BY 4.0** (data licence of PGLib-OPF, repeated in each file header) | `.m` files unchanged (xz) + gtopt cases |
+| UnitCommitment.jl test fixtures | `benchmarks/unitcommitment_jl/*` (3) | UChicago Argonne, LLC (Argonne National Laboratory) | **BSD-3-Clause** (UnitCommitment.jl `LICENSE.md`, reproduced in each `source/NOTICE.md`) | fixtures unchanged (gzip) + gtopt cases |
+| Sienna PowerSystemsTestData (`118-Bus/`; `5-Bus/` and `psy_data/`) | `benchmarks/nrel/nrel118_2024w01`, `benchmarks/sienna/*` (7) | NREL / Alliance for Sustainable Energy, LLC; NREL-118 data by I. Peña, C. B. Martinez-Anido and B.-M. Hodge | **No licence** (no licence file in the repository) | **Nothing redistributed**: README, sha256 manifest and catalog entry only; `tools/get_case.py fetch` downloads the pinned commit and converts locally |
+| CUC-data (Morales-España and Tejada-Arango, 2019) | `benchmarks/papers/morales_espana_2019_cuc/*` (2) | G. Morales-España and D. A. Tejada-Arango | **No licence** (no licence file in the repository) | **Nothing redistributed**: README and catalog entry only; `tools/get_case.py fetch` downloads the pinned workbook (converter in progress) |
 
 ## Details and attribution
 
@@ -167,3 +171,67 @@ rewrite the git history and ask GitHub Support to purge cached views; see
   data by R. Korab (Silesian University of Technology), distributed with
   MATPOWER 8.1; converted to gtopt by the gtopt authors."*
 - See [`poland/dc_opf/case3375wp/README.md`](poland/dc_opf/case3375wp/README.md).
+
+### PGLib-OPF (benchmarks/ieee)
+
+- Publisher: IEEE PES Task Force on Benchmarks for Validation of Emerging
+  Power System Algorithms, <https://github.com/power-grid-lib/pglib-opf>,
+  tag `v23.07`, commit `dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3`.
+- Terms: PGLib-OPF `LICENSE`: *"Data License: Creative Commons Attribution
+  4.0 International license ... See data files for specific copyright
+  holders and attribution details."*  Each file names its copyright holder
+  and repeats the CC BY 4.0 licence (text in
+  [`LICENSES/CC-BY-4.0.txt`](LICENSES/CC-BY-4.0.txt)).  The changes made
+  (xz compression; conversion to a DC OPF with linear costs) are listed in
+  each case README.
+- Citation: S. Babaeinejadsarookolaee et al., "The Power Grid Library for
+  Benchmarking AC Optimal Power Flow Algorithms," arXiv:1908.02788, 2019,
+  and the original source named in each file.
+- Attribution: *"<system>, `<file>.m` from PGLib-OPF v23.07 (<copyright
+  holder>; CC BY 4.0); converted to gtopt by the gtopt authors."*  (exact
+  text per case in `catalog.json`, `terms.attribution`).
+- See [`benchmarks/ieee/README.md`](benchmarks/ieee/README.md).
+
+### UnitCommitment.jl (benchmarks/unitcommitment_jl)
+
+- Publisher: Argonne National Laboratory,
+  <https://github.com/ANL-CEEESA/UnitCommitment.jl>, branch `dev`, commit
+  `3e4fd1b6370900b4053eb04856d534dc72e37012`, files `test/fixtures/*.json.gz`.
+- Terms: BSD-3-Clause, *"Copyright © 2020-2022, UChicago Argonne, LLC"*;
+  the licence text and disclaimer are reproduced in each case's
+  `source/NOTICE.md`, which must accompany redistributed copies.  The
+  365-day benchmark instances UnitCommitment.jl serves from its website
+  are outside the licensed repository and are not included.
+- Citation: A. S. Xavier, A. M. Kazachkov, O. Yurdakul, J. He and F. Qiu,
+  *UnitCommitment.jl (Version 0.4)*, Zenodo, 2024,
+  doi:10.5281/zenodo.4269874.
+- See [`benchmarks/unitcommitment_jl/README.md`](benchmarks/unitcommitment_jl/README.md).
+
+### Sienna PowerSystemsTestData (benchmarks/nrel, benchmarks/sienna)
+
+- Publisher: NREL Sienna, <https://github.com/Sienna-Platform/PowerSystemsTestData>
+  (formerly `NREL-Sienna/PowerSystemsTestData`), commit
+  `a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9`.
+- Terms: **no licence** file or statement in the repository.  **Nothing
+  is redistributed here**: the NREL-118 recipe lists the 125 files it
+  needs with their sha256 (`upstream.sha256`); the Sienna 5-bus recipes
+  rely on gtopt's `sienna_to_gtopt`, which pins the commit and the sha256
+  of the 13 files it downloads.
+- Citation (NREL-118): I. Peña, C. B. Martinez-Anido and B.-M. Hodge, "An
+  Extended IEEE 118-Bus Test System With High Renewable Penetration,"
+  IEEE Trans. Power Systems 33(1), 2018, doi:10.1109/TPWRS.2017.2695963.
+- See [`benchmarks/nrel/README.md`](benchmarks/nrel/README.md) and
+  [`benchmarks/sienna/README.md`](benchmarks/sienna/README.md).
+
+### CUC-data (benchmarks/papers/morales_espana_2019_cuc)
+
+- Authors: G. Morales-España and D. A. Tejada-Arango,
+  <https://github.com/datejada/CUC-data>, commit
+  `624abbbdc9f83095c02b34174e52c76f77ddfa36`.
+- Terms: **no licence** file or statement in the repository; nothing is
+  redistributed here.  `tools/get_case.py fetch` downloads the workbooks
+  (sha256 in `catalog.json`).
+- Citation: G. Morales-España and D. A. Tejada-Arango, "Modeling the
+  Hidden Flexibility of Clustered Unit Commitment," IEEE Trans. Power
+  Systems 34(4), 2019, pp. 3294-3296, doi:10.1109/TPWRS.2019.2908051.
+- See [`benchmarks/papers/morales_espana_2019_cuc/README.md`](benchmarks/papers/morales_espana_2019_cuc/README.md).

@@ -6,7 +6,11 @@ authors; they are under different terms.
 - **`source/`**: third-party data, redistributed as published and
   unmodified except for xz compression and, for large files, splitting
   into numbered parts (the AEMO trace files are also cut to the rows of
-  the case week).  **No licence is granted** by this repository.
+  the case week).  **No licence is granted** by this repository.  The
+  exceptions are benchmark data published under an open licence
+  (`benchmarks/`: PGLib-OPF files under CC BY 4.0, UnitCommitment.jl
+  fixtures under BSD-3-Clause), which you receive under that licence from
+  their authors, not from this repository.
 - **`case/`**: derived from that data by the gtopt conversion tools; the
   cases remain subject to the rights and terms of the publishers.
 - **Rights holders**: Australian Energy Market Operator (AEMO),
@@ -16,7 +20,12 @@ authors; they are under different terms.
   Utility Regulator, Northern Ireland; data not redistributed here,
   fetched on demand); Comité de Operación Económica del
   Sistema Interconectado Nacional (COES), Peru; Roman Korab, Silesian
-  University of Technology, whose data are distributed by MATPOWER.
+  University of Technology, whose data are distributed by MATPOWER; for
+  `benchmarks/`, the authors named in each PGLib-OPF file (IEEE,
+  University of Washington) and UChicago Argonne, LLC (UnitCommitment.jl),
+  and, for the recipe-only benchmarks whose data are not redistributed,
+  NREL / Alliance for Sustainable Energy (Sienna PowerSystemsTestData)
+  and G. Morales-España and D. A. Tejada-Arango (CUC-data).
   Sources, terms and the attribution to give:
   [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md).
 - **Conversion layer**: to the extent the gtopt authors hold any rights in
@@ -37,6 +46,10 @@ without warranty of any kind; see [`DISCLAIMER.md`](DISCLAIMER.md).
 |---|---|---|
 | `**/source/**` | third-party data, no licence granted | `LicenseRef-third-party-no-licence` |
 | `**/case/**` | third-party rights; CC0-1.0 for the conversion layer only | `LicenseRef-third-party-no-licence AND CC0-1.0` |
+| `benchmarks/ieee/**/source/**` | PGLib-OPF data, CC BY 4.0 from their authors | `CC-BY-4.0` |
+| `benchmarks/ieee/**/case/**` | adapted PGLib-OPF data (CC BY 4.0); CC0-1.0 for the conversion layer | `CC-BY-4.0 AND CC0-1.0` |
+| `benchmarks/unitcommitment_jl/**/source/**` | UnitCommitment.jl fixtures, BSD-3-Clause from UChicago Argonne, LLC | `BSD-3-Clause` |
+| `benchmarks/unitcommitment_jl/**/case/**` | converted fixtures (BSD-3-Clause); CC0-1.0 for the conversion layer | `BSD-3-Clause AND CC0-1.0` |
 | `tools/`, `.githooks/` | gtopt dual licence | `AGPL-3.0-or-later OR LicenseRef-gtopt-commercial` |
 | `profiles/`, `catalog.json`, line lifts, documentation, repository metadata | CC0-1.0 | `CC0-1.0` |
 
@@ -70,7 +83,8 @@ for the full explanation of the dual licence.
 ## Third-party data
 
 The third-party data (`source/`) and the cases derived from it (`case/`)
-are **not** licensed by this repository: see the statement above,
+are **not** licensed by this repository (benchmark data under an open
+licence keep that licence, granted by their authors): see the statement above,
 [`THIRD_PARTY_DATA.md`](THIRD_PARTY_DATA.md) and
 [`LICENSES/LicenseRef-third-party-no-licence.txt`](LICENSES/LicenseRef-third-party-no-licence.txt).
 Read [`DISCLAIMER.md`](DISCLAIMER.md) before using any case.

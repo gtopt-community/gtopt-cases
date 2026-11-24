@@ -1,0 +1,3 @@
+# Sienna data are not redistributed: tools/get_case.py fetch c_sys5_ml
+# runs sienna_to_gtopt, which downloads them, and writes case/.
+case/

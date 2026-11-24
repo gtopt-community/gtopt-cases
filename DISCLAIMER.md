@@ -61,9 +61,14 @@ and/or to the institutions that published them: Australian Energy Market
 Operator (AEMO), Australia; Coordinador Eléctrico Nacional (CEN), Chile;
 Administrador del Mercado Mayorista (AMM), Guatemala; Ente Operador Regional
 (EOR); Comité de Operación Económica del Sistema Interconectado Nacional
-(COES), Peru; and Roman Korab, Silesian University of Technology, whose data
-are distributed by MATPOWER.  This repository claims no ownership of them and
-grants no licence over them.  `source/` holds the data as published (unmodified
+(COES), Peru; Roman Korab, Silesian University of Technology, whose data
+are distributed by MATPOWER; and, for the benchmark cases (`benchmarks/`),
+the authors named in each data file (IEEE, University of Washington,
+UChicago Argonne, LLC, NREL / Alliance for Sustainable Energy, and the
+authors of published papers).  This repository claims no ownership of them
+and grants no licence over them; benchmark data published under an open
+licence (CC BY 4.0, BSD-3-Clause) keep that licence, granted by their
+authors.  `source/` holds the data as published (unmodified
 except for compression and splitting into parts; the AEMO traces are cut to
 the case week); `case/` holds gtopt conversions derived from it, which remain
 subject to the publishers' rights.  See [`LICENSING.md`](LICENSING.md) and
@@ -74,8 +79,9 @@ to the terms of use of those institutions.
 
 The gtopt project is not affiliated with, sponsored by or endorsed by AEMO,
 CEN, AMM, EOR, COES, the SEM Committee, CRU, Utility Regulator, NERA, Energy
-Exemplar, PSR, Siemens, IBM, or MATPOWER / PSERC. Mentioning an institution or
-a product does not imply any such relationship.
+Exemplar, PSR, Siemens, IBM, MATPOWER / PSERC, the IEEE, PGLib-OPF, Argonne
+National Laboratory (UnitCommitment.jl) or NREL (Sienna). Mentioning an
+institution or a product does not imply any such relationship.
 
 PLEXOS® is a registered trademark of Energy Exemplar.  SDDP and NCP are
 products of PSR.  PSS®E is a registered trademark of

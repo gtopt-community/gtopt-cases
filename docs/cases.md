@@ -32,12 +32,20 @@ gtopt-cases/
 │   └── unit_commitment/     SEM PLEXOS model week, recipe only: fetched + converted on demand
 ├── peru/                Sistema Eléctrico Interconectado Nacional (SEIN), data from the COES
 │   └── medium_long_term/    COES SDDP base cases 2026-2029 (sddp2gtopt)
-└── poland/              Polish transmission system, MATPOWER case3375wp (R. Korab)
-    └── dc_opf/              single-hour DC OPF snapshot (pp2gtopt)
+├── poland/              Polish transmission system, MATPOWER case3375wp (R. Korab)
+│   └── dc_opf/              single-hour DC OPF snapshot (pp2gtopt)
+└── benchmarks/          standard test systems, tool examples, published case studies
+    ├── ieee/                PGLib-OPF IEEE systems, single-hour DC OPF (pp2gtopt)
+    ├── unitcommitment_jl/   UnitCommitment.jl fixtures, unit-commitment MIP (ucjl2gtopt)
+    ├── nrel/                NREL-118, recipe only (nrel118_to_gtopt)
+    ├── sienna/              Sienna PowerSimulations.jl 5-bus systems, recipe only (sienna_to_gtopt)
+    └── papers/              published case studies, one folder per paper
 ```
 
 New countries go in their own top-level folder (e.g. `colombia/`) with the
-same application sub-folders and a country `README.md`.
+same application sub-folders and a country `README.md`.  Test systems and
+published case studies go in [`benchmarks/`](../benchmarks/README.md),
+grouped by family (`benchmarks/<family>/<case>/`).
 
 ## Model elements by case
 
@@ -236,6 +244,38 @@ See [peru/README.md](../peru/README.md).
 Single-hour DC OPF of the Polish system (winter 2007-08 evening peak),
 from the MATPOWER case file `case3375wp.m`.  See
 [poland/README.md](../poland/README.md).
+
+## Benchmark cases
+
+Standard test systems, example systems of other tools and published case
+studies (see [benchmarks/README.md](../benchmarks/README.md)); open-licence
+sources are kept with their case, the others are recipes that
+`tools/get_case.py fetch` builds locally.
+
+| Case | Application | Buses | Blocks | LP rows | In this repository |
+|---|---|---:|---:|---:|---|
+| [ieee/pglib_opf_case118_ieee](../benchmarks/ieee/pglib_opf_case118_ieee) | dc_opf | 118 | 1 | 187 | source + case |
+| [ieee/pglib_opf_case14_ieee](../benchmarks/ieee/pglib_opf_case14_ieee) | dc_opf | 14 | 1 | 21 | source + case |
+| [ieee/pglib_opf_case24_ieee_rts](../benchmarks/ieee/pglib_opf_case24_ieee_rts) | dc_opf | 24 | 1 | 39 | source + case |
+| [ieee/pglib_opf_case300_ieee](../benchmarks/ieee/pglib_opf_case300_ieee) | dc_opf | 300 | 1 | 412 | source + case |
+| [ieee/pglib_opf_case30_ieee](../benchmarks/ieee/pglib_opf_case30_ieee) | dc_opf | 30 | 1 | 42 | source + case |
+| [ieee/pglib_opf_case39_epri](../benchmarks/ieee/pglib_opf_case39_epri) | dc_opf | 39 | 1 | 47 | source + case |
+| [ieee/pglib_opf_case57_ieee](../benchmarks/ieee/pglib_opf_case57_ieee) | dc_opf | 57 | 1 | 81 | source + case |
+| [ieee/pglib_opf_case5_pjm](../benchmarks/ieee/pglib_opf_case5_pjm) | dc_opf | 5 | 1 | 7 | source + case |
+| [ieee/pglib_opf_case73_ieee_rts](../benchmarks/ieee/pglib_opf_case73_ieee_rts) | dc_opf | 73 | 1 | 121 | source + case |
+| [nrel/nrel118_2024w01](../benchmarks/nrel/nrel118_2024w01) | production_cost | 118 | 168 | 54,096 | recipe only |
+| [papers/morales_espana_2019_cuc/ieee118](../benchmarks/papers/morales_espana_2019_cuc/ieee118) | unit_commitment | — | — | — | recipe only (converter in progress) |
+| [papers/morales_espana_2019_cuc/ieee39](../benchmarks/papers/morales_espana_2019_cuc/ieee39) | unit_commitment | — | — | — | recipe only (converter in progress) |
+| [sienna/batt_test_case_b](../benchmarks/sienna/batt_test_case_b) | production_cost | 1 | 3 | 17 | recipe only |
+| [sienna/c_sys5_dc](../benchmarks/sienna/c_sys5_dc) | production_cost | 5 | 24 | 168 | recipe only |
+| [sienna/c_sys5_hy_cascading](../benchmarks/sienna/c_sys5_hy_cascading) | production_cost | 5 | 24 | 360 | recipe only |
+| [sienna/c_sys5_il](../benchmarks/sienna/c_sys5_il) | production_cost | 5 | 24 | 24 | recipe only |
+| [sienna/c_sys5_ml](../benchmarks/sienna/c_sys5_ml) | production_cost | 5 | 24 | 120 | recipe only |
+| [sienna/c_sys5_phes_ed](../benchmarks/sienna/c_sys5_phes_ed) | production_cost | 5 | 2 | 11 | recipe only |
+| [sienna/c_sys5_re_fuel_cost](../benchmarks/sienna/c_sys5_re_fuel_cost) | production_cost | 5 | 4 | 4 | recipe only |
+| [unitcommitment_jl/case118_initcond](../benchmarks/unitcommitment_jl/case118_initcond) | unit_commitment | 118 | 36 | 208,766 | source + case |
+| [unitcommitment_jl/case14](../benchmarks/unitcommitment_jl/case14) | unit_commitment | 14 | 4 | 1,578 | source + case |
+| [unitcommitment_jl/case14_profiled](../benchmarks/unitcommitment_jl/case14_profiled) | unit_commitment | 14 | 4 | 1,578 | source + case |
 
 ## Expansion planning
 

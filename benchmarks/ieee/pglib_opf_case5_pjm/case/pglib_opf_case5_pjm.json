@@ -1,0 +1,197 @@
+{
+  "options": {
+    "method": "monolithic",
+    "annual_discount_rate": 0.0,
+    "output_format": "csv",
+    "output_compression": "uncompressed",
+    "model_options": {
+      "use_single_bus": false,
+      "demand_fail_cost": 1000.0,
+      "scale_objective": 1000.0,
+      "use_kirchhoff": true
+    }
+  },
+  "simulation": {
+    "block_array": [
+      {
+        "uid": 1,
+        "duration": 1
+      }
+    ],
+    "stage_array": [
+      {
+        "uid": 1,
+        "first_block": 0,
+        "count_block": 1,
+        "active": 1
+      }
+    ],
+    "scenario_array": [
+      {
+        "uid": 1,
+        "probability_factor": 1
+      }
+    ]
+  },
+  "system": {
+    "name": "pglib_opf_case5_pjm",
+    "bus_array": [
+      {
+        "uid": 1,
+        "name": "b1"
+      },
+      {
+        "uid": 2,
+        "name": "b2"
+      },
+      {
+        "uid": 3,
+        "name": "b3"
+      },
+      {
+        "uid": 4,
+        "name": "b4",
+        "reference_theta": 0
+      },
+      {
+        "uid": 5,
+        "name": "b5"
+      }
+    ],
+    "generator_array": [
+      {
+        "uid": 1,
+        "name": "g1",
+        "bus": 4,
+        "pmin": 0.0,
+        "pmax": 200.0,
+        "gcost": 40.0,
+        "capacity": 200.0
+      },
+      {
+        "uid": 2,
+        "name": "g2",
+        "bus": 1,
+        "pmin": 0.0,
+        "pmax": 40.0,
+        "gcost": 14.0,
+        "capacity": 40.0
+      },
+      {
+        "uid": 3,
+        "name": "g3",
+        "bus": 3,
+        "pmin": 0.0,
+        "pmax": 520.0,
+        "gcost": 30.0,
+        "capacity": 520.0
+      },
+      {
+        "uid": 4,
+        "name": "g4",
+        "bus": 5,
+        "pmin": 0.0,
+        "pmax": 600.0,
+        "gcost": 10.0,
+        "capacity": 600.0
+      },
+      {
+        "uid": 5,
+        "name": "g5",
+        "bus": 1,
+        "pmin": 0.0,
+        "pmax": 170.0,
+        "gcost": 15.0,
+        "capacity": 170.0
+      }
+    ],
+    "demand_array": [
+      {
+        "uid": 1,
+        "name": "d1",
+        "bus": 2,
+        "lmax": [
+          [
+            300.0
+          ]
+        ]
+      },
+      {
+        "uid": 2,
+        "name": "d2",
+        "bus": 3,
+        "lmax": [
+          [
+            300.0
+          ]
+        ]
+      },
+      {
+        "uid": 3,
+        "name": "d3",
+        "bus": 4,
+        "lmax": [
+          [
+            400.0
+          ]
+        ]
+      }
+    ],
+    "line_array": [
+      {
+        "name": "l1_2",
+        "bus_a": 1,
+        "bus_b": 2,
+        "reactance": 0.0281,
+        "tmax_ab": 400.0,
+        "tmax_ba": 400.0,
+        "uid": 1
+      },
+      {
+        "name": "l1_4",
+        "bus_a": 1,
+        "bus_b": 4,
+        "reactance": 0.0304,
+        "tmax_ab": 426.0,
+        "tmax_ba": 426.0,
+        "uid": 2
+      },
+      {
+        "name": "l1_5",
+        "bus_a": 1,
+        "bus_b": 5,
+        "reactance": 0.0064,
+        "tmax_ab": 426.0,
+        "tmax_ba": 426.0,
+        "uid": 3
+      },
+      {
+        "name": "l2_3",
+        "bus_a": 2,
+        "bus_b": 3,
+        "reactance": 0.0108,
+        "tmax_ab": 426.0,
+        "tmax_ba": 426.0,
+        "uid": 4
+      },
+      {
+        "name": "l3_4",
+        "bus_a": 3,
+        "bus_b": 4,
+        "reactance": 0.0297,
+        "tmax_ab": 426.0,
+        "tmax_ba": 426.0,
+        "uid": 5
+      },
+      {
+        "name": "l4_5",
+        "bus_a": 4,
+        "bus_b": 5,
+        "reactance": 0.0297,
+        "tmax_ab": 240.0,
+        "tmax_ba": 240.0,
+        "uid": 6
+      }
+    ]
+  }
+}

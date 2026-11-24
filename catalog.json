@@ -3,6 +3,10 @@
   "disclaimer": "DISCLAIMER.md",
   "disclaimer_summary": "Cases built with gtopt's own conversion tools, verified only as far as the authors can, NOT validated by the publishing institutions; provided AS IS without warranty; never to be used as a reference for analysing official operation scheduling or for financial analysis.",
   "description": "Machine-readable index of the gtopt case collection (INPUTS ONLY: source data, gtopt case inputs and how to run them; no results). One entry per case. Paths are relative to the repo root (case_json relative to the case path); run commands assume REPO=<this checkout>.",
+  "collections": {
+    "countries": "Cases of real power systems, by country: <country>/<application>/<case>; data published by system operators, regulators and research groups.",
+    "benchmarks": "Standard test systems, example systems of other tools and published case studies: benchmarks/<family>/<case> (papers: benchmarks/papers/<author_year_topic>/<case>); 'family' names the group; 'country' is null. Open-licence sources are kept in source/; sources without a licence are recipes (source.redistributed false) built by tools/get_case.py fetch."
+  },
   "revisions_note": "converter.gtopt_revision, converter.converter_last_change and size.lp.gtopt_revision record the gtopt development revision used for the conversion or the LP-size check (pre-publication history; may not exist in the public repository https://github.com/gtopt-community/gtopt). To rebuild a case, use the named converter from gtopt master of November 2026 or later.",
   "converter_defaults": {
     "daily_scheduling": {
@@ -130,7 +134,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2021-10-24",
@@ -215,7 +220,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2024-09-01",
@@ -300,7 +306,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2024-10-03",
@@ -385,7 +392,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2024-12-15",
@@ -470,7 +478,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-02-17",
@@ -555,7 +564,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-04-10",
@@ -640,7 +650,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-04-27",
@@ -725,7 +736,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-06-26",
@@ -810,7 +822,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-09-16",
@@ -895,7 +908,8 @@
       "notes": [
         "Source only, fetched on demand: no CEN data and no gtopt case in this repository; no case built or checked by the gtopt authors (no size, skipped by gtopt_check_cases).",
         "Kept as a test day for the study of negative nodal prices."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-10-05",
@@ -990,7 +1004,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-10-19",
@@ -1085,7 +1100,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-11-09",
@@ -1180,7 +1196,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-11-23",
@@ -1275,7 +1292,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-12-07",
@@ -1370,7 +1388,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2025-12-21",
@@ -1465,7 +1484,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-01-04",
@@ -1560,7 +1580,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-01-18",
@@ -1655,7 +1676,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-02-15",
@@ -1750,7 +1772,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-03-15",
@@ -1845,7 +1868,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-04-07",
@@ -1940,7 +1964,8 @@
         "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
         "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
       },
-      "notes": []
+      "notes": [],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-04-12",
@@ -2037,7 +2062,8 @@
       },
       "notes": [
         "Expect a harder MIP than the other days: allow the full profile time_limit."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-04-22",
@@ -2134,7 +2160,8 @@
       },
       "notes": [
         "Expect a harder MIP than the other days: allow the full profile time_limit."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-05-10",
@@ -2208,7 +2235,8 @@
       "notes": [
         "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-05-17",
@@ -2305,7 +2333,8 @@
       },
       "notes": [
         "Lift list contains both 'Futuro033_CRCA2B>Andes220' (common) and 'Futuro033_CRCA2B->Andes220' (extra); both names exist in the bundle."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-05-25",
@@ -2379,7 +2408,8 @@
       "notes": [
         "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-11-03",
@@ -2453,7 +2483,8 @@
       "notes": [
         "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/daily_scheduling/pcp_2026-11-09",
@@ -2527,7 +2558,8 @@
       "notes": [
         "Source only: no gtopt case JSON yet (no size; skipped by gtopt_check_cases); tools/get_case.py fetch builds it locally.",
         "Kept as a test day for the comparison of line-loss models (PLEXOS and gtopt)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/medium_long_term/plp_23y",
@@ -2803,7 +2835,8 @@
       "notes": [
         "1-year cut of the 23-year source: 12 monthly stages = 12 SDDP phases, 120 blocks, hydrology 1, no apertures; boundary cuts via system.future_cost_array (810 cuts); sddp_options.max_iterations = 3 (smoke-test setting).",
         "Same model as the former cen_long_term_1y case (regenerated from source/; identical parquet data and planning JSON up to system.version). The full 23-year horizon is a README variant."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/transmission_planning/plp_pet27/e01",
@@ -3065,7 +3098,8 @@
         "Variants CS_I_sens (E01-E03) and NC_VI (E01-E03) of the same publication are documented in the group README (fetched from the CEN archive, not redistributed here).",
         "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
       ],
-      "title": "PLP-PET27 E01 — Proceso de Planificación de la Transmisión 2027"
+      "title": "PLP-PET27 E01 — Proceso de Planificación de la Transmisión 2027",
+      "collection": "countries"
     },
     {
       "id": "chile/transmission_planning/plp_pet27/e02",
@@ -3327,7 +3361,8 @@
         "Variants CS_I_sens (E01-E03) and NC_VI (E01-E03) of the same publication are documented in the group README (fetched from the CEN archive, not redistributed here).",
         "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
       ],
-      "title": "PLP-PET27 E02 — Proceso de Planificación de la Transmisión 2027"
+      "title": "PLP-PET27 E02 — Proceso de Planificación de la Transmisión 2027",
+      "collection": "countries"
     },
     {
       "id": "chile/transmission_planning/plp_pet27/e03",
@@ -3589,7 +3624,8 @@
         "Variants CS_I_sens (E01-E03) and NC_VI (E01-E03) of the same publication are documented in the group README (fetched from the CEN archive, not redistributed here).",
         "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
       ],
-      "title": "PLP-PET27 E03 — Proceso de Planificación de la Transmisión 2027"
+      "title": "PLP-PET27 E03 — Proceso de Planificación de la Transmisión 2027",
+      "collection": "countries"
     },
     {
       "id": "chile/medium_long_term/plp_2y",
@@ -3833,7 +3869,8 @@
       "notes": [
         "4 equiprobable hydrologies (2, 17, 52, 67), 52 stages = 52 SDDP phases, 20 apertures; boundary cuts via system.future_cost_array (1007 cuts).",
         "Replaces the former gtopt_case_2y (hydrologies 51,52) and gtopt_case_2y_fs (first scenario); their commands are in the README Variants section."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "chile/medium_long_term/plp_5y",
@@ -4066,7 +4103,8 @@
       },
       "notes": [
         "4 equiprobable hydrologies (16, 17, 19, 48) at about the 65th, 35th, 90th and 10th percentile of total inflow; 72 stages = 72 SDDP phases, 34 apertures; boundary cuts via system.future_cost_array (1665 cuts)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/daily_scheduling/ncp_pdd_2026-06-22",
@@ -4245,7 +4283,8 @@
         "Daily PSR NCP model (PDD 22-Jun-2026) over a 168-hour horizon, single stage, 1 block per hour.",
         "Terminal water value: system.future_cost_array 'fcf' -> case/boundary_cuts.csv (watervcp single-cut proxy). case/boundary_cuts_gtopt_fcf.csv holds gtopt's own FCF from the two-run pipeline (12-week deterministic SDDP built from this case; A/B alternative, not used by default: point future_cost_array[0].cuts_file at it).",
         "Economics: thermal merit costs, water values, inflow-limited run-of-river. Imports are offered only in hours with a PRECIOSMEX price (21-22 Jun); hours without an offer close the import (MEX-I has none at all), except the fixed RESTMEX schedule of EDC-I (120 MW, 22 Jun only). No aggregate import limit."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/daily_scheduling/ncp_week_2026-06-21",
@@ -4367,7 +4406,8 @@
         "Self-contained case (no application profile); run as is.",
         "Weekly NCP dispatch 21-27 Jun 2026 (short-term weekly program), 168 hourly blocks, single stage; kept under daily_scheduling (dispatch with hourly resolution).",
         "No water-value file shipped: thermal merit costs only. The bundle has no PRECIOSMEX, so the fuel table prices the imports: import units whose fuel costs $0 (MEX-I, IMP-01) have no offer and are left out (16 units). EDC-I (38.89 $/MWh, 120 MW) and ESA-I, HON-I, MEX-01 (INTER-SAL, 1000 $/MWh) stay available. No aggregate import limit."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMAX27",
@@ -4466,7 +4506,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), maximum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMED27",
@@ -4565,7 +4606,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), medium demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMIN27",
@@ -4664,7 +4706,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Mar 2027 (dry), minimum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMAX26",
@@ -4763,7 +4806,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), maximum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMED26",
@@ -4862,7 +4906,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), medium demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/psse_bdd_2026-2027/PAESEPMIN26",
@@ -4961,7 +5006,8 @@
         "Self-contained case (no application profile); run as is.",
         "Single-period DC-OPF network snapshot from the AMM long-term study (PLP May-2026..Apr-2027): Sep 2026 (wet), minimum demand; 1 stage / 1 block / 1 scenario.",
         "Costs are rank-based merit order from the LDM spreadsheet (PSS/E RAW has no costs; about half the generators match by name)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2021-2022",
@@ -5127,7 +5173,8 @@
       },
       "notes": [
         "AMM long-term programme 2021-2022: 12 monthly stages from 2021-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2022-2023",
@@ -5303,7 +5350,8 @@
       },
       "notes": [
         "AMM long-term programme 2022-2023: 12 monthly stages from 2022-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2023-2024",
@@ -5489,7 +5537,8 @@
       },
       "notes": [
         "AMM long-term programme 2023-2024: 12 monthly stages from 2023-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2024-2025",
@@ -5670,7 +5719,8 @@
       },
       "notes": [
         "AMM long-term programme 2024-2025: 12 monthly stages from 2024-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2025-2026",
@@ -5856,7 +5906,8 @@
       },
       "notes": [
         "AMM long-term programme 2025-2026: 12 monthly stages from 2025-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "guatemala/medium_long_term/sddp_plp_2026-2027",
@@ -6062,7 +6113,8 @@
       },
       "notes": [
         "AMM long-term programme 2026-2027: 12 monthly stages from 2026-05, 9 load blocks, the study's single hydrology, DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "peru/medium_long_term/coes_mrfo_2026-2029/2026",
@@ -6327,7 +6379,8 @@
       },
       "notes": [
         "12 monthly stages of 2026, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "peru/medium_long_term/coes_mrfo_2026-2029/2027",
@@ -6592,7 +6645,8 @@
       },
       "notes": [
         "12 monthly stages of 2027, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "peru/medium_long_term/coes_mrfo_2026-2029/2028",
@@ -6857,7 +6911,8 @@
       },
       "notes": [
         "12 monthly stages of 2028, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "peru/medium_long_term/coes_mrfo_2026-2029/2029",
@@ -7122,7 +7177,8 @@
       },
       "notes": [
         "12 monthly stages of 2029, 5 load blocks, 56 historical hydrologies (1966-2021), DC network with losses; simplified relative to the PSR model (see README)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "poland/dc_opf/case3375wp",
@@ -7208,7 +7264,8 @@
         "Single-hour DC OPF snapshot: MATPOWER provides no time series, no unit-commitment or ramp data.",
         "Out-of-service units omitted; 10 negative-load buses become fixed injections; MATPOWER linear costs.",
         "Data have no explicit licence; redistributed unchanged as published by MATPOWER, with attribution; removable on request of the rights holder."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "australia/production_cost/isp2026_sc_2027w03",
@@ -7306,7 +7363,8 @@
         "15 sub-regional and 20 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
         "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "australia/production_cost/isp2026_sc_2027w16",
@@ -7404,7 +7462,8 @@
         "15 sub-regional and 20 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
         "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "australia/production_cost/isp2026_sc_2027w29",
@@ -7502,7 +7561,8 @@
         "15 sub-regional and 19 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
         "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "australia/production_cost/isp2026_sc_2027w42",
@@ -7600,7 +7660,8 @@
         "15 sub-regional and 19 REZ buses, 18 notional flow paths plus radial REZ lines (transport, lossless); operational PLEXOS constraints converted (REZ, transmission group, purchaser network, gas-zone daily offtake); targets longer than one month are not enforced.",
         "Hydro reservoirs/turbines with natural inflows and pumped storage (Kidston, Shoalhaven, Wivenhoe, Tumut 3); start/end levels from the source data, other storages end at their start volume, no water values; outages, MLFs and reserves are not modelled.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "australia/expansion/isp2026_sc_exp_fy28_3y",
@@ -7689,7 +7750,8 @@
         "Batteries close a daily cycle per representative day; reservoir volumes are coupled across all months with a free end volume; no outages, unit commitment or reserves.",
         "Needs a gtopt with battery power expansion (energy_power_ratio) and user-constraint active_stages.",
         "Not validated against AEMO (the public package has no PLEXOS solution)."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "ireland/unit_commitment/sem_2025w03",
@@ -7829,7 +7891,8 @@
         "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
         "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; France not connected in January 2025.",
         "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "ireland/unit_commitment/sem_2025w16",
@@ -7969,7 +8032,8 @@
         "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
         "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in April 2025.",
         "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "ireland/unit_commitment/sem_2025w29",
@@ -8109,7 +8173,8 @@
         "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
         "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in July 2025.",
         "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
-      ]
+      ],
+      "collection": "countries"
     },
     {
       "id": "ireland/unit_commitment/sem_2025w42",
@@ -8249,7 +8314,2105 @@
         "One week of PLEXOS model 'Opt A2 24-32 (Avail, No Uplift, No Wheeling)--MIP', weather sample 1, deterministic (no forced outages).",
         "Three-node transport model (SEM, GB, France) with GB/France as flat load plus price-bid generator; three HVDC links SEM-GB in service (East-West, Moyle and Greenlink, which enters the model after January 2025); France not connected in October 2025.",
         "Not converted: forced outages, marginal loss factors and line losses, battery charging fees, yearly hours-of-operation limits, line ramps, uplift and price cap/floor, the trading-day (23:00) offset."
-      ]
+      ],
+      "collection": "countries"
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case118_ieee",
+      "path": "benchmarks/ieee/pglib_opf_case118_ieee",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE 118-bus test case (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case118_ieee.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case118_ieee.m.xz",
+            "sha256": "5203a227657544190caf63302eefeae234340064e097912ba8425a283b57b383",
+            "bytes": 8504
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case118_ieee.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 b1af0833849040c04babc3700631cff0d9afa66b79c5d3e13ae79bdf516cec78; originally: University of Washington Power Systems Test Case Archive (ieee118cdf.txt), IEEE Common Data Format, 1962 AEP system",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 Richard D. Christie, University of Washington Electrical Engineering, licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case118_ieee.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case118_ieee/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case118_ieee/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case118_ieee/case/pglib_opf_case118_ieee.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case118_ieee/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case118_ieee",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case118_ieee",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case118_ieee"
+      },
+      "rights_holders": [
+        {
+          "name": "Richard D. Christie, University of Washington Electrical Engineering",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Richard D. Christie, University of Washington Electrical Engineering",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE 118-bus test case, pglib_opf_case118_ieee.m from PGLib-OPF v23.07 (© 1999 Richard D. Christie, University of Washington Electrical Engineering; CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 187,
+          "cols": 339,
+          "nnz": 1021,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 118,
+        "generators": 54,
+        "lines": 186,
+        "demands": 99,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case14_ieee",
+      "path": "benchmarks/ieee/pglib_opf_case14_ieee",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE 14-bus test case (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case14_ieee.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case14_ieee.m.xz",
+            "sha256": "cae32f34be7557ffeec4604bb79558493facf060038c2df0ea7a57c805e322b8",
+            "bytes": 2472
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case14_ieee.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 bd5c568621de65e4b0922317010868bc7fa94173807faa10ea8fdbbe77c28106; originally: University of Washington Power Systems Test Case Archive (ieee14cdf.txt), IEEE Common Data Format, 1962 AEP system",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 Richard D. Christie, University of Washington Electrical Engineering, licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case14_ieee.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case14_ieee/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case14_ieee/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case14_ieee/case/pglib_opf_case14_ieee.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case14_ieee/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case14_ieee",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case14_ieee",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case14_ieee"
+      },
+      "rights_holders": [
+        {
+          "name": "Richard D. Christie, University of Washington Electrical Engineering",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Richard D. Christie, University of Washington Electrical Engineering",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE 14-bus test case, pglib_opf_case14_ieee.m from PGLib-OPF v23.07 (© 1999 Richard D. Christie, University of Washington Electrical Engineering; CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 21,
+          "cols": 36,
+          "nnz": 88,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 14,
+        "generators": 5,
+        "lines": 20,
+        "demands": 11,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case24_ieee_rts",
+      "path": "benchmarks/ieee/pglib_opf_case24_ieee_rts",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE Reliability Test System 1979 (24 buses) (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case24_ieee_rts.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case24_ieee_rts.m.xz",
+            "sha256": "74e7fbb6254363afc8b1a5e5398b9a24e3695f1ed31529a559025158ebde45f2",
+            "bytes": 2296
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case24_ieee_rts.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 5d4fc2d4a1a282f700c51747e592f5a5ac15fa6d5eadb7df7ae937bbe3063374; originally: IEEE RTS Task Force, \"IEEE Reliability Test System,\" IEEE Trans. PAS-98(6), 1979, pp. 2047-2054, doi:10.1109/TPAS.1979.319398",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1979 The Institute of Electrical and Electronics Engineers (IEEE), licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case24_ieee_rts.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case24_ieee_rts/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case24_ieee_rts/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case24_ieee_rts/case/pglib_opf_case24_ieee_rts.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case24_ieee_rts/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case24_ieee_rts",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case24_ieee_rts",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case24_ieee_rts"
+      },
+      "rights_holders": [
+        {
+          "name": "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE Reliability Test System 1979 (24 buses), pglib_opf_case24_ieee_rts.m from PGLib-OPF v23.07 (© 1979 The Institute of Electrical and Electronics Engineers (IEEE); CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 39,
+          "cols": 88,
+          "nnz": 204,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 24,
+        "generators": 33,
+        "lines": 38,
+        "demands": 17,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case300_ieee",
+      "path": "benchmarks/ieee/pglib_opf_case300_ieee",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE 300-bus test case (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case300_ieee.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case300_ieee.m.xz",
+            "sha256": "c0a413cfaf6dcb40db57079dcd3a04c94753d3beaf2105c79d9a44fc1f0db4b4",
+            "bytes": 16068
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case300_ieee.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 7ecf056d5942135765200ad7ae8791c28f0d35fb1dc888ba2c32dfc950f3c2f5; originally: University of Washington Power Systems Test Case Archive (ieee300cdf.txt), IEEE Common Data Format",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 Richard D. Christie, University of Washington Electrical Engineering, licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case300_ieee.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case300_ieee/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case300_ieee/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case300_ieee/case/pglib_opf_case300_ieee.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case300_ieee/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case300_ieee",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case300_ieee",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case300_ieee"
+      },
+      "rights_holders": [
+        {
+          "name": "Richard D. Christie, University of Washington Electrical Engineering",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Richard D. Christie, University of Washington Electrical Engineering",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE 300-bus test case, pglib_opf_case300_ieee.m from PGLib-OPF v23.07 (© 1999 Richard D. Christie, University of Washington Electrical Engineering; CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 412,
+          "cols": 679,
+          "nnz": 1863,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 300,
+        "generators": 77,
+        "lines": 411,
+        "demands": 191,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case30_ieee",
+      "path": "benchmarks/ieee/pglib_opf_case30_ieee",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE 30-bus test case (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case30_ieee.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case30_ieee.m.xz",
+            "sha256": "86cbce8e298122c558ec1c71b23e4a4c36a57e132fb97b92472bc6bd0a0c1651",
+            "bytes": 2888
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case30_ieee.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 cae3290639d989731d32428aacf30c0b918bc91db73bc54791f3aa62d3f76c70; originally: University of Washington Power Systems Test Case Archive (ieee30cdf.txt), IEEE Common Data Format",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 Richard D. Christie, University of Washington Electrical Engineering, licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case30_ieee.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case30_ieee/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case30_ieee/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case30_ieee/case/pglib_opf_case30_ieee.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case30_ieee/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case30_ieee",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case30_ieee",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case30_ieee"
+      },
+      "rights_holders": [
+        {
+          "name": "Richard D. Christie, University of Washington Electrical Engineering",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Richard D. Christie, University of Washington Electrical Engineering",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE 30-bus test case, pglib_opf_case30_ieee.m from PGLib-OPF v23.07 (© 1999 Richard D. Christie, University of Washington Electrical Engineering; CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 42,
+          "cols": 68,
+          "nnz": 167,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 30,
+        "generators": 6,
+        "lines": 41,
+        "demands": 21,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case39_epri",
+      "path": "benchmarks/ieee/pglib_opf_case39_epri",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "New England 39-bus system (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case39_epri.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case39_epri.m.xz",
+            "sha256": "95e0349da5f96b737c7104608801a5c6c243b29f468fd887ac06d40e7d0e0d29",
+            "bytes": 4156
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case39_epri.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 83a1a6ec49c9a0533b51e928f6bd95b93aea745a620e5123bedcd88f716c286b; originally: T. Athay, R. Podmore and S. Virmani, \"A Practical Method for the Direct Analysis of Transient Stability,\" IEEE Trans. PAS-98(2), 1979, pp. 573-584, doi:10.1109/TPAS.1979.319407; via MATPOWER case39",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1989 The Institute of Electrical and Electronics Engineers (IEEE), licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case39_epri.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case39_epri/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case39_epri/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case39_epri/case/pglib_opf_case39_epri.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case39_epri/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case39_epri",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case39_epri",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case39_epri"
+      },
+      "rights_holders": [
+        {
+          "name": "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "New England 39-bus system, pglib_opf_case39_epri.m from PGLib-OPF v23.07 (© 1989 The Institute of Electrical and Electronics Engineers (IEEE); CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 47,
+          "cols": 77,
+          "nnz": 177,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 39,
+        "generators": 10,
+        "lines": 46,
+        "demands": 21,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case57_ieee",
+      "path": "benchmarks/ieee/pglib_opf_case57_ieee",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE 57-bus test case (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case57_ieee.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case57_ieee.m.xz",
+            "sha256": "d9a6b703ef3021db57686e1ea0a692c70adc1e5f479571a650354e0cb01b05f6",
+            "bytes": 4820
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case57_ieee.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 aa3b48f7cbaade2afd69cb3790ef72be981db8494dcef9277bee460f754bdb22; originally: University of Washington Power Systems Test Case Archive (ieee57cdf.txt), IEEE Common Data Format",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 Richard D. Christie, University of Washington Electrical Engineering, licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case57_ieee.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case57_ieee/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case57_ieee/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case57_ieee/case/pglib_opf_case57_ieee.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case57_ieee/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case57_ieee",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case57_ieee",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case57_ieee"
+      },
+      "rights_holders": [
+        {
+          "name": "Richard D. Christie, University of Washington Electrical Engineering",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Richard D. Christie, University of Washington Electrical Engineering",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE 57-bus test case, pglib_opf_case57_ieee.m from PGLib-OPF v23.07 (© 1999 Richard D. Christie, University of Washington Electrical Engineering; CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 81,
+          "cols": 129,
+          "nnz": 372,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 57,
+        "generators": 7,
+        "lines": 80,
+        "demands": 42,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case5_pjm",
+      "path": "benchmarks/ieee/pglib_opf_case5_pjm",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "PJM 5-bus system (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case5_pjm.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case5_pjm.m.xz",
+            "sha256": "20f9752bb0cee9099da181911a145575b491c45ed519b1cb8ccabb95fa2e44c8",
+            "bytes": 1528
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case5_pjm.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 cadf7501a15c2d508820493cef6acc85757274197e74c40bcec4fc4ecf619e6f; originally: F. Li and R. Bo, \"Small Test Systems for Power System Economic Studies,\" IEEE PES General Meeting 2010, doi:10.1109/PES.2010.5589973",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 2010 The Institute of Electrical and Electronics Engineers (IEEE), licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case5_pjm.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case5_pjm/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case5_pjm/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case5_pjm/case/pglib_opf_case5_pjm.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case5_pjm/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case5_pjm",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case5_pjm",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case5_pjm"
+      },
+      "rights_holders": [
+        {
+          "name": "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "PJM 5-bus system, pglib_opf_case5_pjm.m from PGLib-OPF v23.07 (© 2010 The Institute of Electrical and Electronics Engineers (IEEE); CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 7,
+          "cols": 14,
+          "nnz": 27,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 5,
+        "lines": 6,
+        "demands": 3,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/ieee/pglib_opf_case73_ieee_rts",
+      "path": "benchmarks/ieee/pglib_opf_case73_ieee_rts",
+      "collection": "benchmarks",
+      "family": "ieee",
+      "title": "IEEE Reliability Test System 1996 (73 buses, three areas) (PGLib-OPF v23.07)",
+      "date": "snapshot (one hour)",
+      "country": null,
+      "application": "dc_opf",
+      "method": "monolithic",
+      "case_json": "case/pglib_opf_case73_ieee_rts.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/pglib_opf_case73_ieee_rts.m.xz",
+            "sha256": "f20424514699e5b8dd090b74505bfac2228fdf607f0fe0cf42fec7aa90885bb4",
+            "bytes": 3268
+          }
+        ],
+        "origin": "PGLib-OPF v23.07 pglib_opf_case73_ieee_rts.m (https://github.com/power-grid-lib/pglib-opf, commit dc6be4b2f85ca0e776952ec22cbd4c22396ea5a3); uncompressed sha256 fe8f15a2391e2c92138b712d146b04c038f0727e8e9220e1c6065507ea12a22c; originally: IEEE RTS Task Force, \"The IEEE Reliability Test System-1996,\" IEEE Trans. Power Systems 14(3), 1999, pp. 1010-1020, doi:10.1109/59.780914",
+        "publisher": "IEEE PES Task Force on Benchmarks for Validation of Emerging Power System Algorithms (PGLib-OPF)",
+        "licence": "CC-BY-4.0 (data licence of PGLib-OPF; file header: © 1999 The Institute of Electrical and Electronics Engineers (IEEE), licensed under CC BY 4.0)"
+      },
+      "converter": {
+        "tool": "pp2gtopt",
+        "flags": [
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "input": "source/pglib_opf_case73_ieee_rts.m.xz",
+        "decompress": true,
+        "argv": [
+          "pp2gtopt",
+          "-f",
+          "{input}",
+          "-o",
+          "{out_json}",
+          "--solver",
+          "monolithic",
+          "--no-check"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "pp2gtopt (pandapower 3.5.6, matpowercaseframes 2.1.1); needs the matpower extra (pip install -e \"scripts[matpower]\"); quadratic cost terms are dropped (linear coefficient kept)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case73_ieee_rts/output && cd ~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case73_ieee_rts/output && gtopt \"$REPO/benchmarks/ieee/pglib_opf_case73_ieee_rts/case/pglib_opf_case73_ieee_rts.json\" --set input_directory=\"$REPO/benchmarks/ieee/pglib_opf_case73_ieee_rts/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only pglib_opf_case73_ieee_rts",
+        "output": "~/gtopt-cases-out/benchmarks/ieee/pglib_opf_case73_ieee_rts",
+        "resources": {
+          "class": "small",
+          "guide": "single-hour DC OPF; well under a second, < 1 GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild pglib_opf_case73_ieee_rts"
+      },
+      "rights_holders": [
+        {
+          "name": "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "url": null
+        },
+        {
+          "name": "PGLib-OPF (IEEE PES Task Force, distributor)",
+          "url": "https://github.com/power-grid-lib/pglib-opf"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "The Institute of Electrical and Electronics Engineers (IEEE)",
+          "PGLib-OPF (IEEE PES Task Force, distributor)"
+        ],
+        "licence": "CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)",
+        "attribution": "IEEE Reliability Test System 1996 (73 buses, three areas), pglib_opf_case73_ieee_rts.m from PGLib-OPF v23.07 (© 1999 The Institute of Electrical and Electronics Engineers (IEEE); CC BY 4.0); converted to gtopt by the gtopt authors (DC OPF, linear costs).",
+        "modified": "source: unmodified except xz compression; case: converted by gtopt pp2gtopt (DC approximation, quadratic cost terms dropped)",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Single-hour DC OPF snapshot of a standard test system; PGLib-OPF 'typical operations' data (costs and limits as revised by PGLib-OPF).",
+        "pp2gtopt keeps the linear cost coefficient of each generator; the quadratic terms of the PGLib-OPF cost curves are dropped."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 121,
+          "cols": 270,
+          "nnz": 705,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 73,
+        "generators": 99,
+        "lines": 120,
+        "demands": 51,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 1,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 1.0
+      }
+    },
+    {
+      "id": "benchmarks/unitcommitment_jl/case118_initcond",
+      "path": "benchmarks/unitcommitment_jl/case118_initcond",
+      "collection": "benchmarks",
+      "family": "unitcommitment_jl",
+      "title": "IEEE 118-bus unit commitment with initial conditions (UnitCommitment.jl test fixture)",
+      "date": "UnitCommitment.jl test fixture (hourly)",
+      "country": null,
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/case118_initcond.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/case118-initcond.json.gz",
+            "sha256": "503cf688e079ba00a4869d8841aa84e120a2241a6e86da04b35d9e623a237eea",
+            "bytes": 24081
+          }
+        ],
+        "origin": "UnitCommitment.jl test/fixtures/case118-initcond.json.gz (https://github.com/ANL-CEEESA/UnitCommitment.jl, branch dev, commit 3e4fd1b6370900b4053eb04856d534dc72e37012)",
+        "publisher": "UnitCommitment.jl, Argonne National Laboratory (UChicago Argonne, LLC)",
+        "licence": "BSD-3-Clause (UnitCommitment.jl LICENSE.md, Copyright © 2020-2022, UChicago Argonne, LLC); the fixture is part of the licensed repository"
+      },
+      "converter": {
+        "tool": "ucjl2gtopt",
+        "flags": [
+          "--mip"
+        ],
+        "input": "source/case118-initcond.json.gz",
+        "decompress": true,
+        "argv": [
+          "python3",
+          "{gtopt_src}/tools/ucjl2gtopt.py",
+          "{input}",
+          "--mip",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "tools/ucjl2gtopt.py of a gtopt checkout (set GTOPT_SRC); --mip keeps the commitment binary"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case118_initcond/output && cd ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case118_initcond/output && gtopt \"$REPO/benchmarks/unitcommitment_jl/case118_initcond/case/case118_initcond.json\" --set input_directory=\"$REPO/benchmarks/unitcommitment_jl/case118_initcond/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only case118_initcond",
+        "output": "~/gtopt-cases-out/benchmarks/unitcommitment_jl/case118_initcond",
+        "resources": {
+          "class": "small",
+          "guide": "MIP with ~54x36 commitment binaries and N-1 contingency rows; minutes with HiGHS, < 2 GB RAM"
+        },
+        "rebuild": "GTOPT_SRC=<gtopt checkout> tools/get_case.py rebuild case118_initcond"
+      },
+      "rights_holders": [
+        {
+          "name": "UChicago Argonne, LLC (UnitCommitment.jl, Argonne National Laboratory)",
+          "url": "https://github.com/ANL-CEEESA/UnitCommitment.jl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "UChicago Argonne, LLC (UnitCommitment.jl)"
+        ],
+        "licence": "BSD-3-Clause; keep the copyright notice and disclaimer (in source/NOTICE.md)",
+        "attribution": "UnitCommitment.jl test fixture case118-initcond.json.gz (© 2020-2022 UChicago Argonne, LLC; BSD-3-Clause); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified (gzip as published); case: converted by gtopt tools/ucjl2gtopt.py",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "36 hourly periods; 54 thermal units with initial status, reserves and N-1 contingencies.",
+        "MIP: solve with a MIP-capable solver (HiGHS, CBC, CPLEX, ...); never CLP."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 208766,
+          "cols": 205956,
+          "nnz": 655218,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 118,
+        "generators": 54,
+        "lines": 186,
+        "demands": 99,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 54,
+        "user_constraints": 4844,
+        "blocks": 36,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 36.0
+      }
+    },
+    {
+      "id": "benchmarks/unitcommitment_jl/case14",
+      "path": "benchmarks/unitcommitment_jl/case14",
+      "collection": "benchmarks",
+      "family": "unitcommitment_jl",
+      "title": "IEEE 14-bus unit commitment (UnitCommitment.jl test fixture)",
+      "date": "UnitCommitment.jl test fixture (hourly)",
+      "country": null,
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/case14.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/case14.json.gz",
+            "sha256": "7e87cc62fe6e388ad4a82a32f0d950430abe8d59bdc8ad30b7de11ec2a630150",
+            "bytes": 1834
+          }
+        ],
+        "origin": "UnitCommitment.jl test/fixtures/case14.json.gz (https://github.com/ANL-CEEESA/UnitCommitment.jl, branch dev, commit 3e4fd1b6370900b4053eb04856d534dc72e37012)",
+        "publisher": "UnitCommitment.jl, Argonne National Laboratory (UChicago Argonne, LLC)",
+        "licence": "BSD-3-Clause (UnitCommitment.jl LICENSE.md, Copyright © 2020-2022, UChicago Argonne, LLC); the fixture is part of the licensed repository"
+      },
+      "converter": {
+        "tool": "ucjl2gtopt",
+        "flags": [
+          "--mip"
+        ],
+        "input": "source/case14.json.gz",
+        "decompress": true,
+        "argv": [
+          "python3",
+          "{gtopt_src}/tools/ucjl2gtopt.py",
+          "{input}",
+          "--mip",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "tools/ucjl2gtopt.py of a gtopt checkout (set GTOPT_SRC); --mip keeps the commitment binary"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14/output && cd ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14/output && gtopt \"$REPO/benchmarks/unitcommitment_jl/case14/case/case14.json\" --set input_directory=\"$REPO/benchmarks/unitcommitment_jl/case14/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only case14",
+        "output": "~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14",
+        "resources": {
+          "class": "small",
+          "guide": "small MIP; seconds, < 1 GB RAM"
+        },
+        "rebuild": "GTOPT_SRC=<gtopt checkout> tools/get_case.py rebuild case14"
+      },
+      "rights_holders": [
+        {
+          "name": "UChicago Argonne, LLC (UnitCommitment.jl, Argonne National Laboratory)",
+          "url": "https://github.com/ANL-CEEESA/UnitCommitment.jl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "UChicago Argonne, LLC (UnitCommitment.jl)"
+        ],
+        "licence": "BSD-3-Clause; keep the copyright notice and disclaimer (in source/NOTICE.md)",
+        "attribution": "UnitCommitment.jl test fixture case14.json.gz (© 2020-2022 UChicago Argonne, LLC; BSD-3-Clause); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified (gzip as published); case: converted by gtopt tools/ucjl2gtopt.py",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "4 hourly periods; 6 thermal units with commitment, reserves, N-1 contingencies, price-sensitive loads.",
+        "MIP: solve with a MIP-capable solver (HiGHS, CBC, CPLEX, ...); never CLP."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 1578,
+          "cols": 1600,
+          "nnz": 4790,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 14,
+        "generators": 6,
+        "lines": 20,
+        "demands": 12,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 6,
+        "user_constraints": 324,
+        "blocks": 4,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 4.0
+      }
+    },
+    {
+      "id": "benchmarks/unitcommitment_jl/case14_profiled",
+      "path": "benchmarks/unitcommitment_jl/case14_profiled",
+      "collection": "benchmarks",
+      "family": "unitcommitment_jl",
+      "title": "IEEE 14-bus unit commitment with profiled renewables (UnitCommitment.jl test fixture)",
+      "date": "UnitCommitment.jl test fixture (hourly)",
+      "country": null,
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/case14_profiled.json",
+      "profile": null,
+      "source": {
+        "files": [
+          {
+            "path": "source/case14-profiled.json.gz",
+            "sha256": "db00c8b08a6b2aac7327ee9b80ede0db3ae9affc27354effb813a6b5c5db8a73",
+            "bytes": 1910
+          }
+        ],
+        "origin": "UnitCommitment.jl test/fixtures/case14-profiled.json.gz (https://github.com/ANL-CEEESA/UnitCommitment.jl, branch dev, commit 3e4fd1b6370900b4053eb04856d534dc72e37012)",
+        "publisher": "UnitCommitment.jl, Argonne National Laboratory (UChicago Argonne, LLC)",
+        "licence": "BSD-3-Clause (UnitCommitment.jl LICENSE.md, Copyright © 2020-2022, UChicago Argonne, LLC); the fixture is part of the licensed repository"
+      },
+      "converter": {
+        "tool": "ucjl2gtopt",
+        "flags": [
+          "--mip"
+        ],
+        "input": "source/case14-profiled.json.gz",
+        "decompress": true,
+        "argv": [
+          "python3",
+          "{gtopt_src}/tools/ucjl2gtopt.py",
+          "{input}",
+          "--mip",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "tools/ucjl2gtopt.py of a gtopt checkout (set GTOPT_SRC); --mip keeps the commitment binary"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14_profiled/output && cd ~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14_profiled/output && gtopt \"$REPO/benchmarks/unitcommitment_jl/case14_profiled/case/case14_profiled.json\" --set input_directory=\"$REPO/benchmarks/unitcommitment_jl/case14_profiled/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only case14_profiled",
+        "output": "~/gtopt-cases-out/benchmarks/unitcommitment_jl/case14_profiled",
+        "resources": {
+          "class": "small",
+          "guide": "small MIP; seconds, < 1 GB RAM"
+        },
+        "rebuild": "GTOPT_SRC=<gtopt checkout> tools/get_case.py rebuild case14_profiled"
+      },
+      "rights_holders": [
+        {
+          "name": "UChicago Argonne, LLC (UnitCommitment.jl, Argonne National Laboratory)",
+          "url": "https://github.com/ANL-CEEESA/UnitCommitment.jl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "UChicago Argonne, LLC (UnitCommitment.jl)"
+        ],
+        "licence": "BSD-3-Clause; keep the copyright notice and disclaimer (in source/NOTICE.md)",
+        "attribution": "UnitCommitment.jl test fixture case14-profiled.json.gz (© 2020-2022 UChicago Argonne, LLC; BSD-3-Clause); converted to gtopt by the gtopt authors.",
+        "modified": "source: unmodified (gzip as published); case: converted by gtopt tools/ucjl2gtopt.py",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "case14 plus two profiled (time-varying) renewable units.",
+        "MIP: solve with a MIP-capable solver (HiGHS, CBC, CPLEX, ...); never CLP."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 1578,
+          "cols": 1608,
+          "nnz": 4798,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 14,
+        "generators": 8,
+        "lines": 20,
+        "demands": 12,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 6,
+        "user_constraints": 324,
+        "blocks": 4,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 4.0
+      }
+    },
+    {
+      "id": "benchmarks/nrel/nrel118_2024w01",
+      "path": "benchmarks/nrel/nrel118_2024w01",
+      "collection": "benchmarks",
+      "family": "nrel",
+      "title": "NREL-118 extended IEEE 118-bus system, first week (hourly)",
+      "date": "week 1 of the NREL-118 year (168 h, daily stages)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/nrel118_2024w01.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. tools/get_case.py fetch nrel118_2024w01 downloads the 125 files listed in upstream.sha256 from the pinned commit, checks each sha256 and converts them into the git-ignored case/.",
+        "files": [
+          {
+            "manifest": "upstream.sha256",
+            "base_url": "https://raw.githubusercontent.com/Sienna-Platform/PowerSystemsTestData/a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9/118-Bus",
+            "dest": "source",
+            "flat": true
+          }
+        ],
+        "origin": "Sienna PowerSystemsTestData 118-Bus/ (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); data of I. Peña, C. B. Martinez-Anido and B.-M. Hodge, \"An Extended IEEE 118-Bus Test System With High Renewable Penetration,\" IEEE Trans. Power Systems 33(1), 2018, doi:10.1109/TPWRS.2017.2695963",
+        "publisher": "NREL (Sienna PowerSystemsTestData; data of Peña, Martinez-Anido and Hodge, NREL)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "nrel118_to_gtopt",
+        "flags": [
+          "--week",
+          "1",
+          "--no-download"
+        ],
+        "input": "source",
+        "argv": [
+          "nrel118_to_gtopt",
+          "--week",
+          "1",
+          "--cache-dir",
+          "{input}",
+          "--no-download",
+          "-o",
+          "{out_json}"
+        ],
+        "flatten": true,
+        "drop": [
+          "options.input_directory"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "nrel118_to_gtopt defaults: LP economic dispatch (no commitment), Sienna fuel prices, monolithic, 168 hourly blocks in 7 daily stages"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/nrel/nrel118_2024w01/output && cd ~/gtopt-cases-out/benchmarks/nrel/nrel118_2024w01/output && gtopt \"$REPO/benchmarks/nrel/nrel118_2024w01/case/nrel118_2024w01.json\" --set input_directory=\"$REPO/benchmarks/nrel/nrel118_2024w01/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only nrel118_2024w01",
+        "output": "~/gtopt-cases-out/benchmarks/nrel/nrel118_2024w01",
+        "resources": {
+          "class": "small",
+          "guide": "LP of one week, 118 buses, 327 units; seconds, < 2 GB RAM"
+        },
+        "rebuild": "tools/get_case.py fetch nrel118_2024w01"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        },
+        {
+          "name": "I. Peña, C. B. Martinez-Anido, B.-M. Hodge (data authors)",
+          "url": "https://doi.org/10.1109/TPWRS.2017.2695963"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC",
+          "I. Peña, C. B. Martinez-Anido, B.-M. Hodge (data authors)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "NREL-118 test system (Peña, Martinez-Anido and Hodge, IEEE TPWRS 2018), data from Sienna PowerSystemsTestData; converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README, manifest and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no NREL-118 data and no converted case files are in this repository.",
+        "Full 118-bus network (DC OPF), hourly regional load by bus participation factors, wind/solar/hydro availability profiles."
+      ],
+      "size": {
+        "lp": {
+          "lps": 7,
+          "rows": 54096,
+          "cols": 124152,
+          "nnz": 263088,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 118,
+        "generators": 327,
+        "lines": 186,
+        "demands": 91,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 168,
+        "stages": 7,
+        "phases": 7,
+        "scenarios": 1,
+        "horizon_hours": 168.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/batt_test_case_b",
+      "path": "benchmarks/sienna/batt_test_case_b",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna batt_test_case_b_sys: single-bus battery test system (wind, load, one battery), subcase b",
+      "date": "3 blocks over 3 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/batt_test_case_b.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system batt_test_case_b_sys; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "battery_degeneracy",
+          "--subcase",
+          "b"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "battery_degeneracy",
+          "--subcase",
+          "b",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/batt_test_case_b/output && cd ~/gtopt-cases-out/benchmarks/sienna/batt_test_case_b/output && gtopt \"$REPO/benchmarks/sienna/batt_test_case_b/case/batt_test_case_b.json\" --set input_directory=\"$REPO/benchmarks/sienna/batt_test_case_b/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only batt_test_case_b",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/batt_test_case_b",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch batt_test_case_b"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna batt_test_case_b_sys (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system batt_test_case_b_sys: single-bus battery test system (wind, load, one battery), subcase b."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 17,
+          "cols": 26,
+          "nnz": 49,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 1,
+        "generators": 2,
+        "lines": 0,
+        "demands": 1,
+        "batteries": 1,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 3,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 3.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_dc",
+      "path": "benchmarks/sienna/c_sys5_dc",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_dc: PJM 5-bus system with one branch as an HVDC link (no Kirchhoff row)",
+      "date": "24 blocks over 24 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_dc.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_dc; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "hvdc"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "hvdc",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_dc/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_dc/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_dc/case/c_sys5_dc.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_dc/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_dc",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_dc",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_dc"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_dc (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_dc: PJM 5-bus system with one branch as an HVDC link (no Kirchhoff row)."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 168,
+          "cols": 360,
+          "nnz": 648,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 5,
+        "lines": 7,
+        "demands": 3,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_hy_cascading",
+      "path": "benchmarks/sienna/c_sys5_hy_cascading",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_hy_cascading_turbine_energy: PJM 5-bus system with three hydro units in cascade (reservoirs, waterways, turbines)",
+      "date": "24 blocks over 24 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_hy_cascading.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_hy_cascading_turbine_energy; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "cascading_hydro"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "cascading_hydro",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_hy_cascading/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_hy_cascading/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_hy_cascading/case/c_sys5_hy_cascading.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_hy_cascading/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_hy_cascading",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_hy_cascading",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_hy_cascading"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_hy_cascading_turbine_energy (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_hy_cascading_turbine_energy: PJM 5-bus system with three hydro units in cascade (reservoirs, waterways, turbines)."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 360,
+          "cols": 603,
+          "nnz": 1032,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 8,
+        "lines": 0,
+        "demands": 3,
+        "batteries": 0,
+        "reservoirs": 3,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_il",
+      "path": "benchmarks/sienna/c_sys5_il",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_il: PJM 5-bus system with an interruptible load",
+      "date": "24 blocks over 24 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_il.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_il; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "interruptible_load"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "interruptible_load",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_il/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_il/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_il/case/c_sys5_il.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_il/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_il",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_il",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_il"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_il (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_il: PJM 5-bus system with an interruptible load."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 24,
+          "cols": 216,
+          "nnz": 216,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 5,
+        "lines": 0,
+        "demands": 4,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_ml",
+      "path": "benchmarks/sienna/c_sys5_ml",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_ml: PJM 5-bus system with a single monitored line (only its thermal limit is enforced)",
+      "date": "24 blocks over 24 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_ml.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_ml; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "monitored_line"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "monitored_line",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_ml/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_ml/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_ml/case/c_sys5_ml.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_ml/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_ml",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_ml",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_ml"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_ml (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_ml: PJM 5-bus system with a single monitored line (only its thermal limit is enforced)."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 120,
+          "cols": 360,
+          "nnz": 528,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 5,
+        "lines": 7,
+        "demands": 3,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 24,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 24.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_phes_ed",
+      "path": "benchmarks/sienna/c_sys5_phes_ed",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_phes_ed: PJM 5-bus system with a pumped-storage hydro plant",
+      "date": "2 blocks over 12 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_phes_ed.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_phes_ed; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "pumped_storage"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "pumped_storage",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_phes_ed/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_phes_ed/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_phes_ed/case/c_sys5_phes_ed.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_phes_ed/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_phes_ed",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_phes_ed",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_phes_ed"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_phes_ed (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_phes_ed: PJM 5-bus system with a pumped-storage hydro plant."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 11,
+          "cols": 17,
+          "nnz": 32,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 2,
+        "lines": 0,
+        "demands": 1,
+        "batteries": 1,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 2,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 12.0
+      }
+    },
+    {
+      "id": "benchmarks/sienna/c_sys5_re_fuel_cost",
+      "path": "benchmarks/sienna/c_sys5_re_fuel_cost",
+      "collection": "benchmarks",
+      "family": "sienna",
+      "title": "Sienna c_sys5_re_fuel_cost: PJM 5-bus system with time-varying fuel prices",
+      "date": "4 blocks over 4 h (single stage)",
+      "country": null,
+      "application": "production_cost",
+      "method": "monolithic",
+      "case_json": "case/c_sys5_re_fuel_cost.json",
+      "profile": null,
+      "source": {
+        "redistributed": false,
+        "fetched_by": "converter",
+        "redistribution_note": "Not in this repository: PowerSystemsTestData has no licence. sienna_to_gtopt downloads the files listed below from the pinned commit into ~/.cache/gtopt/sienna/ and checks each sha256 (manifest in gtopt scripts/sienna_to_gtopt/_bundle.py).",
+        "files": [],
+        "origin": "Sienna PowerSystemsTestData 5-Bus/ and psy_data/data_5bus_pu.jl (https://github.com/Sienna-Platform/PowerSystemsTestData, commit a2ecae9ff3cfe6d219744f1b10e4edd4eeecabc9); PowerSystemCaseBuilder.jl system c_sys5_re_fuel_cost; PJM 5-bus system of F. Li and R. Bo (2010)",
+        "publisher": "NREL Sienna (PowerSystemsTestData, PowerSystemCaseBuilder.jl)",
+        "licence": "No licence: PowerSystemsTestData has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "sienna_to_gtopt",
+        "flags": [
+          "fuel_cost_ts"
+        ],
+        "argv": [
+          "sienna_to_gtopt",
+          "fuel_cost_ts",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": "211c82db78eb5ee4802c2b15e48735efd6acf24a",
+        "note": "sienna_to_gtopt downloads the 13-file sienna_5bus bundle at the pinned commit and checks every sha256"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/sienna/c_sys5_re_fuel_cost/output && cd ~/gtopt-cases-out/benchmarks/sienna/c_sys5_re_fuel_cost/output && gtopt \"$REPO/benchmarks/sienna/c_sys5_re_fuel_cost/case/c_sys5_re_fuel_cost.json\" --set input_directory=\"$REPO/benchmarks/sienna/c_sys5_re_fuel_cost/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only c_sys5_re_fuel_cost",
+        "output": "~/gtopt-cases-out/benchmarks/sienna/c_sys5_re_fuel_cost",
+        "resources": {
+          "class": "small",
+          "guide": "tiny LP; well under a second"
+        },
+        "rebuild": "tools/get_case.py fetch c_sys5_re_fuel_cost"
+      },
+      "rights_holders": [
+        {
+          "name": "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)",
+          "url": "https://github.com/Sienna-Platform/PowerSystemsTestData"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "National Renewable Energy Laboratory (NREL) / Alliance for Sustainable Energy, LLC (Sienna)"
+        ],
+        "licence": "no licence stated by the publisher; data not redistributed here",
+        "attribution": "Sienna c_sys5_re_fuel_cost (NREL Sienna PowerSystemsTestData / PowerSystemCaseBuilder.jl); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: the converter fetches the data and the case is built locally",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no Sienna data and no converted case files are in this repository.",
+        "gtopt port of the PowerSimulations.jl test system c_sys5_re_fuel_cost: PJM 5-bus system with time-varying fuel prices."
+      ],
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 4,
+          "cols": 20,
+          "nnz": 20,
+          "gtopt_revision": "0794d659fc37"
+        },
+        "buses": 5,
+        "generators": 2,
+        "lines": 0,
+        "demands": 3,
+        "batteries": 0,
+        "reservoirs": 0,
+        "commitments": 0,
+        "user_constraints": 0,
+        "blocks": 4,
+        "stages": 1,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 4.0
+      }
+    },
+    {
+      "id": "benchmarks/papers/morales_espana_2019_cuc/ieee118",
+      "path": "benchmarks/papers/morales_espana_2019_cuc/ieee118",
+      "collection": "benchmarks",
+      "family": "papers",
+      "title": "Clustered unit commitment case study: Modified IEEE 118-bus system (Morales-España and Tejada-Arango, 2019)",
+      "date": "paper case study",
+      "country": null,
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/cuc_ieee118.json",
+      "profile": null,
+      "status": "converter_in_progress",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not in this repository: the CUC-data repository has no licence. tools/get_case.py fetch morales_espana_2019_cuc/ieee118 downloads the workbook from the pinned commit and checks its sha256.",
+        "files": [
+          {
+            "url": "https://raw.githubusercontent.com/datejada/CUC-data/624abbbdc9f83095c02b34174e52c76f77ddfa36/CUC_IEEE118-busSystem.xlsx",
+            "path": "source/CUC_IEEE118-busSystem.xlsx",
+            "sha256": "f4e87590261a80c45c29a9ea2fa759f4c9cc92a3256c07fa89d603a52034f2a3",
+            "bytes": 145652
+          }
+        ],
+        "origin": "datejada/CUC-data CUC_IEEE118-busSystem.xlsx (https://github.com/datejada/CUC-data, commit 624abbbdc9f83095c02b34174e52c76f77ddfa36); G. Morales-España and D. A. Tejada-Arango, \"Modeling the Hidden Flexibility of Clustered Unit Commitment,\" IEEE Trans. Power Systems 34(4), 2019, pp. 3294-3296, doi:10.1109/TPWRS.2019.2908051",
+        "publisher": "G. Morales-España and D. A. Tejada-Arango (CUC-data repository)",
+        "licence": "No licence: the CUC-data repository has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "cucdata2gtopt",
+        "flags": [],
+        "input": "source/CUC_IEEE118-busSystem.xlsx",
+        "argv": [
+          "cucdata2gtopt",
+          "{input}",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": null,
+        "note": "converter in progress in gtopt (scripts/cucdata2gtopt, branch feat/cucdata2gtopt); command line provisional"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only ieee118",
+        "output": "~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee118",
+        "resources": {
+          "class": "small",
+          "guide": "unit-commitment MIP; size to be recorded once the converter is merged"
+        },
+        "rebuild": "tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee118"
+      },
+      "rights_holders": [
+        {
+          "name": "Germán Morales-España and Diego A. Tejada-Arango (data authors)",
+          "url": "https://github.com/datejada/CUC-data"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Germán Morales-España and Diego A. Tejada-Arango (data authors)"
+        ],
+        "licence": "no licence stated by the authors; data not redistributed here",
+        "attribution": "Modified IEEE 118-bus system, CUC-data (Morales-España and Tejada-Arango, IEEE TPWRS 2019); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no CUC-data files and no converted case files are in this repository.",
+        "The converter (cucdata2gtopt) is not yet in gtopt master; this entry is a placeholder recipe until it is."
+      ],
+      "size": null
+    },
+    {
+      "id": "benchmarks/papers/morales_espana_2019_cuc/ieee39",
+      "path": "benchmarks/papers/morales_espana_2019_cuc/ieee39",
+      "collection": "benchmarks",
+      "family": "papers",
+      "title": "Clustered unit commitment case study: Modified New England IEEE 39-bus system (Morales-España and Tejada-Arango, 2019)",
+      "date": "paper case study",
+      "country": null,
+      "application": "unit_commitment",
+      "method": "monolithic",
+      "case_json": "case/cuc_ieee39.json",
+      "profile": null,
+      "status": "converter_in_progress",
+      "source": {
+        "redistributed": false,
+        "redistribution_note": "Not in this repository: the CUC-data repository has no licence. tools/get_case.py fetch morales_espana_2019_cuc/ieee39 downloads the workbook from the pinned commit and checks its sha256.",
+        "files": [
+          {
+            "url": "https://raw.githubusercontent.com/datejada/CUC-data/624abbbdc9f83095c02b34174e52c76f77ddfa36/CUC_IEEE39-busSystem.xlsx",
+            "path": "source/CUC_IEEE39-busSystem.xlsx",
+            "sha256": "665c1cdb4776beff0acc19e0ab6808896294006e469c5a57583ffefe6ef89514",
+            "bytes": 76923
+          }
+        ],
+        "origin": "datejada/CUC-data CUC_IEEE39-busSystem.xlsx (https://github.com/datejada/CUC-data, commit 624abbbdc9f83095c02b34174e52c76f77ddfa36); G. Morales-España and D. A. Tejada-Arango, \"Modeling the Hidden Flexibility of Clustered Unit Commitment,\" IEEE Trans. Power Systems 34(4), 2019, pp. 3294-3296, doi:10.1109/TPWRS.2019.2908051",
+        "publisher": "G. Morales-España and D. A. Tejada-Arango (CUC-data repository)",
+        "licence": "No licence: the CUC-data repository has no licence file; not redistributed here."
+      },
+      "converter": {
+        "tool": "cucdata2gtopt",
+        "flags": [],
+        "input": "source/CUC_IEEE39-busSystem.xlsx",
+        "argv": [
+          "cucdata2gtopt",
+          "{input}",
+          "-o",
+          "{out_json}"
+        ],
+        "gtopt_revision": null,
+        "note": "converter in progress in gtopt (scripts/cucdata2gtopt, branch feat/cucdata2gtopt); command line provisional"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && cd ~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39/output && gtopt \"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case/cuc_ieee39.json\" --set input_directory=\"$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee39/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only ieee39",
+        "output": "~/gtopt-cases-out/benchmarks/papers/morales_espana_2019_cuc/ieee39",
+        "resources": {
+          "class": "small",
+          "guide": "unit-commitment MIP; size to be recorded once the converter is merged"
+        },
+        "rebuild": "tools/get_case.py fetch benchmarks/papers/morales_espana_2019_cuc/ieee39"
+      },
+      "rights_holders": [
+        {
+          "name": "Germán Morales-España and Diego A. Tejada-Arango (data authors)",
+          "url": "https://github.com/datejada/CUC-data"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Germán Morales-España and Diego A. Tejada-Arango (data authors)"
+        ],
+        "licence": "no licence stated by the authors; data not redistributed here",
+        "attribution": "Modified New England IEEE 39-bus system, CUC-data (Morales-España and Tejada-Arango, IEEE TPWRS 2019); converted to gtopt by the user with the gtopt tools.",
+        "modified": "nothing redistributed: source and case are fetched and built locally by tools/get_case.py",
+        "conversion_layer": "CC0-1.0 for the README and catalog entry; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Recipe only: no CUC-data files and no converted case files are in this repository.",
+        "The converter (cucdata2gtopt) is not yet in gtopt master; this entry is a placeholder recipe until it is."
+      ],
+      "size": null
     }
   ],
   "results_policy": "No results of any kind are published here; run gtopt and the gtopt analysis tools with their output outside the repository (e.g. ~/gtopt-cases-out)."
