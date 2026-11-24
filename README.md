@@ -4,7 +4,8 @@
 [gtopt](https://github.com/gtopt-community/gtopt).**  From a one-hour DC
 OPF to a 23-year hydrothermal SDDP and the transmission planning bases of
 the Chilean system operator, built from data published by system operators
-and research groups.  Needs gtopt **1.1.0 or later**
+and research groups, plus standard benchmark systems.  Needs gtopt
+**1.1.0 or later**
 ([releases](https://github.com/gtopt-community/gtopt/releases)).
 
 > [!WARNING]
@@ -18,6 +19,18 @@ and research groups.  Needs gtopt **1.1.0 or later**
 > data); no licence over that data is granted here beyond the open
 > licences under which some benchmark data are published.  Read the [disclaimer](DISCLAIMER.md) and
 > [licensing](LICENSING.md) before using any case.
+
+## Contents
+
+- **[Real systems](#countries)** from six countries (Australia, Chile,
+  Guatemala, Ireland, Peru, Poland): unit commitment and dispatch,
+  hydrothermal SDDP, transmission planning bases and DC OPF, built from
+  data published by system operators and regulators.
+- **[Benchmark cases](#benchmark-cases)**: standard test systems (IEEE /
+  PGLib-OPF), example systems of other tools (UnitCommitment.jl, NREL
+  Sienna, NREL-118) and published case studies (clustered unit
+  commitment, IEEE 39 and 118 buses), to compare gtopt with other
+  models.
 
 ## Countries
 

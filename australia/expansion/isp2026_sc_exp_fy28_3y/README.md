@@ -132,9 +132,8 @@ gtopt "$C/isp2026_sc_exp_fy28_3y.json" --set input_directory="$C" -d . \
 ```
 
 - No profile; the case reads its Parquet schedules from `case/`.
-- Needs gtopt with battery power expansion, user-constraint
-  `active_stages` and pump loads that enter service during the horizon
-  (not yet in a gtopt release).
+- Needs gtopt **1.2.0 or later** (battery power expansion, user-constraint
+  `active_stages` and pump loads that enter service during the horizon).
 - Solver: any LP solver works (`gtopt --solvers` lists them).  A barrier
   method (`--set solver_options.algorithm=barrier` with CPLEX or HiGHS) is the
   practical choice at this size.
@@ -183,10 +182,11 @@ JSON and every Parquet file exactly.
   `UserConstraint/slack_sol`, as PLEXOS would pay it too).
 - **Network.**  Transport model over the ISP notional flow paths, no
   losses, no marginal loss factors.
-- **Battery self-discharge.**  The case sets no battery `annual_loss`, so
-  gtopt applies its default of 4 %/month to all 223 batteries (and adds
-  the battery power-envelope rows); run with
-  `--set model_options.battery_annual_loss=0` for lossless storage.
+- **Battery self-discharge.**  The case sets no battery
+  `annual_standing_loss`, so gtopt applies its default of 4 %/month to
+  all 223 batteries (and adds the battery power-envelope rows); run with
+  `--set model_options.battery_annual_standing_loss=0` for lossless
+  storage.
 - **Units.**  No outages, no unit commitment, no reserves.
 - **Not validated against AEMO.**  The public package contains no PLEXOS
   solution.
