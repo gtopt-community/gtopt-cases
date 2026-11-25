@@ -86,3 +86,6 @@ gtopt "$REPO/benchmarks/papers/morales_espana_2019_cuc/ieee118/case/cuc_ieee118.
 
 - Any figures quoted from the paper are the paper's own results, obtained
   with the authors' GAMS model, not gtopt results.
+- gtopt reproduces the published GAMS model, whose cost is below the
+  paper's Table I because the paper priced reserve differently; see
+  [Comparing with the paper](../README.md#comparing-with-the-paper).
