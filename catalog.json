@@ -2858,10 +2858,10 @@
         "horizon_hours": 8760.0,
         "lp": {
           "lps": 12,
-          "rows": 455069,
-          "cols": 347626,
-          "nnz": 1156655,
-          "gtopt_revision": "256a6d0e3dda"
+          "rows": 470429,
+          "cols": 350698,
+          "nnz": 1190447,
+          "gtopt_revision": "0794d659fc37"
         }
       },
       "source": {
@@ -3121,10 +3121,10 @@
         "horizon_hours": 8760.0,
         "lp": {
           "lps": 12,
-          "rows": 458969,
-          "cols": 354030,
-          "nnz": 1169455,
-          "gtopt_revision": "256a6d0e3dda"
+          "rows": 475577,
+          "cols": 357102,
+          "nnz": 1205743,
+          "gtopt_revision": "0794d659fc37"
         }
       },
       "source": {
@@ -3384,10 +3384,10 @@
         "horizon_hours": 8760.0,
         "lp": {
           "lps": 12,
-          "rows": 468269,
-          "cols": 369283,
-          "nnz": 1199960,
-          "gtopt_revision": "256a6d0e3dda"
+          "rows": 487853,
+          "cols": 372355,
+          "nnz": 1242200,
+          "gtopt_revision": "0794d659fc37"
         }
       },
       "source": {
@@ -3626,6 +3626,801 @@
       ],
       "title": "PLP-PET27 E03 — Proceso de Planificación de la Transmisión 2027",
       "collection": "countries"
+    },
+    {
+      "id": "chile/transmission_planning/plp_pet27/e01_sens",
+      "path": "chile/transmission_planning/plp_pet27/e01_sens",
+      "country": "chile",
+      "application": "transmission_planning",
+      "method": "sddp",
+      "case_json": "case/pet27_e01_cs_i_sens_1y.json",
+      "profile": null,
+      "size": {
+        "buses": 292,
+        "generators": 933,
+        "lines": 430,
+        "batteries": 158,
+        "blocks": 96,
+        "stages": 12,
+        "phases": 12,
+        "scenarios": 1,
+        "horizon_hours": 8760.0,
+        "lp": {
+          "lps": 12,
+          "rows": 469469,
+          "cols": 350506,
+          "nnz": 1188143,
+          "gtopt_revision": "0794d659fc37"
+        }
+      },
+      "source": {
+        "files": [
+          {
+            "path": "../e01/source/indhor.csv.xz",
+            "sha256": "45bb437d60373daf0648ee9620657dd0f3302a45cc6a33ed522531fb74e03566",
+            "bytes": 139424
+          },
+          {
+            "path": "../e01/source/plpaflce.dat.1.xz",
+            "sha256": "c3eef85d71088e99a92a4b6ac47a548cde9abeff8840b2209623aa4ba7d9f1e2",
+            "bytes": 620404
+          },
+          {
+            "path": "../e01/source/plpaflce.dat.2.xz",
+            "sha256": "809246f4f582e7826fbcb1e21660c46bb9f1cc2e77b4876d9bd5609b4791cd18",
+            "bytes": 6515516
+          },
+          {
+            "path": "../e01/source/plpaflce.dat.3.xz",
+            "sha256": "7235bc0c19dec886a726f82eaf38458eef4488374c3a3c5cdfdd312827a0c753",
+            "bytes": 4646320
+          },
+          {
+            "path": "../e01/source/plpaflce.dat.4.xz",
+            "sha256": "c83225be358db7f9fd3d57e088fe18050673c9ddf463a43d06e8ef66283a7622",
+            "bytes": 5352008
+          },
+          {
+            "path": "../e01/source/plpbar.dat.xz",
+            "sha256": "b3522c24e2e44f5eaa97d47202c42205ee68d771d482d1c7ab4d16ddc979ad21",
+            "bytes": 2132
+          },
+          {
+            "path": "../e01/source/plpblo.dat.xz",
+            "sha256": "b07381daea6a4ee2def9b53bfa3b2b505e176c9163b3a9458ae5c59585054052",
+            "bytes": 6920
+          },
+          {
+            "path": "../e01/source/plpcenbat.dat.xz",
+            "sha256": "fc9834748be7976319fb80c005b7659cdea5e4408f35138dffbde3e2258d1187",
+            "bytes": 3140
+          },
+          {
+            "path": "../e01/source/plpcenpmax.dat.xz",
+            "sha256": "35dd400562df9b6ebb396248c4064a646a8e0341b3a44312f1d971c9b135457d",
+            "bytes": 604
+          },
+          {
+            "path": "../e01/source/plpcenre.dat.xz",
+            "sha256": "77950e3f19c3e27829dc263934ded2ce84e2e46a2830b5b00f2351420cbdc6cb",
+            "bytes": 372
+          },
+          {
+            "path": "../e01/source/plpcnfce.dat.xz",
+            "sha256": "8b8ca6c6519c20dd74043fc94e00df82247b75d56123d47419cc318231edc6c3",
+            "bytes": 18440
+          },
+          {
+            "path": "../e01/source/plpcnfli.dat.xz",
+            "sha256": "0d34e74da9b3fd80dd4538e7e1701367a34f2c38a6f27553fe7c33bc2f49fc72",
+            "bytes": 8588
+          },
+          {
+            "path": "../e01/source/plpcosce.dat.xz",
+            "sha256": "a0944725cca8b6b02aa1599b5704f936edab62c6fb449eb1f724bff25b8e82bc",
+            "bytes": 16564
+          },
+          {
+            "path": "../e01/source/plpdeb.dat.xz",
+            "sha256": "3300490492547bb06689542da3e926867f1dd807757feaeb19e9f707475f3a6e",
+            "bytes": 240
+          },
+          {
+            "path": "../e01/source/plpdem.dat.xz",
+            "sha256": "7483f4abe7b6e4ae6760e9e4e65ce306614cdc8272d1e276503a6be215dc6e17",
+            "bytes": 605624
+          },
+          {
+            "path": "../e01/source/plpeta.dat.xz",
+            "sha256": "05d2a65bb4cc2858f5987e7f42f1f63cd8f282ce345616e8eb23a3aaa23cae97",
+            "bytes": 2028
+          },
+          {
+            "path": "../e01/source/plpextrac.dat.xz",
+            "sha256": "5b4bd03717f804a033626457761480e3c41e84120cff35e7831e58ae72b04b3d",
+            "bytes": 268
+          },
+          {
+            "path": "../e01/source/plpfilemb.dat.xz",
+            "sha256": "181361e86b99478eee88f69aa19622c1c622b62ab1b7c8408eec52cb86cae422",
+            "bytes": 512
+          },
+          {
+            "path": "../e01/source/plpidap2.dat.xz",
+            "sha256": "4b25a404abda73390d122e09f2f6d8fe98b96fd40bf2d6850d4ca6c746cf808d",
+            "bytes": 780
+          },
+          {
+            "path": "../e01/source/plpidape.dat.xz",
+            "sha256": "af415834a20310c66ba748993489b087f61d4897d05bea632283289ad8be1292",
+            "bytes": 6432
+          },
+          {
+            "path": "../e01/source/plpidsim.dat.xz",
+            "sha256": "a9f4b6a0870455b81ef8b006c7e281baec38239155e1aae0c2a771b72bb4d85b",
+            "bytes": 816
+          },
+          {
+            "path": "../e01/source/plplajam.dat.xz",
+            "sha256": "f0b4f216d9b9a7b479137d4a67e701c25fee94116f447c2c1be3fab6fe5f77ce",
+            "bytes": 1108
+          },
+          {
+            "path": "../e01/source/plpmance.dat.xz",
+            "sha256": "29ca40d4728a168d7712c26eccd7ab71d73b77809756733c1a9027c782f7d5c6",
+            "bytes": 75984
+          },
+          {
+            "path": "../e01/source/plpmanem.dat.xz",
+            "sha256": "92fb631852a479ad937721f984aa796b108b8a19fae8da754fe5c900d36479f4",
+            "bytes": 460
+          },
+          {
+            "path": "../e01/source/plpmanli.dat.xz",
+            "sha256": "9957b316b5f8ea29fe0be8b78d0e3d7a10aea358065ba421117e21f9e0fb242f",
+            "bytes": 144
+          },
+          {
+            "path": "../e01/source/plpmat.dat.xz",
+            "sha256": "5f107bd300814b63dd6fd682f4876d7e07c9bbf6def14d7ef22b3b71d7390dfd",
+            "bytes": 384
+          },
+          {
+            "path": "../e01/source/plpmaulen.dat.xz",
+            "sha256": "977d86bf3cf03645ecb6b62dc35761ecbcc506456f50401b908c6a9a0a96cf6d",
+            "bytes": 1388
+          },
+          {
+            "path": "../e01/source/plpminembh.dat.xz",
+            "sha256": "40e972df1b48934d99cead289756faf24c25296a7773e0ef50ddab9ce59425c0",
+            "bytes": 900
+          },
+          {
+            "path": "../e01/source/plpplem1.dat.xz",
+            "sha256": "abcc94da2555787174a1078fccca63fca29453679d670c199eb175e99a0cb2be",
+            "bytes": 464
+          },
+          {
+            "path": "../e01/source/plpplem2.dat.xz",
+            "sha256": "68d98251100b46e6e5fb8cfc03d67bad31f7e2e10a06ac0c5cfbb69e4d23a3ab",
+            "bytes": 8048
+          },
+          {
+            "path": "../e01/source/plprun.dat.xz",
+            "sha256": "09aa187f1281e53eb8246104541561e6b7426dbee4c8576a11a4b611dd5cec06",
+            "bytes": 240
+          },
+          {
+            "path": "../e01/source/plpvrebemb.dat.xz",
+            "sha256": "881320dc9844188320cb7bf395d35996fb81a4a96b885925ae6098f14a281041",
+            "bytes": 408
+          },
+          {
+            "path": "../e01/source/run_plp_plani.sh.xz",
+            "sha256": "2a15079cd750817adf7e1dc7abcea4f7fd8094f8b99703f6f399de8bf65141c9",
+            "bytes": 640
+          },
+          {
+            "path": "source/mantlin.csv.xz",
+            "sha256": "2c01836d7dae657f7068e7719fc5536db862f93ca412baeddbdb8cfc7008fc27",
+            "bytes": 6640
+          }
+        ],
+        "origin": "CEN PET 2027 Diagnóstico, Anexo IV.1 (Base PLP), IPLP case PET27_E01_CS_I_v4_d_sens (energy scenario E01, transmission configuration CS_I with the entry-year sensitivity of the plan of works (sensibilidad año EO): mantlin.csv only); stored as an overlay: the files that differ from PET27_E01_CS_I_v4_d, over ../e01/source",
+        "publisher": "CEN (Coordinador Eléctrico Nacional)",
+        "url": "https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/",
+        "archive": {
+          "name": "Anexo-4.1-Base-PLP.zip",
+          "url": "https://www.coordinador.cl/wp-content/uploads/2026/11/Anexo-4.1-Base-PLP.zip",
+          "sha256": "152215e2e120b2111b80ffbec49a9f1fa3b8f77556421525ec266722f481ae86",
+          "bytes": 699882207,
+          "published": "2026-11-13",
+          "member": "Anexo 4.1/BD PLP/IPLP.zip -> IPLP/Caso CS_I/PET27_E01_CS_I_v4_d_sens/"
+        }
+      },
+      "converter": {
+        "tool": "plp2gtopt",
+        "flags": [
+          "-n",
+          "pet27_e01_cs_i_sens_1y",
+          "-s",
+          "12",
+          "-y",
+          "1",
+          "-a",
+          "0",
+          "--method",
+          "sddp"
+        ],
+        "gtopt_revision": "8ec21a693f86531b10bfe58cff92c83c60269e2c",
+        "converter_last_change": "5c34b931ca3028e2771bb7e61b1cdfc0acc7f3e4",
+        "note": "input = ../e01/source with source/ overlaid and the split parts joined (tools/get_case.py does this); flags -n pet27_e01_cs_i_sens_1y -s 12 -y 1 -a 0 --method sddp; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed",
+        "input": "../e01/source",
+        "overlay": "source",
+        "join_parts": true
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e01_sens/output && cd ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e01_sens/output && gtopt \"$REPO/chile/transmission_planning/plp_pet27/e01_sens/case/pet27_e01_cs_i_sens_1y.json\" --set input_directory=\"$REPO/chile/transmission_planning/plp_pet27/e01_sens/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only plp_pet27/e01_sens",
+        "output": "~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e01_sens",
+        "resources": {
+          "class": "large",
+          "guide": "SDDP over many phase LPs; plan for 8+ cores and 16+ GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild chile/transmission_planning/plp_pet27/e01_sens --out <dir outside the repo>"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Propuesta de Expansión de Transmisión del SEN 2027, Diagnóstico, Anexo IV.1 (Base PLP); converted to gtopt by the gtopt authors.",
+        "modified": "source: only the files that differ from the CS_I base of the same scenario, unmodified except xz compression; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "1-year cut of the 23-year PET 2027 base PET27_E01_CS_I_v4_d_sens: 12 monthly stages = 12 SDDP phases, 96 blocks, hydrology 1, no apertures; PLP boundary cuts via system.future_cost_array.",
+        "The entry-year changes of the sensitivity fall mostly after the first year (Centro-Sur works 2029-2035); use the longer-horizon variants of the README to see them.",
+        "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
+      ],
+      "title": "PLP-PET27 E01 CS_I_sens — Proceso de Planificación de la Transmisión 2027"
+    },
+    {
+      "id": "chile/transmission_planning/plp_pet27/e02_sens",
+      "path": "chile/transmission_planning/plp_pet27/e02_sens",
+      "country": "chile",
+      "application": "transmission_planning",
+      "method": "sddp",
+      "case_json": "case/pet27_e02_cs_i_sens_1y.json",
+      "profile": null,
+      "size": {
+        "buses": 292,
+        "generators": 965,
+        "lines": 430,
+        "batteries": 171,
+        "blocks": 96,
+        "stages": 12,
+        "phases": 12,
+        "scenarios": 1,
+        "horizon_hours": 8760.0,
+        "lp": {
+          "lps": 12,
+          "rows": 474617,
+          "cols": 356910,
+          "nnz": 1203439,
+          "gtopt_revision": "0794d659fc37"
+        }
+      },
+      "source": {
+        "files": [
+          {
+            "path": "../e02/source/indhor.csv.xz",
+            "sha256": "84b30fc996543c4bca95fce1089351b60e391fd900cf6f3e3ed87ef1e20a4c1d",
+            "bytes": 138380
+          },
+          {
+            "path": "../e02/source/plpaflce.dat.1.xz",
+            "sha256": "9fdd45cb3939c69f6110d404ad0a9cd44616c590f697c27764bae098cfc149e1",
+            "bytes": 854128
+          },
+          {
+            "path": "../e02/source/plpaflce.dat.2.xz",
+            "sha256": "0bf0b402ca512c473a1b0e602e96a3fac41bb5eae3a1d2b97c64f1fcd2af5248",
+            "bytes": 6931072
+          },
+          {
+            "path": "../e02/source/plpaflce.dat.3.xz",
+            "sha256": "a6330837c49259023a4d24812c7e577569fbeb54702bd79634fe19f79b3b9f89",
+            "bytes": 4830912
+          },
+          {
+            "path": "../e02/source/plpaflce.dat.4.xz",
+            "sha256": "256990578f5291c85eedda72908effc311716f08a33cef4b37b63bf862594ac1",
+            "bytes": 5644224
+          },
+          {
+            "path": "../e02/source/plpbar.dat.xz",
+            "sha256": "b3522c24e2e44f5eaa97d47202c42205ee68d771d482d1c7ab4d16ddc979ad21",
+            "bytes": 2132
+          },
+          {
+            "path": "../e02/source/plpblo.dat.xz",
+            "sha256": "915e0a3328c8b89a1e3f56d07698841211359475fbecef72823c5a67db21df6d",
+            "bytes": 6832
+          },
+          {
+            "path": "../e02/source/plpcenbat.dat.xz",
+            "sha256": "86c8d14d5a6bc895b942d8281b57a09dccedb64d83736407ec1acec2dbc18759",
+            "bytes": 3252
+          },
+          {
+            "path": "../e02/source/plpcenpmax.dat.xz",
+            "sha256": "35dd400562df9b6ebb396248c4064a646a8e0341b3a44312f1d971c9b135457d",
+            "bytes": 604
+          },
+          {
+            "path": "../e02/source/plpcenre.dat.xz",
+            "sha256": "77950e3f19c3e27829dc263934ded2ce84e2e46a2830b5b00f2351420cbdc6cb",
+            "bytes": 372
+          },
+          {
+            "path": "../e02/source/plpcnfce.dat.xz",
+            "sha256": "6243d49c8df4d765a9f0a4c943c5ec7966f8805b2606c2634385b65c1f71a486",
+            "bytes": 18900
+          },
+          {
+            "path": "../e02/source/plpcnfli.dat.xz",
+            "sha256": "0d34e74da9b3fd80dd4538e7e1701367a34f2c38a6f27553fe7c33bc2f49fc72",
+            "bytes": 8588
+          },
+          {
+            "path": "../e02/source/plpcosce.dat.xz",
+            "sha256": "a0944725cca8b6b02aa1599b5704f936edab62c6fb449eb1f724bff25b8e82bc",
+            "bytes": 16564
+          },
+          {
+            "path": "../e02/source/plpdeb.dat.xz",
+            "sha256": "3300490492547bb06689542da3e926867f1dd807757feaeb19e9f707475f3a6e",
+            "bytes": 240
+          },
+          {
+            "path": "../e02/source/plpdem.dat.xz",
+            "sha256": "8150f00eac266cf552cca4957223103e3bad7e9a2a94031e8d41fa74dc6fe101",
+            "bytes": 617476
+          },
+          {
+            "path": "../e02/source/plpeta.dat.xz",
+            "sha256": "a1088a5983d03a4b31c27a71f378435c380227041c89050c931b36dd43395434",
+            "bytes": 2040
+          },
+          {
+            "path": "../e02/source/plpextrac.dat.xz",
+            "sha256": "5b4bd03717f804a033626457761480e3c41e84120cff35e7831e58ae72b04b3d",
+            "bytes": 268
+          },
+          {
+            "path": "../e02/source/plpfilemb.dat.xz",
+            "sha256": "181361e86b99478eee88f69aa19622c1c622b62ab1b7c8408eec52cb86cae422",
+            "bytes": 512
+          },
+          {
+            "path": "../e02/source/plpidap2.dat.xz",
+            "sha256": "4b25a404abda73390d122e09f2f6d8fe98b96fd40bf2d6850d4ca6c746cf808d",
+            "bytes": 780
+          },
+          {
+            "path": "../e02/source/plpidape.dat.xz",
+            "sha256": "af415834a20310c66ba748993489b087f61d4897d05bea632283289ad8be1292",
+            "bytes": 6432
+          },
+          {
+            "path": "../e02/source/plpidsim.dat.xz",
+            "sha256": "a9f4b6a0870455b81ef8b006c7e281baec38239155e1aae0c2a771b72bb4d85b",
+            "bytes": 816
+          },
+          {
+            "path": "../e02/source/plplajam.dat.xz",
+            "sha256": "f0b4f216d9b9a7b479137d4a67e701c25fee94116f447c2c1be3fab6fe5f77ce",
+            "bytes": 1108
+          },
+          {
+            "path": "../e02/source/plpmance.dat.xz",
+            "sha256": "b8722f5158217224d17b4949268ccaba63980c956b98f0c6bc85f0fe6a44ab38",
+            "bytes": 76800
+          },
+          {
+            "path": "../e02/source/plpmanem.dat.xz",
+            "sha256": "92fb631852a479ad937721f984aa796b108b8a19fae8da754fe5c900d36479f4",
+            "bytes": 460
+          },
+          {
+            "path": "../e02/source/plpmanli.dat.xz",
+            "sha256": "9957b316b5f8ea29fe0be8b78d0e3d7a10aea358065ba421117e21f9e0fb242f",
+            "bytes": 144
+          },
+          {
+            "path": "../e02/source/plpmat.dat.xz",
+            "sha256": "5f107bd300814b63dd6fd682f4876d7e07c9bbf6def14d7ef22b3b71d7390dfd",
+            "bytes": 384
+          },
+          {
+            "path": "../e02/source/plpmaulen.dat.xz",
+            "sha256": "977d86bf3cf03645ecb6b62dc35761ecbcc506456f50401b908c6a9a0a96cf6d",
+            "bytes": 1388
+          },
+          {
+            "path": "../e02/source/plpminembh.dat.xz",
+            "sha256": "40e972df1b48934d99cead289756faf24c25296a7773e0ef50ddab9ce59425c0",
+            "bytes": 900
+          },
+          {
+            "path": "../e02/source/plpplem1.dat.xz",
+            "sha256": "abcc94da2555787174a1078fccca63fca29453679d670c199eb175e99a0cb2be",
+            "bytes": 464
+          },
+          {
+            "path": "../e02/source/plpplem2.dat.xz",
+            "sha256": "68d98251100b46e6e5fb8cfc03d67bad31f7e2e10a06ac0c5cfbb69e4d23a3ab",
+            "bytes": 8048
+          },
+          {
+            "path": "../e02/source/plprun.dat.xz",
+            "sha256": "09aa187f1281e53eb8246104541561e6b7426dbee4c8576a11a4b611dd5cec06",
+            "bytes": 240
+          },
+          {
+            "path": "../e02/source/plpvrebemb.dat.xz",
+            "sha256": "881320dc9844188320cb7bf395d35996fb81a4a96b885925ae6098f14a281041",
+            "bytes": 408
+          },
+          {
+            "path": "../e02/source/run_plp_plani.sh.xz",
+            "sha256": "2a15079cd750817adf7e1dc7abcea4f7fd8094f8b99703f6f399de8bf65141c9",
+            "bytes": 640
+          },
+          {
+            "path": "source/mantlin.csv.xz",
+            "sha256": "2c01836d7dae657f7068e7719fc5536db862f93ca412baeddbdb8cfc7008fc27",
+            "bytes": 6640
+          }
+        ],
+        "origin": "CEN PET 2027 Diagnóstico, Anexo IV.1 (Base PLP), IPLP case PET27_E02_CS_I_v4_d_sens (energy scenario E02, transmission configuration CS_I with the entry-year sensitivity of the plan of works (sensibilidad año EO): mantlin.csv only); stored as an overlay: the files that differ from PET27_E02_CS_I_v4_d, over ../e02/source",
+        "publisher": "CEN (Coordinador Eléctrico Nacional)",
+        "url": "https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/",
+        "archive": {
+          "name": "Anexo-4.1-Base-PLP.zip",
+          "url": "https://www.coordinador.cl/wp-content/uploads/2026/11/Anexo-4.1-Base-PLP.zip",
+          "sha256": "152215e2e120b2111b80ffbec49a9f1fa3b8f77556421525ec266722f481ae86",
+          "bytes": 699882207,
+          "published": "2026-11-13",
+          "member": "Anexo 4.1/BD PLP/IPLP.zip -> IPLP/Caso CS_I/PET27_E02_CS_I_v4_d_sens/"
+        }
+      },
+      "converter": {
+        "tool": "plp2gtopt",
+        "flags": [
+          "-n",
+          "pet27_e02_cs_i_sens_1y",
+          "-s",
+          "12",
+          "-y",
+          "1",
+          "-a",
+          "0",
+          "--method",
+          "sddp"
+        ],
+        "gtopt_revision": "8ec21a693f86531b10bfe58cff92c83c60269e2c",
+        "converter_last_change": "5c34b931ca3028e2771bb7e61b1cdfc0acc7f3e4",
+        "note": "input = ../e02/source with source/ overlaid and the split parts joined (tools/get_case.py does this); flags -n pet27_e02_cs_i_sens_1y -s 12 -y 1 -a 0 --method sddp; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed",
+        "input": "../e02/source",
+        "overlay": "source",
+        "join_parts": true
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e02_sens/output && cd ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e02_sens/output && gtopt \"$REPO/chile/transmission_planning/plp_pet27/e02_sens/case/pet27_e02_cs_i_sens_1y.json\" --set input_directory=\"$REPO/chile/transmission_planning/plp_pet27/e02_sens/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only plp_pet27/e02_sens",
+        "output": "~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e02_sens",
+        "resources": {
+          "class": "large",
+          "guide": "SDDP over many phase LPs; plan for 8+ cores and 16+ GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild chile/transmission_planning/plp_pet27/e02_sens --out <dir outside the repo>"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Propuesta de Expansión de Transmisión del SEN 2027, Diagnóstico, Anexo IV.1 (Base PLP); converted to gtopt by the gtopt authors.",
+        "modified": "source: only the files that differ from the CS_I base of the same scenario, unmodified except xz compression; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "1-year cut of the 23-year PET 2027 base PET27_E02_CS_I_v4_d_sens: 12 monthly stages = 12 SDDP phases, 96 blocks, hydrology 1, no apertures; PLP boundary cuts via system.future_cost_array.",
+        "The entry-year changes of the sensitivity fall mostly after the first year (Centro-Sur works 2029-2035); use the longer-horizon variants of the README to see them.",
+        "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
+      ],
+      "title": "PLP-PET27 E02 CS_I_sens — Proceso de Planificación de la Transmisión 2027"
+    },
+    {
+      "id": "chile/transmission_planning/plp_pet27/e03_sens",
+      "path": "chile/transmission_planning/plp_pet27/e03_sens",
+      "country": "chile",
+      "application": "transmission_planning",
+      "method": "sddp",
+      "case_json": "case/pet27_e03_cs_i_sens_1y.json",
+      "profile": null,
+      "size": {
+        "buses": 292,
+        "generators": 988,
+        "lines": 430,
+        "batteries": 202,
+        "blocks": 96,
+        "stages": 12,
+        "phases": 12,
+        "scenarios": 1,
+        "horizon_hours": 8760.0,
+        "lp": {
+          "lps": 12,
+          "rows": 486893,
+          "cols": 372163,
+          "nnz": 1239896,
+          "gtopt_revision": "0794d659fc37"
+        }
+      },
+      "source": {
+        "files": [
+          {
+            "path": "../e03/source/indhor.csv.xz",
+            "sha256": "b9329942402e63b631829abd06e1f073c6846ec2386b31e850b6a7101dd80f01",
+            "bytes": 136232
+          },
+          {
+            "path": "../e03/source/plpaflce.dat.1.xz",
+            "sha256": "3941f2b4ce3a63e857c3ece876ecf2aa437a85b151e58329d713f252ba4f7382",
+            "bytes": 1068632
+          },
+          {
+            "path": "../e03/source/plpaflce.dat.2.xz",
+            "sha256": "4665bcffc5ff3704207582708a9e9a6c71c5818ed5d0edc63857a23138862910",
+            "bytes": 6922748
+          },
+          {
+            "path": "../e03/source/plpaflce.dat.3.xz",
+            "sha256": "d62973d601d140d7163962b819c67ff933a7f12ecb811b452069701c7af48d31",
+            "bytes": 4982672
+          },
+          {
+            "path": "../e03/source/plpaflce.dat.4.xz",
+            "sha256": "163eb625e4decca415c9e7f8f5cf9bbd93710d403ce8b8041b68b168b6c90080",
+            "bytes": 5701476
+          },
+          {
+            "path": "../e03/source/plpbar.dat.xz",
+            "sha256": "b3522c24e2e44f5eaa97d47202c42205ee68d771d482d1c7ab4d16ddc979ad21",
+            "bytes": 2132
+          },
+          {
+            "path": "../e03/source/plpblo.dat.xz",
+            "sha256": "9fe78603f1b36e97a26efae6bb0eacca3fe4678568fdfe94028b83e1c2430705",
+            "bytes": 7604
+          },
+          {
+            "path": "../e03/source/plpcenbat.dat.xz",
+            "sha256": "0e5c32bec8bec9cd79fcd56bf631656f57476d3f215f454281af9ccaec7b6df0",
+            "bytes": 3452
+          },
+          {
+            "path": "../e03/source/plpcenpmax.dat.xz",
+            "sha256": "35dd400562df9b6ebb396248c4064a646a8e0341b3a44312f1d971c9b135457d",
+            "bytes": 604
+          },
+          {
+            "path": "../e03/source/plpcenre.dat.xz",
+            "sha256": "77950e3f19c3e27829dc263934ded2ce84e2e46a2830b5b00f2351420cbdc6cb",
+            "bytes": 372
+          },
+          {
+            "path": "../e03/source/plpcnfce.dat.xz",
+            "sha256": "2e938b2ea6355c086297092d3402dc64c3fd62c384fb46479decb0a8b2d2f49d",
+            "bytes": 19356
+          },
+          {
+            "path": "../e03/source/plpcnfli.dat.xz",
+            "sha256": "0d34e74da9b3fd80dd4538e7e1701367a34f2c38a6f27553fe7c33bc2f49fc72",
+            "bytes": 8588
+          },
+          {
+            "path": "../e03/source/plpcosce.dat.xz",
+            "sha256": "a0944725cca8b6b02aa1599b5704f936edab62c6fb449eb1f724bff25b8e82bc",
+            "bytes": 16564
+          },
+          {
+            "path": "../e03/source/plpdeb.dat.xz",
+            "sha256": "3300490492547bb06689542da3e926867f1dd807757feaeb19e9f707475f3a6e",
+            "bytes": 240
+          },
+          {
+            "path": "../e03/source/plpdem.dat.xz",
+            "sha256": "4aa3099626f56dfb38aba1190887de0f9b007b562c32d1fca2fa03b067936443",
+            "bytes": 618692
+          },
+          {
+            "path": "../e03/source/plpeta.dat.xz",
+            "sha256": "6c28d661d150c26e02f04862d513e138807cfe1d379a60c49e4d48bdcd44e551",
+            "bytes": 2036
+          },
+          {
+            "path": "../e03/source/plpextrac.dat.xz",
+            "sha256": "5b4bd03717f804a033626457761480e3c41e84120cff35e7831e58ae72b04b3d",
+            "bytes": 268
+          },
+          {
+            "path": "../e03/source/plpfilemb.dat.xz",
+            "sha256": "181361e86b99478eee88f69aa19622c1c622b62ab1b7c8408eec52cb86cae422",
+            "bytes": 512
+          },
+          {
+            "path": "../e03/source/plpidap2.dat.xz",
+            "sha256": "4b25a404abda73390d122e09f2f6d8fe98b96fd40bf2d6850d4ca6c746cf808d",
+            "bytes": 780
+          },
+          {
+            "path": "../e03/source/plpidape.dat.xz",
+            "sha256": "af415834a20310c66ba748993489b087f61d4897d05bea632283289ad8be1292",
+            "bytes": 6432
+          },
+          {
+            "path": "../e03/source/plpidsim.dat.xz",
+            "sha256": "a9f4b6a0870455b81ef8b006c7e281baec38239155e1aae0c2a771b72bb4d85b",
+            "bytes": 816
+          },
+          {
+            "path": "../e03/source/plplajam.dat.xz",
+            "sha256": "f0b4f216d9b9a7b479137d4a67e701c25fee94116f447c2c1be3fab6fe5f77ce",
+            "bytes": 1108
+          },
+          {
+            "path": "../e03/source/plpmance.dat.xz",
+            "sha256": "23dbde51024259b7511e5106971572b23f9af7b4b2d850c991fbbb079ee60250",
+            "bytes": 85856
+          },
+          {
+            "path": "../e03/source/plpmanem.dat.xz",
+            "sha256": "92fb631852a479ad937721f984aa796b108b8a19fae8da754fe5c900d36479f4",
+            "bytes": 460
+          },
+          {
+            "path": "../e03/source/plpmanli.dat.xz",
+            "sha256": "9957b316b5f8ea29fe0be8b78d0e3d7a10aea358065ba421117e21f9e0fb242f",
+            "bytes": 144
+          },
+          {
+            "path": "../e03/source/plpmat.dat.xz",
+            "sha256": "5f107bd300814b63dd6fd682f4876d7e07c9bbf6def14d7ef22b3b71d7390dfd",
+            "bytes": 384
+          },
+          {
+            "path": "../e03/source/plpmaulen.dat.xz",
+            "sha256": "977d86bf3cf03645ecb6b62dc35761ecbcc506456f50401b908c6a9a0a96cf6d",
+            "bytes": 1388
+          },
+          {
+            "path": "../e03/source/plpminembh.dat.xz",
+            "sha256": "40e972df1b48934d99cead289756faf24c25296a7773e0ef50ddab9ce59425c0",
+            "bytes": 900
+          },
+          {
+            "path": "../e03/source/plpplem1.dat.xz",
+            "sha256": "abcc94da2555787174a1078fccca63fca29453679d670c199eb175e99a0cb2be",
+            "bytes": 464
+          },
+          {
+            "path": "../e03/source/plpplem2.dat.xz",
+            "sha256": "68d98251100b46e6e5fb8cfc03d67bad31f7e2e10a06ac0c5cfbb69e4d23a3ab",
+            "bytes": 8048
+          },
+          {
+            "path": "../e03/source/plprun.dat.xz",
+            "sha256": "09aa187f1281e53eb8246104541561e6b7426dbee4c8576a11a4b611dd5cec06",
+            "bytes": 240
+          },
+          {
+            "path": "../e03/source/plpvrebemb.dat.xz",
+            "sha256": "881320dc9844188320cb7bf395d35996fb81a4a96b885925ae6098f14a281041",
+            "bytes": 408
+          },
+          {
+            "path": "../e03/source/run_plp_plani.sh.xz",
+            "sha256": "2a15079cd750817adf7e1dc7abcea4f7fd8094f8b99703f6f399de8bf65141c9",
+            "bytes": 640
+          },
+          {
+            "path": "source/mantlin.csv.xz",
+            "sha256": "2c01836d7dae657f7068e7719fc5536db862f93ca412baeddbdb8cfc7008fc27",
+            "bytes": 6640
+          }
+        ],
+        "origin": "CEN PET 2027 Diagnóstico, Anexo IV.1 (Base PLP), IPLP case PET27_E03_CS_I_v4_d_sens (energy scenario E03, transmission configuration CS_I with the entry-year sensitivity of the plan of works (sensibilidad año EO): mantlin.csv only); stored as an overlay: the files that differ from PET27_E03_CS_I_v4_d, over ../e03/source",
+        "publisher": "CEN (Coordinador Eléctrico Nacional)",
+        "url": "https://www.coordinador.cl/desarrollo/documentos/desarrollo-de-la-transmision/propuesta-de-expansion-de-transmision-del-sen-2027/diagnostico-2027/anexos-diagnostico-2027/",
+        "archive": {
+          "name": "Anexo-4.1-Base-PLP.zip",
+          "url": "https://www.coordinador.cl/wp-content/uploads/2026/11/Anexo-4.1-Base-PLP.zip",
+          "sha256": "152215e2e120b2111b80ffbec49a9f1fa3b8f77556421525ec266722f481ae86",
+          "bytes": 699882207,
+          "published": "2026-11-13",
+          "member": "Anexo 4.1/BD PLP/IPLP.zip -> IPLP/Caso CS_I/PET27_E03_CS_I_v4_d_sens/"
+        }
+      },
+      "converter": {
+        "tool": "plp2gtopt",
+        "flags": [
+          "-n",
+          "pet27_e03_cs_i_sens_1y",
+          "-s",
+          "12",
+          "-y",
+          "1",
+          "-a",
+          "0",
+          "--method",
+          "sddp"
+        ],
+        "gtopt_revision": "8ec21a693f86531b10bfe58cff92c83c60269e2c",
+        "converter_last_change": "5c34b931ca3028e2771bb7e61b1cdfc0acc7f3e4",
+        "note": "input = ../e03/source with source/ overlaid and the split parts joined (tools/get_case.py does this); flags -n pet27_e03_cs_i_sens_1y -s 12 -y 1 -a 0 --method sddp; needs gtopt 1.1.0 or later (plp2gtopt with mantlin.csv support); case/ = converter output without logs/README, solver-file comments removed",
+        "input": "../e03/source",
+        "overlay": "source",
+        "join_parts": true
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e03_sens/output && cd ~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e03_sens/output && gtopt \"$REPO/chile/transmission_planning/plp_pet27/e03_sens/case/pet27_e03_cs_i_sens_1y.json\" --set input_directory=\"$REPO/chile/transmission_planning/plp_pet27/e03_sens/case\" -d .",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only plp_pet27/e03_sens",
+        "output": "~/gtopt-cases-out/chile/transmission_planning/plp_pet27/e03_sens",
+        "resources": {
+          "class": "large",
+          "guide": "SDDP over many phase LPs; plan for 8+ cores and 16+ GB RAM"
+        },
+        "rebuild": "tools/get_case.py rebuild chile/transmission_planning/plp_pet27/e03_sens --out <dir outside the repo>"
+      },
+      "rights_holders": [
+        {
+          "name": "Coordinador Eléctrico Nacional (CEN)",
+          "url": "https://www.coordinador.cl"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Coordinador Eléctrico Nacional (CEN)"
+        ],
+        "licence": "no licence stated by the publisher",
+        "attribution": "Source: Coordinador Eléctrico Nacional (CEN), Propuesta de Expansión de Transmisión del SEN 2027, Diagnóstico, Anexo IV.1 (Base PLP); converted to gtopt by the gtopt authors.",
+        "modified": "source: only the files that differ from the CS_I base of the same scenario, unmodified except xz compression; case: converted by gtopt plp2gtopt",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "1-year cut of the 23-year PET 2027 base PET27_E03_CS_I_v4_d_sens: 12 monthly stages = 12 SDDP phases, 96 blocks, hydrology 1, no apertures; PLP boundary cuts via system.future_cost_array.",
+        "The entry-year changes of the sensitivity fall mostly after the first year (Centro-Sur works 2029-2035); use the longer-horizon variants of the README to see them.",
+        "The PLP base holds no investment costs (VI/COMA/VATT) and no candidate units: generation expansion is a fixed plan of works; transmission projects are evaluated by with/without runs (methodology/Anexo-II-Metodologia.pdf)."
+      ],
+      "title": "PLP-PET27 E03 CS_I_sens — Proceso de Planificación de la Transmisión 2027"
     },
     {
       "id": "chile/medium_long_term/plp_2y",

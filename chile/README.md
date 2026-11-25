@@ -12,7 +12,7 @@ operator.
 |---|---|---|---|
 | Daily scheduling | [daily_scheduling/](daily_scheduling/README.md) | CEN daily operation programme (PCP), daily PLEXOS model | `plexos2gtopt` |
 | Medium / long term | [medium_long_term/](medium_long_term/README.md) (`plp_2y`, `plp_5y`, `plp_23y`) | PLP — *Programa de Largo Plazo*, hydrothermal SDDP | `plp2gtopt` |
-| Transmission planning | [transmission_planning/](transmission_planning/README.md) (`plp_pet27`: `e01`, `e02`, `e03`) | PLP-PET27 — Proceso de Planificación de la Transmisión 2027 (PLP bases of the PET 2027 Diagnóstico) | `plp2gtopt` |
+| Transmission planning | [transmission_planning/](transmission_planning/README.md) (`plp_pet27`: `e01`–`e03`, `e0N_sens`) | PLP-PET27 — Proceso de Planificación de la Transmisión 2027 (PLP bases of the PET 2027 Diagnóstico) | `plp2gtopt` |
 | Expansion | [expansion/](expansion/README.md) | — | — |
 
 ## Getting the data

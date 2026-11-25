@@ -10,16 +10,20 @@ Transmisión del SEN 2027** (the annual transmission planning process of
 Art. 87 of the Ley General de Servicios Eléctricos), converted to gtopt
 with `plp2gtopt`.
 
-Three cases, one per **energy scenario** of the planning process (low,
-medium, high), each in the reference transmission configuration **CS-I**:
+One case per **energy scenario** of the planning process (low, medium,
+high) in the reference transmission configuration **CS-I**, plus the
+same cut of the CS-I entry-year sensitivity (`_sens`):
 
 | Case | Scenario | PLP base (IPLP) | Generators | Batteries | Case content | LP rows (`--lp-only`) |
 |---|---|---|---:|---:|---|---:|
-| [e01](e01) | 1 — Bajo | `PET27_E01_CS_I_v4_d` | 933 | 158 | `pet27_e01_cs_i_1y`: first 12 stages, hydrology 1, no apertures | 455,069 |
-| [e02](e02) | 2 — Medio | `PET27_E02_CS_I_v4_d` | 965 | 171 | `pet27_e02_cs_i_1y`: same cut | 458,969 |
-| [e03](e03) | 3 — Alto | `PET27_E03_CS_I_v4_d` | 988 | 202 | `pet27_e03_cs_i_1y`: same cut | 468,269 |
+| [e01](e01) | 1 — Bajo | `PET27_E01_CS_I_v4_d` | 933 | 158 | `pet27_e01_cs_i_1y`: first 12 stages, hydrology 1, no apertures | 470,429 |
+| [e02](e02) | 2 — Medio | `PET27_E02_CS_I_v4_d` | 965 | 171 | `pet27_e02_cs_i_1y`: same cut | 475,577 |
+| [e03](e03) | 3 — Alto | `PET27_E03_CS_I_v4_d` | 988 | 202 | `pet27_e03_cs_i_1y`: same cut | 487,853 |
+| [e01_sens](e01_sens) | 1 — Bajo, CS_I_sens | `PET27_E01_CS_I_v4_d_sens` | 933 | 158 | `pet27_e01_cs_i_sens_1y`: same cut; `source/` holds only the files that differ from e01 | 469,469 |
+| [e02_sens](e02_sens) | 2 — Medio, CS_I_sens | `PET27_E02_CS_I_v4_d_sens` | 965 | 171 | `pet27_e02_cs_i_sens_1y`: same cut; `source/` holds only the files that differ from e02 | 474,617 |
+| [e03_sens](e03_sens) | 3 — Alto, CS_I_sens | `PET27_E03_CS_I_v4_d_sens` | 988 | 202 | `pet27_e03_cs_i_sens_1y`: same cut; `source/` holds only the files that differ from e03 | 486,893 |
 
-All three share the network (292 buses, 430 lines: the reduced SEN at
+The CS-I cases share the network (292 buses, 430 lines: the reduced SEN at
 500 and 220 kV with some 154, 110 and 66 kV), 10 reservoirs with the Laja
 and Maule irrigation agreements, 276 monthly stages (April 2026 to March
 2049) of 8 blocks and 25 historical hydrologies.  The scenarios differ in
@@ -35,6 +39,7 @@ plp_pet27/
 │   ├── README.md    how to run, regeneration command, variants
 │   ├── source/      PLP input files as published by the CEN (xz)
 │   └── case/        the gtopt case converted from ../source (plp2gtopt)
+├── e0N_sens/        CS-I entry-year sensitivity: source/ = mantlin.csv only (over ../e0N/source)
 ```
 
 ## The planning process
@@ -213,15 +218,17 @@ corridors.
 ## Variants of the publication
 
 The publication has nine PLP bases: the three energy scenarios
-(E01, E02, E03) in three transmission set-ups.  Only the CS_I bases are
-committed; the other six differ only in a few files and can be built
-from the CEN archive:
+(E01, E02, E03) in three transmission set-ups.  The CS_I bases are
+committed in full and the CS_I_sens ones as overlays (`mantlin.csv`
+only).  The NC_VI bases differ in their generation plan and inflow file
+(~17 MB compressed each) and are kept out of this repository for size;
+build them from the CEN archive:
 
 | Set-up | What changes against CS_I | Bases |
 |---|---|---|
-| `CS_I` (committed) | — | `PET27_E0{1,2,3}_CS_I_v4_d` |
-| `CS_I_sens` | `mantlin.csv` only: the dates of about 15 Centro-Sur works (Charrúa, Pichirropulli, Entre Ríos, Baja Cordillera–Alto Jahuel, …) | `PET27_E0{1,2,3}_CS_I_v4_d_sens` |
-| `NC_VI` | `plpcnfli.dat` and `mantlin.csv`: adds Kimal–Jadresic 500 kV and the Jadresic–Lo Aguirre HVDC link, drops Lo Aguirre–Charrúa 500 kV; plus `plpcnfce.dat`, `plpcenbat.dat`, `plpmance.dat`, `plpaflce.dat` | `PET27_E01_NC_VI_v4_d`, `PET2027_E0{2,3}_NC_VI_v4_d` |
+| `CS_I` (`e01`–`e03`) | — | `PET27_E0{1,2,3}_CS_I_v4_d` |
+| `CS_I_sens` (`e01_sens`–`e03_sens`) | `mantlin.csv` only: the dates of about 15 Centro-Sur works (Charrúa, Pichirropulli, Entre Ríos, Baja Cordillera–Alto Jahuel, …) | `PET27_E0{1,2,3}_CS_I_v4_d_sens` |
+| `NC_VI` | `plpcnfli.dat` and `mantlin.csv`: adds Kimal–Jadresic 500 kV and the Jadresic–Lo Aguirre HVDC link (2000 MW, 2042), drops Lo Aguirre–Charrúa 500 kV; and its own generation plan of works (`plpcnfce.dat`, `plpcenbat.dat`, `plpmance.dat`) and inflow file `plpaflce.dat` | `PET27_E01_NC_VI_v4_d`, `PET2027_E0{2,3}_NC_VI_v4_d` |
 
 ```bash
 # ~700 MB download, ~3.6 GB unpacked; outside the repository

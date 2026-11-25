@@ -78,6 +78,9 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e01](../chile/transmission_planning/plp_pet27/e01) | 292 | 430 | 933 | 148 | 10 | 173 | 158 | 3 | — | 96 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e02](../chile/transmission_planning/plp_pet27/e02) | 292 | 430 | 965 | 148 | 10 | 173 | 171 | 3 | — | 96 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e03](../chile/transmission_planning/plp_pet27/e03) | 292 | 430 | 988 | 148 | 10 | 173 | 202 | 3 | — | 96 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e01_sens](../chile/transmission_planning/plp_pet27/e01_sens) | 292 | 430 | 933 | 148 | 10 | 173 | 158 | 3 | — | 96 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e02_sens](../chile/transmission_planning/plp_pet27/e02_sens) | 292 | 430 | 965 | 148 | 10 | 173 | 171 | 3 | — | 96 | 12 | 1 |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [transmission_planning/plp_pet27/e03_sens](../chile/transmission_planning/plp_pet27/e03_sens) | 292 | 430 | 988 | 148 | 10 | 173 | 202 | 3 | — | 96 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [daily_scheduling/ncp_pdd_2026-06-22](../guatemala/daily_scheduling/ncp_pdd_2026-06-22) | 830 | 955 | 229 | 241 | 44 | 98 | — | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [daily_scheduling/ncp_week_2026-06-21](../guatemala/daily_scheduling/ncp_week_2026-06-21) | 830 | 955 | 203 | 241 | — | — | — | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [medium_long_term/psse_bdd_2026-2027/PAEMARMAX27](../guatemala/medium_long_term/psse_bdd_2026-2027/PAEMARMAX27) | 877 | 948 | 121 | 260 | — | — | — | — | — | 1 | 1 | 1 |
@@ -177,13 +180,17 @@ See [chile/medium_long_term/README.md](../chile/medium_long_term/README.md).
 
 PLP bases of the CEN **Proceso de Planificación de la Transmisión 2027**
 (Diagnóstico, Anexo IV.1), one case per energy scenario in configuration
-CS_I; the group folder also holds the CEN methodology (Anexo II).
+CS_I, plus the same cut of the entry-year sensitivity (`_sens`), stored as
+`mantlin.csv` overlays over the CS_I sources; the group folder also holds the CEN methodology (Anexo II).
 
 | Case | Source (PLP) | Case | Buses | LP rows | Resources |
 |---|---|---|---:|---:|---|
-| [plp_pet27/e01](../chile/transmission_planning/plp_pet27/e01) | `PET27_E01_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 455,069 | medium |
-| [plp_pet27/e02](../chile/transmission_planning/plp_pet27/e02) | `PET27_E02_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 458,969 | medium |
-| [plp_pet27/e03](../chile/transmission_planning/plp_pet27/e03) | `PET27_E03_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 468,269 | medium |
+| [plp_pet27/e01](../chile/transmission_planning/plp_pet27/e01) | `PET27_E01_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 470,429 | medium |
+| [plp_pet27/e02](../chile/transmission_planning/plp_pet27/e02) | `PET27_E02_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 475,577 | medium |
+| [plp_pet27/e03](../chile/transmission_planning/plp_pet27/e03) | `PET27_E03_CS_I_v4_d`: 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 487,853 | medium |
+| [plp_pet27/e01_sens](../chile/transmission_planning/plp_pet27/e01_sens) | `PET27_E01_CS_I_v4_d_sens` (overlay over e01): 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 469,469 | medium |
+| [plp_pet27/e02_sens](../chile/transmission_planning/plp_pet27/e02_sens) | `PET27_E02_CS_I_v4_d_sens` (overlay over e02): 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 474,617 | medium |
+| [plp_pet27/e03_sens](../chile/transmission_planning/plp_pet27/e03_sens) | `PET27_E03_CS_I_v4_d_sens` (overlay over e03): 276 monthly stages, 25 hydrologies | first year: 12 phases, 1 hydrology | 292 | 486,893 | medium |
 
 See [chile/transmission_planning/plp_pet27/README.md](../chile/transmission_planning/plp_pet27/README.md).
 
@@ -286,7 +293,7 @@ No case yet; see [chile/expansion/README.md](../chile/expansion/README.md).
 | Country | System | Data source | Daily scheduling | Medium/long term | Expansion |
 |---|---|---|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](../australia/README.md) | NEM | AEMO (Australian Energy Market Operator), 2026 ISP | 1 weekly dispatch (production cost) | — | — |
-| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 + 3 PLP-PET27 (transmission planning) | — |
+| <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](../chile/README.md) | SEN | CEN (Coordinador Eléctrico Nacional) | 14 | 3 + 6 PLP-PET27 (transmission planning) | — |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](../guatemala/README.md) | SNI | AMM (Administrador del Mercado Mayorista), EOR (Ente Operador Regional) | 2 | 6 SDDP + 6 snapshots | — |
 | <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](../ireland/README.md) | SEM | SEM Committee (CRU, Utility Regulator); not redistributed, fetched on demand | 1 weekly unit commitment | — | — |
 | <img src="https://flagcdn.com/w40/pe.png" width="28" align="absmiddle" alt="🇵🇪"> [Peru](../peru/README.md) | SEIN | COES (Comité de Operación Económica del Sistema Interconectado Nacional) | — | 4 SDDP | — |

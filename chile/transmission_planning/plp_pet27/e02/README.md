@@ -20,7 +20,7 @@ NC_VI) and what the base does not contain (investment costs, candidates):
 | Hydrologies | 1 scenario: hydrology 1 (of 25); no apertures (`-a 0`) |
 | Network | 292 buses, 430 lines (time-varying ratings, status and R/X from `mantlin.csv`) |
 | Units | 965 generators, 171 batteries, 10 reservoirs, 173 turbines, 3 flow rights |
-| LP (`--lp-only`) | 458,969 rows over 12 phase LPs (gtopt development revision `256a6d0e3`) |
+| LP (`--lp-only`) | 475,577 rows over 12 phase LPs (gtopt 1.1.0) |
 | Method / profile | sddp, no profile (method and SDDP options are in the case JSON) |
 | Future cost | `system.future_cost_array`: `boundary_cuts.csv` (PLP `plpplem1/2.dat` cuts), `mode: phi_expectation` |
 | Converter | `plp2gtopt` from gtopt 1.1.0 or later (`mantlin.csv` support); revision in `catalog.json` |
@@ -94,5 +94,4 @@ defines 25 apertures per stage (`plpidap2.dat`).
 | **Full horizon** (276 stages), all hydrologies and apertures | `plp2gtopt -i source -o <out> --method sddp` |
 
 The full horizon is a large SDDP problem (276 phases × 25 scenarios);
-expect long runs and plan memory accordingly.  For the CS_I_sens and
-NC_VI set-ups of this scenario see the [group README](../README.md#variants-of-the-publication).
+expect long runs and plan memory accordingly.  The CS_I_sens set-up of this scenario is [`e02_sens`](../e02_sens); for NC_VI see the [group README](../README.md#variants-of-the-publication).
