@@ -8549,6 +8549,119 @@
       "collection": "countries"
     },
     {
+      "id": "australia/expansion/isp2026_sc_exp_fy28_cheby64",
+      "path": "australia/expansion/isp2026_sc_exp_fy28_cheby64",
+      "date": "2027-07-01 to 2028-06-30 (FY2028; one typical week per month at 64 Chebyshev nodes)",
+      "country": "australia",
+      "application": "expansion",
+      "method": "monolithic",
+      "case_json": "case/isp2026_sc_exp_fy28_cheby64.json",
+      "profile": null,
+      "size": {
+        "lp": {
+          "lps": 1,
+          "rows": 932417,
+          "cols": 1320403,
+          "nnz": 3046077,
+          "gtopt_revision": "36663ac517bc"
+        },
+        "buses": 15,
+        "generators": 626,
+        "lines": 18,
+        "batteries": 138,
+        "reservoirs": 22,
+        "blocks": 768,
+        "stages": 12,
+        "phases": 1,
+        "scenarios": 1,
+        "horizon_hours": 8784.0
+      },
+      "source": {
+        "files": [
+          {
+            "path": "source/2026 ISP Step Change Model.xml.xz",
+            "sha256": "e98c4827c4fb3052732e20415709a83a8453de8ddd0960101490f0b0b96e74df",
+            "bytes": 1234148
+          },
+          {
+            "path": "source/NOT_KEPT.txt",
+            "sha256": "45889934f233b42d6c163e308e1f67c7f2e40fca35f4bfff1ceca4afc8b47813",
+            "bytes": 923
+          }
+        ],
+        "origin": "AEMO 2026 ISP page, https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp; '2026 ISP Model.zip' (sha256 d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2) plus the Solar, Wind, Hydro and Timeslice trace zips (hashes in case/isp2026_sc_exp_fy28_cheby64.provenance.json; the traces are not kept here); scenario XML '2026 ISP Step Change/2026 ISP Step Change Model.xml', uncompressed sha256 19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+        "publisher": "Australian Energy Market Operator (AEMO)",
+        "licence": "AEMO copyright permissions (https://aemo.com.au/privacy-and-legal-notices/copyright-permissions): 'AEMO confirms its general permission for anyone to use AEMO Material for any purpose, but only with accurate and appropriate attribution of the relevant AEMO Material and AEMO as its author. You do not need to obtain specific permission to use AEMO Material in this way.' Excludes confidential documents and reports commissioned by third parties."
+      },
+      "converter": {
+        "tool": "plexos2gtopt.aemo_isp_expansion",
+        "flags": [
+          "source/2026 ISP Step Change Model.xml",
+          "-t",
+          "2026 ISP Model/2026 ISP Step Change",
+          "-t",
+          "2026 ISP Solar traces",
+          "-t",
+          "2026 ISP Wind traces",
+          "-t",
+          "hydro",
+          "-t",
+          "2026 ISP Timeslice traces",
+          "--first-fy",
+          "2028",
+          "--years",
+          "1",
+          "--fill-years",
+          "0",
+          "--capacity-penalty",
+          "1e7",
+          "--week-sampler",
+          "chebyshev:64",
+          "-o",
+          "case",
+          "-n",
+          "isp2026_sc_exp_fy28_cheby64"
+        ],
+        "gtopt_revision": "8f34712be789b694d6862d1eb7c7af2bc5cdd25d",
+        "note": "python -m plexos2gtopt.aemo_isp_expansion with --first-fy 2028 --years 1 --fill-years 0 --capacity-penalty 1e7 --week-sampler chebyshev:64 (one typical week per month, Wednesday 12:00 window with the month's net-load peak, 64 Chebyshev-Gauss-Lobatto nodes, storage rule cc = converter default on point stages); reads the scenario XML and the AEMO trace archives (not kept here, see source/NOT_KEPT.txt)"
+      },
+      "run": {
+        "command": "mkdir -p ~/gtopt-cases-out/australia/expansion/isp2026_sc_exp_fy28_cheby64/output && cd ~/gtopt-cases-out/australia/expansion/isp2026_sc_exp_fy28_cheby64/output && gtopt \"$REPO/australia/expansion/isp2026_sc_exp_fy28_cheby64/case/isp2026_sc_exp_fy28_cheby64.json\" --set input_directory=\"$REPO/australia/expansion/isp2026_sc_exp_fy28_cheby64/case\" -d . --solver highs",
+        "tool": "gtopt_check_cases --repo \"$REPO\" --only isp2026_sc_exp_fy28_cheby64",
+        "output": "~/gtopt-cases-out/australia/expansion/isp2026_sc_exp_fy28_cheby64",
+        "resources": {
+          "class": "medium",
+          "guide": "~0.9M-row LP, 1.3M columns; ~2 GB RAM; HiGHS simplex ~25 min on a shared 18-core VM"
+        },
+        "rebuild": "xz -dk 'source/2026 ISP Step Change Model.xml.xz' && python -m plexos2gtopt.aemo_isp_expansion 'source/2026 ISP Step Change Model.xml' -t '2026 ISP Model/2026 ISP Step Change' -t '2026 ISP Solar traces' -t '2026 ISP Wind traces' -t hydro -t '2026 ISP Timeslice traces' --first-fy 2028 --years 1 --fill-years 0 --capacity-penalty 1e7 --week-sampler chebyshev:64 -o case -n isp2026_sc_exp_fy28_cheby64 (trace archives from the AEMO ISP page)"
+      },
+      "rights_holders": [
+        {
+          "name": "Australian Energy Market Operator (AEMO)",
+          "url": "https://www.aemo.com.au"
+        }
+      ],
+      "terms": {
+        "rights_holders": [
+          "Australian Energy Market Operator (AEMO)"
+        ],
+        "licence": "AEMO copyright permissions: general permission for anyone to use AEMO Material for any purpose, with accurate and appropriate attribution of the AEMO Material and of AEMO as its author; confidential documents and reports commissioned by third parties are excluded.",
+        "attribution": "Source: Australian Energy Market Operator (AEMO), 2026 Integrated System Plan PLEXOS model (Step Change), © AEMO, used under AEMO's copyright permissions; converted to gtopt format.",
+        "modified": "source: scenario XML unmodified except xz compression; traces not kept (see source/NOT_KEPT.txt); case: converted by gtopt plexos2gtopt.aemo_isp_expansion",
+        "conversion_layer": "CC0-1.0, to the extent the gtopt authors hold any rights; grants no right in the third-party data",
+        "removal": "marcelomatusacuna@gmail.com, subject 'gtopt-cases removal request' (see DISCLAIMER.md)"
+      },
+      "notes": [
+        "Prototype: generation, battery and REZ / network-augmentation expansion over FY2028 from the ISP Step Change DLT database; one typical week per month (168 h, Wednesday 12:00 to Wednesday 12:00, the week with the month's net-load peak) sampled at 64 Chebyshev-Gauss-Lobatto nodes (point stages, Clenshaw-Curtis weights scaled to the month; 12 stages x 64 blocks), monolithic LP.",
+        "Storage rule cc (Clenshaw-Curtis, one balance row per node) for batteries and reservoirs, the converters' default on point stages.",
+        "15 sub-regional buses, 18 notional flow paths with dated limits (transport, lossless); inter-regional transmission and retirements are inputs; yearly capacity / build limits as stage-scope user constraints (slack cost 1e7 $/MW unless PLEXOS gives a Penalty Price); yearly energy targets, purchasers and hydrogen not modelled.",
+        "Batteries close their cycle within each typical week; 7 reservoir volumes are coupled across the months with a free end volume, 15 cycle within the week; no outages, unit commitment or reserves.",
+        "Needs a gtopt build from master of 26 November 2026 or later (point-sampled stages, cc storage integration).",
+        "Not validated against AEMO (the public package has no PLEXOS solution)."
+      ],
+      "collection": "countries"
+    },
+    {
       "id": "ireland/unit_commitment/sem_2025w03",
       "path": "ireland/unit_commitment/sem_2025w03",
       "date": "2025-01-13 to 2025-01-19 (one week, hourly)",

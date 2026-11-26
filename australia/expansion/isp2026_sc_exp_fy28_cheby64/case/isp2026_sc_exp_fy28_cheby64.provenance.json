@@ -1,0 +1,56 @@
+{
+  "source": {
+    "publisher": "Australian Energy Market Operator (AEMO)",
+    "dataset": "2026 Integrated System Plan (ISP) PLEXOS model, Step Change scenario",
+    "page": "https://www.aemo.com.au/energy-systems/major-publications/integrated-system-plan-isp/2026-integrated-system-plan-isp",
+    "archives_sha256": {
+      "2026 ISP Model.zip": "d25ad3905dd6e8bffcdd53f323d6caccd4d188f2e10c600d5a97a35d9616e6f2",
+      "2026 ISP Solar traces.zip": "ce364d7c6eddfebaf23a56569732fb90bdb93f051007df79d3d6dda6d50fb689",
+      "2026 ISP Wind traces.zip": "7a14094b68437356c20da1048714b62c1a082b030573531e690b3bf6df22d844",
+      "2026 ISP Hydro traces.zip": "e66ce0f94dd13a7414d6defa5b5405b479bae86c4db82d5323e9591f66e2dc5c",
+      "2026 ISP Timeslice traces.zip": "66c21860a84de67f7164b4010e0fdb04df6bd03746878264e3c514358d40c3bd"
+    },
+    "xml": "2026 ISP Model/2026 ISP Step Change/2026 ISP Step Change Model.xml",
+    "xml_sha256": "19cc3451f1ee00955019bb501d800e629bb740e3bb51e270020ef2dd7485a849",
+    "copyright": "(c) AEMO. Used under AEMO's copyright permissions: general permission to use AEMO Material for any purpose with accurate and appropriate attribution of the material and of AEMO as its author."
+  },
+  "converter": {
+    "tool": "python -m plexos2gtopt.aemo_isp_expansion",
+    "gtopt_revision": "8f34712be789b694d6862d1eb7c7af2bc5cdd25d",
+    "args": [
+      "source/2026 ISP Step Change Model.xml",
+      "-t",
+      "2026 ISP Model/2026 ISP Step Change",
+      "-t",
+      "2026 ISP Solar traces",
+      "-t",
+      "2026 ISP Wind traces",
+      "-t",
+      "hydro",
+      "-t",
+      "2026 ISP Timeslice traces",
+      "--first-fy",
+      "2028",
+      "--years",
+      "1",
+      "--fill-years",
+      "0",
+      "--capacity-penalty",
+      "1e7",
+      "--week-sampler",
+      "chebyshev:64",
+      "-o",
+      "case",
+      "-n",
+      "isp2026_sc_exp_fy28_cheby64"
+    ],
+    "trace_roots": [
+      "2026 ISP Model/2026 ISP Step Change",
+      "2026 ISP Solar traces",
+      "2026 ISP Wind traces",
+      "hydro",
+      "2026 ISP Timeslice traces"
+    ],
+    "flags_note": "FY2028 only (2027-28), no fill FY; one typical week per month (Wednesday 12:00 window holding the month's net-load peak) sampled at 64 Chebyshev-Gauss-Lobatto nodes (point stages, Clenshaw-Curtis weights scaled to the month, 12 stages x 64 blocks); storage rule cc for batteries and reservoirs (converter default on point stages); yearly capacity constraints on the FY-mean existing fleet with slack cost 1e7 $/MW; PLEXOS Penalty Price kept (soft constraints stay soft); monolithic (no phases)"
+  }
+}

@@ -73,7 +73,7 @@ redistributed here.
 
 | Country | Horizon | Buses | Lines | Generators | Demands | Reservoirs | Batteries |
 |---|---|---:|---:|---:|---:|---:|---:|
-| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 1 week (hourly) · 4 years (1 day per month) | 15 | 18 | 523–765 | 15–32 | 22 | 85–223 |
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [Australia](australia/README.md) | 1 week (hourly) · 1 year (1 week per month) · 4 years (1 day per month) | 15 | 18 | 523–765 | 15–32 | 22 | 85–223 |
 | <img src="https://flagcdn.com/w40/cl.png" width="28" align="absmiddle" alt="🇨🇱"> [Chile](chile/README.md) | 1 week · 2 years (+ fill) · 4.5 years · 23 years | 237–339 | 305–449 | 933–1,892 | 127–161 | 10–12 | 0–202 |
 | <img src="https://flagcdn.com/w40/gt.png" width="28" align="absmiddle" alt="🇬🇹"> [Guatemala](guatemala/README.md) | 1 hour · 1 week · 1 year | 461–877 | 519–955 | 75–230 | 116–261 | 0–44 | — |
 | <img src="https://flagcdn.com/w40/ie.png" width="28" align="absmiddle" alt="🇮🇪"> [Ireland](ireland/README.md) | 1 week (hourly) | 3 | 2–3 | 116 | 3 | — | 23–25 |

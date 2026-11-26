@@ -15,6 +15,7 @@ Cases of the Australian National Electricity Market (NEM) built from the
 | Production cost (weekly dispatch), winter | [production_cost/isp2026_sc_2027w29](production_cost/isp2026_sc_2027w29/README.md) | same model: 19-25 July 2027 | same |
 | Production cost (weekly dispatch), spring | [production_cost/isp2026_sc_2027w42](production_cost/isp2026_sc_2027w42/README.md) | same model: 18-24 October 2027 | same |
 | Expansion planning (prototype) | [expansion/isp2026_sc_exp_fy28_3y](expansion/isp2026_sc_exp_fy28_3y/README.md) | same model: FY2028-FY2030 plus a fill year, one representative day per month | `plexos2gtopt.aemo_isp_expansion` (gtopt 1.2.0 or later) |
+| Expansion planning, typical weeks (prototype) | [expansion/isp2026_sc_exp_fy28_cheby64](expansion/isp2026_sc_exp_fy28_cheby64/README.md) | same model: FY2028, one typical week per month sampled at 64 Chebyshev nodes | `plexos2gtopt.aemo_isp_expansion --week-sampler chebyshev:64` (gtopt master of 26 November 2026 or later) |
 
 The weekly cases are prototypes: one hourly week of the ISP capacity-outlook
 database with the fleet in service on its first day and no expansion.

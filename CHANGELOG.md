@@ -17,6 +17,13 @@ Each release states the minimum gtopt version its cases need.
 
 ### Added
 
+- **Australia**: `australia/expansion/isp2026_sc_exp_fy28_cheby64`, the
+  FY2028 expansion year of the AEMO 2026 ISP Step Change database with
+  one typical week per month sampled at 64 Chebyshev nodes (point
+  stages, Clenshaw-Curtis `cc` storage rule), solved as one monolithic
+  LP; the README gives the HiGHS reference objective.  `source/` keeps
+  the scenario XML only (same file as `isp2026_sc_exp_fy28_3y`).  Needs
+  gtopt master of 26 November 2026 or later.
 - **Benchmarks**: a new top-level collection, `benchmarks/`, for standard
   test systems, example systems of other tools and published case
   studies, grouped by family (catalog entries with

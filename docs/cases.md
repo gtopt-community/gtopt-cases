@@ -54,6 +54,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | Case | Buses | Lines | Generators | Demands | Reservoirs | Turbines | Batteries | Water rights | Unit commitments | Blocks | Stages | Scenarios |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [expansion/isp2026_sc_exp_fy28_3y](../australia/expansion/isp2026_sc_exp_fy28_3y) | 15 | 18 | 765 | 32 | 22 | 101 | 223 | — | — | 1,152 | 48 | 1 |
+| <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [expansion/isp2026_sc_exp_fy28_cheby64](../australia/expansion/isp2026_sc_exp_fy28_cheby64) | 15 | 18 | 626 | 26 | 22 | 95 | 138 | — | — | 768 | 12 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | 15 | 18 | 523 | 15 | 22 | 95 | 85 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | 15 | 18 | 527 | 15 | 22 | 95 | 90 | — | — | 168 | 1 | 1 |
 | <img src="https://flagcdn.com/w40/au.png" width="28" align="absmiddle" alt="🇦🇺"> [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | 15 | 18 | 540 | 15 | 22 | 95 | 100 | — | — | 168 | 1 | 1 |
@@ -110,6 +111,7 @@ Counts of the gtopt elements in each case (from its `case/` JSON).  Blocks × st
 | Case | Application | Buses | Blocks | LP rows | Resources |
 |---|---|---:|---:|---:|---|
 | [expansion/isp2026_sc_exp_fy28_3y](../australia/expansion/isp2026_sc_exp_fy28_3y) | expansion | 15 | 1,152 | 1,681,763 | medium |
+| [expansion/isp2026_sc_exp_fy28_cheby64](../australia/expansion/isp2026_sc_exp_fy28_cheby64) | expansion | 15 | 768 | 932,417 | medium |
 | [production_cost/isp2026_sc_2027w03](../australia/production_cost/isp2026_sc_2027w03) | production_cost | 15 | 168 | 126,129 | small |
 | [production_cost/isp2026_sc_2027w16](../australia/production_cost/isp2026_sc_2027w16) | production_cost | 15 | 168 | 132,012 | small |
 | [production_cost/isp2026_sc_2027w29](../australia/production_cost/isp2026_sc_2027w29) | production_cost | 15 | 168 | 143,792 | small |
