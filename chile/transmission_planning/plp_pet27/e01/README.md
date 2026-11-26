@@ -91,7 +91,14 @@ defines 25 apertures per stage (`plpidap2.dat`).
 | This case: first year, hydrology 1, no apertures | `plp2gtopt -i source -o <out> -s 12 -y 1 -a 0 --method sddp` |
 | First 5 years (60 stages), all 25 hydrologies | `plp2gtopt -i source -o <out> -s 60 -a 0 --method sddp` |
 | Planning horizon of the methodology (20 years, 240 stages), 25 hydrologies | `plp2gtopt -i source -o <out> -s 240 --method sddp` |
+| Full horizon (276 stages), 5 hydrologies, no apertures | `plp2gtopt -i source -o <out> -y 1,6,11,16,21 -a 0 --method sddp` |
 | **Full horizon** (276 stages), all hydrologies and apertures | `plp2gtopt -i source -o <out> --method sddp` |
 
 The full horizon is a large SDDP problem (276 phases × 25 scenarios);
-expect long runs and plan memory accordingly.  The CS_I_sens set-up of this scenario is [`e01_sens`](../e01_sens); for NC_VI see the [group README](../README.md#variants-of-the-publication).
+expect long runs and plan memory accordingly.  The 5-hydrology
+full-horizon variant converts and runs with gtopt 1.1.0
+(`--set solver_options.threads=1`; measured on e01 and e02): on a 40-core,
+247 GB machine the first
+SDDP iteration took about 2.5 h and the process peaked at 84–90 GB of
+resident memory, so give it at least ~100 GB and run the scenarios one at
+a time.  The CS_I_sens set-up of this scenario is [`e01_sens`](../e01_sens); for NC_VI see the [group README](../README.md#variants-of-the-publication).
