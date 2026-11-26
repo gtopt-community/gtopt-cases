@@ -92,13 +92,29 @@ defines 25 apertures per stage (`plpidap2.dat`).
 | First 5 years (60 stages), all 25 hydrologies | `plp2gtopt -i source -o <out> -s 60 -a 0 --method sddp` |
 | Planning horizon of the methodology (20 years, 240 stages), 25 hydrologies | `plp2gtopt -i source -o <out> -s 240 --method sddp` |
 | Full horizon (276 stages), 5 hydrologies, no apertures | `plp2gtopt -i source -o <out> -y 1,6,11,16,21 -a 0 --method sddp` |
+| Full horizon (276 stages), 5 hydrologies, as a 4-level cascade (warmup, uninodal, transport, full network) | `plp2gtopt -i source -o <out> -y 1,6,11,16,21 --method cascade` |
 | **Full horizon** (276 stages), all hydrologies and apertures | `plp2gtopt -i source -o <out> --method sddp` |
 
-The full horizon is a large SDDP problem (276 phases × 25 scenarios);
-expect long runs and plan memory accordingly.  The 5-hydrology
-full-horizon variant converts and runs with gtopt 1.1.0
-(`--set solver_options.threads=1`; measured on e01 and e02): on a 40-core,
-247 GB machine the first
-SDDP iteration took about 2.5 h and the process peaked at 84–90 GB of
-resident memory, so give it at least ~100 GB and run the scenarios one at
-a time.  The CS_I_sens set-up of this scenario is [`e01_sens`](../e01_sens); for NC_VI see the [group README](../README.md#variants-of-the-publication).
+The full horizon is a large SDDP problem (276 phases × 25 scenarios); expect
+long runs and plan memory accordingly.  The 5-hydrology full-horizon variant
+converts and runs with gtopt 1.1.0 (`--set solver_options.threads=1`;
+measured on e01 and e02): on a 40-core, 247 GB machine the first SDDP
+iteration took about 2.5 h and the process peaked at 84–90 GB of resident
+memory, so give it at least ~100 GB and run the scenarios one at a time.
+
+To run the cascade, writing outside the repository (plp2gtopt names the case
+JSON after the output directory; the levels and their apertures, 1, 4, 8 and
+all, are in `options.cascade_options` of that JSON):
+
+```bash
+OUT=$HOME/pet27_e01_cascade
+plp2gtopt -i source -o "$OUT" -y 1,6,11,16,21 --method cascade
+ulimit -c unlimited
+cd "$(dirname "$OUT")" && mkdir -p run_e01_cascade && cd run_e01_cascade
+gtopt "$OUT/$(basename "$OUT").json" --set input_directory="$OUT" -d .
+```
+
+With gtopt 1.1.0 this converts in about 4 min and builds the LPs
+(`--lp-only`) in about 25 s with 23 GB of memory (e01).
+
+The CS_I_sens set-up of this scenario is [`e01_sens`](../e01_sens); for NC_VI see the [group README](../README.md#variants-of-the-publication).
